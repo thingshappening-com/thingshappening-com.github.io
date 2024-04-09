@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="Rendering form for child objects in Rails"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Rendering forms for parent and child ActiveRecord objects in Rails"> <meta property="og:description" content="Rendering form for child objects in Rails"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Rendering forms for parent and child ActiveRecord objects in Rails"> <meta property="twitter:description" content="Rendering form for child objects in Rails"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Rendering forms for parent and child ActiveRecord objects in Rails</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Rendering forms for parent and child ActiveRecord objects in Rails</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>To understand the form rendering example that follows I posted the classes that are referenced and their associations below where a <code>User</code> has many <code>Form</code>’s and a <code>Form</code> has many <code>FormFields</code>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class User &#x3C; ApplicationRecord</span></span>
+<span class="line"><span>  has_many :forms</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class Form &#x3C; ApplicationRecord</span></span>
+<span class="line"><span>  belongs_to :user</span></span>
+<span class="line"><span>  has_many :form_fields</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class FormField &#x3C; ApplicationRecord</span></span>
+<span class="line"><span>  belongs_to :form</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<p>What I needed to do here was get one form rendered for the <code>Form</code> object and a collection of forms rendered form the <code>FormFields</code> object. The route the forms are rendered at are nested under <code>User</code> at the <code>Form#edit</code> controller action:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>/users/:user_id/forms/:id/edit</span></span></code></pre>
+<p>The edit action sets instance variables for <code>@user</code> and <code>@form</code>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>def edit</span></span>
+<span class="line"><span>  @user =  User.joins(forms: :form_fields).find(params[:user_id])</span></span>
+<span class="line"><span>  @form = @user.forms.find(params[:id].to_i)</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<p>After the controller is called the edit template is rendered which renders two partials, one for forms form and a partial for the form fields form.</p>
+<p>In the code example below the key thing to point out is the rendering of the form partial in the same directory, we pass that rendered partial a form and user which will be accessible within the template.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/views/forms/edit.html.erb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;h1>Edit: &#x3C;%= @form.name %>&#x3C;/h1></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;%= render 'form', form: @form, user: @user %></span></span></code></pre>
+<p>The below snippet is actual form file that was rendered in the previous example. We do two things here:</p>
+<ol>
+<li>Render a form for the actual form. To do this we need to pass both the <code>@user</code> and <code>@form</code> to account for the nested route.</li>
+<li>Render a collection of forms for the form fields. From the form object we get the collection <code>FormFields</code> data associated, which is another ActiveRecord object. During the iteration of those objects, we render the form partial for each form field and pass it the form_field object to build the form from.</li>
+</ol>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/views/forms/_form.html.erb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;%= form_with(model: [@user, @form]) do |f| %></span></span>
+<span class="line"><span>  &#x3C;%= f.label :name %></span></span>
+<span class="line"><span>  &#x3C;%= f.text_field :name, value: @form.name %>  </span></span>
+<span class="line"><span>  &#x3C;div class="actions"></span></span>
+<span class="line"><span>    &#x3C;%= f.submit %></span></span>
+<span class="line"><span>  &#x3C;/div></span></span>
+<span class="line"><span>&#x3C;% end %></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;% @form.form_fields.each do |form_field| %></span></span>
+<span class="line"><span>  &#x3C;%= render 'form_fields/form', form_field: form_field %></span></span>
+<span class="line"><span>  &#x3C;br /></span></span>
+<span class="line"><span>&#x3C;% end %></span></span></code></pre>
+<p>This is the final rendered form_field partial, which utilizes the data passed into the form_field partial shown in the previous code snippet.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/views/form_fields/_form.html.erb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;%= form_with(model: form_field) do |form| %></span></span>
+<span class="line"><span>  &#x3C;%= form.label :html_input_type %></span></span>
+<span class="line"><span>  &#x3C;%= form.text_field :html_input_type, value: form_field.html_input_type %></span></span>
+<span class="line"><span>  &#x3C;%= form.label :html_element_type %></span></span>
+<span class="line"><span>  &#x3C;%= form.text_field :html_element_type, value: form_field.html_element_type %></span></span>
+<span class="line"><span>  &#x3C;%= form.label :name %></span></span>
+<span class="line"><span>  &#x3C;%= form.text_field :name, value: form_field.name %></span></span>
+<span class="line"><span>  &#x3C;%= form.label :options %></span></span>
+<span class="line"><span>  &#x3C;%= form.text_field :options, value: JSON.pretty_generate(form_field.options) %></span></span>
+<span class="line"><span>  &#x3C;div class="actions"></span></span>
+<span class="line"><span>    &#x3C;%= form.submit %></span></span>
+<span class="line"><span>  &#x3C;/div></span></span>
+<span class="line"><span>&#x3C;% end %></span></span></code></pre>
+<p>If you followed along to the end you should now be able to view your forms at <code>http://localhost:3000/users/1/forms/1/edit</code>.</p>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="Elixir Protocols for new developers"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Elixir Protocols for new developers"> <meta property="og:description" content="Elixir Protocols for new developers"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Elixir Protocols for new developers"> <meta property="twitter:description" content="Elixir Protocols for new developers"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Elixir Protocols for new developers</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Elixir Protocols for new developers</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>This and the other “Deck” posts are a repurposing of flashcard study decks to Q&#x26;A blog posts.</p>
+<h3>Protocols enable polymorphism in Elixir, what is polymorphism?</h3>
+It is the ability to implement the same function with different behavior based on the data-type provided to the method.
+<h3>How do Protocols enable polymorphism?</h3>
+By providing an interface to group implementations of the same method on different data types.
+<h3>How are protocols defined?</h3>
+First you need to define the protocol with `defprotcol`: 
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>defprotocol First do </span></span>
+<span class="line"><span> def first(data) </span></span>
+<span class="line"><span>end</span></span></code></pre>
+<p>And then individual implementations for each type. The below implementations are for <code>Tuple</code> and <code>Map</code>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>defimpl First, for: Tuple do </span></span>
+<span class="line"><span> def first(tuple), do: elem(tuple, 0) </span></span>
+<span class="line"><span>end </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>defimpl First, for: Map do </span></span>
+<span class="line"><span>  def first_key_and_value(map) do </span></span>
+<span class="line"><span>   keys = Map.keys(map) </span></span>
+<span class="line"><span>   key = List.first(keys) </span></span>
+<span class="line"><span>   value = map[key] </span></span>
+<span class="line"><span>   "#{key}: #{value}" </span></span>
+<span class="line"><span>  end </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>  def first(map), do: first_key_and_value(map)</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<h3>How do you invoke a Protocol after it is defined and implemented?</h3>
+For the previous example we would reference the protocol and invoke the method using dot notation and pass a data type to the method that has an implementation for the protocol: 
+```
+First.first({4, 6, 12}) 
+=> 4
+``` 
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>First.first(%{name: "bob", email: "bobo@email.com"}) </span></span>
+<span class="line"><span>=> "name: bob"</span></span></code></pre>
+<h3>Where are protocols used in the Elixir ecosystem?</h3>
+One example is the `Enum` module. The `Enum` modules functions can operate successfully on a `List`, `Map`, or `Range`.
+<h3>Which data types can implement a Protocol?</h3>
+`Atom`, `BitString`, `Float`, `Function`, `Integer`, `List`, `Map`, `PID`, `Port`, `Reference`, `Struct`, `Tuple`.
+<h3>How do protocols allow for cleaner code?</h3>
+They provide another means of code organization. Any time you need the same method with different behavior, you have the option to either look for an existing protocol to add a new implementation for or to create a new protocol and extract any existing behavior into the implementations.
+<h3>Do Structs require their own Protocol implementation?</h3>
+Yes. Structs share a lot of behavior with maps, but each struct requires its own protocol implementation.
+<h3>When implementing a protocol inside a struct, do you need to pass the for: option?</h3>
+No. See the example below: 
+```
+defmodule User do 
+ defstruct [:email, :name] 
+<p>defimpl Size do
+def size(%User{}), do: 2
+end
+end</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;h3>How do you fallback to a default implementation if a protocol is invoked that doesn't have an implementation for that type?&#x3C;/h3></span></span>
+<span class="line"><span>Use the `@fallback_to_any` attribute, ex: </span></span></code></pre>
+<p>defprotocol First do
+@doc “GET the first value from collections”
+@fallback_to_any true
+def first(data)
+end</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>  </span></span>
+<span class="line"><span>And then implement `first` for `Any` </span></span></code></pre>
+<p>defimpl First, for: Any do
+def first(_), do: nil
+end</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span></span></span></code></pre>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

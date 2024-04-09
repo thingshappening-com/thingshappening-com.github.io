@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="how to setup models views and controllers for nested resources"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Rails nested resources MVC complete example"> <meta property="og:description" content="how to setup models views and controllers for nested resources"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Rails nested resources MVC complete example"> <meta property="twitter:description" content="how to setup models views and controllers for nested resources"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Rails nested resources MVC complete example</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Rails nested resources MVC complete example</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>This post provides references to the code changes that need to be made to a scaffolded rails app in order to render a form for the resources. In the application I am providing the example from those resources are User and Form, where a form is rendered for a user. This is a survey rendering application, similar to TypeForm or SurveyMonkey.</p>
+<p>This post will use the <code>form#edit</code> action as an example but this can be applied to any of the resources.</p>
+<h3>Generating the scaffold</h3>
+For those that want to code along with the post, you can start by creating a new rails application and generating the following two scaffolds:
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>rails g scaffold Form</span></span>
+<span class="line"><span>rails g scaffold User</span></span></code></pre>
+<p>This will create all of the resources needed to create and render forms and users, but we will make changes to the generated files to account for forms being nested within users.</p>
+<h3>Creating the tables and ActiveRecord relationships</h3>
+<p>To establish the relationships between the Form and User I added a reference to the users table in the form <code>create_table</code>. Adding the reference requires the users table to exist before running the migration:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/db/migrate/20211111221212_create_forms.rb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class CreateForms &#x3C; ActiveRecord::Migration[6.1]</span></span>
+<span class="line"><span>  def change</span></span>
+<span class="line"><span>    create_table :forms do |t|</span></span>
+<span class="line"><span>      t.references :user, index: true, null: false</span></span>
+<span class="line"><span>      t.string :name</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>      t.timestamps</span></span>
+<span class="line"><span>    end</span></span>
+<span class="line"><span>  end</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<p>In the <code>Form</code> and <code>User</code> models add the <code>belongs_to</code> and <code>has_many</code> associations appropriately:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/models/form.rb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class Form &#x3C; ApplicationRecord</span></span>
+<span class="line"><span>  belongs_to :user</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/models/user.rb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class User &#x3C; ApplicationRecord</span></span>
+<span class="line"><span>  has_many :forms</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<h3>Update routes to be nested</h3>
+<p>Update the routes file so <code>:forms</code> are scoped under <code>:users</code> because in this system a <code>Form</code> will only exist under the context of a <code>User</code>. This will also update the url helpers rails providers, which we will need to update references to later in the post.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/config/routes.rb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>resources :users do</span></span>
+<span class="line"><span>  resources :forms</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<p>Run the <code>rails routes</code> command to see the changes to the routes definitions. For our edit example the new url is:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>/users/:user_id/forms/:id/edit</span></span></code></pre>
+<h3>Updating FormsController#edit</h3>
+<p>In the <code>FormsController</code> an update needs to be made to get form for a specific user. Since the route to access the <code>edit</code> action is <code>/users/:user_id/forms/:id/edit</code> we now have the <code>user_id</code> and <code>id</code> (from_id) available to us as parameters to query for data.</p>
+<p>In the <code>edit</code> example below we query for the user first and then filter the forms to find the correct resource. Setting the <code>@form</code> and <code>@user</code> variables will give us access to them in the view template:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>class FormsController &#x3C; ApplicationController</span></span>
+<span class="line"><span>  before_action :set_user, only: %i[ edit ]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  def edit</span></span>
+<span class="line"><span>    @form = @user.forms.find(params[:id].to_i)</span></span>
+<span class="line"><span>  end</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  private</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  def set_user</span></span>
+<span class="line"><span>    @user = User.find(params[:user_id])</span></span>
+<span class="line"><span>  end</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<h3>Updating views for FormsController#edit</h3>
+<p>When generating the scaffold for <code>Form</code> you an edit template was created for you that looks similar to this:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/views/forms/edit.html.erb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;h1>Editing Form&#x3C;/h1></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;%= render 'form', form: @form %></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;%= link_to 'Show', @form %> |</span></span>
+<span class="line"><span>&#x3C;%= link_to 'Back', forms_path %></span></span></code></pre>
+<p>Since the forms were updated to be nested, we will need to account for two changes:</p>
+<ol>
+<li>The new url path helpers</li>
+<li>The added data needed for the form to render</li>
+</ol>
+<p>After the updates the new <code>edit.html.erb</code> will look like the below code example. The links were updated with the correct url paths and the data we provide to the form partial is accounted for.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;h1>Editing Form&#x3C;/h1></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;%= render 'form', form_and_user: [@user, @form] %></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;%= link_to 'Show', user_form_path(@form) %> |</span></span>
+<span class="line"><span>&#x3C;%= link_to 'Back', user_forms_path %></span></span></code></pre>
+<p>Finally update the references in the form partially to account for the changed parameter name as the example below illustrates:</p>
+<p>Orginal form partial:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>~/app/views/forms/_form.html.erb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;%= form_with(model: form) do |form| %></span></span>
+<span class="line"><span># form elements</span></span>
+<span class="line"><span>&#x3C;% end %></span></span></code></pre>
+<p>Updated form partial:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;%= form_with(model: form_and_user) do |form| %></span></span>
+<span class="line"><span># form elements</span></span>
+<span class="line"><span>&#x3C;% end %></span></span></code></pre>
+<p>After making these updates you should be able to navigate to <code>http://localhost:3000/users/1/forms/1/edit</code> successfully.</p>
+<p>Thanks for tuning in! I hope you found this post helpful today.</p>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

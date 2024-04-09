@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="elixir atoms and integers explained"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Elixir Atoms and Integers explained through q&#38;a"> <meta property="og:description" content="elixir atoms and integers explained"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Elixir Atoms and Integers explained through q&#38;a"> <meta property="twitter:description" content="elixir atoms and integers explained"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Elixir Atoms and Integers explained through q&amp;a</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Elixir Atoms and Integers explained through q&amp;a</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>This post works best when paired with the <a href="https://elixir-lang.org/getting-started/basic-types.html">Elixir docs</a> for a general overview of Atoms and Integers.</p>
+<h3>What is an Elixir Atom?</h3>
+It is an Elixir data type thats value is its own name.
+<h3>What is an Elixir Atom used for?</h3>
+They are often used to indicate the result of an operation either as the first value of a tuple or as a standalone response. `:ok` is often used to indicate a successful operation and `:error` is used if something goes wrong.
+```
+{:ok, result} = some_function()
+<p>:ok = some_other_function()</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span></span></span>
+<span class="line"><span>&#x3C;h3>What is special about the values true, false and nil as they relate to atoms?&#x3C;/h3></span></span>
+<span class="line"><span>Each of those data types are atoms. Elixir allows you to skip typing the colon (:) for these atoms. Ex:</span></span></code></pre>
+<p>true == :true
+=> true</p>
+<p>nil == :nil
+=> true</p>
+<p>false == :false
+=> true</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span></span></span>
+<span class="line"><span>&#x3C;h3>Which data type represents whole numbers in Elixir Integer or Float?&#x3C;/h3></span></span>
+<span class="line"><span>`Integer`. `Float` is used for fractional numbers.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;h3>The Kernel and Integer module each define integer functions. What integer functions does the Kernel define?&#x3C;/h3></span></span>
+<span class="line"><span>`abs/1`, `div/2`, `min/2`, `max/2`, `rem/2`. These are all arithmetic based functions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;h3>What functions does the Integer module define?&#x3C;/h3></span></span>
+<span class="line"><span>`is_env` and `is_odd`. These are most often used as Guards in Elixir.</span></span></code></pre>
+<p>Integer.is_even(12)
+=> true</p>
+<p>Integer.is_odd(12)
+=> false</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span></span></span>
+<span class="line"><span>More Elixir Decks:</span></span>
+<span class="line"><span>1. [Tuples](https://tinytechtuts.com/2021-elixir-tuples-explained/)</span></span>
+<span class="line"><span>2. [List](https://tinytechtuts.com/2021-elixir-lists-explained/)</span></span></code></pre>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

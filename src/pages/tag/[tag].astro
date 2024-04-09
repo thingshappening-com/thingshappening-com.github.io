@@ -1,0 +1,38 @@
+---
+import Card from '../../components/Card.astro';
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob('../*.md');
+
+  let tags = new Set(allPosts.flatMap(post => post.frontmatter.tags));
+  tags = Array.from(tags);
+  console.log(tags);
+  tags = tags.filter(element => element !== undefined);
+
+  const paths = tags.map(tag => {    
+    return {
+      params: { tag },
+    };
+  });
+
+  return paths;
+}
+
+const { tag } = Astro.params;
+
+// Since we cannot share allPosts between getStaticPaths and the component,
+// we need to fetch them again here for filtering
+const filteredPosts = (await Astro.glob('../*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
+---
+
+<html>
+  <head>
+  </head>
+  <body>
+    <ul>
+      {filteredPosts.map(p => <div class="col-span-1">
+        <Card post={p} />
+      </div>)}
+    </ul>
+  </body>
+</html>

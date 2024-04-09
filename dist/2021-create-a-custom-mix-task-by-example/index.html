@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="Create a custom Mix task by example"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Create a custom Mix task by example"> <meta property="og:description" content="Create a custom Mix task by example"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Create a custom Mix task by example"> <meta property="twitter:description" content="Create a custom Mix task by example"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Create a custom Mix task by example</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Create a custom Mix task by example</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>I am working on a task to migratie the DevDecks flashcard decks I created for this website to markdown files that will be rendering using NimblePublisher.</p>
+<p>These were the sub tasks I outlined for completing this task given I have no prior experience writing a custom mix tasks:</p>
+<ol>
+<li>Determine where to place the file for the task within my application</li>
+<li>Figure out the syntax for the task, is there a module definition format? What function will the task voke? Are there other modules I need to import?</li>
+<li>How do I run the custom mix task from the command line?</li>
+<li>How do I create, write, and close a file in Elixir?</li>
+<li>How do I include Ecto modules that will be needed for querying the database for the flashcard decks?</li>
+<li>Put it all together</li>
+</ol>
+<h3>1) Determine where to place the file for the task within my application</h3>
+I created a new directory and task file within devdecks/lib/dev_decks/tasks/migrate_db_posts_to_md.ex that would be used to define the task
+<h3>2) Figure out the syntax for the task, is there a module definition format? What function will the task voke? Are there other modules I need to import?</h3>
+<p>This is probably best illustrated with an annotated code example:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span># define the module under mix.tasks namespace</span></span>
+<span class="line"><span>defmodule Mix.Tasks.MigrateDbPostsToMd do</span></span>
+<span class="line"><span> @moduledoc “convert db posts to markdown posts"</span></span>
+<span class="line"><span> # include the Mix.Task code</span></span>
+<span class="line"><span> use Mix.Task</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span> # define a run/1 function that will be invoked when your task is executed</span></span>
+<span class="line"><span> def run(_) do</span></span>
+<span class="line"><span>   IO.puts("RUNNING!")</span></span>
+<span class="line"><span> end</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<h3>3) How do I run the custom mix task from the command line?</h3>
+The command for the task is going to be the snake case version of the module you created for the task. So in this example from the root directory of the application I execute `mix migrate_db_posts_to_md`. 
+<h3>4) How do I create and write to a file in Elixir?</h3>
+Through the use of Elixir’s `File` module there is a `write!/3` function that will create a file if one doesn’t exist at the specified path and write the contents provided to it as the second argument, ex:
+```
+File.write!(“/path/to/new_or_existing_file.md”, contents)
+```
+<h3>5) How do I include Ecto modules that will be needed for querying the database for the flashcard decks?</h3>
+<p>You just include them as you would inside any other Elixir module inside your Phoenix application, but now your task must start the application in order to have access to those modules through <code>Mix.Task.run("app.start")</code>, the result of all the changes looked like this in my case:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>defmodule Mix.Tasks.MigrateDbPostsToMd do</span></span>
+<span class="line"><span> @moduledoc "convert db posts to markdown posts"</span></span>
+<span class="line"><span> use Mix.Task</span></span>
+<span class="line"><span> import Ecto.Query</span></span>
+<span class="line"><span> alias DevDecks.Repo</span></span>
+<span class="line"><span> alias DevDecks.Deck</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span> def run(_) do</span></span>
+<span class="line"><span>   # Need this to get repo</span></span>
+<span class="line"><span>   Mix.Task.run("app.start")</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span>   IO.puts("BLURP")</span></span>
+<span class="line"><span> end</span></span>
+<span class="line"><span>end</span></span>
+<span class="line"><span></span></span></code></pre>
+<h3>Put it all together</h3>
+```
+defmodule Mix.Tasks.MigrateDbPostsToMd do
+ @moduledoc "convert db posts to markdown posts"
+ use Mix.Task
+ import Ecto.Query
+ alias DevDecks.Repo
+ alias DevDecks.Deck
+<p>def run(_) do
+Mix.Task.run(“app.start”)</p>
+<p>Deck |> Ecto.Query.select([:title]) |> Repo.all |> Enum.with_index |> Enum.each(fn({deck, i}) ->
+File.write(“priv/posts/scheduled/post#{i}”, deck.title)
+end)
+end
+end</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span></span></span>
+<span class="line"><span>And the newly built files:</span></span>
+<span class="line"><span>&#x3C;image src="/images/blog/custom-mix-ouput.gpng" alt="my_picture" /></span></span></code></pre>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

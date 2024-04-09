@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="Learn how to set default state for a GenServer"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="How to set default state for a GenServer"> <meta property="og:description" content="Learn how to set default state for a GenServer"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="How to set default state for a GenServer"> <meta property="twitter:description" content="Learn how to set default state for a GenServer"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>How to set default state for a GenServer</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>How to set default state for a GenServer</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>When you write a GenServer you will in almost every use case run it as a supervised process to get the added benefit Supervisors provide, fault tolerance.</p>
+<p>To set the initial state for your supervised GenServer process you will need to make sure you have a <code>start_link</code> function defined in your GenServer that makes another call to the GenServer <code>init</code> callback. That is outlined below with function comments for additional context:</p>
+<p>lib/server.ex</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>defmodule CacheServer.Server do</span></span>
+<span class="line"><span>  use GenServer</span></span>
+<span class="line"><span>  GenServer is passed as a child to</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  def start_link(initial_state) do</span></span>
+<span class="line"><span>    GenServer.start_link(__MODULE__, initial_state, name: Cache)</span></span>
+<span class="line"><span>  end</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  @impl true</span></span>
+<span class="line"><span>  def init(cache_store) do</span></span>
+<span class="line"><span>    {:ok, cache_store}</span></span>
+<span class="line"><span>  end</span></span>
+<span class="line"><span>end</span></span></code></pre>
+<p>Now that you’ve seen the functions that need to be defined in order to start your process. Navigate to your <code>application.ex</code> file. In the <code>children</code> list is where you will start all your genservers for your application. There are a couple of different ways you can format the tuple in the <code>children</code> list but below we optioned to pass the GenServer name and the initial state, in this case <code>%{a: :b}</code>. This will be passed to the <code>start_link</code> function we referenced above.</p>
+<p>lib/application.ex</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>defmodule CacheServer.Application do</span></span>
+<span class="line"><span>  @moduledoc false</span></span>
+<span class="line"><span>  use Application</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  @impl true</span></span>
+<span class="line"><span>  def start(_type, _args) do</span></span>
+<span class="line"><span>    children = [</span></span>
+<span class="line"><span>      start_link(arg)</span></span>
+<span class="line"><span>      {CacheServer.Server, %{a: :b}}</span></span>
+<span class="line"><span>    ]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    opts = [strategy: :one_for_one, name: CacheServer.Supervisor]</span></span>
+<span class="line"><span>    Supervisor.start_link(children, opts)</span></span>
+<span class="line"><span>  end</span></span>
+<span class="line"><span>end</span></span></code></pre>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

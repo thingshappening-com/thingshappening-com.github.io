@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="learn Elixir Structs"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Learn Elixir through Q&#38;A: Structs"> <meta property="og:description" content="learn Elixir Structs"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Learn Elixir through Q&#38;A: Structs"> <meta property="twitter:description" content="learn Elixir Structs"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Learn Elixir through Q&amp;A: Structs</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Learn Elixir through Q&amp;A: Structs</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>This and the other “Deck” posts are a repurposing of flashcard study decks to Q&#x26;A blog posts.</p>
+<h3>What are Structs?</h3>
+An Elixir key/value data structure. They are also extensions of the Map module and thus share similar functionality.
+<h3>What are some differences between Structs and Maps?</h3>
+<ul>
+<li>Structs do not have access to Enum functions like Maps do</li> 
+<li>The keys for a Struct must be included in its definition.</li> 
+<li>If a key is provided to a Struct that the Struct is unaware of an error will be raised.</li> 
+<li>Only atoms can be used as keys in a Struct.</li> 
+</ul>
+<h3>How is a Struct defined?</h3>
+From inside a module using the defstruct macro. Ex: 
+```
+defmodule User do 
+  defstruct email: "lisa@gmail.com", age: 29, name: "Lisa" 
+end
+```
+<h3>How would you instantiate a new Struct using the previous cards User struct definition?</h3>
+The examples below are two separate structs created from the User struct. 
+```
+lisa = %User{} => %User{age: 29, email: "lisa@gmail.com", name: "Lisa"} 
+jim = %User{name: "Jim", email: "jim@gmail.com"} 
+=> %User{age: 29, email: "jim@gmail.com", name: "Jim"}
+```
+<h3>How do you update a Struct?</h3>
+The same way you would update a `Map`. Using the `|` operator: 
+```
+jim = %User{name: "Jim", email: "jim@gmail.com", age: 24} 
+jim = %{jim | age: 30} 
+=> %User{age: 30, email: "jim@gmail.com", name: "Jim"}
+```
+<h3>How do you access a value in a Struct?</h3>
+The same way you would access a value in a Map: 
+```
+jim = %User{name: "Jim", email: "jim@gmail.com", age: 24} 
+jim.email 
+=> "jim@gmail.com"
+```
+<h3>How do you delete a key/value from a Struct?</h3>
+You don't. `Struct` definitions are constant. If you need a more dynamic key/value store, a `Map` should be used.
+<h3>Can you set a Struct key without a default value?</h3>
+Yes, but it must come at the end of the beginning of the definition. Ex: 
+```
+defmodule User do 
+  defstruct [:email, age: 29, name: "Lisa"]
+end
+```  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>

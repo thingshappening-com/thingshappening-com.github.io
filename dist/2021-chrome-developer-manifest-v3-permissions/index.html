@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-2K6JP8M5XE"></script>  <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <link rel="sitemap" href="/sitemap.xml"> <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  <meta name="description" content="chrome extension development manifest v3"> <meta property="og:type" content="website"> <meta property="og:url" content="https://tinytechtuts.com"> <meta property="og:title" content="Chrome developer Manifest v3 permissions"> <meta property="og:description" content="chrome extension development manifest v3"> <meta property="og:image" content="/images/social.jpg"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:url" content="https://tinytechtuts.com"> <meta property="twitter:title" content="Chrome developer Manifest v3 permissions"> <meta property="twitter:description" content="chrome extension development manifest v3"> <meta property="twitter:image" content="/images/social.jpg"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css"> <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet"> <title>Chrome developer Manifest v3 permissions</title><style>pre[data-astro-cid-xj2uyz6m]{padding:8px 16px;overflow:auto;border-radius:4px;background:#343434}code[data-astro-cid-xj2uyz6m]{padding:4px;border-radius:4px;background:#343434;font-family:Consolas,Monaco,Andale Mono,monospace;direction:ltr;font-size:14px}pre[data-astro-cid-xj2uyz6m]>code[data-astro-cid-xj2uyz6m]{padding:0;line-height:1.5;word-break:normal;white-space:pre;word-spacing:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4}
+</style>
+<link rel="stylesheet" href="/_astro/2020-add-sitemap-to-phoenix-elixir-project.A85XpehK.css" /><script type="module" src="/_astro/hoisted.tlrkCr7x.js"></script></head> <body> <nav> <div class="max-w-5xl mx-auto px-3 py-3 flex items-center justify-between h-16"> <a href="/" class="font-bold text-xl hover:text-hot-pink">TinyTechTuts</a> <a href="/search" class=""> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </a> </div> <div class="w-full border-b-2 border-black squiggle"></div> </nav> <main class="py-12 lg:py-20"> <article class="max-w-5xl mx-auto px-3" data-astro-cid-xj2uyz6m> <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content" data-astro-cid-xj2uyz6m> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <meta name="google-adsense-account" content="ca-pub-2976969447542443"> <h1 data-astro-cid-xj2uyz6m>Chrome developer Manifest v3 permissions</h1> </header> <!-- Image -->  <!-- YouTube Video -->  <!-- Content --> <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content" data-astro-cid-xj2uyz6m>  <p>If you’re using Chrome Manifest v3 there are now three types of permissions available as config values in your manifest file:</p>
+<ol>
+<li>Permissions</li>
+<li>Optional permissions</li>
+<li>Host permissions</li>
+</ol>
+<ol>
+<li>Permissions</li>
+</ol>
+<p>These are permissions required for the chrome extension to function and a user must agree to grant those permissions if they are to use your extension. They are defined as an array:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>{</span></span>
+<span class="line"><span>  "manifest_version": 3,</span></span>
+<span class="line"><span>  ...</span></span>
+<span class="line"><span>  "permissions": ["webRequest", "tabs"]</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<ol start="2">
+<li>Optional permissions</li>
+</ol>
+<p>These are permissions that a user can opt into if they want to utilize the functionality required by that permission. The user should still be able to use other parts of the chrome extension without the optional permission enabled.</p>
+<p>If a permission is already defined in the permissions setting, it should not be included in your optional permissions.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>{</span></span>
+<span class="line"><span>  "manifest_version": 3,</span></span>
+<span class="line"><span>  ...</span></span>
+<span class="line"><span>  "permissions": ["webRequestBlocking"]</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<ol start="3">
+<li>Host permissions</li>
+</ol>
+<p>These are permissions to define what websites (hosts) your chrome extension can run on. If you want it to run on all websites:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;!-- manifest.json --></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "manifest_version": 3,</span></span>
+<span class="line"><span>  ...</span></span>
+<span class="line"><span>  "host_permissions": ["&#x3C;all_urls>"],</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<p>If you want it to run on only certain websites:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>{</span></span>
+<span class="line"><span>  "manifest_version": 3,</span></span>
+<span class="line"><span>  ...</span></span>
+<span class="line"><span>  "host_permissions": ["https://*.youtube.com/*"],</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<p>Chrome extensions created by DevDecks:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/http-sheriff/lkahbbgcfdicehlpefblblfelahakjfp">Http Sheriff</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/youtube-control-tower/njfjdiighaejclkgnjgmblefmdklmoed">YouTube Control Tower</a></li>
+</ul>  </section> <div data-astro-cid-xj2uyz6m> <!-- sidebar vertical --> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443" crossorigin="anonymous"></script> <ins class="adsbygoogle" style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;" data-ad-client="ca-pub-2976969447542443" data-ad-slot="1095168865" data-ad-format="auto" data-full-width-responsive="true" data-astro-cid-xj2uyz6m></ins>  </div> </article>  </main> </body></html>
