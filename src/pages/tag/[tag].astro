@@ -22,7 +22,7 @@ const { tag } = Astro.params;
 
 // Since we cannot share allPosts between getStaticPaths and the component,
 // we need to fetch them again here for filtering
-const filteredPosts = (await Astro.glob('../*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
+const filteredPosts = (await Astro.glob('../chattanooga/*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
 ---
 
 <html>

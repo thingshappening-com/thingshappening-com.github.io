@@ -9,11 +9,11 @@ interface MarkdownFrontmatter {
   date: number;
 }
 
-const title = 'TinyTechTuts';
-const description = 'Formerly a dev flashcard website now code snippets and tuts. I hope you enjoy your stay 🏡 .';
-const seoDescription = 'A web engineering blog by TinyTechTuts.';
+const title = 'thingshappening';
+const description = 'A simple way to find out about things happening in greater Chattanooga';
+const seoDescription = 'A simple way to find out about things happening';
 
-const allPosts = await Astro.glob<MarkdownFrontmatter>('./*.md');
+const allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 console.log("prob here")
 ---
@@ -30,6 +30,10 @@ console.log("prob here")
   <main class="py-12 lg:py-20">
     <article class="max-w-6xl mx-auto px-3">
       <HomeHeader title={title} description={description} />
+      <div class="flex items-center justify-evenly">
+        <a href="/chattanooga/attractions">Attractions</a>
+        <a href="/chattanooga/events">Events</a>
+      </div>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
         {sortedPosts.map(p => <div class="col-span-1">
           <Card post={p} />

@@ -8,7 +8,7 @@ import Paginator from '../components/Paginator.astro'
 
 
 export async function getStaticPaths({ paginate }) {  
-  const allPosts = await Astro.glob<MarkdownFrontmatter>('./*.md');
+  const allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/*.md');
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
   return paginate(sortedPosts, {
@@ -17,10 +17,10 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
-let pageTitle = 'TinyTechTuts';
+let pageTitle = 'thingshappening';
 // let pageDescription = `page ${page.currentPage}`;
 let pageDescription = `s'explique;`;
-let seoTitle = 'TinyTechTuts.com';
+let seoTitle = 'thingshappening.com';
 let seoDescription = '';
 ---
 
