@@ -2,7 +2,6 @@
   title: "5 Great Hikes Less Than 5 Miles in the Chattanooga Area"
   description: "5 Hikes less than 5 miles long in the Chattanooga Area"
   tags: ["outdoors"]
-  pubDate: "2024-04-13"
   slug: "5-mile-hikes-chattanooga"
   layout: "../../layouts/BlogPostLayout.astro"
 ---

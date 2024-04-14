@@ -13,9 +13,13 @@ const title = 'thingshappening';
 const description = 'A simple way to find out about things happening in greater Chattanooga';
 const seoDescription = 'A simple way to find out about things happening';
 
-const allPosts = await Astro.glob<MarkdownFrontmatter>('./*.md');
-const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
-console.log("prob here")
+const allPosts = await Astro.glob<MarkdownFrontmatter>('./*/*/*.md');
+const sortedPosts = allPosts.sort((a, b) => new Date(a.frontmatter.pubDate).valueOf() - new Date(b.frontmatter.pubDate).valueOf());
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+// Filter posts to include those with a pubDate today or in the future
+const futureAndTodayPosts = sortedPosts.filter(post => new Date(post.frontmatter.pubDate) >= today);
 ---
 
 <html lang="en">
@@ -31,18 +35,12 @@ console.log("prob here")
     <article class="max-w-6xl mx-auto px-3">
       <HomeHeader title={title} description={description} />
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {sortedPosts.map(p => <div class="col-span-1">
+        {futureAndTodayPosts.map(p => <div class="col-span-1">
           <Card post={p} />
         </div>)}
       </section>
     </article>
   </main>
-
-  <!-- <section class="flex space-x-8 justify-center text-xl pt-8 font-bold">
-    <a href="/posts" class="mr-8" data-test="see-all-link">
-      See All<span class="squiggle">&rarr;</span>
-    </a>
-  </section> -->
 
   <Footer />
 </body>

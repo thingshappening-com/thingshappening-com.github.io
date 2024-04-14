@@ -15,7 +15,6 @@ const seoDescription = 'A simple way to find out about things happening';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
-console.log("prob here")
 ---
 
 <html lang="en">
