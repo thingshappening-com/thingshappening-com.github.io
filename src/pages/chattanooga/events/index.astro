@@ -16,8 +16,10 @@ const seoDescription = 'A simple way to find out about things happening';
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./*/*/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(a.frontmatter.pubDate).valueOf() - new Date(b.frontmatter.pubDate).valueOf());
 const today = new Date();
-today.setHours(0, 0, 0, 0);
-
+today.setDate(today.getDate() - 1);  // Move back by one day
+today.setHours(0,0,0,0);
+console.log(today);
+console.log("hello");
 // Filter posts to include those with a pubDate today or in the future
 const futureAndTodayPosts = sortedPosts.filter(post => new Date(post.frontmatter.pubDate) >= today);
 ---
