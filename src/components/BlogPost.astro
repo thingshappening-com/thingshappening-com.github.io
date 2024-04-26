@@ -2,13 +2,17 @@
 // import EmailSignup from './Subscribe/EmailSignup.astro'
 
 export interface Props {
+  address: string;
   title: string;
-  date: string;
-  hero: string;
-  youtube: string;
+  pubDate: string;
+  time: string;
+  venue: string;
+  venueDetails: string;
+  hero?: string;
+  youtube?: string;
 }
 
-const { title, date, hero, youtube } = Astro.props;
+const { address, entranceCost, title, time, pubDate, venue, venueDetails, hero, youtube } = Astro.props;
 ---
 
 <article class="max-w-5xl mx-auto px-3">
@@ -16,8 +20,17 @@ const { title, date, hero, youtube } = Astro.props;
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443"
      crossorigin="anonymous"></script>
      <meta name="google-adsense-account" content="ca-pub-2976969447542443">
-    <h1>{title}</h1>
+     <h1>{title}</h1>  
   </header>
+
+  <div>    
+    {pubDate ? <div><b>When:</b> {pubDate}</div> : ""}
+    {time ? <div><b>Time:</b> {time}</div> : ""}
+    {venue ? <div><b>Venue:</b> {venue}</div> : ""}
+    {venueDetails ? <div><b>Venue Details:</b> {venueDetails}</div> : ""}
+    {address ? <div><b>Address:</b> {address}</div> : ""}
+    {entranceCost ? <div><b>Entrance Fee:</b> {entranceCost}</div> : ""}    
+  </div>
 
   <!-- Image -->
   {hero && <img class="rounded-xl mx-auto" style="min-width: 80%;" loading="lazy" src={hero} alt={title} />}

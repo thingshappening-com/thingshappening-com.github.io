@@ -15,19 +15,19 @@ const { post } = Astro.props;
 
     <div class="py-6 px-8">
       <h2 class="font-bold text-2xl leading-tight">
-        {post.title}
+        {post.frontmatter.title}
       </h2>
       <p class="text-xs text-gray-600 mt-4 flex items-center">
-        {dayjs(post.pubDate).format('MM-DD-YYYY')}
+        {dayjs(post.frontmatter.pubDate).format('MM-DD-YYYY')}
       </p>
     </div>
   </a>
 
   <div class="flex items-center pl-8 pb-3">
-    {post.tags && (
+    {post.frontmatter.tags && (
       <div>
-        {Array.isArray(post.tags) ? (
-          post.tags.map((t) => <a href={`/tag/${t}`} class="transition-all duration-75 h-fit inline pr-2">{`#${t}`}</a>)
+        {Array.isArray(post.frontmatter.tags) ? (
+          post.frontmatter.tags.map((t) => <a href={`/tag/${t}`} class="transition-all duration-75 h-fit inline pr-2">{`#${t}`}</a>)
         ) : (
           <span>Tags are not an array.</span>
         )}

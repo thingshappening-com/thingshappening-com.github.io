@@ -4,7 +4,7 @@ import BaseHead from '../components/Head/BaseHead.astro';
 import BlogPost from '../components/BlogPost.astro';
 
 const {content} = Astro.props;
-let {title, description, date, hero, youtube} = content;
+let {address, entranceCost, title, time, description, pubDate, venue, venueDetails, hero, youtube} = content;
 
 title = title ? title : "";
 ---
@@ -16,7 +16,7 @@ title = title ? title : "";
   <body>
     <Nav />
     <main class="py-12 lg:py-20">
-      <BlogPost title={title} hero={hero} date={date} youtube={youtube} >
+      <BlogPost address={address} entranceCost={entranceCost} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube} >
         <slot />
       </BlogPost>
     </main>
