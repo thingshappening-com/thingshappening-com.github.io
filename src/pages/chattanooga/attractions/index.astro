@@ -10,8 +10,8 @@ interface MarkdownFrontmatter {
 }
 
 const title = 'thingshappening';
-const description = 'A simple way to find out about things happening in greater Chattanooga';
-const seoDescription = 'A simple way to find out about things happening';
+const description = 'The simplest way to find out about things happening in greater Chattanooga';
+const seoDescription = 'The simplest way to find out about things happening';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());

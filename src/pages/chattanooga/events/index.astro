@@ -12,8 +12,8 @@ interface MarkdownFrontmatter {
 }
 
 const title = 'thingshappening';
-const description = 'A simple way to find out about things happening in greater Chattanooga';
-const seoDescription = 'A simple way to find out about things happening';
+const description = 'The simplest way to find out about things happening in greater Chattanooga';
+const seoDescription = 'The simplest way to find out about things happening';
 
 let allPosts = await Astro.glob<MarkdownFrontmatter>('./*/*/*.md');
 
@@ -37,6 +37,8 @@ allPosts.forEach((p) => {
 const today = new Date();
 today.setDate(today.getDate() - 1);  // Move back by one day
 today.setHours(0,0,0,0);
+
+console.log(allPostsIncludingMultipleDates);
 
 allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
 

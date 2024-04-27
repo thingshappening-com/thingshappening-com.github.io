@@ -161,8 +161,8 @@ const $$Index$2 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$Index$2;
   const title = "thingshappening";
-  const description = "A simple way to find out about things happening in greater Chattanooga";
-  const seoDescription = "A simple way to find out about things happening";
+  const description = "The simplest way to find out about things happening in greater Chattanooga";
+  const seoDescription = "The simplest way to find out about things happening";
   const allPosts = await Astro2.glob(/* #__PURE__ */ Object.assign({"./ruby-falls.md": () => Promise.resolve().then(() => rubyFalls)}), () => "./*.md");
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
   console.log("prob here");
@@ -234,8 +234,8 @@ const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Index$1;
   const title = "thingshappening";
-  const description = "A simple way to find out about things happening in greater Chattanooga";
-  const seoDescription = "A simple way to find out about things happening";
+  const description = "The simplest way to find out about things happening in greater Chattanooga";
+  const seoDescription = "The simplest way to find out about things happening";
   const allPosts = await Astro2.glob(/* #__PURE__ */ Object.assign({"./today.md": () => Promise.resolve().then(() => today)}), () => "./*.md");
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
   console.log("prob here");
@@ -293,8 +293,8 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Index;
   const title = "thingshappening";
-  const description = "A simple way to find out about things happening in greater Chattanooga";
-  const seoDescription = "A simple way to find out about things happening";
+  const description = "The simplest way to find out about things happening in greater Chattanooga";
+  const seoDescription = "The simplest way to find out about things happening";
   const allPosts = await Astro2.glob(/* #__PURE__ */ Object.assign({"./chattanooga/5-mile-hikes-chattanooga.md": () => Promise.resolve().then(() => _5MileHikesChattanooga)}), () => "./chattanooga/*.md");
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
   console.log("prob here");
