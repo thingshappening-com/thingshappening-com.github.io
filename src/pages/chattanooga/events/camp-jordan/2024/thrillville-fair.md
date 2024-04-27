@@ -1,7 +1,6 @@
 ---
   title: "Thrillville Fair"
   venue: "Camp Jordan Arena"
-  venueDetails: ""
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
   multiple: true
   eventDates: ["2024-05-09", "2024-05-10", "2024-05-11"]

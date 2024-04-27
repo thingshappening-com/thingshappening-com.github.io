@@ -1,0 +1,42 @@
+---
+// import Card from '../../components/Card.astro';
+import BlogPostLayout from "../../../../../../layouts/BlogPostLayout.astro"
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob('../**/thrillville-fair.md');
+
+  let dates = new Set(allPosts.flatMap(post => post.frontmatter.eventDates));
+  dates = Array.from(dates);
+  dates = dates.filter(element => element !== undefined);
+
+  const paths = dates.map(date => {    
+    return {
+      params: { date },
+    };
+  });
+
+  return paths
+}
+
+const { date } = Astro.params;
+
+// Since we cannot share allPosts between getStaticPaths and the component,
+// we need to fetch them again here for filtering
+// const filteredPost = (await Astro.glob('../**/thrillville-fair.md').find(post => post.frontmatter.eventDates.find(date)));
+const filteredPost = (await Astro.glob('../**/thrillville-fair.md')).find((p) => {return p.frontmatter.eventDates.find((d) => d == date)});
+console.log("hello");
+console.log(filteredPost);
+const postDetails = Object.assign(filteredPost.frontmatter, {pubDate: date});
+---
+
+<html>
+  <head>
+  </head>
+  <body>
+    <ul>
+      <BlogPostLayout content={postDetails}>
+        <p>{filteredPost.rawContent}</p>
+      </BlogPostLayout>
+    </ul>
+  </body>
+</html>

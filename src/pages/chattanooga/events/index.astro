@@ -3,10 +3,9 @@ import BaseHead from '../../../components/Head/BaseHead.astro';
 import Nav from '../../../components/Nav.astro';
 import HomeHeader from '../../../components/HomeHeader.astro';
 import Card from '../../../components/Card.astro';
-import MultipleDatesCard from '../../../components/MultipleDatesCard.astro';
 import Footer from '../../../components/Footer/Footer.astro'
-import { prefetch } from 'astro:prefetch';
-import { object } from 'astro/zod';
+// import { prefetch } from 'astro:prefetch';
+// import { object } from 'astro/zod';
 
 interface MarkdownFrontmatter {
   date: number;
@@ -25,8 +24,7 @@ allPosts.forEach((p) => {
 
   if (baseData.eventDates) {
     baseData.eventDates.forEach((date, i) => {
-      console.log(date);
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - Day ${i + 1}`}); // Create a new object for each date
+      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - Day ${i + 1}`, url: `${baseData.url}/${date}`}); 
 
       allPostsIncludingMultipleDates.push(again);
     })
@@ -34,6 +32,7 @@ allPosts.forEach((p) => {
     allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
   }
 });
+
 
 const today = new Date();
 today.setDate(today.getDate() - 1);  // Move back by one day

@@ -1,9 +1,9 @@
 ---
-  title: "Taco Festival - Day 1"
+  title: "Taco Festival"
   venue: "Camp Jordan Arena"
   venueDetails: "Kitchen Pavillion"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
-  pubDate: "2024-05-03"
+  eventDates: ["2024-05-03", "2024-05-04"]
   time: "7am-12am"
   entranceCost: "Free" 
   tags: ["camp-jordan", "food"]

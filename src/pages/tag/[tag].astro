@@ -6,7 +6,6 @@ export async function getStaticPaths() {
 
   let tags = new Set(allPosts.flatMap(post => post.frontmatter.tags));
   tags = Array.from(tags);
-  console.log(tags);
   tags = tags.filter(element => element !== undefined);
 
   const paths = tags.map(tag => {    
