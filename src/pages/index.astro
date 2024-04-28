@@ -4,6 +4,8 @@ import Nav from '../components/Nav.astro';
 import HomeHeader from '../components/HomeHeader.astro';
 import Card from '../components/Card.astro';
 import Footer from '../components/Footer/Footer.astro'
+// import { prefetch } from 'astro:prefetch';
+// import { object } from 'astro/zod';
 
 interface MarkdownFrontmatter {
   date: number;
@@ -13,8 +15,36 @@ const title = 'thingshappening';
 const description = 'The simplest way to find out about things happening in greater Chattanooga';
 const seoDescription = 'The simplest way to find out about things happening';
 
-const allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/*.md');
-const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
+
+let allPostsIncludingMultipleDates = [];
+
+allPosts.forEach((p) => {
+  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+
+  if (baseData.eventDates) {
+    baseData.eventDates.forEach((date, i) => {
+      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - ${baseData.eventLabel} ${i + 1}`, url: `${baseData.url}/${date}`}); 
+
+      allPostsIncludingMultipleDates.push(again);
+    })
+  } else {
+    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+  }
+});
+
+
+const today = new Date();
+today.setDate(today.getDate() - 1);  // Move back by one day
+today.setHours(0,0,0,0);
+
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+    const dateA = new Date(a.pubDate);
+    const dateB = new Date(b.pubDate);
+
+    return dateA - dateB;
+});
 ---
 
 <html lang="en">
@@ -29,25 +59,14 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valu
   <main class="py-12 lg:py-20">
     <article class="max-w-6xl mx-auto px-3">
       <HomeHeader title={title} description={description} />
-      <div class="flex items-center justify-evenly">
-        <a href="/chattanooga/attractions">Attractions</a>
-        <a href="/chattanooga/events">Events</a>
-      </div>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {sortedPosts.map(p => <div class="col-span-1">
+        {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
           <Card post={p} />
         </div>)}
       </section>
     </article>
   </main>
 
-  <!-- <section class="flex space-x-8 justify-center text-xl pt-8 font-bold">
-    <a href="/posts" class="mr-8" data-test="see-all-link">
-      See All<span class="squiggle">&rarr;</span>
-    </a>
-  </section> -->
-
   <Footer />
 </body>
-
 </html>
