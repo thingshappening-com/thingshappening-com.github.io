@@ -24,7 +24,7 @@ allPosts.forEach((p) => {
 
   if (baseData.eventDates) {
     baseData.eventDates.forEach((date, i) => {
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - Day ${i + 1}`, url: `${baseData.url}/${date}`}); 
+      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - ${baseData.eventLabel} ${i + 1}`, url: `${baseData.url}/${date}`}); 
 
       allPostsIncludingMultipleDates.push(again);
     })
@@ -39,7 +39,12 @@ today.setDate(today.getDate() - 1);  // Move back by one day
 today.setHours(0,0,0,0);
 
 allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+    const dateA = new Date(a.pubDate);
+    const dateB = new Date(b.pubDate);
 
+    return dateA - dateB;
+});
 ---
 
 <html lang="en">

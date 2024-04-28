@@ -2,7 +2,7 @@
 import BlogPostLayout from "../../../../../../layouts/BlogPostLayout.astro"
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../**/thrillville-fair.md');
+  const allPosts = await Astro.glob('../**/all-or-nothing-fights.md');
 
   let dates = new Set(allPosts.flatMap(post => post.frontmatter.eventDates));
   dates = Array.from(dates);
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 const { date } = Astro.params;
-const filteredPost = (await Astro.glob('../**/thrillville-fair.md')).find((p) => {return p.frontmatter.eventDates.find((d) => d == date)});
+const filteredPost = (await Astro.glob('../**/all-or-nothing-fights.md')).find((p) => {return p.frontmatter.eventDates.find((d) => d == date)});
 const postDetails = Object.assign(filteredPost.frontmatter, {pubDate: date});
 ---
 

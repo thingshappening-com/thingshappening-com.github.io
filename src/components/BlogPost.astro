@@ -12,7 +12,7 @@ export interface Props {
   youtube?: string;
 }
 
-const { address, entranceCost, title, time, pubDate, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
+const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
 ---
 
 <article class="max-w-5xl mx-auto px-3">
@@ -31,6 +31,7 @@ const { address, entranceCost, title, time, pubDate, ticketsLink, venue, venueDe
     {address ? <div><b>Address:</b> {address}</div> : ""}
     {entranceCost ? <div><b>Entrance Fee:</b> {entranceCost}</div> : ""}
     {ticketsLink ? <div><a target="_blank" href={ticketsLink}>Tickets Link</a></div> : ""}
+    {eventLink ? <div><a target="_blank" href={eventLink}>Event Website</a></div> : ""}
   </div>
 
   <!-- Image -->
