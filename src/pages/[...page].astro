@@ -8,7 +8,7 @@ import Paginator from '../components/Paginator.astro'
 
 
 export async function getStaticPaths({ paginate }) {  
-  let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
+  let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/events/**/*.md');
 
   let allPostsIncludingMultipleDates = [];
 
