@@ -8,18 +8,32 @@ import Paginator from '../components/Paginator.astro'
 
 
 export async function getStaticPaths({ paginate }) {  
-  const allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/*.md');
-  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+  let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
 
-  return paginate(sortedPosts, {
+  let allPostsIncludingMultipleDates = [];
+
+  allPosts.forEach((p) => {
+    let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+
+    if (baseData.eventDates) {
+      baseData.eventDates.forEach((date, i) => {
+        const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - ${baseData.eventLabel} ${i + 1}`, url: `${baseData.url}/${date}`}); 
+
+        allPostsIncludingMultipleDates.push(again);
+      })
+    } else {
+      allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+    }
+  });
+
+  return paginate(allPostsIncludingMultipleDates, {
     pageSize: 21
   })
 }
 
 const { page } = Astro.props;
 let pageTitle = 'thingshappening';
-// let pageDescription = `page ${page.currentPage}`;
-let pageDescription = `s'explique;`;
+const pageDescription = 'The simplest way to find out about things happening in greater Chattanooga';
 let seoTitle = 'thingshappening.com';
 let seoDescription = '';
 ---
