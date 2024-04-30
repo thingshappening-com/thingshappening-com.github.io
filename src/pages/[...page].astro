@@ -26,8 +26,22 @@ export async function getStaticPaths({ paginate }) {
     }
   });
 
+  const today = new Date();
+  today.setDate(today.getDate() - 1);  // Move back by one day
+  today.setHours(0,0,0,0);
+
+  allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
+  allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+      const dateA = new Date(a.pubDate);
+      const dateB = new Date(b.pubDate);
+
+      return dateA - dateB;
+  });
+
+  console.log(allPostsIncludingMultipleDates)
+
   return paginate(allPostsIncludingMultipleDates, {
-    pageSize: 21
+    pageSize: 50
   })
 }
 
@@ -40,7 +54,7 @@ let seoDescription = '';
 
 let allPostsIncludingMultipleDates = [];
 
-console.log(page);
+// console.log(page);
 
 page.data.forEach((p) => {
   let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data

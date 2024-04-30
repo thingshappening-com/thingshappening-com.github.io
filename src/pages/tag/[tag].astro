@@ -38,9 +38,6 @@ filteredPosts.forEach((p) => {
     allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
   }
 });
-// console.log(filteredPosts[0]);
-// console.log(filteredPosts);
-console.log(allPostsIncludingMultipleDates);
 
 const today = new Date();
 today.setDate(today.getDate() - 1);  // Move back by one day
