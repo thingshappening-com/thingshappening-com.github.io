@@ -41,7 +41,7 @@ export async function getStaticPaths({ paginate }) {
   console.log(allPostsIncludingMultipleDates)
 
   return paginate(allPostsIncludingMultipleDates, {
-    pageSize: 50
+    pageSize: 24
   })
 }
 
@@ -51,30 +51,6 @@ const pageDescription = 'The simplest way to find out about things happening in 
 let seoTitle = 'thingshappening.com';
 let seoDescription = '';
 
-
-let allPostsIncludingMultipleDates = [];
-
-// console.log(page);
-
-page.data.forEach((p) => {
-  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
-
-  if (baseData.eventDates) {
-    baseData.eventDates.forEach((date, i) => {
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - Day ${i + 1}`, url: `${baseData.url}/${date}`}); 
-
-      allPostsIncludingMultipleDates.push(again);
-    })
-  } else {
-    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
-  }
-});
-
-const today = new Date();
-today.setDate(today.getDate() - 1);  // Move back by one day
-today.setHours(0,0,0,0);
-
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
 ---
 
 <html lang="en">
