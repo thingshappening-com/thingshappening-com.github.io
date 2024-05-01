@@ -3,3 +3,21 @@
 @import "./content";
 @import "./site";
 @import "./custom";
+
+#mlb2-14458342.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent, #mlb2-14458342.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+  display: flex !important;
+  align-items: center !important;;
+  justify-content: center !important;;
+}
+.ml-form-embedContent {
+  display: flex !important;
+  align-items: center !important;;
+  justify-content: center !important;
+  margin-bottom: 1em !important;
+}
+
+.ml-form-align-center {
+  display: flex !important;;
+  justify-content: center !important;;
+  align-items: center !important;;
+}
