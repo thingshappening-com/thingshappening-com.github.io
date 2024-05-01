@@ -38,8 +38,6 @@ export async function getStaticPaths({ paginate }) {
       return dateA - dateB;
   });
 
-  console.log(allPostsIncludingMultipleDates)
-
   return paginate(allPostsIncludingMultipleDates, {
     pageSize: 24
   })
@@ -59,13 +57,11 @@ let seoDescription = '';
   <!-- hello is it me youre looking for -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443"
   crossorigin="anonymous"></script>
-  <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '930023');
-  </script>
+  <script is:inline>(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '930023')</script>
   
   <meta name="google-adsense-account" content="ca-pub-2976969447542443">
   <BaseHead title={seoTitle} description={seoDescription} />
