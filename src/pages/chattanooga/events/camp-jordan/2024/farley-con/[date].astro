@@ -1,5 +1,6 @@
 ---
 import BlogPostLayout from "../../../../../../layouts/BlogPostLayout.astro"
+import { marked } from 'marked';
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob('../**/farley-con.md');
@@ -29,7 +30,7 @@ const postDetails = Object.assign(filteredPost.frontmatter, {pubDate: date});
   <body>
     <ul>
       <BlogPostLayout content={postDetails}>
-        <p>{filteredPost.rawContent}</p>
+        <div set:html={marked(filteredPost.rawContent())}>
       </BlogPostLayout>
     </ul>
   </body>
