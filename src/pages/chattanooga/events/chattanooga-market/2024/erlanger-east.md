@@ -4,7 +4,7 @@
   address: "1751 Gunbarrel Road, Chattanooga, TN 37421"
   eventDates: ["2024-05-10", "2024-06-14", "2024-07-12"]
   time: "10:30am to 1:30pm"
-  eventLabel: "Day"
+  eventLabel: "Week"
   eventLink: "https://chattanoogamarket.com/calendar/"
   tags: ["chattanooga-market", "market", "kid-friendly"]
   entranceCost: "Free"

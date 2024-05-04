@@ -4,7 +4,7 @@
   address: "1 Broad Street, Chattanooga, TN 37402"
   eventDates: ["2024-05-04", "2024-05-11", "2024-05-18", "2024-05-25", "2024-06-01", "2024-06-08", "2024-06-15", "2024-06-22", "2024-06-29", "2024-07-06", "2024-07-13", "2024-07-20", "2024-07-27", "2024-08-03", "2024-08-10", "2024-08-17", "2024-08-24", "2024-08-31"]
   time: "10:00am - 5:00pm"
-  eventLabel: "Day"
+  eventLabel: "Week"
   eventLink: "https://chattanoogamarket.com/calendar/"
   tags: ["chattanooga-market", "market", "kid-friendly"]
   entranceCost: "Free"

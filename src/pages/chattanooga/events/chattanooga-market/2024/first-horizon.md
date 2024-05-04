@@ -4,7 +4,7 @@
   address: "1801 Reggie White Boulevard, Chattanooga, TN 37408"
   eventDates: ["2024-05-05", "2024-05-12", "2024-05-19", "2024-05-25", "2024-05-26", "2024-06-02", "2024-06-09", "2024-06-16", "2024-06-23", "2024-06-30", "2024-07-07", "2024-07-14", "2024-07-21", "2024-07-28", "2024-08-04", "2024-08-11", "2024-08-18", "2024-08-25"]
   time: "11:00am - 4:00pm"
-  eventLabel: "Day"
+  eventLabel: "Week"
   eventLink: "https://chattanoogamarket.com/calendar/"
   tags: ["chattanooga-market", "market", "kid-friendly"]
   entranceCost: "Free - except Beer Festival"
