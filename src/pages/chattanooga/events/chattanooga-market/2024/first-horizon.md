@@ -14,6 +14,8 @@
 
 Join the market vendors at First Horizon Pavillion every Sunday from 11:00am to 4:00pm for the Chattanooga Market! Discover fresh produce, local art, food trucks, and live music. Lineup of Sunday's events:
 
+<br>
+
 - May 5th: Strawberry Festival
 - May 12th: Mother's Day Celebration
 - May 19th: Sunday Funday

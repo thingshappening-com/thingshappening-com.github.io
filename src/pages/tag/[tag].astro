@@ -1,5 +1,6 @@
 ---
 import Card from '../../components/Card.astro';
+import HomeHeader from '../../components/HomeHeader.astro';
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob('../**/*.md');
@@ -50,6 +51,11 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => n
   <head>
   </head>
   <body>
+    <main class="py-12 lg:py-20">
+      <article class="max-w-6xl mx-auto px-3">
+        <HomeHeader title={tag} description={`thingshappening events tag: ${tag}`} />
+      </article>
+    </main>
     <ul>
       {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
         <Card post={p} />

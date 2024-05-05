@@ -21,3 +21,23 @@
   justify-content: center !important;;
   align-items: center !important;;
 }
+
+.date-filter-options {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.date-filter-options a {
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size: 20px;
+}
+
+.date-filter-options a:hover {
+  color: #fd2d78
+}
+
+a:hover {
+  color: #fd2d78 !important;
+}

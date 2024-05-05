@@ -1,0 +1,85 @@
+---
+import BaseHead from '../../../../components/Head/BaseHead.astro';
+import Nav from '../../../../components/Nav.astro';
+import HomeHeader from '../../../../components/HomeHeader.astro';
+import Card from '../../../../components/Card.astro';
+import Footer from '../../../../components/Footer/Footer.astro'
+// import { prefetch } from 'astro:prefetch';
+// import { object } from 'astro/zod';
+
+interface MarkdownFrontmatter {
+  date: number;
+}
+
+const title = 'thingshappening';
+const description = 'The easiest way to find out about things happening in greater Chattanooga';
+const seoDescription = 'The easiest way to find out about things happening';
+
+let allPosts = await Astro.glob<MarkdownFrontmatter>('../*/*/*.md');
+
+let allPostsIncludingMultipleDates = [];
+
+allPosts.forEach((p) => {
+  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+
+  if (baseData.eventDates) {
+    baseData.eventDates.forEach((date, i) => {
+      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - ${baseData.eventLabel} ${i + 1}`, url: `${baseData.url}/${date}`}); 
+
+      allPostsIncludingMultipleDates.push(again);
+    })
+  } else {
+    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+  }
+});
+
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({pubDate}) => {
+  const dateObj = new Date(pubDate);
+    const currentDate = new Date();
+
+    // Check if the date is in the future
+    if (dateObj >= currentDate) {
+        const dayOfWeek = dateObj.getUTCDay();
+
+        // Check if the date falls on Friday, Saturday, or Sunday
+        if (dayOfWeek == 0 || dayOfWeek == 6 || dayOfWeek == 5) {
+            return true;
+        }
+    }
+    return false;
+})
+
+console.log(allPostsIncludingMultipleDates);
+
+
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+    const dateA = new Date(a.pubDate);
+    const dateB = new Date(b.pubDate);
+
+    return dateA - dateB;
+});
+---
+
+<html lang="en">
+
+<head>
+  <BaseHead title={title} description={seoDescription} />
+</head>
+
+<body class="bg-white text-black font-body leading-normal personality-casual">
+  <Nav />
+
+  <main class="py-12 lg:py-20">
+    <article class="max-w-6xl mx-auto px-3">
+      <HomeHeader title={title} description={description} />
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+        {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
+          <Card post={p} />
+        </div>)}
+      </section>
+    </article>
+  </main>
+
+  <Footer />
+</body>
+</html>
