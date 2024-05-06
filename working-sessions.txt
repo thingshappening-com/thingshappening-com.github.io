@@ -1,0 +1,112 @@
+Links:
+* i can schedule posts through facebook: https://business.facebook.com/latest/composer?ref=biz_web_po_schedule_post_action&asset_id=289293767605995&composer_action=schedule&context_ref=GET_STARTED
+* profile page - https://www.facebook.com/profile.php?id=61559147467507
+* view subscribers: https://business.facebook.com/latest/leads_center?asset_id=289293767605995&nav_id=3439144733 
+* scheduling post: https://business.facebook.com/latest/composer?ref=biz_web_po_create_post_action&asset_id=289293767605995&context_ref=HOME
+* ads summary: https://business.facebook.com/latest/ad_center/ads_summary?asset_id=289293767605995&nav_ref=internal_nav
+
+
+Documentation:
+- Define a slot - The <slot /> element is a placeholder for external HTML content, allowing you to inject (or “slot”) child elements from other files into your component template. By default, all child elements passed to a component will be rendered in its <slot />. BlogPostLayout renders a <slot> within <BlogPost>, which contains the contents from the markdown
+- Routing for multiple cities - all routing for content is by directories underneath pages - ex Pages -> Chattanooga -> Events, Attractions. I think Ill need to update the tagging functionality to get Astro.glob for multiple .md paths if it doesn’t get them all properly from the /pages top level
+- Tags
+    - Defined in markdown
+    - Rendered as links in post.tags.map((t) => <a href={`/tag/${t}`} class="transition-all duration-75 h-fit inline pr-2">{`#${t}`}</a>)
+    - Because the link is to a /tag path it will look for that under /pages
+    - [tag].md allows it to be a dynamic route /tag/${t}
+- Multiple dates
+    - eventDates key in .md files
+    - In the src/pages/chattanooga/events/index.astro added logic to iterate over the events, create a new object from the frontmatter and adds each date as a new post that includes a pubDate of the given date
+- How does a blog post get rendered
+- Dynamic routes explained (as well as I can)
+    - Need to define [paramvalue].astro - paramvalue also needs to be exported from getStaticPaths in the form of [
+    -   { params: { date: '2024-05-09' } },
+    -   { params: { date: '2024-05-10' } },
+    -   { params: { date: '2024-05-11' } }
+    - ]
+    - Where date is equal to paramvalue
+
+(1) 4/14:
+- Got past events not showing
+- Got folder directories in place and routing working (tested w Knoxville and Chattanooga
+- Routing for Attractions, Posts, and Events
+
+(2) 4/17
+- Found this website as a content model https://www.top-rated.online .  https://www.top-rated.online/cities/Chattanooga/place/p/14305374/Kioto+Brazilian+Jiu+Jitsu+Chattanooga
+- Added new props to a blog post
+    - Add it to the .md
+    - Access it from content and pass it to the BlogPost component in BlogPostLayout.astro
+    - Add it as a prop and access it from props and use it in the actual html in in BlogPost.astro
+
+(3, 4) 4/26 and 4/27
+- X - Conditional display of .md props
+- X - Multiple events - single markdown file
+- You’ll probably want to have a branch going that has the current routing so you can reference it (defaults to posts, with attractions and events as links) but then have the events be the first page
+- Todos:
+    - X - Events show page doesn’t include pubDate for multiple dates
+    - X - Events index page doesn’t route to different urls
+    - X - Tag list page doesn’t work with multiple events
+    - X - Tag list page doesn’t filter out past events
+    - X - Document all the features:
+
+(5) 4/28
+- Figure out how you want URL’s to look
+- X - Sort events by date on index page
+- add index.astro for multiple events pages. It should show all the event cards
+- Add header to Tags page
+- X - Things happening header is off center on larger screens
+- 
+- X - Add events for Camp Jordan for the next three months
+- Add events for market fair the next three months (or whatever has the Saturday market)
+- Add aquarium events the next three months
+
+(6) 4/30
+- X - Update homepage routing
+
+(7) 5/1
+- X- Add email capture
+- Get mailerlite account approved
+- Google calendar links
+
+(8) 5/4
+- X - Routed domain
+- X - Figured out markdown and update all [date].astro 
+- X- Added farm summerfest events
+- X - Added chattanooga market events
+
+(9) 5/5
+- X - figured out this week, day, month, etc filters
+- X - Make date filters look  better
+- X - publish first Facebook ad
+
+
+(10) 5/5 - 2
+- X - Find first subscribers - 7 for 0.35 per!
+- X - add facebook post 1,2 
+- X - schedule first facebook post
+- X - ad to boost that post
+-  - add the date filters link 
+-  - ADD and subscribe FORM TO DATE FILTER PAGES
+- fix date filters
+
+To dos list
+* fix date filters
+* Get search working by pointing the build to thingshappening.com
+* get a google voice number for FB some companies may want to call and advertise
+* add date filters to other date filters pages
+* include abbreviated day of the week in card.
+* google calendar add to links.
+* fix search
+* fix tags page header
+* fix tags page mobile
+* fix the date filter functionality
+* create ads for likes
+* add /ab test for ads
+* Ad improvement notes: Add more text options Add different text options to your ad, so we can mix and match them to automatically create variations of your ad.
+* Ad improvement notes: Adjust images by placementAdd different images for different placements, and crop images to better fill each placement size.
+* Ad improvement notes: Improve the visual quality of your ads Polish your ad creative by turning on vary aspect ratio, brightness & contrast and image filter.
+* the logo im using in my profile pic should be the logo im using on the website, image only.
+
+
+
+
