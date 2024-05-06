@@ -109,5 +109,6 @@ To dos list
 * the logo im using in my profile pic should be the logo im using on the website, image only.
 
 
-
-
+Possibles:
+- create one mans website site where I document this journey and a twitter account that corresponds
+    - updates every two weeks

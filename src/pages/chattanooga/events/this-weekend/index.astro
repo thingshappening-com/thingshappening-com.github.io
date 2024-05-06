@@ -33,9 +33,34 @@ allPosts.forEach((p) => {
   }
 });
 
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({pubDate}) => {
+// allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({pubDate}) => {
+//     const dateObj = new Date(pubDate);
+//     const currentDate = new Date();
+
+//     // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+//     const currentDayOfWeek = currentDate.getDay();
+
+//     // Calculate the number of days until the next Sunday
+//     const daysUntilSunday = 7 - currentDayOfWeek;
+//     // Calculate the date of the upcoming Sunday
+//     const upcomingSunday = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + daysUntilSunday);
+
+//     // Check if the publication date is before or on the upcoming Sunday
+//     if (dateObj <= upcomingSunday) {
+//         const dayOfWeek = dateObj.getUTCDay();
+        
+//         // Check if the date falls on Friday, Saturday, or Sunday
+//         if (dayOfWeek == 0 || dayOfWeek == 6 || dayOfWeek == 5) {
+//             return true;
+//         }
+//     }
+//     return false;
+// });
+
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({ pubDate }) => {
     const dateObj = new Date(pubDate);
     const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); // Reset to start of today
 
     // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
     const currentDayOfWeek = currentDate.getDay();
@@ -44,19 +69,17 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({pubDate
     const daysUntilSunday = 7 - currentDayOfWeek;
     // Calculate the date of the upcoming Sunday
     const upcomingSunday = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + daysUntilSunday);
+    upcomingSunday.setHours(23, 59, 59, 999); // End of the day for upcoming Sunday
 
-    // Check if the publication date is before or on the upcoming Sunday
-    if (dateObj <= upcomingSunday) {
-        const dayOfWeek = dateObj.getUTCDay();
-        
+    // Check if the publication date is not in the past and is before or on the upcoming Sunday
+    if (dateObj >= currentDate && dateObj <= upcomingSunday) {
+        const dayOfWeek = dateObj.getDay(); // 0 = Sunday, 5 = Friday, 6 = Saturday
+
         // Check if the date falls on Friday, Saturday, or Sunday
-        if (dayOfWeek == 0 || dayOfWeek == 6 || dayOfWeek == 5) {
-            return true;
-        }
+        return dayOfWeek === 0 || dayOfWeek === 5 || dayOfWeek === 6;
     }
     return false;
 });
-
 
 allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
     const dateA = new Date(a.pubDate);
