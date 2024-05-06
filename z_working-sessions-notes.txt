@@ -77,7 +77,7 @@ Documentation:
 
 (9) 5/5
 - X - figured out this week, day, month, etc filters
-- X - Make date filters look  better
+- X - Make date filters look  better - pink underline and
 - X - publish first Facebook ad
 
 
@@ -86,29 +86,15 @@ Documentation:
 - X - add facebook post 1,2 
 - X - schedule first facebook post
 - X - ad to boost that post
--  - add the date filters link 
--  - ADD and subscribe FORM TO DATE FILTER PAGES
-- fix date filters
+- X - add the date filters link 
+- X - ADD and subscribe FORM TO DATE FILTER PAGES
+- X - fix date filters
 
-To dos list
-* fix date filters
-* Get search working by pointing the build to thingshappening.com
-* get a google voice number for FB some companies may want to call and advertise
-* add date filters to other date filters pages
-* include abbreviated day of the week in card.
-* google calendar add to links.
-* fix search
-* fix tags page header
-* fix tags page mobile
-* fix the date filter functionality
-* create ads for likes
-* add /ab test for ads
-* Ad improvement notes: Add more text options Add different text options to your ad, so we can mix and match them to automatically create variations of your ad.
-* Ad improvement notes: Adjust images by placementAdd different images for different placements, and crop images to better fill each placement size.
-* Ad improvement notes: Improve the visual quality of your ads Polish your ad creative by turning on vary aspect ratio, brightness & contrast and image filter.
-* the logo im using in my profile pic should be the logo im using on the website, image only.
+(11) 5/6
+-  - add events for Bird Fork Farm
+- - add likes campaign
+- - update tags page
+- - fix search
 
 
-Possibles:
-- create one mans website site where I document this journey and a twitter account that corresponds
-    - updates every two weeks
+

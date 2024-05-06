@@ -1,0 +1,23 @@
+To dos list
+* fix date filters
+* Get search working by pointing the build to thingshappening.com
+* get a google voice number for FB some companies may want to call and advertise
+* add date filters to other date filters pages
+* include abbreviated day of the week in card.
+* google calendar add to links.
+* fix search
+* fix tags page header
+* fix tags page mobile
+* fix the date filter functionality
+* create ads for likes
+* add /ab test for ads
+* Ad improvement notes: Add more text options Add different text options to your ad, so we can mix and match them to automatically create variations of your ad.
+* Ad improvement notes: Adjust images by placementAdd different images for different placements, and crop images to better fill each placement size.
+* Ad improvement notes: Improve the visual quality of your ads Polish your ad creative by turning on vary aspect ratio, brightness & contrast and image filter.
+* the logo im using in my profile pic should be the logo im using on the website, image only.
+* Add an "All Tags" page
+* add pagination to event dates filters pages
+
+Possibles:
+- create one mans website site where I document this journey and a twitter account that corresponds
+    - updates every two weeks
