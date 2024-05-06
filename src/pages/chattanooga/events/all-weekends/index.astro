@@ -49,8 +49,6 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({pubDate
     return false;
 })
 
-console.log(allPostsIncludingMultipleDates);
-
 
 allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
     const dateA = new Date(a.pubDate);

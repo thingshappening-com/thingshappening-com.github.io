@@ -46,7 +46,6 @@ var lastDayOfWeek = new Date(today.getFullYear(), today.getMonth(), today.getDat
 
     // Filter dates within the current week
 allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(({pubDate}) => {
-    console.log(pubDate);
     pubDate = new Date(pubDate);
     return pubDate >= firstDayOfWeek && pubDate <= lastDayOfWeek;
 });
