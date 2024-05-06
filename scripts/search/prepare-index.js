@@ -6,6 +6,7 @@ import grayMatter from "gray-matter";
 
 (async function () {
   // prepare the dirs
+  console.log("preparing index....")
   const srcDir = path.join(process.cwd(), "src");
   const publicDir = path.join(process.cwd(), "public");
   const contentDir = path.join(srcDir, "pages");
