@@ -1,0 +1,8 @@
+Links:
+* i can schedule posts through facebook: https://business.facebook.com/latest/composer?ref=biz_web_po_schedule_post_action&asset_id=289293767605995&composer_action=schedule&context_ref=GET_STARTED
+* profile page - https://www.facebook.com/profile.php?id=61559147467507
+* view subscribers: https://business.facebook.com/latest/leads_center?asset_id=289293767605995&nav_id=3439144733 
+* scheduling post: https://business.facebook.com/latest/composer?ref=biz_web_po_create_post_action&asset_id=289293767605995&context_ref=HOME
+* ads summary: https://business.facebook.com/latest/ad_center/ads_summary?asset_id=289293767605995&nav_ref=internal_nav
+* follows: https://business.facebook.com/latest/insights/results?asset_id=289293767605995&ad_account_id=120207799635240746&entity_type=FB_PAGE&audience_tab=trends
+* campaigns summary: https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=797119781887923&nav_entry_point=lep_233&selected_campaign_ids=120208572827160746&breakdown_regrouping=1&nav_source=unknown 

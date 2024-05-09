@@ -1,4 +1,5 @@
 To dos list
+* other calendar links: check tap house list on their events website
 * fix date filters
 * Get search working by pointing the build to thingshappening.com
 * get a google voice number for FB some companies may want to call and advertise

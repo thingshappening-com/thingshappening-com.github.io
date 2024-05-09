@@ -23,8 +23,9 @@ allPosts.forEach((p) => {
   let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
 
   if (baseData.eventDates) {
-    baseData.eventDates.forEach((date, i) => {
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - ${baseData.eventLabel} ${i + 1}`, url: `${baseData.url}/${date}`}); 
+    baseData.eventDates.forEach((date, i) => {      
+      let title = baseData.eventLabel ? `${baseData.title} - ${baseData.eventLabel} ${i + 1}` : `${baseData.title}`
+      const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
 
       allPostsIncludingMultipleDates.push(again);
     })

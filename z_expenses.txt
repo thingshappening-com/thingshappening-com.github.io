@@ -1,0 +1,7 @@
+Expenses:
+- Domain: $3000
+- Facebook ads likes:
+- Facebook ads emails:
+- Gmail hosting:
+- Mailerlite: 
+- 

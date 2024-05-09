@@ -1,12 +1,3 @@
-Links:
-* i can schedule posts through facebook: https://business.facebook.com/latest/composer?ref=biz_web_po_schedule_post_action&asset_id=289293767605995&composer_action=schedule&context_ref=GET_STARTED
-* profile page - https://www.facebook.com/profile.php?id=61559147467507
-* view subscribers: https://business.facebook.com/latest/leads_center?asset_id=289293767605995&nav_id=3439144733 
-* scheduling post: https://business.facebook.com/latest/composer?ref=biz_web_po_create_post_action&asset_id=289293767605995&context_ref=HOME
-* ads summary: https://business.facebook.com/latest/ad_center/ads_summary?asset_id=289293767605995&nav_ref=internal_nav
-* campaigns summary: https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=797119781887923&nav_entry_point=lep_233&selected_campaign_ids=120208572827160746&breakdown_regrouping=1&nav_source=unknown 
-
-
 Documentation:
 - Define a slot - The <slot /> element is a placeholder for external HTML content, allowing you to inject (or “slot”) child elements from other files into your component template. By default, all child elements passed to a component will be rendered in its <slot />. BlogPostLayout renders a <slot> within <BlogPost>, which contains the contents from the markdown
 - Routing for multiple cities - all routing for content is by directories underneath pages - ex Pages -> Chattanooga -> Events, Attractions. I think Ill need to update the tagging functionality to get Astro.glob for multiple .md paths if it doesn’t get them all properly from the /pages top level
@@ -91,10 +82,22 @@ Documentation:
 - X - fix date filters
 
 (11) 5/6
--  - add events for Bird Fork Farm
-- - add likes campaign
+- X  - add events for Bird Fork Farm
+- X - add likes campaign
+- X - add second email campaign
 - - update tags page
 - - fix search
 
+(11) 5/9
+- X - Add tap house trivia
+- X - make event label optional
+- Post to facebook taphouse trivia
+- Schedule facebook post about plumbing and hard at work
+- Setup things happening email - hey.com
+- Setup google voice number for Facebook
+- Setup automated first message
+- Update email modal on mailerlite to capture name
+- Google analytics
+- Google calendar func https://chatgpt.com/c/e15e892d-2e01-4532-ba50-96a9eb437c7f 
 
 
