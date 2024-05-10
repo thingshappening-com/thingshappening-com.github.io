@@ -1,5 +1,5 @@
 Links:
-* i can schedule posts through facebook: https://business.facebook.com/latest/composer?ref=biz_web_po_schedule_post_action&asset_id=289293767605995&composer_action=schedule&context_ref=GET_STARTED
+* schedule posts: https://business.facebook.com/latest/composer?ref=biz_web_po_schedule_post_action&asset_id=289293767605995&composer_action=schedule&context_ref=GET_STARTED
 * profile page - https://www.facebook.com/profile.php?id=61559147467507
 * view subscribers: https://business.facebook.com/latest/leads_center?asset_id=289293767605995&nav_id=3439144733 
 * scheduling post: https://business.facebook.com/latest/composer?ref=biz_web_po_create_post_action&asset_id=289293767605995&context_ref=HOME
