@@ -68,3 +68,14 @@
 a:hover {
   color: #fd2d78 !important;
 }
+
+.hide-on-small {
+  display: none; /* Hide by default */
+}
+
+/* This media query applies to screens that are 640px or wider */
+@media (min-width: 640px) {
+  .hide-on-small {
+    display: block; /* Show on medium screens and larger */
+  }
+}
