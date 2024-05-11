@@ -25,17 +25,15 @@ import grayMatter from "gray-matter";
     if (date) {
       // console.log(pathname);
       pathname = pathname.replace(".md", `/${date}`)
-      console.log(pathname);
-      console.log(date);
-      path.basename(pathname, path.extname(pathname));
+      // console.log(pathname);
+      // console.log(date);
+      return path.basename(pathname, path.extname(pathname));
     } else {
-      path.basename(pathname, path.extname(pathname));
+      return path.basename(pathname, path.extname(pathname));
     }
   }
     
 
-  // console.log("CFPs")
-  // console.log(contentFilePaths);
   if (contentFilePaths.length) {
     const files = contentFilePaths.map(
       async (filePath) => await fs.readFile(filePath, "utf8")
@@ -53,6 +51,7 @@ import grayMatter from "gray-matter";
       // chattanooga/events/tap-house/2024/trivia/2024-05-15
       if(eventDates) {
         eventDates.forEach((date) => {
+          console.log(getSlugFromPathname(contentFilePaths[i], date));
           index.push({
             slug: getSlugFromPathname(contentFilePaths[i], date),
             category: "blog",
