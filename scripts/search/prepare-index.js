@@ -19,14 +19,9 @@ import grayMatter from "gray-matter";
 
   const contentFilePaths = await globby([contentFilePattern]);
 
-        // 'chattanooga/events/tap-house/2024/trivia.md'
-      // chattanooga/events/tap-house/2024/trivia/2024-05-15
   const getSlugFromPathname = (pathname, date = null) => {
     if (date) {
-      // console.log(pathname);
       pathname = pathname.replace(".md", `/${date}`)
-      // console.log(pathname);
-      // console.log(date);
       return path.basename(pathname, path.extname(pathname));
     } else {
       return path.basename(pathname, path.extname(pathname));
@@ -75,6 +70,9 @@ import grayMatter from "gray-matter";
 
       i++;
     }
+            // 'chattanooga/events/tap-house/2024/trivia.md'
+      // chattanooga/events/tap-house/2024/trivia/2024-05-15
+    console.log(index);
     await fs.writeFile(indexFile, JSON.stringify(index));
     console.log(
       `Indexed ${index.length} documents from ${contentDir} to ${indexFile}`
