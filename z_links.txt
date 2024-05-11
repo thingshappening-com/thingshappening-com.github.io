@@ -11,6 +11,7 @@ Mailerlite links:
 * dashboard: https://dashboard.mailerlite.com/dashboard
 * campaigns: https://dashboard.mailerlite.com/campaigns/status/sent
 * domain config: https://dashboard.mailerlite.com/configuration/domains
+* domain config tut: https://www.youtube.com/watch?v=j0BuAYxk_jA
 
 Google:
 * analytics: https://analytics.google.com/analytics/web/?pli=1#/p440619184/reports/intelligenthome

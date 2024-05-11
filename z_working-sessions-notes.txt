@@ -103,8 +103,9 @@ Documentation:
 - X - first attempt authenticate domain in mailerlite
 - X - logo link
 - X - mailer lite subscribe at bottom of pages
--  - event / ticket website links work on mobile
-- - past events prod
+- X - event / ticket website links work on mobile
+- X - mailerlite domain dns confirmed
+-  - past events prod
 - - tags page design
 - - search functionality
 - - Google calendar func https://chatgpt.com/c/e15e892d-2e01-4532-ba50-96a9eb437c7f 
@@ -113,3 +114,6 @@ Documentation:
 
 (14) 5/12
 - - I've been running ads for a week, where we at?
+- - Add two vendor events
+- - Schedule FB posts
+- - test first mailerlite campaign
