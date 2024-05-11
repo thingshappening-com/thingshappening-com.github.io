@@ -17,9 +17,6 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
 
 <article class="max-w-5xl mx-auto px-3">
   <header style="margin: 0 !important" class="mx-auto max-w-3xl text-center content">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443"
-     crossorigin="anonymous"></script>
-     <meta name="google-adsense-account" content="ca-pub-2976969447542443">
      <h1>{title}</h1>  
   </header>
 
@@ -30,6 +27,7 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
     {venueDetails ? <div><b>Venue Details:</b> {venueDetails}</div> : ""}
     {address ? <div><b>Address:</b> {address}</div> : ""}
     {entranceCost ? <div><b>Entrance Fee:</b> {entranceCost}</div> : ""}
+    {eventLink ? <a target="_blank" class="pr-1 pt-2" href={eventLink}>Event Website</a> : ""}
     {() => { 
       if(ticketsLink && ticketsLink.includes("http")) {
         return <a target="_blank" href={ticketsLink}>Tickets Link</a>
@@ -40,7 +38,6 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
         ""
       }
     }}
-    {eventLink ? <a target="_blank" href={eventLink}>Event Website</a> : ""}
   </div>
 
   <!-- Image -->
@@ -59,18 +56,6 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
   </section>
 
   <div>
-    <!-- sidebar vertical -->
-    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2976969447542443"
-    crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-        style="position: absolute; right: 50px; top: 200px; width: 300px; height: 1000px;"
-        data-ad-client="ca-pub-2976969447542443"
-        data-ad-slot="1095168865"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
   </div>
 </article>
 <style>
