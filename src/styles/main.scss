@@ -12,14 +12,17 @@
 .ml-form-embedContent {
   display: flex !important;
   align-items: center !important;;
-  justify-content: center !important;
   margin-bottom: 1em !important;
 }
 
 .ml-form-align-center {
   display: flex !important;;
-  justify-content: center !important;;
+  justify-content: center;
   align-items: center !important;;
+}
+
+.ml-embedded-left .ml-form-align-center {
+  justify-content: flex-start;
 }
 
 .date-filter-options {
