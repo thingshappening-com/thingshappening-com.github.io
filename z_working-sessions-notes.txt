@@ -91,13 +91,25 @@ Documentation:
 (11) 5/9
 - X - Add tap house trivia
 - X - make event label optional
-- Post to facebook taphouse trivia
-- Schedule facebook post about plumbing and hard at work
-- Setup things happening email - hey.com
-- Setup google voice number for Facebook
-- Setup automated first message
-- Update email modal on mailerlite to capture name
-- Google analytics
-- Google calendar func https://chatgpt.com/c/e15e892d-2e01-4532-ba50-96a9eb437c7f 
+- X - Post to facebook taphouse trivia
 
+(12) 5/10
+- X - added logo
+- X - added analytics
+- X - setup hey.com email
+- X - Update email modal on mailerlite to capture name
 
+(13) 5/11
+- X - first attempt authenticate domain in mailerlite
+- X - logo link
+- - mailer lite subscribe at bottom of pages
+- - event / ticket website links work on mobile
+- - tags page design
+- - search functionality
+- - past events prod
+- - Google calendar func https://chatgpt.com/c/e15e892d-2e01-4532-ba50-96a9eb437c7f 
+- - Other calendar links like: https://taphousechatt.com/chattanooga-chattanooga-the-tap-house-and-empyreal-brewing-company-events
+- - Setup google voice number for Facebook
+
+(14) 5/12
+- - I've been running ads for a week, where we at?
