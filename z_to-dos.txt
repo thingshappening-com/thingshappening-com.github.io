@@ -20,6 +20,7 @@ To dos list
 * add pagination to event dates filters pages
 * about page - include your why, that its a journey, the tech stack
 * List vendors page with their links and maybe logos?
+* add day of week abbrev to card next to date
 
 Possibles:
 - create one mans website site where I document this journey and a twitter account that corresponds

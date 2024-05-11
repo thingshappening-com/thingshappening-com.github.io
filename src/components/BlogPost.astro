@@ -32,7 +32,7 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
     {entranceCost ? <div><b>Entrance Fee:</b> {entranceCost}</div> : ""}
     {() => { 
       if(ticketsLink && ticketsLink.includes("http")) {
-        return <div><a target="_blank" href={ticketsLink}>Tickets Link</a></div>
+        return <a target="_blank" href={ticketsLink}>Tickets Link</a>
       } else if (ticketsLink) {
         console.log("hello")
        return <div><b>Tickets Link:</b> {ticketsLink}</div>
@@ -40,7 +40,7 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
         ""
       }
     }}
-    {eventLink ? <div><a target="_blank" href={eventLink}>Event Website</a></div> : ""}
+    {eventLink ? <a target="_blank" href={eventLink}>Event Website</a> : ""}
   </div>
 
   <!-- Image -->
