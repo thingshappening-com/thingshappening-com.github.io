@@ -52,7 +52,7 @@ import grayMatter from "gray-matter";
           index.push({
             slug: getSlugFromPathname(contentFilePaths[i], date),
             category: "blog",
-            title,
+            title: `${title} - ${date}`,
             description,
             tags,
             body: content,
