@@ -10,16 +10,20 @@ import grayMatter from "gray-matter";
   const srcDir = path.join(process.cwd(), "src");
   const publicDir = path.join(process.cwd(), "public");
   const contentDir = path.join(srcDir, "pages");
-  let contentFilePattern = path.join(contentDir, "*.md");
+  // let contentFilePattern = path.join(contentDir, "*.md");
+  let contentFilePattern = path.join(contentDir, "**", "*.md");
   if(os.platform().includes("win")) {
     contentFilePattern = contentFilePattern.replaceAll("\\", "/");
   }
   const indexFile = path.join(publicDir, "search-index.json");
-  const getSlugFromPathname = (pathname) =>
-    path.basename(pathname, path.extname(pathname));
 
   const contentFilePaths = await globby([contentFilePattern]);
 
+  const getSlugFromPathname = (pathname) =>
+    path.basename(pathname, path.extname(pathname));
+
+  console.log("CFPs")
+  console.log(contentFilePaths);
   if (contentFilePaths.length) {
     const files = contentFilePaths.map(
       async (filePath) => await fs.readFile(filePath, "utf8")

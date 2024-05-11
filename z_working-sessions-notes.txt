@@ -105,9 +105,9 @@ Documentation:
 - X - mailer lite subscribe at bottom of pages
 - X - event / ticket website links work on mobile
 - X - mailerlite domain dns confirmed
--  - past events prod
-- - tags page design
+- X - tags page design
 - - search functionality
+-  - past events prod
 - - Google calendar func https://chatgpt.com/c/e15e892d-2e01-4532-ba50-96a9eb437c7f 
 - - Other calendar links like: https://taphousechatt.com/chattanooga-chattanooga-the-tap-house-and-empyreal-brewing-company-events
 - - Setup google voice number for Facebook

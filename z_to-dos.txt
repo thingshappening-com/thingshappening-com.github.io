@@ -21,6 +21,7 @@ To dos list
 * about page - include your why, that its a journey, the tech stack
 * List vendors page with their links and maybe logos?... section it by seasons (summer events added for:, fall: )
 * add day of week abbrev to card next to date
+* hightlight tag on tags page
 * see what scott delong says about llcs 
 
 Possibles:
