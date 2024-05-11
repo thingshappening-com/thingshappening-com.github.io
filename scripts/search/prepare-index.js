@@ -22,7 +22,9 @@ import grayMatter from "gray-matter";
   const getSlugFromPathname = (pathname, date = null) => {
     if (date) {
       pathname = pathname.replace(".md", `/${date}`)
-      return path.basename(pathname, path.extname(pathname));
+      pathname = pathname.split(/pages\//).pop();
+      return pathname
+      // return path.basename(pathname, path.extname(pathname));
     } else {
       return path.basename(pathname, path.extname(pathname));
     }
