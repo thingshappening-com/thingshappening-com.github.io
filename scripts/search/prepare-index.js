@@ -24,7 +24,6 @@ import grayMatter from "gray-matter";
       pathname = pathname.replace(".md", `/${date}`)
       pathname = pathname.split(/pages\//).pop();
       return pathname
-      // return path.basename(pathname, path.extname(pathname));
     } else {
       return path.basename(pathname, path.extname(pathname));
     }
@@ -43,9 +42,8 @@ import grayMatter from "gray-matter";
         content,
       } = grayMatter(file);
 
-      // I think this is where the magic needs to happen
-      // 'chattanooga/events/tap-house/2024/trivia.md'
-      // chattanooga/events/tap-house/2024/trivia/2024-05-15
+      // TODO: youll continuously need to update this when you add things like:
+      // new cities, new content types, etc
       if(eventDates) {
         eventDates.forEach((date) => {
           console.log(getSlugFromPathname(contentFilePaths[i], date));
@@ -59,7 +57,6 @@ import grayMatter from "gray-matter";
           });
         })
       } else {
-        console.log("else")
         index.push({
           slug: getSlugFromPathname(contentFilePaths[i]),
           category: "blog",
@@ -72,8 +69,7 @@ import grayMatter from "gray-matter";
 
       i++;
     }
-            // 'chattanooga/events/tap-house/2024/trivia.md'
-      // chattanooga/events/tap-house/2024/trivia/2024-05-15
+
     console.log(index);
     await fs.writeFile(indexFile, JSON.stringify(index));
     console.log(

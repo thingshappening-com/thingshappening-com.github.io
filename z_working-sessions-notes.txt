@@ -106,14 +106,17 @@ Documentation:
 - X - event / ticket website links work on mobile
 - X - mailerlite domain dns confirmed
 - X - tags page design
-- - search functionality
+- X - search functionality
 -  - past events prod
 - - Google calendar func https://chatgpt.com/c/e15e892d-2e01-4532-ba50-96a9eb437c7f 
 - - Other calendar links like: https://taphousechatt.com/chattanooga-chattanooga-the-tap-house-and-empyreal-brewing-company-events
 - - Setup google voice number for Facebook
+- - search still doesnt work for the big fork farm type events
 
 (14) 5/12
-- - I've been running ads for a week, where we at?
-- - Add two vendor events
+- 114 subs & 125 like - I've been running ads for a week, where we at?
+- - Add listening room events
 - - Schedule FB posts
 - - test first mailerlite campaign
+- - Add two vendor events
+- - Add Trivoli theatre events

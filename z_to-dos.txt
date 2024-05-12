@@ -23,6 +23,7 @@ To dos list
 * add day of week abbrev to card next to date
 * hightlight tag on tags page
 * see what scott delong says about llcs 
+* use an icon or emoji on the cards to tell the type of event it is. Make it more fun
 
 Possibles:
 - create one mans website site where I document this journey and a twitter account that corresponds
