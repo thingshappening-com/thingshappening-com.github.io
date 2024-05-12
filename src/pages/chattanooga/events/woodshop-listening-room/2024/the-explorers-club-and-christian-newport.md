@@ -11,8 +11,9 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-The Woodshop Listening Room is a neighborhood bar known for it’s intimate, live music experiences with occasional down-to-earth events. Over time we’ve developed into a space that curates a really comfortable, homelike environment for everyone.
+
+"The Woodshop Listening Room is a neighborhood bar known for it’s intimate, live music experiences with occasional down-to-earth events. Over time we’ve developed into a space that curates a really comfortable, homelike environment for everyone." - The venue
 
 On June 8th come out to see The Explorer's Club + Christian Newport:
 
-"Originating from the coast of South Carolina in 2005, The Explorers Club are American pop rock at its best. They feature a rotating cast of musicians, led by singer songwriter and producer, Jason Brewer. Their music is heavily influenced by the vocal harmony styles and production of The Beach Boys, as well as classic rock and roll arrangements made popular by The Beatles, Chuck Berry, Phil Spector, The Zombies, The Monkees and The Byrds."
+"Originating from the coast of South Carolina in 2005, The Explorers Club are American pop rock at its best. They feature a rotating cast of musicians, led by singer songwriter and producer, Jason Brewer. Their music is heavily influenced by the vocal harmony styles and production of The Beach Boys, as well as classic rock and roll arrangements made popular by The Beatles, Chuck Berry, Phil Spector, The Zombies, The Monkees and The Byrds." - The band

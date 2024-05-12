@@ -115,8 +115,12 @@ Documentation:
 
 (14) 5/12
 - 114 subs & 125 like - I've been running ads for a week, where we at?
-- - Add listening room events
+- X - Add listening room events
 - - Schedule FB posts
-- - test first mailerlite campaign
-- - Add two vendor events
+- - test first mailerlite campaign (me (both with and without name) and Jess)
+- - Upload facebook subscribers
+- - Send first mailerlite campaign
+- - Schedule mailerlite campaign for Thursday
+- - First the date filters
+- - Paginate the date filters
 - - Add Trivoli theatre events

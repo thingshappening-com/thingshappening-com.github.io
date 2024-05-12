@@ -11,10 +11,10 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-The Woodshop Listening Room is a neighborhood bar known for it’s intimate, live music experiences with occasional down-to-earth events. Over time we’ve developed into a space that curates a really comfortable, homelike environment for everyone.
+"The Woodshop Listening Room is a neighborhood bar known for it’s intimate, live music experiences with occasional down-to-earth events. Over time we’ve developed into a space that curates a really comfortable, homelike environment for everyone." - The venue
 
 On May 5th come out to see Viv & Riley + Cat Campbell:
 
 "Viv & Riley's sound is old-soul roots music to its core, elegantly combining a traditional backbone with the fresh iconic melodies of future-leaning indie-folk, and the tightly wound vocal harmonies of the old-time and classic country music they came from." 
 
-"Catherine Campbell is a soft spoken singer/songwriter and indie rock practitioner with a writerly focus on pulling the listener into a romantic world a little apart from hard reality. Her songs are described as dreamy ditties, romantic reflections, twilight ballads. Beautifully orchestrated with her notable nightingale voice in the middle."
+"Catherine Campbell is a soft spoken singer/songwriter and indie rock practitioner with a writerly focus on pulling the listener into a romantic world a little apart from hard reality. Her songs are described as dreamy ditties, romantic reflections, twilight ballads. Beautifully orchestrated with her notable nightingale voice in the middle." - The Band
