@@ -28,7 +28,7 @@ export async function getStaticPaths({ paginate }) {
   });
 
   const today = new Date();
-  today.setDate(today.getDate() - 2);  // Move back two days
+  today.setDate(today.getDate());  // Move back two days
   today.setHours(0,0,0,0);
 
   allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
