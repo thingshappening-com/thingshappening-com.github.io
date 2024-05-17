@@ -85,8 +85,6 @@ Documentation:
 - X  - add events for Bird Fork Farm
 - X - add likes campaign
 - X - add second email campaign
-- - update tags page
-- - fix search
 
 (11) 5/9
 - X - Add tap house trivia
@@ -114,13 +112,42 @@ Documentation:
 - - search still doesnt work for the big fork farm type events
 
 (14) 5/12
-- 114 subs & 125 like - I've been running ads for a week, where we at?
+- 114 subs & 125 like ~$45 - I've been running ads for a week, where we at?
 - X - Add listening room events
-- - Schedule FB posts
+- X - Schedule FB post (1)
+- X - Schedule FB post (2)
+- X - Schedule FB post (3)
+- X - Schedule FB post (4)
+- X - Schedule FB post (5)
+- X - Setup FB email ad (1)
+- X - Setup FB email ad (2)
+- X - Setup likes ad (1)
+- X - Setup likes ad (2)
 - - test first mailerlite campaign (me (both with and without name) and Jess)
 - - Upload facebook subscribers
 - - Send first mailerlite campaign
 - - Schedule mailerlite campaign for Thursday
-- - First the date filters
+- - Fix the date filters
 - - Paginate the date filters
+- - Setup likes ad (1)
 - - Add Trivoli theatre events
+
+(15) 5/13
+- X - Test an email - me first, Jess second
+- X - Schedule an email
+- X - Add email confirmation
+- X - Import facebook email
+- X - write script to split first and last name
+- X - Reimport subscribers
+- X - send welcome email
+- - Auto send a thank you the day after a subscriber comes in
+- - Add highlighted tags
+- - Add another event set
+
+Weekly KPIs:
+
+Week of 5/13
+-  - Did I get closer to 15 event venues
+- X - Did I schedule two emails
+- X - Did I schedule 3-8 facebook posts
+- X - Did I optimize ads

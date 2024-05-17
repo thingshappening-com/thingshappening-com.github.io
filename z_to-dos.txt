@@ -24,6 +24,9 @@ To dos list
 * hightlight tag on tags page
 * see what scott delong says about llcs 
 * use an icon or emoji on the cards to tell the type of event it is. Make it more fun
+* Have a how we curated this list page that's funny, similar to derek sivers fun email I saved in the scott delong drive. Link to it from emails. https://sive.rs/cdbe. Try to do a slightly unique one for each city - make it tailored to the city.
+
+
 
 Possibles:
 - create one mans website site where I document this journey and a twitter account that corresponds
