@@ -3,9 +3,10 @@ import dayjs from 'dayjs'
 
 export interface Props {
   post: any;
+  highlighted: string;
 }
 
-const { post } = Astro.props;
+const { post, highlighted } = Astro.props;
 ---
 
 <div class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden" data-test="article-card">
@@ -27,7 +28,13 @@ const { post } = Astro.props;
     {post.tags && (
       <div>
         {Array.isArray(post.tags) ? (
-          post.tags.map((t) => <a href={`/tag/${t}`} class="transition-all duration-75 h-fit inline pr-2">{`#${t}`}</a>)
+          post.tags.map((t) => {
+            console.log(t);
+            console.log(highlighted);
+            const highlight = t == highlighted ? 'font-semibold' : ''
+            console.log(highlight);
+            return <a href={`/tag/${t}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}>{`#${t}`}</a>
+          })
         ) : (
           <span>Tags are not an array.</span>
         )}
