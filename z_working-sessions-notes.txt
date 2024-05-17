@@ -144,6 +144,18 @@ Documentation:
 - - Add highlighted tags
 - - Add another event set
 
+(15) 5/17
+- - Add Songbirds Museum events.
+- - Add another farm event.
+- - Another music event. 
+- - Add tag highlighting.
+- - Fix the stubborn past events prod issue
+- - Submit sitemap to google search console
+- - Another trivia or karaoke event
+- - Trivoli theatre events
+- - Add tag for free entrance
+
+
 Weekly KPIs:
 
 Week of 5/13
