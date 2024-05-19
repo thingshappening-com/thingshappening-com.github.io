@@ -1,0 +1,44 @@
+---
+import BlogPostLayout from "../../../../../../layouts/BlogPostLayout.astro"
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob('../**/bbq-week.md');
+
+  let dates = new Set(allPosts.flatMap(post => post.frontmatter.eventDates));
+  dates = Array.from(dates);
+  dates = dates.filter(element => element !== undefined);
+
+  const paths = dates.map(date => {    
+    return {
+      params: { date },
+    };
+  });
+
+  return paths
+}
+
+const { date } = Astro.params;
+const filteredPost = (await Astro.glob('../**/bbq-week.md')).find((p) => {return p.frontmatter.eventDates.find((d) => d == date)});
+const postDetails = Object.assign(filteredPost.frontmatter, {pubDate: date});
+---
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script is:inline>(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '930023')</script>
+  </head>
+  <body>
+    <ul>
+      <BlogPostLayout content={postDetails}>
+        <div set:html={marked(filteredPost.rawContent())}>
+      </BlogPostLayout>
+    </ul>
+
+    <div class="ml-embedded ml-embedded-left max-w-5xl mx-auto px-3" data-form="ZoK6PR"></div>
+  </body>
+</html>
