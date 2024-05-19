@@ -26,7 +26,7 @@ To dos list
 * use an icon or emoji on the cards to tell the type of event it is. Make it more fun
 * Have a how we curated this list page that's funny, similar to derek sivers fun email I saved in the scott delong drive. Link to it from emails. https://sive.rs/cdbe. Try to do a slightly unique one for each city - make it tailored to the city.
 * Additional filters dropdown: today, free, kid-friendly
-
+* include tags links in event#show page
 
 
 Possibles:

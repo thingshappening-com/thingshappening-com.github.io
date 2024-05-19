@@ -144,12 +144,14 @@ Documentation:
 - - Add highlighted tags
 - - Add another event set
 
-(15) 5/17
-- - Add Songbirds Museum events.
+(16) 5/17
+- X - Add Songbirds Museum events.
+- X - Maybe fixed past event showing?
+- X - highlighted tag
+- X - started tagging free events
+- X - added google search console
 - - Add another farm event.
 - - Another music event. 
-- - Add tag highlighting.
-- - Fix the stubborn past events prod issue
 - - Submit sitemap to google search console
 - - Another trivia or karaoke event
 - - Trivoli theatre events
