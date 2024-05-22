@@ -164,15 +164,18 @@ Documentation:
 
 (18) 5/20
 - X - export more facebook emails
-- - 
 - X - Send them initial email
-- - Schedule first email this week
+- X - Schedule first email this week
 
+(19) 5/22
+- X - write script for deploying empty for past events
+- X - execute script to update past events removals
+- X - add events for main street market
+- X - Remove week and day from card
 
-Weekly KPIs:
+Next website working session:
+- sort date filters and tags pages by calendar date
+- paginate those pages as well where possible
+- add icons to cards
+- fix more of the search index
 
-Week of 5/13
--  - Did I get closer to 15 event venues
-- X - Did I schedule two emails
-- X - Did I schedule 3-8 facebook posts
-- X - Did I optimize ads

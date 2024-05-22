@@ -4,4 +4,5 @@ Expenses:
 - Facebook ads emails:
 - hey.com hosting:
 - Mailerlite: 
+- chatgpt premium: 
 - Github pro (think I need this for private)

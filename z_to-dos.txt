@@ -35,8 +35,8 @@ To dos list
 * sort tags page by date
 * remove day and week stuff
 * add day of week Abbrev to cards
-
-
+* write a cron job that deploys this every day so I don't have to. Or at least write the git script so it's a one liner
+* google and other calendar links
 
 Possibles:
 - create one mans website site where I document this journey and a twitter account that corresponds
