@@ -24,7 +24,7 @@ allPosts.forEach((p) => {
 
   if (baseData.eventDates) {
     baseData.eventDates.forEach((date, i) => {      
-      let title = baseData.eventLabel ? `${baseData.title} - ${baseData.eventLabel} ${i + 1}` : `${baseData.title}`
+      let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
       const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
 
       allPostsIncludingMultipleDates.push(again);

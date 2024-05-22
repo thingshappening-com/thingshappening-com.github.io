@@ -2,6 +2,6 @@ Expenses:
 - Domain: $3000
 - Facebook ads likes:
 - Facebook ads emails:
-- Gmail hosting:
+- hey.com hosting:
 - Mailerlite: 
-- 
+- Github pro (think I need this for private)
