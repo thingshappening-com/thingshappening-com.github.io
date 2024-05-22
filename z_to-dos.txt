@@ -21,14 +21,24 @@ To dos list
 * about page - include your why, that its a journey, the tech stack
 * List vendors page with their links and maybe logos?... section it by seasons (summer events added for:, fall: )
 * add day of week abbrev to card next to date
-* hightlight tag on tags page
+* highlight tag on tags page
 * see what scott delong says about llcs 
 * use an icon or emoji on the cards to tell the type of event it is. Make it more fun
 * Have a how we curated this list page that's funny, similar to derek sivers fun email I saved in the scott delong drive. Link to it from emails. https://sive.rs/cdbe. Try to do a slightly unique one for each city - make it tailored to the city.
 * Additional filters dropdown: today, free, kid-friendly
 * include tags links in event#show page
+* after 20-25 vendors start the posts
+* after updating the vendors for fall events hire someone to do it - install git and npm for them and walk them through the process
+* ask chalie about general legal advice for it
+* lock down the github repo, you may need to pay
+* claim your credit for google ads so you can run them to your ads page - https://ads.google.com/aw/signup/expert?ocid=6456797740&euid=692647372&__u=3570078828&uscid=6456797740&__c=2011981260&authuser=0&subid=ww-ww-xs-ip-awhc-ga_reco!o2-unqsi-CPWnvdyonIYDFQBdnQYdB_EFkg-unqsi-ga_max_treatment&_gl=1*d4qxn1*_ga*MTY0MDA2OTc1My4xNjk1NTgzMDk3*_ga_4BXXKZJZTZ*MTcxNTkxMzg3Ny4zOS4wLjE3MTU5MTM4NzcuMC4wLjA.&sourceid=emp
+* sort tags page by date
+* remove day and week stuff
+* add day of week Abbrev to cards
+
 
 
 Possibles:
 - create one mans website site where I document this journey and a twitter account that corresponds
     - updates every two weeks
+    

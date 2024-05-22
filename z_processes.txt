@@ -1,0 +1,11 @@
+Facebook leads import:
+1. download the csv
+2. run it through your script to get first name
+3. import it to mailerlite - name, email, signup timestamp, chattanooga group
+4. send first email
+
+Weekly emails:
+1. Did you make any site updates?
+2. New events for the week
+3. Make sure the pretext and headers all look good
+

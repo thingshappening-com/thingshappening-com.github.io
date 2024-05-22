@@ -146,16 +146,27 @@ Documentation:
 
 (16) 5/17
 - X - Add Songbirds Museum events.
-- X - Maybe fixed past event showing?
+- X - Maybe fixed past evet showing?
 - X - highlighted tag
 - X - started tagging free events
 - X - added google search console
+- X - Submit sitemap to google search console
 - - Add another farm event.
-- - Another music event. 
-- - Submit sitemap to google search console
+- - Another music event.
 - - Another trivia or karaoke event
 - - Trivoli theatre events
 - - Add tag for free entrance
+
+(17) 5/19 (tyler visit weekend)
+- X - cambridge square events
+- X - nooga nightlife events
+- X - schedule week of fb posts
+
+(18) 5/20
+- X - export more facebook emails
+- - 
+- X - Send them initial email
+- - Schedule first email this week
 
 
 Weekly KPIs:
