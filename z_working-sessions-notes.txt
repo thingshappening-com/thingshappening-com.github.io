@@ -171,11 +171,29 @@ Documentation:
 - X - write script for deploying empty for past events
 - X - execute script to update past events removals
 - X - add events for main street market
+- X - add event for river concert
 - X - Remove week and day from card
+- X - Add more subs from facebook
+- X - send welcome email
+- X - schedule weekend email
+
+(20) 5/23 (2-4am)
+- X - strategy / dump / organization session: posts, monetization, first post generated, events ideas, distinguishing topics.
+
+(21) 5/26
+- crabtree farms events
+
+Check hey.com fucking email
+
+figure out automation for welcome email:
+https://www.mailerlite.com/help/how-to-create-an-automation-workflow
 
 Next website working session:
+- add icons to cards
+- add google and apple calendar links
+- add all tags page filter
+- add day of week to cards and pages
 - sort date filters and tags pages by calendar date
 - paginate those pages as well where possible
-- add icons to cards
 - fix more of the search index
 
