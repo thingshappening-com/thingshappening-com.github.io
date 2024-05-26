@@ -36,7 +36,7 @@ filteredPosts.forEach((p) => {
 
   if (baseData.eventDates) {
     baseData.eventDates.forEach((date, i) => {
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title} - Day ${i + 1}`, url: `${baseData.url}/${date}`}); 
+      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title}`, url: `${baseData.url}/${date}`}); 
 
       allPostsIncludingMultipleDates.push(again);
     })
@@ -67,7 +67,7 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => n
 
     <main class="py-12 lg:pt-20">
       <article class="max-w-6xl mx-auto px-3">
-        <HomeHeader title={tag} description={description} />
+        <HomeHeader title={`#${tag}`} description={description} />
         <div class="ml-embedded" data-form="ZoK6PR"></div>
   
         <div class="date-filter-options">
