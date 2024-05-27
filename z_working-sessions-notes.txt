@@ -182,22 +182,41 @@ Documentation:
 
 (21) 5/26
 - X - crabtree farms events
-- - Add trivia events for Chatt Trivia
-- - Get 3 Posts Ready for the posts part of the website
+- X - Add trivia events for Chatt Trivia
+- X - Schedule this week email
+- X - Schedule this weekend email
+- X - Add welcome email automation
+- X - Import subscribers
+
+(22)
+You've only got 2 1.5 hour sessions for this because tomorrow you HAVE TO: Update tasks in jira, Duplex, flights, timmy card
+-  - Reply to emails
+- - You've earned website updates, do a few
+- - Fix the fucking logo in the ads
+- - Schedule facebook posts
 
 
 https://noogatoday.6amcity.com/where-to-play-trivia-chattanooga-tn
-- - Add trivia event for live trivia
-- - Add trivia events for not rocket science trivia
 
 
-Check hey.com fucking email
+Every week you have to:
+- fix automation preheader
+- respond to fucking email
+- schedule two emails
+- schedule two facebook posts
+- Add one location or post
+
+You've done more than enough if in addition to the above you:
+- Added more than one post or event
+- Scheduled 3 - 5 facebook posts
+
 
 figure out automation for welcome email:
 https://www.mailerlite.com/help/how-to-create-an-automation-workflow
 
 Next website working session:
 - add icons to cards
+- Add #free tag to the nav
 - add google and apple calendar links
 - add all tags page filter
 - add day of week to cards and pages
