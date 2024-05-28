@@ -50,6 +50,12 @@ today.setDate(today.getDate() - 1);  // Move back by one day
 today.setHours(0,0,0,0);
 
 allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+    const dateA = new Date(a.pubDate);
+    const dateB = new Date(b.pubDate);
+
+    return dateA - dateB;
+});
 ---
 
 <html>

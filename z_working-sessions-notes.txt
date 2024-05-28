@@ -194,16 +194,29 @@ Documentation:
 - X - Reply to emails
 - X - Fix the fucking logo in the ads
 - X - And on your FB page dumbass
-- Schedule facebook posts
+- X - Schedule facebook posts
 
 
 (23) 5/28
-- - You've earned website updates, do a few (below)
+- - You've earned website updates, do a few (below) - fix broken card sorting
 - - Site navigation #free, #all-tags, library
 - - signup for amazon affiliate
 - - Create bookstore page, get it ready to go.
 - - fix search
-- - respond to emails
+- - fix/update automation triggers
+- - import more subscribers and try to resend welcome email to previous subscribers
+- upload sitemap
+
+Next website working session:
+- add day of week to cards and pages
+- sort date filters and tags pages by calendar date
+- paginate those pages as well where possible
+- fix more of the search index
+- Add #free tag and all tags to the nav
+- add icons to cards
+- add google and apple calendar links
+- standardize tags (farm, outdoors, free, market)
+
 
 https://noogatoday.6amcity.com/where-to-play-trivia-chattanooga-tn
 
@@ -223,16 +236,6 @@ You've done more than enough if in addition to the above you:
 
 figure out automation for welcome email:
 https://www.mailerlite.com/help/how-to-create-an-automation-workflow
-
-Next website working session:
-- add icons to cards
-- Add #free tag to the nav
-- add google and apple calendar links
-- add all tags page filter
-- add day of week to cards and pages
-- sort date filters and tags pages by calendar date
-- paginate those pages as well where possible
-- fix more of the search index
 
 Mailer lite tips:
 1. Ensure that you are using the latest version of your web browser, as this can sometimes affect the editor's functionality.
