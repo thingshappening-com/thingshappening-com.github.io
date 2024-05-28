@@ -208,11 +208,12 @@ Documentation:
 - upload sitemap
 
 Next website working session:
-- add day of week to cards and pages
-- sort date filters and tags pages by calendar date
-- paginate those pages as well where possible
-- fix more of the search index
+- X add day of week to cards 
+- - add day of week to pages
+- X - sort date filters and tags pages by calendar date
+- X - (would be too much work for the time being) those pages as well where possible
 - Add #free tag and all tags to the nav
+- fix more of the search index
 - add icons to cards
 - add google and apple calendar links
 - standardize tags (farm, outdoors, free, market)

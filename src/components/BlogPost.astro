@@ -13,6 +13,10 @@ export interface Props {
 }
 
 const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
+
+const date = new Date(pubDate);
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dayOfWeek = daysOfWeek[date.getDay()];
 ---
 
 <article class="max-w-5xl mx-auto px-3">
@@ -21,7 +25,7 @@ const { address, eventLink, entranceCost, title, time, pubDate, ticketsLink, ven
   </header>
 
   <div>
-    {pubDate ? <div><b>When:</b> {pubDate}</div> : ""}
+    {pubDate ? <div><b>When:</b> {pubDate} {`(${dayOfWeek})`}</div> : ""}
     {time ? <div><b>Time:</b> {time}</div> : ""}
     {venue ? <div><b>Venue:</b> {venue}</div> : ""}
     {venueDetails ? <div><b>Venue Details:</b> {venueDetails}</div> : ""}
