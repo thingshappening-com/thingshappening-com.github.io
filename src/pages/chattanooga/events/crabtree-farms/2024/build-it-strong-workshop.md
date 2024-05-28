@@ -2,7 +2,7 @@
   title: "Skill Strengthening Workshop: Build it Strong!"
   venue: "Crabtree Farms"
   address: "1000 E 30th St.Chattanooga, TN 37407"
-  iconPath: "/public/images/icons/barn.png"
+  iconPath: "/images/icons/barn.png"
   pubDate: "2024-07-20"
   eventLink: "https://crabtreefarms.org/event/skill-strengthening-workshop-build-it-strong/"
   tags: ["crabtree-farms", "farm", "outdoors"]

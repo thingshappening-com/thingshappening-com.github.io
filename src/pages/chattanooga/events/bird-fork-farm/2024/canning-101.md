@@ -2,7 +2,7 @@
   title: "Canning 101"
   venue: "Bird Fork Farm"
   address: "Bird Fork Farm, Lewis Cross Rd, Dunlap, TN 37327-6807"
-  iconPath: "/public/images/icons/barn.png"
+  iconPath: "/images/icons/barn.png"
   pubDate: "2024-05-11"
   eventLink: "https://birdforkfarm.square.site/events"
   tags: ["bird-fork-farm", "farm"]

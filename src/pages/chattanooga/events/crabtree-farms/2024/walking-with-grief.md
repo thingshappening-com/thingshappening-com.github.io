@@ -3,7 +3,7 @@
   venue: "Crabtree Farms"
   address: "1000 E 30th St.Chattanooga, TN 37407"
   pubDate: "2024-07-14"
-  iconPath: "/public/images/icons/barn.png"
+  iconPath: "/images/icons/barn.png"
   eventLink: "https://crabtreefarms.org/event/walking-with-grief-5/"
   tags: ["crabtree-farms", "farm", "outdoors"]
   entranceCost: "$40"

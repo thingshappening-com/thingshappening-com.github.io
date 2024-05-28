@@ -1,7 +1,7 @@
 ---
   title: "Nooga Nightlife: Taco Week"
   eventDates: ["2024-07-15", "2024-07-16", "2024-07-17", "2024-07-18", "2024-07-19", "2024-07-20", "2024-07-21"]
-  iconPath: "/public/images/icons/food.png"
+  iconPath: "/images/icons/food.png"
   address: "Varies"
   eventLink: "https://chattanoogatacoweek.com/"
   tags: ["nooga-nightlife", "food"]

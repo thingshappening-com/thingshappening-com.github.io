@@ -1,7 +1,7 @@
 ---
   title: "TVCU Riverfront Nights"
   address: "201 Riverfront Pkwy, Chattanooga, TN 37402"
-  iconPath: "/public/images/icons/music.png"
+  iconPath: "/images/icons/music.png"
   eventDates: ["2024-05-25", "2024-06-01", "2024-06-08", "2024-06-15", "2024-06-29", "2024-07-06", "2024-07-13", "2024-07-20", "2024-07-27", "2024-08-03", "2024-08-10", "2024-08-17", "2024-08-24", "2024-08-31"]
   eventLink: "https://www.riverfrontnights.com/"
   tags: ["music", "free", "outside"]

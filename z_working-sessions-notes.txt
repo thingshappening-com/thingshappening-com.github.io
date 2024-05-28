@@ -200,7 +200,13 @@ Documentation:
 
 
 (23) 5/28
-- - You've earned website updates, do a few (below) - fix broken card sorting
+- X add day of week to cards 
+- X - add day of week to pages
+- X - sort date filters and tags pages by calendar date
+- X - (would be too much work for the time being) those pages as well where possible
+- X - Increase font size blogpost
+- X - Increase font size card
+- X - add icons to cards
 - - Site navigation #free, #all-tags, library
 - - signup for amazon affiliate
 - - Create bookstore page, get it ready to go.
@@ -210,16 +216,9 @@ Documentation:
 - upload sitemap
 
 Next website working session:
-- X add day of week to cards 
-- X - add day of week to pages
-- X - sort date filters and tags pages by calendar date
-- X - (would be too much work for the time being) those pages as well where possible
-- X - Increase font size blogpost
-- X - Increase font size card
 - - Padding for event website link, underline event website link
 - Add #free tag and all tags to the nav
 - fix more of the search index
-- add icons to cards
 - add google and apple calendar links
 - standardize tags (farm, outdoors, free, market)
 

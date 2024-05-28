@@ -2,7 +2,7 @@
   title: "Youth Music Talent Show"
   venue: "Songbirds Foundation"
   address: "206 West Main Street, Chattanooga, TN, 37408"
-  iconPath: "/public/images/icons/music.png"
+  iconPath: "/images/icons/music.png"
   pubDate: "2024-05-30"
   eventLink: "https://songbirdsfoundation.org/events/youth-talent-show"
   tags: ["music", "songbirds", "kid-friendly"]

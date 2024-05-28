@@ -2,7 +2,7 @@
   title: "RK Gun Show"
   venue: "Camp Jordan"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
-  iconPath: "/public/images/icons/expo.png"
+  iconPath: "/images/icons/expo.png"
   eventDates: ["2024-05-26", "2024-05-27", "2024-06-29", "2024-06-30"]
   eventLabel: "Day"
   time: "7am-9pm"

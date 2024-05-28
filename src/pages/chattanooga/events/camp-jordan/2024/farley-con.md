@@ -3,7 +3,7 @@
   venue: "Camp Jordan"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
   eventLabel: "Day"
-  iconPath: "/public/images/icons/expo.png"
+  iconPath: "/images/icons/expo.png"
   eventLink: "https://www.farleycon.com/"
   eventDates: ["2024-08-03", "2024-08-04"]
   time: "5am-5pm"

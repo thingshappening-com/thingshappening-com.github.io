@@ -2,7 +2,7 @@
   title: "Nooga Nightlife: Wings and Beer Week"
   eventDates: ["2024-08-26", "2024-08-27", "2024-08-28", "2024-08-29", "2024-08-30", "2024-08-31", "2024-09-01"]
   address: "Varies"
-  iconPath: "/public/images/icons/food.png"
+  iconPath: "/images/icons/food.png"
   eventLink: "https://chattanoogabbqweek.com/"
   tags: ["nooga-nightlife", "food"]
   entranceCost: "$6 wings at participating restaurants"

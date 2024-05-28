@@ -2,7 +2,7 @@
   title: "Chatt Trivia at Five Wits Brewing"
   venue: "Five Wits Brewing"
   address: "1501 Long St, Chattanooga, TN 37408"
-  iconPath: "/public/images/icons/trivia.png"
+  iconPath: "/images/icons/trivia.png"
   eventDates: ["2024-06-06", "2024-06-13", "2024-06-20", "2024-06-27", "2024-07-04", "2024-07-11", "2024-07-18", "2024-07-25", "2024-08-01", "2024-08-08", "2024-08-15", "2024-08-22", "2024-08-29"]
   eventLink: "https://www.chatttrivia.com/"
   tags: ["five-wits-brewing", "chatt-trivia", "trivia"]

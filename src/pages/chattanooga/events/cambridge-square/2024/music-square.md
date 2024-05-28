@@ -1,7 +1,7 @@
 ---
   title: "Live on Music Square"
   venue: "Cambridge Square"
-  iconPath: "/public/images/icons/music.png"
+  iconPath: "/images/icons/music.png"
   eventDates: ["2024-06-08", "2024-07-20", "2024-05-25", "2024-06-15"]
   address: "9440 Bradmore Ln, Ooltewah, TN 37363"
   eventLink: "https://www.facebook.com/events/312802405159714/"

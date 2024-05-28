@@ -6,7 +6,7 @@
   eventLink: "https://songbirdsfoundation.org/events/george-lynch"
   tags: ["music", "songbirds"]
   entranceCost: "$75 - $175"
-  iconPath: "/public/images/icons/music.png"
+  iconPath: "/images/icons/music.png"
   ticketsLink: "https://www.seetickets.us/event/sunny-sweeney/598569"
   time: "6pm - 10pm"
   layout: "../../../../../layouts/BlogPostLayout.astro"

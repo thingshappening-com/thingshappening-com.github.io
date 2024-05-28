@@ -5,7 +5,7 @@
   eventDates: ["2024-05-08", "2024-05-15", "2024-05-22", "2024-05-29", "2024-06-05", "2024-06-12", "2024-06-19", "2024-06-26", "2024-07-03", "2024-07-10", "2024-07-17", "2024-07-24", "2024-07-31", "2024-08-07", "2024-08-14", "2024-08-21", "2024-08-28"]
   time: "10:30am to 1:30pm"
   eventLabel: "Week"
-  iconPath: "/public/images/icons/market.png"
+  iconPath: "/images/icons/market.png"
   eventLink: "https://chattanoogamarket.com/calendar//"
   tags: ["chattanooga-market", "market", "kid-friendly"]
   entranceCost: "Free"
