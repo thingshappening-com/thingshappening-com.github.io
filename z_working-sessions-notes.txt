@@ -188,11 +188,19 @@ Documentation:
 - X - Add welcome email automation
 - X - Import subscribers
 
-(22)
-You've only got 2 1.5 hour sessions for this because tomorrow you HAVE TO: Update tasks in jira, Duplex, flights, timmy card
--  - Reply to emails
-- - You've earned website updates, do a few
-- - Fix the fucking logo in the ads
+(22) 5/27
+- X - Add Chosen By Fitness
+- X - Update this weekends events with chosen by fitness
+- X - Reply to emails
+- X - Fix the fucking logo in the ads
+- X - And on your FB page dumbass
+- Schedule facebook posts
+
+
+(23) 5/28
+- - You've earned website updates, do a few (below)
+- - signup for amazon affiliate
+- - Site navigation #free, #all-tags, library
 - - Schedule facebook posts
 
 
@@ -224,3 +232,8 @@ Next website working session:
 - paginate those pages as well where possible
 - fix more of the search index
 
+Mailer lite tips:
+1. Ensure that you are using the latest version of your web browser, as this can sometimes affect the editor's functionality.
+2. Clear your browser cache and cookies to refresh the editor's performance.
+3. Try creating the links outside of the unordered list first and then paste them into the list items.
+4. If the issue persists, please provide more details or screenshots so we can investigate further.

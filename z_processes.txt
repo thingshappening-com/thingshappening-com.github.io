@@ -9,3 +9,9 @@ Weekly emails:
 2. New events for the week
 3. Make sure the pretext and headers all look good
 
+Mailer lite tips
+
+1. Ensure that you are using the latest version of your web browser, as this can sometimes affect the editor's functionality.
+2. Clear your browser cache and cookies to refresh the editor's performance.
+3. Try creating the links outside of the unordered list first and then paste them into the list items.
+4. If the issue persists, please provide more details or screenshots so we can investigate further.

@@ -9,9 +9,10 @@ X - 10 total working sessions
 X - schedule 3+ fbook posts week of 5/13
 X - schedule 3+ fbook posts week of 5/20
 X - schedule 2 emails week of 5/13
- - schedule 2 emails week of 5/20
-- 20 total working sessions
-- 500 subscribers
+X - schedule 2 emails week of 5/20
+X - schedule 2 emails week of 5/27
+X - 20 total working sessions
+X - 500 subscribers
 - 2000 followers
 - 10 initial posts
 - 20 total vendors
