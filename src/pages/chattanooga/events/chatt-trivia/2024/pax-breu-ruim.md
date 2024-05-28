@@ -4,7 +4,7 @@
   address: " 516 East Main Street, Chattanooga, TN"
   eventDates: ["2024-06-09", "2024-06-16", "2024-06-23", "2024-06-30", "2024-07-07", "2024-07-14", "2024-07-21", "2024-07-28", "2024-08-04", "2024-08-11", "2024-08-18", "2024-08-25"]
   eventLink: "https://www.chatttrivia.com/"
-  tags: ["pax-breu-rim", "chatt-trivia", "trivia"]
+  tags: ["pax-breu-ruim", "chatt-trivia", "trivia"]
   time: "2:30pm"
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
