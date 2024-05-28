@@ -10,5 +10,7 @@
 ---
 
 Chatt Trivia is running the qualifying rounds for its Summer Tournament, featuring a $1,000 cash prize. Participants also have weekly chances to win bar cash.
-
-The game has four rounds, each with four questions. Points per question increase each round: five points in the first, ten in the second, and so on. In the final question, players can wager any or all of their points on a topic announced by the host, like anatomy. This format offers both a test of trivia knowledge and strategic decision-making. Whether you’re a seasoned trivia player or just looking for a fun evening, Chatt Trivia is a great way to a night out!
+<br><br>
+The game has four rounds, each with four questions. Points per question increase each round: five points in the first, ten in the second, and so on. In the final question, players can wager any or all of their points on a topic announced by the host, like anatomy.
+<br><br>
+This format offers both a test of trivia knowledge and strategic decision-making. Whether you’re a seasoned trivia player or just looking for a fun evening, Chatt Trivia is a great way to a night out!

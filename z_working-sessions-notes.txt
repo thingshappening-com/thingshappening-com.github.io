@@ -199,10 +199,11 @@ Documentation:
 
 (23) 5/28
 - - You've earned website updates, do a few (below)
-- - signup for amazon affiliate
 - - Site navigation #free, #all-tags, library
-- - Schedule facebook posts
-
+- - signup for amazon affiliate
+- - Create bookstore page, get it ready to go.
+- - fix search
+- - respond to emails
 
 https://noogatoday.6amcity.com/where-to-play-trivia-chattanooga-tn
 
@@ -213,6 +214,7 @@ Every week you have to:
 - schedule two emails
 - schedule two facebook posts
 - Add one location or post
+- submit to search console
 
 You've done more than enough if in addition to the above you:
 - Added more than one post or event
