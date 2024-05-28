@@ -23,13 +23,13 @@ const dayOfWeek = daysOfWeek[date.getDay()];
       <h2 class="font-bold text-2xl leading-tight">
         {post.title}
       </h2>
-      <p class="text-s text-gray-600 mt-4 flex items-center">
+      <p class="text-lg text-gray-600 mt-4 flex items-center">
         {`${dayOfWeek}`} {dayjs(post.pubDate).format('MM-DD-YYYY')} 
       </p>
     </div>
   </a>
 
-  <div class="flex items-center pl-8 pb-3">
+  <div class="flex items-center pl-8 pb-3 text-base">
     {post.tags && (
       <div>
         {Array.isArray(post.tags) ? (

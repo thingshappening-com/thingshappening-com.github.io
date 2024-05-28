@@ -209,9 +209,11 @@ Documentation:
 
 Next website working session:
 - X add day of week to cards 
-- - add day of week to pages
+- X - add day of week to pages
 - X - sort date filters and tags pages by calendar date
 - X - (would be too much work for the time being) those pages as well where possible
+- X - Increase font size blogpost
+- X - Increase font size card
 - Add #free tag and all tags to the nav
 - fix more of the search index
 - add icons to cards
