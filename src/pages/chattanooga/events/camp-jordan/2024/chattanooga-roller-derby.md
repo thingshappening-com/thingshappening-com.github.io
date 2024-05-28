@@ -2,6 +2,7 @@
   title: "Chattanooga Roller Derby"
   venue: "Camp Jordan Arena"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
+  iconPath: "/public/images/icons/fitness.png"
   eventDates: ["2024-05-04", "2024-06-08", "2024-08-17"]
   eventLabel: "Game"
   time: "2pm-9pm"

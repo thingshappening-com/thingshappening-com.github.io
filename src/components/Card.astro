@@ -24,7 +24,7 @@ const dayOfWeek = daysOfWeek[date.getDay()];
         {post.title}
       </h2>
       <p class="text-lg text-gray-600 mt-4 flex items-center">
-        {`${dayOfWeek}`} {dayjs(post.pubDate).format('MM-DD-YYYY')} 
+        {`${dayOfWeek}`} {dayjs(post.pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8" src=`${post.iconPath}` alt="icon"></img> : ""}
       </p>
     </div>
   </a>

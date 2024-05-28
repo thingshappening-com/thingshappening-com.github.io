@@ -2,6 +2,7 @@
   title: "Caning 101
   "
   venue: "Bird Fork Farm"
+  iconPath: "/public/images/icons/barn.png"
   address: "Dunlap, TN (address provided after registration)"
   pubDate: "2024-07-06"
   eventLink: "https://birdforkfarm.square.site/events"

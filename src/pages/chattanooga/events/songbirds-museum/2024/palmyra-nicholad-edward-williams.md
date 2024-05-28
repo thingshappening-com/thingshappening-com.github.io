@@ -2,6 +2,7 @@
   title: "Palmyra with Nicholas Edward Williams"
   venue: "Songbirds Foundation"
   address: "206 West Main Street, Chattanooga, TN, 37408"
+  iconPath: "/public/images/icons/music.png"
   pubDate: "2024-06-14"
   eventLink: "https://songbirdsfoundation.org/events/palmyra"
   tags: ["music", "songbirds"]

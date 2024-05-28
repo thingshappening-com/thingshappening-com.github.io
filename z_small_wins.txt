@@ -1,3 +1,5 @@
+1% improvements
+
 X - App deployed
 X - date filtering working
 X - search (mostly working)
@@ -29,3 +31,5 @@ Big goals I'm striving for that I hope these small wins can get me to:
 - 5000 pageviews in a month
 - a $10 earnings day
 - a $100/mo earnings month
+
+1% improvements

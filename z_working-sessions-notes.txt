@@ -1,3 +1,5 @@
+1% improvements
+
 Documentation:
 - Define a slot - The <slot /> element is a placeholder for external HTML content, allowing you to inject (or “slot”) child elements from other files into your component template. By default, all child elements passed to a component will be rendered in its <slot />. BlogPostLayout renders a <slot> within <BlogPost>, which contains the contents from the markdown
 - Routing for multiple cities - all routing for content is by directories underneath pages - ex Pages -> Chattanooga -> Events, Attractions. I think Ill need to update the tagging functionality to get Astro.glob for multiple .md paths if it doesn’t get them all properly from the /pages top level
@@ -214,6 +216,7 @@ Next website working session:
 - X - (would be too much work for the time being) those pages as well where possible
 - X - Increase font size blogpost
 - X - Increase font size card
+- - Padding for event website link, underline event website link
 - Add #free tag and all tags to the nav
 - fix more of the search index
 - add icons to cards
@@ -245,3 +248,5 @@ Mailer lite tips:
 2. Clear your browser cache and cookies to refresh the editor's performance.
 3. Try creating the links outside of the unordered list first and then paste them into the list items.
 4. If the issue persists, please provide more details or screenshots so we can investigate further.
+
+1% improvements

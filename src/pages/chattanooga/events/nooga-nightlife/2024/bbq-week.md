@@ -3,6 +3,7 @@
   eventDates: ["2024-06-10", "2024-06-11", "2024-06-12", "2024-06-13", "2024-06-14", "2024-06-15", "2024-06-16"]
   address: "Varies"
   eventLink: "https://chattanoogabbqweek.com/"
+  iconPath: "/public/images/icons/food.png"
   tags: ["nooga-nightlife", "food"]
   entranceCost: "$7 BBQ at participating restaurants"
   layout: "../../../../../layouts/BlogPostLayout.astro"

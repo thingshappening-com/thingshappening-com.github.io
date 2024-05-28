@@ -3,6 +3,7 @@
   venue: "Camp Jordan"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
   eventLabel: "Day"
+  iconPath: "/public/images/icons/expo.png"
   eventLink: "https://repticon.com/"
   eventDates: ["2024-08-24", "2024-08-25"]
   time: "8am - 9pm"

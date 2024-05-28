@@ -2,6 +2,7 @@
   title: "Midsummer Feast and Litha Ritual"
   venue: "Crabtree Farms"
   address: "1000 E 30th St.Chattanooga, TN 37407"
+  iconPath: "/public/images/icons/barn.png"
   pubDate: "2024-06-16"
   eventLink: "https://crabtreefarms.org/event/litha2024/"
   tags: ["crabtree-farms", "farm", "outdoors"]

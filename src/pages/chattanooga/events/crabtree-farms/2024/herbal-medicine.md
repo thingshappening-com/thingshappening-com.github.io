@@ -3,6 +3,7 @@
   venue: "Crabtree Farms"
   address: "1000 E 30th St.Chattanooga, TN 37407"
   pubDate: "2024-05-30"
+  iconPath: "/public/images/icons/barn.png"
   eventLink: "https://crabtreefarms.org/event/intro-to-herbal-medicine-making/"
   tags: ["crabtree-farms", "farm", "outdoors"]
   entranceCost: "$35"

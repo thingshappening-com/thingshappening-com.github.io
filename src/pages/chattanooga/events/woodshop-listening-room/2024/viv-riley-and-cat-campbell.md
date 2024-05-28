@@ -2,6 +2,7 @@
   title: "Viv & Riley + Cat Campbell"
   venue: "The Woodshop Listening Room"
   address: "5500 Saint Elmo Avenue Chattanooga, TN 37409"
+  iconPath: "/public/images/icons/music.png"
   pubDate: "2024-05-25"
   eventLink: "https://thewoodshoplisteningroom.com/shows"
   tags: ["listening-room", "music"]

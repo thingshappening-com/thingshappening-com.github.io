@@ -2,6 +2,7 @@
   title: "Steve Earle: Alone Again, Solo & Acoustic"
   venue: "Songbirds Foundation"
   address: "206 West Main Street, Chattanooga, TN, 37408"
+  iconPath: "/public/images/icons/music.png"
   pubDate: "2024-06-04"
   eventLink: "https://songbirdsfoundation.org/events/steve-earle-2024"
   tags: ["music", "songbirds", "fundraiser"]

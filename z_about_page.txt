@@ -11,3 +11,5 @@ For now we won't be featuring events like pro or college athletics. Also doesn't
 All of this is subject to change.
 
 This information won't always be perfect so let me know if I have a detail or entire event listed incorrectly.
+
+built using Astro, Tailwind, Creek theme, flaticon, mailerlite, hey.com

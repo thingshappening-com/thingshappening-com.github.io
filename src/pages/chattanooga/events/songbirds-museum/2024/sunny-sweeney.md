@@ -2,6 +2,7 @@
   title: "Sunny Sweeney"
   venue: "Songbirds Foundation"
   address: "206 West Main Street, Chattanooga, TN, 37408"
+  iconPath: "/public/images/icons/music.png"
   pubDate: "2024-06-23"
   eventLink: "https://songbirdsfoundation.org/events/sunny-sweeney"
   tags: ["music", "songbirds"]

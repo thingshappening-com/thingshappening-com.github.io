@@ -1,6 +1,7 @@
 ---
   title: "Intro to Lacto-Fermentation Workshop"
   venue: "Bird Fork Farm"
+  iconPath: "/public/images/icons/barn.png"
   address: "Dunlap, TN (address provided after registration)"
   pubDate: "2024-06-09"
   eventLink: "https://birdforkfarm.square.site/events"

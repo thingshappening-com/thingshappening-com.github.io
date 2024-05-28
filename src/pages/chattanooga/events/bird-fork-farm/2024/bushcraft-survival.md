@@ -3,6 +3,7 @@
   venue: "Bird Fork Farm"
   address: "Dunlap, TN (address provided after registration)"
   pubDate: "2024-05-25"
+  iconPath: "/public/images/icons/barn.png"
   eventLink: "https://birdforkfarm.square.site/events"
   tags: ["bird-fork-farm", "farm", "outdoors"]
   entranceCost: "$95"

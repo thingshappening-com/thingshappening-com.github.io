@@ -2,6 +2,7 @@
   title: "Sourdough Workshop: Foccacia"
   venue: "Bird Fork Farm"
   address: "Dunlap, TN (address provided after registration)"
+  iconPath: "/public/images/icons/barn.png"
   pubDate: "2024-06-01"
   eventLink: "https://birdforkfarm.square.site/events"
   tags: ["bird-fork-farm", "farm", "food"]
