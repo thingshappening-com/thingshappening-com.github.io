@@ -33,9 +33,6 @@ Featuring:
 
 
 
-This Saturday's performance features Barry Johnson, view their music page 
-
-
 
 
 

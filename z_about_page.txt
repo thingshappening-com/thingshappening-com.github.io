@@ -13,3 +13,6 @@ All of this is subject to change.
 This information won't always be perfect so let me know if I have a detail or entire event listed incorrectly.
 
 built using Astro, Tailwind, Creek theme, flaticon, mailerlite, hey.com
+Icon attributions
+
+We not have them all (events) but we've got some pretty good one's, eh? Feel like we're missing something talk to me (link)
