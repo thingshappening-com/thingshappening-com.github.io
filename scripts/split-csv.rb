@@ -7,7 +7,7 @@ def split_name(full_name)
 end
 
 # Read the input CSV file
-input_file = '/Users/jack.burum/Downloads/leads_through_06_02.csv'
+input_file = '/Users/jack.burum/Downloads/leads_06_05.csv'
 output_file = 'output.csv'
 
 # Open the input file and read headers

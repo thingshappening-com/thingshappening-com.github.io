@@ -221,8 +221,9 @@ Documentation:
 (25) 6/2
 - scheduled emails for this week
 
-(26) 6/3 
-- 
+(26) 6/5 (after a crazy migrain day in scottsdale)
+- pounded out affiliate page for bookshelf
+- imported more subscribers
 
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
