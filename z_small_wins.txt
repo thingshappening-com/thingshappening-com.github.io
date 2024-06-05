@@ -15,7 +15,7 @@ X - schedule 2 emails week of 5/20
 X - schedule 2 emails week of 5/27
 X - 20 total working sessions
 X - 500 subscribers
-- 2000 followers
+X (recordded at 2.6) - 2000 followers
 - 10 initial posts
 - 15 total posts
 - 15 total vendors
