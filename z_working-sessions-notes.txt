@@ -221,6 +221,9 @@ Documentation:
 (25) 6/2
 - scheduled emails for this week
 
+(26) 6/3 
+- 
+
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
 - - Padding for event website link, underline event website link
