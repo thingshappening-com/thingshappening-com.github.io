@@ -8,6 +8,8 @@
 <h4 class="bookstore-h2"><a href="#bookstores">Local Bookstores</a></h4>
 <h2 class="bookstore-h2">Local Bookstores</h2>
 
+This is a collection of works that you might find interesting if you have an interest in diving deeper into the history of Chattanooga, or want to support a Chattanooga creative. Where appropriate Fiction books will either be from Chattanooga authors or have a nearby setting. 
+
 
 <a href="https://www.thebookandcover.com/" target="_blank">**The Book & Cover**</a> &nbsp; A cozy new addition to Chattanooga’s bookstore scene, The Book & Cover offers a selection of new books with a focus on contemporary fiction and children’s literature. They also have a charming café inside.
 
@@ -20,7 +22,7 @@
 <a href="https://shopwinderbinder.com/" target="_blank">**Winder Binder**</a> &nbsp; This unique bookstore and art gallery in Chattanooga specializes in used and rare books, as well as local art and music. It’s a must-visit for book lovers and art enthusiasts alike.
 
 
-
+Photography books
 
 <h2 class="bookstore-h2">Local Bookstores</h2>
 
