@@ -4,7 +4,7 @@
   address: "5824 Brainerd Road
 Chattanooga, TN 37411"
   iconPath: "/images/icons/craftsman.png"
-  eventDates: ["2024-06-15", "2024-06-17", "2024-06-18", "2024-06-19", "2024-06-20", "2024-06-21", "2024-06-22", "2024-06-23", "2024-06-24", "2024-06-25", "2024-06-28", "2024-06-29"]
+  eventDates: ["2024-06-15", "2024-06-17", "2024-06-18", "2024-06-20", "2024-06-21", "2024-06-22", "2024-06-23", "2024-06-24", "2024-06-25", "2024-06-28", "2024-06-29"]
   eventLink: "https://www.woodcraft.com/pages/store-classes/chattanooga"
   tags: ["woodworking", "craft", "woodcraft-of-chattanooga"]
   time: "Varies"
@@ -57,4 +57,4 @@ The sheer number of classes and events Woodcraft puts on is impressive! If you'r
 <br>
 <b>June 29th:</b> Sawdust Social: Planter Box
 <br><br>
-If you like woodcraft and don't see anything on this list that interests you, I don't really know what to say.
+If you like woodcraft and don't see anything on this list that interests you, I don't really know what to say. If you do partake, I hope it's a great time!
