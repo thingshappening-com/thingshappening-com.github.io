@@ -226,7 +226,7 @@ Documentation:
 - imported more subscribers
 
 (27) 6/13 (I've lacked motivation and work has been hard)
-- Townsend finish
+- Townsend finish - X
 - Add that one ladies events
 - Add the woodworking events
 
