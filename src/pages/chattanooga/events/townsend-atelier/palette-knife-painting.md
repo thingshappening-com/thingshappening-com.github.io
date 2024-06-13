@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-08-05", "2024-08-12", "2024-08-19", "2024-08-26"]
   eventLink: "https://townsendatelier.com/product/palette-knife-painting-techniques-with-mia-bergeron/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art","craft", "townsend-atelier"]
   time: "5:30pm - 8:30pm"
   entranceCost: "$400"
   layout: "../../../../layouts/BlogPostLayout.astro"

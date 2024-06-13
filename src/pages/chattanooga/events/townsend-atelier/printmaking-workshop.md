@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-08-16", "2024-08-17", "2024-08-18"]
   eventLink: "https://townsendatelier.com/product/3-day-printmaking-workshop-pochoir-meets-collagraphy/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art","craft", "townsend-atelier"]
   time: "10am - 3pm"
   entranceCost: "$220"
   layout: "../../../../layouts/BlogPostLayout.astro"

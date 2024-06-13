@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-08-24", "2024-08-25"]
   eventLink: "https://townsendatelier.com/product/try-oil-painting-just-bring-yourself/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art","craft", "townsend-atelier"]
   time: "10am - 5pm"
   entranceCost: "$225"
   layout: "../../../../layouts/BlogPostLayout.astro"

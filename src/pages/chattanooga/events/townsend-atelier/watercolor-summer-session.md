@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-08-05", "2024-08-12", "2024-08-19", "2024-08-26"]
   eventLink: "https://townsendatelier.com/product/beginning-watercolor-spring-session/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art", "craft", "townsend-atelier"]
   time: "9am - 12pm"
   entranceCost: "$170"
   layout: "../../../../layouts/BlogPostLayout.astro"

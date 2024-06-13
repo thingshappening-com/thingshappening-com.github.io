@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-07-08", "2024-07-09", "2024-07-10", "2024-07-11", "2024-07-12"]
   eventLink: "https://townsendatelier.com/product/5-day-oil-painting-bootcamp-for-beginners-2/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art","craft", "townsend-atelier"]
   time: "10am - 4pm"
   entranceCost: "$600"
   layout: "../../../../layouts/BlogPostLayout.astro"

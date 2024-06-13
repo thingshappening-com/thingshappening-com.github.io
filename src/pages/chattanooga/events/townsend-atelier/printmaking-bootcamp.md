@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-07-15", "2024-07-16", "2024-07-17", "2024-07-18", "2024-07-19"]
   eventLink: "https://townsendatelier.com/product/printmaking-bootcamp-for-adults/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art","craft", "townsend-atelier"]
   time: "10am - 3pm"
   entranceCost: "$550"
   layout: "../../../../layouts/BlogPostLayout.astro"

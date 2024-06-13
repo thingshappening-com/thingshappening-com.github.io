@@ -5,7 +5,7 @@
   iconPath: "/images/icons/art.png"
   eventDates: ["2024-06-06", "2024-06-13", "2024-06-20", "2024-06-27", "2024-07-04", "2024-07-11", "2024-07-18", "2024-07-25", "2024-08-01", "2024-08-08", "2024-08-15", "2024-08-22", "2024-08-29", "2024-09-05", "2024-09-12", "2024-09-19", "2024-09-26"]
   eventLink: "https://townsendatelier.com/product/life-drawing-open-studio/"
-  tags: ["art", "townsend-atelier"]
+  tags: ["art","craft", "townsend-atelier"]
   time: "6pm - 9pm"
   entranceCost: "$10 - 15"
   layout: "../../../../layouts/BlogPostLayout.astro"

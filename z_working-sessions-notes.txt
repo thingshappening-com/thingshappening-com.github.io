@@ -227,7 +227,7 @@ Documentation:
 
 (27) 6/13 (I've lacked motivation and work has been hard)
 - Townsend finish - X
-- Add that one ladies events
+- Add that one ladies events and message her - X
 - Add the woodworking events
 
 Next website working session:

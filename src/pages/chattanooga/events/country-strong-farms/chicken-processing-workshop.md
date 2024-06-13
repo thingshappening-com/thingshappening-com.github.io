@@ -5,7 +5,7 @@
   iconPath: "/images/icons/barn.png"
   eventDates: ["2024-07-26"]
   eventLink: "https://www.facebook.com/profile.php?id=100082276099621"
-  tags: ["farm", "outdoors"]
+  tags: ["farm", "outdoors", "country-strong-farms"]
   time: "6pm - 9pm"
   entranceCost: "$80"
   layout: "../../../../layouts/BlogPostLayout.astro"
