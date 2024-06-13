@@ -229,9 +229,9 @@ Documentation:
 - Townsend finish - X
 - Add that one ladies events and message her - X
 - Add the woodworking events june - x
-- Add the woodworking events july - 
-- Add the woodworking events august -
-- Add the summer camp -  
+- Add the woodworking events july - x
+- Add the woodworking events august - 
+- Add the summer camp - 
 
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
