@@ -225,6 +225,11 @@ Documentation:
 - pounded out affiliate page for bookshelf
 - imported more subscribers
 
+(27) 6/13 (I've lacked motivation and work has been hard)
+- Townsend finish
+- Add that one ladies events
+- Add the woodworking events
+
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
 - - Padding for event website link, underline event website link
@@ -260,4 +265,5 @@ Mailer lite tips:
 3. Try creating the links outside of the unordered list first and then paste them into the list items.
 4. If the issue persists, please provide more details or screenshots so we can investigate further.
 
-1% improvements
+- 1% improvements
+- I can automate this. I just need to try, it'll be after 20 vendors and 20 posts, but I can get there. Ask scott.

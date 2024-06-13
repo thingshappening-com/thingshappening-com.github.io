@@ -11,8 +11,8 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-Perfect for beginners or those needing a refresher, this watercolor class led by Durinda Cheek at Townsend Atelier covers all the essentials. Durinda will guide participants through understanding the medium and materials, teaching versatile techniques, color mixing, and paint application. With demonstrations and exercises, no prior painting or drawing experience is necessary. Discover the joy of watercolor in a friendly, supportive environment.
-
+Every Monday for 4 weeks. Perfect for beginners or those needing a refresher, this watercolor class led by Durinda Cheek at Townsend Atelier covers all the essentials. Durinda will guide participants through understanding the medium and materials, teaching versatile techniques, color mixing, and paint application. With demonstrations and exercises, no prior painting or drawing experience is necessary. Discover the joy of watercolor in a friendly, supportive environment.
+<br><br>
 Pre-registration required. Masks optional.
-
+<br><br>
 Materials can be purchased at Townsend Atelier’s store with a 20% discount (excluding brushes) on the event website

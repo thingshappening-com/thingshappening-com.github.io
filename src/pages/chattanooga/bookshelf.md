@@ -78,7 +78,7 @@ Reed has also published volumes of poetry, such as <a target="_blank" href="http
 <br><br>
 She gained wider recognition for her steampunk series, "The Clockwork Century," beginning with <a href="https://amzn.to/3wWp84p" target="_blank">"Boneshaker"</a> (2009). The novel is set in an alternate history Seattle during the Civil War and involves zombies, airships, and adventure. The series includes several other novels, such as "Dreadnought" and "Ganymede.". You can check out her other works here
 
-<h2 class="bookstore-h2">Local Bookstores</h2>
+<h2 class="bookstore-h2" id="bookstores">Local Bookstores</h2>
 
 <a href="https://www.thebookandcover.com/" target="_blank">**The Book & Cover**</a> &nbsp; A cozy new addition to Chattanooga’s bookstore scene, The Book & Cover offers a selection of new books with a focus on contemporary fiction and children’s literature. They also have a charming café inside.
 
