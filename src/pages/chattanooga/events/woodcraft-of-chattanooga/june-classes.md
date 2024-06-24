@@ -4,7 +4,7 @@
   address: "5824 Brainerd Road
 Chattanooga, TN 37411"
   iconPath: "/images/icons/craftsman.png"
-  eventDates: ["2024-06-15", "2024-06-17", "2024-06-18", "2024-06-20", "2024-06-21", "2024-06-22", "2024-06-23", "2024-06-24", "2024-06-25", "2024-06-28", "2024-06-29"]
+  eventDates: ["2024-06-15", "2024-06-17", "2024-06-18", "2024-06-20", "2024-06-21", "2024-06-22", "2024-06-23", "2024-06-25", "2024-06-28", "2024-06-29"]
   eventLink: "https://www.woodcraft.com/pages/store-classes/chattanooga"
   tags: ["woodworking", "craft", "woodcraft-of-chattanooga"]
   time: "Varies"
@@ -65,8 +65,8 @@ If you like woodcraft and don't see anything on this list that interests you, I 
   console.log(window.location.pathname.split("/"))
   console.log(window.location.pathname.split("/").pop())
 
-  let elId = window.location.pathname.split("/").pop();
-
+  let pathSplit = window.location.pathname.split("/");
+  let elId = pathSplit[pathSplit.length - 2];
   let els = document.getElementsByClassName(elId);
   console.log(els);
   Array.from(els).forEach((el) => el.classList.add("highlighted-date"));
