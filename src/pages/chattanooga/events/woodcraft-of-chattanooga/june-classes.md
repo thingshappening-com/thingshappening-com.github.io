@@ -17,44 +17,58 @@ The sheer number of classes and events Woodcraft puts on is impressive! If you'r
 <br>
 <b><p style="font-size: 20px;"> Classes:</p></b>
 <br>
-<b>June 14th and 15th:</b> Woodworking Fundamentals III
+<b class="2024-06-14 2024-06-15">June 14th and 15th:</b> Woodworking Fundamentals III
 <br>
-<b>June 15th:</b> Making a plant stand
+<b class="2024-06-15">June 15th:</b> Making a plant stand
 <br>
-<b>June 16th:</b> Wine Bottle Holder
+<b class="2024-06-16">June 16th:</b> Wine Bottle Holder
 <br>
-<b>June 17th:</b> Intro to Wood Burning
+<b class="2024-06-17">June 17th:</b> Intro to Wood Burning
 <br>
-<b>June 18th:</b> Kids Woodworking 101: Wood Burning
+<b class="2024-06-18">June 18th:</b> Kids Woodworking 101: Wood Burning
 <br>
-<b>June 18th:</b> Making a Custom Knife
+<b class="2024-06-18">June 18th:</b> Making a Custom Knife
 <br>
-<b>June 20th and 21st:</b> Kitchen Cabinetmaking 101: Boxes and Frames
+<b class="2024-06-20 2024-06-21">June 20th and 21st:</b> Kitchen Cabinetmaking 101: Boxes and Frames
 <br>
-<b>June 20th:</b> Making a Custom Knife
+<b class="2024-06-20">June 20th:</b> Making a Custom Knife
 <br>
-<b>June 22nd:</b> Kitchen Cabinetmaking 102: Dovetailed Drawers
+<b class="2024-06-22">June 22nd:</b> Kitchen Cabinetmaking 102: Dovetailed Drawers
 <br>
-<b>June 22nd:</b> Journey Thru Joinery: Stopped Mortise-and-Tenons
+<b class="2024-06-22">June 22nd:</b> Journey Thru Joinery: Stopped Mortise-and-Tenons
 <br>
-<b>June 22nd:</b> Journey Thru Joinery: Through Dovetails
+<b class="2024-06-22">June 22nd:</b> Journey Thru Joinery: Through Dovetails
 <br>
-<b>June 22nd:</b> Intro to Turning
+<b class="2024-06-22">June 22nd:</b> Intro to Turning
 <br>
-<b>June 22nd:</b> Date Night: Serving Tray
+<b class="2024-06-22">June 22nd:</b> Date Night: Serving Tray
 <br>
-<b>June 23rd:</b> Handcut Dovetails
+<b class="2024-06-23">June 23rd:</b> Handcut Dovetails
 <br>
-<b>June 25th:</b> Bandsaw Box
+<b class="2024-06-25">June 25th:</b> Bandsaw Box
 <br>
-<b>June 28th:</b> Date Night: Floating Shelves
+<b class="2024-06-28">June 28th:</b> Date Night: Floating Shelves
 <br>
-<b>June 29th:</b> Fine Furniture 100: Hand Tool Workshop
+<b class="2024-06-29">June 29th:</b> Fine Furniture 100: Hand Tool Workshop
 <br>
-<b>June 29th:</b> Parent/Child Plant Stand
+<b class="2024-06-29">June 29th:</b> Parent/Child Plant Stand
 <br>
-<b>June 29th:</b> Bowl Turning 101, The Basics
+<b class="2024-06-29">June 29th:</b> Bowl Turning 101, The Basics
 <br>
-<b>June 29th:</b> Sawdust Social: Planter Box
+<b class="2024-06-29">June 29th:</b> Sawdust Social: Planter Box
 <br><br>
 If you like woodcraft and don't see anything on this list that interests you, I don't really know what to say. If you do partake, I hope it's a great time!
+
+<script is:inline>
+  console.log("hello")
+  console.log(window.location.pathname)
+  console.log(window.location.pathname.split("/"))
+  console.log(window.location.pathname.split("/").pop())
+
+  let elId = window.location.pathname.split("/").pop();
+
+  let els = document.getElementsByClassName(elId);
+  console.log(els);
+  Array.from(els).forEach((el) => el.classList.add("highlighted-date"));
+  
+</script>

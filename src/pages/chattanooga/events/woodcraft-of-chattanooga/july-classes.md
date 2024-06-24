@@ -74,3 +74,7 @@ The sheer number of classes and events Woodcraft puts on is impressive! If you'r
 <br><br>
 
 If you like woodcraft and don't see anything on this list that interests you, I don't really know what to say. If you do partake, I hope it's a great time!
+
+<script is:inline>
+  console.log("hello")
+</script>

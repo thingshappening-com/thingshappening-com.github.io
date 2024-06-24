@@ -1,0 +1,19 @@
+Documentation:
+- Define a slot - The <slot /> element is a placeholder for external HTML content, allowing you to inject (or “slot”) child elements from other files into your component template. By default, all child elements passed to a component will be rendered in its <slot />. BlogPostLayout renders a <slot> within <BlogPost>, which contains the contents from the markdown
+- Routing for multiple cities - all routing for content is by directories underneath pages - ex Pages -> Chattanooga -> Events, Attractions. I think Ill need to update the tagging functionality to get Astro.glob for multiple .md paths if it doesn’t get them all properly from the /pages top level
+- Tags
+    - Defined in markdown
+    - Rendered as links in post.tags.map((t) => <a href={`/tag/${t}`} class="transition-all duration-75 h-fit inline pr-2">{`#${t}`}</a>)
+    - Because the link is to a /tag path it will look for that under /pages
+    - [tag].md allows it to be a dynamic route /tag/${t}
+- Multiple dates
+    - eventDates key in .md files
+    - In the src/pages/chattanooga/events/index.astro added logic to iterate over the events, create a new object from the frontmatter and adds each date as a new post that includes a pubDate of the given date
+- How does a blog post get rendered
+- Dynamic routes explained (as well as I can)
+    - Need to define [paramvalue].astro - paramvalue also needs to be exported from getStaticPaths in the form of [
+    -   { params: { date: '2024-05-09' } },
+    -   { params: { date: '2024-05-10' } },
+    -   { params: { date: '2024-05-11' } }
+    - ]
+    - Where date is equal to paramvalue
