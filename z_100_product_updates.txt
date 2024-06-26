@@ -9,6 +9,7 @@ And will have a bunch of Amo to start promoting again
 5. X - limit character spacing affiliate page links and increase font size
 6. X - Add book emoji, change from local bookshelf to just bookshelf
 7. X - standardize event list pages layouts
+8. X - blogpostlayout width increase to 4xl
 
 
 Options:
@@ -17,7 +18,6 @@ Options:
 - Adsense troubleshooting
 - Move it to an object (eventsDetails: [{}])
 - All calendar filter and store filter navigation
-- create layout for stores that's wider on desktop
 - Add the library book store sale
 - list tags and links to tags in blog post of event
 - add calendar integrations (this is 2 or 3 separate updates)
