@@ -17,6 +17,7 @@ Options:
 - Adsense troubleshooting
 - Move it to an object (eventsDetails: [{}])
 - All calendar filter and store filter navigation
+- create layout for stores that's wider on desktop
 - Add the library book store sale
 - list tags and links to tags in blog post of event
 - add calendar integrations (this is 2 or 3 separate updates)
