@@ -1,5 +1,5 @@
 ---
-  title: "Bookshelf"
+  title: "Chattanooga Bookshelf"
   layout: "../../layouts/BlogPostLayout.astro"
 ---
 
