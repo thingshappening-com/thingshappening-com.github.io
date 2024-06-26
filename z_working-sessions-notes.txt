@@ -233,7 +233,16 @@ Documentation:
 - Add the woodworking events august - 
 
 (28) 6/24 
-- highlight events in date lists (woodcraft, tvcu, etc)
+- X - highlight events in date lists (woodcraft, tvcu, etc)
+
+(29) 6/26
+1. X - Highlight event list page functionality
+2. X - Add that functionality to remaining pages (tvcu and market square)
+3. X - Underline external website links on card
+4. X - Remove stupidity from affiliate page
+5. X - limit character spacing affiliate page links and increase font size
+6. X - Add book emoji, change from local bookshelf to just bookshelf
+7. X - standardize event list pages layouts
 
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
