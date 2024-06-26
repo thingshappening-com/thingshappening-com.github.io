@@ -19,33 +19,33 @@ The festivities begin with concession stands opening at 6:00 pm*, followed by li
 <br>
 <b><p style="font-size: 20px;"> Lineup:</p></b>
 <br>
-<b>May 25th:</b> A1A: A TRIBUTE TO JIMMY BUFFET BAND and OGYA WORLD MUSIC BAND
+<b class="2024-05-25">May 25th:</b> A1A: A TRIBUTE TO JIMMY BUFFET BAND and OGYA WORLD MUSIC BAND
 <br>
-<b>June 1st:</b> STRUNG LIKE A HORSE and LENOX HILLS
+<b class="2024-06-01">June 1st:</b> STRUNG LIKE A HORSE and LENOX HILLS
 <br>
-<b>June 8th:</b> THE MCCRARY SISTERS and LUKE SIMMONS & THE LOVESTRUCK
+<b class="2024-06-08">June 8th:</b> THE MCCRARY SISTERS and LUKE SIMMONS & THE LOVESTRUCK
 <br>
-<b>June 15th:</b> R&B INC & BEE TAYLOR
+<b class="2024-06-15">June 15th:</b> R&B INC & BEE TAYLOR
 <br>
-<b>June 29nd:</b> ON THE BORDER: A TRIBUTE TO THE EAGLES and BIAS
+<b class="2024-06-29">June 29nd:</b> ON THE BORDER: A TRIBUTE TO THE EAGLES and BIAS
 <br>
-<b>July 6th:</b> RUBIKS GROOVE and SCOTT MULVAHILL
+<b class="2024-07-06">July 6th:</b> RUBIKS GROOVE and SCOTT MULVAHILL
 <br>
-<b>July 13th:</b> THE PETERSON BROTHERS and SWAYYVO
+<b class="2024-07-13">July 13th:</b> THE PETERSON BROTHERS and SWAYYVO
 <br>
-<b>July 20th:</b> EARTH TO MARS: A BRUNO MARS EXPERIENCE and PAUL CHILDERS BAND
+<b class="2024-07-20">July 20th:</b> EARTH TO MARS: A BRUNO MARS EXPERIENCE and PAUL CHILDERS BAND
 <br>
-<b>July 27th:</b> MIKE FARRIS & THE FORTUNATE FEW and PAUL MCDONALD & THE MOURNING DOVES
+<b class="2024-07-27">July 27th:</b> MIKE FARRIS & THE FORTUNATE FEW and PAUL MCDONALD & THE MOURNING DOVES
 <br>
-<b>August 3rd:</b> DRVIN' N CRYIN' and SCARLET LOVE CONSPIRACY
+<b class="2024-08-03">August 3rd:</b> DRVIN' N CRYIN' and SCARLET LOVE CONSPIRACY
 <br>
-<b>August 10th:</b> BACK 2 MAC: A TRIBUTE TO FLEETWOOD MAC and THE ESSENTIALS
+<b class="2024-08-10">August 10th:</b> BACK 2 MAC: A TRIBUTE TO FLEETWOOD MAC and THE ESSENTIALS
 <br>
-<b>August 17th:</b> DEPARTURE: A TRIBUTE TO JOURNEY and MOON JUICE
+<b class="2024-08-17">August 17th:</b> DEPARTURE: A TRIBUTE TO JOURNEY and MOON JUICE
 <br>
-<b>August 24th:</b> THE AFTERNOONERS and ET CETERA
+<b class="2024-08-24">August 24th:</b> THE AFTERNOONERS and ET CETERA
 <br>
-<b>August 31st:</b> THE MALEMEN: A NIGHT OF MOTOWN and RICK RUSHING * THE BLUES STRANGERS
+<b class="2024-08-31">August 31st:</b> THE MALEMEN: A NIGHT OF MOTOWN and RICK RUSHING * THE BLUES STRANGERS
 <br>
 <br>
 Visit the event website for more information
@@ -54,6 +54,6 @@ Visit the event website for more information
   let pathSplit = window.location.pathname.split("/");
   let elId = pathSplit[pathSplit.length - 2];
   let els = document.getElementsByClassName(elId);
-  console.log(els);
+
   Array.from(els).forEach((el) => el.classList.add("highlighted-date"));
 </script>
