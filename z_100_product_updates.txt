@@ -3,11 +3,12 @@ And will have a bunch of Amo to start promoting again
 
 
 1. X - Highlight event list page functionality
-2. Add that functionality to remaining pages (tvcu and market square)
+2. X - Add that functionality to remaining pages (tvcu and market square)
 3. X - Underline external website links on card
 4. X - Remove stupidity from affiliate page
 5. X - limit character spacing affiliate page links and increase font size
 6. - Add book emoji
+7. X - standardize event list pages layouts
 
 
 Options:
