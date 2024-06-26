@@ -1,0 +1,4 @@
+flyers:
+- front side a QR code for registering
+- backside a QR code for local sponsorship (include stats) links to media kit
+

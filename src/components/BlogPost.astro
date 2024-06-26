@@ -31,10 +31,10 @@ const dayOfWeek = daysOfWeek[date.getDay()];
     {venueDetails ? <div><b>Venue Details:</b> {venueDetails}</div> : ""}
     {address ? <div><b>Address:</b> {address}</div> : ""}
     {entranceCost ? <div><b>Entrance Fee:</b> {entranceCost}</div> : ""}
-    {eventLink ? <a target="_blank" class="pr-1 pt-2" href={eventLink}>Event Website</a> : ""}
+    {eventLink ? <a target="_blank" class="mr-3 mt-5 underline-pink" href={eventLink}>Event Website</a> : ""}
     {() => { 
       if(ticketsLink && ticketsLink.includes("http")) {
-        return <a target="_blank" href={ticketsLink}>Tickets Link</a>
+        return <a target="_blank" class="mr-1 mt-5 underline-pink" href={ticketsLink}>Tickets Link</a>
       } else if (ticketsLink) {
         console.log("hello")
        return <div><b>Tickets Link:</b> {ticketsLink}</div>
@@ -55,7 +55,7 @@ const dayOfWeek = daysOfWeek[date.getDay()];
   </div>}
 
   <!-- Content -->
-  <section style="margin: 0 !important" class="max-w-3xl mx-auto py-6 lg:py-12 content">
+  <section style="margin: 0 !important" class="max-w-3xl mx-auto py-3 lg:py-12 content">
     <slot />
   </section>
 

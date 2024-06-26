@@ -1,0 +1,22 @@
+After you finish 100 youll be close to 5000 and 7500
+And will have a bunch of Amo to start promoting again
+
+
+1. X - Highlight event list page functionality
+2. Add that functionality to remaining pages (tvcu and market square)
+3. X - Underline external website links on card
+4. X - Remove stupidity from affiliate page
+5. X - limit character spacing affiliate page links and increase font size
+6. - Add book emoji
+
+
+Options:
+
+- 
+- Adsense troubleshooting
+- Move it to an object (eventsDetails: [{}])
+- All calendar filter and store filter navigation
+- Add the library book store sale
+- list tags and links to tags in blog post of event
+- add calendar integrations (this is 2 or 3 separate updates)
+- write 5 posts and then add acordion (or other) navigation to them on homepage? or just link to a posts page

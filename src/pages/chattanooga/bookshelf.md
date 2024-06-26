@@ -4,14 +4,14 @@
 ---
 
 
-This ongoing project is a collection of works on the history of Chattanooga, local authors, guides, history and a list of local bookstores. By making a purchase through our Amazon links, you support local businesses, authors, and this website, as we earn an affiliate commission.
+This is a collection of works on the history of Chattanooga, local authors, guides to the outdoors + things to do, and a list of local bookstores. By making a purchase through our links, you support local businesses, authors, and this website, as we earn an affiliate commission.
 
 <div class="flex justify-evenly flex-wrap">
-  <h4 class="bookstore-h2"><a href="#setting">Chattanooga Setting</a></h4>
-  <h4 class="bookstore-h2"><a href="#guides">Guides</a></h4>
-  <h4 class="bookstore-h2"><a href="#history">History</a></h4>
-  <h4 class="bookstore-h2"><a href="#authors"> Local Authors</a></h4>
-  <h4 class="bookstore-h2"><a href="#bookstores">Local Bookstores</a></h4>
+  <h3 class="bookstore-h2"><a href="#setting">Chattanooga Setting</a></h4>
+  <h3 class="bookstore-h2"><a href="#guides">Guides</a></h4>
+  <h3 class="bookstore-h2"><a href="#history">History</a></h4>
+  <h3 class="bookstore-h2"><a href="#authors"> Local Authors</a></h4>
+  <h3 class="bookstore-h2"><a href="#bookstores">Local Bookstores</a></h4>
 </div>
 
 <br>

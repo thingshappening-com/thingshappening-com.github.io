@@ -89,6 +89,8 @@ a:hover {
   margin-top: 0 !important;
   padding-top: 0 !important;
   margin-right: 0.5em;
+  letter-spacing: 0;
+  font-size: 1.3em !important;
 }
 
 .badge-link {
@@ -105,4 +107,8 @@ a:hover {
 .highlighted-date {
   background-color: #fd2d78;
   color: white;
+}
+
+.underline-pink {
+  border-bottom: 2px solid #fd2d78;
 }

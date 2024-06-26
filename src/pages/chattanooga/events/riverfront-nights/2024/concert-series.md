@@ -49,3 +49,11 @@ The festivities begin with concession stands opening at 6:00 pm*, followed by li
 <br>
 <br>
 Visit the event website for more information
+
+<script is:inline>
+  let pathSplit = window.location.pathname.split("/");
+  let elId = pathSplit[pathSplit.length - 2];
+  let els = document.getElementsByClassName(elId);
+  console.log(els);
+  Array.from(els).forEach((el) => el.classList.add("highlighted-date"));
+</script>
