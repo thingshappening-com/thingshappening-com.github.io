@@ -1,17 +1,17 @@
 ---
-  title: "Local Bookshelf"
+  title: "Bookshelf"
   layout: "../../layouts/BlogPostLayout.astro"
 ---
 
 
-This is a collection of works on the history of Chattanooga, local authors, guides to the outdoors + things to do, and a list of local bookstores. By making a purchase through our links, you support local businesses, authors, and this website, as we earn an affiliate commission.
+This is a collection of works on the history of Chattanooga, local authors, guides to the outdoors + things to do, and a list of bookstores. By making a purchase through our links, you support local businesses, authors, and this website, as we earn an affiliate commission.
 
 <div class="flex justify-evenly flex-wrap">
   <h3 class="bookstore-h2"><a href="#setting">Chattanooga Setting</a></h4>
   <h3 class="bookstore-h2"><a href="#guides">Guides</a></h4>
   <h3 class="bookstore-h2"><a href="#history">History</a></h4>
   <h3 class="bookstore-h2"><a href="#authors"> Local Authors</a></h4>
-  <h3 class="bookstore-h2"><a href="#bookstores">Local Bookstores</a></h4>
+  <h3 class="bookstore-h2"><a href="#bookstores">bookstores</a></h4>
 </div>
 
 <br>
@@ -78,7 +78,7 @@ Reed has also published volumes of poetry, such as <a target="_blank" href="http
 <br><br>
 She gained wider recognition for her steampunk series, "The Clockwork Century," beginning with <a href="https://amzn.to/3wWp84p" target="_blank">"Boneshaker"</a> (2009). The novel is set in an alternate history Seattle during the Civil War and involves zombies, airships, and adventure. The series includes several other novels, such as "Dreadnought" and "Ganymede.". You can check out her other works here
 
-<h2 class="bookstore-h2" id="bookstores">Local Bookstores</h2>
+<h2 class="bookstore-h2" id="bookstores">bookstores</h2>
 
 <a href="https://www.thebookandcover.com/" target="_blank">**The Book & Cover**</a> &nbsp; A cozy new addition to Chattanooga’s bookstore scene, The Book & Cover offers a selection of new books with a focus on contemporary fiction and children’s literature. They also have a charming café inside.
 
