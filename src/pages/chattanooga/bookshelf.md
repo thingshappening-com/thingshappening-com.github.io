@@ -20,11 +20,21 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 <h2 class="bookstore-h2" id="setting">Chattanooga Setting</h2>
 
 <br>
-<a href="https://amzn.to/4aQqDin" target="_blank">The Girl Who Struck Out Babe Ruth</a>
+<div class="book-img-title">
+  <a href="https://amzn.to/4aQqDin" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/babe_ruth.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/4aQqDin" target="_blank">The Girl Who Struck Out Babe Ruth</a>
+  </a>
+</div>
 <br>
 In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. 
 <br><br>
-<a href="https://amzn.to/4aQqDin" target="_blank">Extended Stay</a>
+<div class="book-img-title">
+  <a href="https://amzn.to/4cAlegy" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/extended_stay.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/4cAlegy" target="_blank">Extended Stay</a>
+  </a>
+</div>
 <br>
 In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie corridors of a secluded hotel in Chattanooga. When weary traveler Ethan checks in, he anticipates a brief respite from his troubles, but the hotel's sinister secrets soon ensnare him. As he delves deeper into the mysterious disappearances and ghostly occurrences haunting the premises, Ethan must confront his darkest fears and unravel the hotel's chilling past. With each twist and turn, Cannon masterfully builds suspense, making "Extended Stay" a heart-pounding read that will keep you on the edge of your seat until the final, shocking revelation.
 <br><br>
@@ -32,17 +42,33 @@ In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie c
 <h2 class="bookstore-h2" id="guides">Guides</h2>
 
 <br>
-<a href="https://amzn.to/3XdDO9U" target="_blank">100 Things to Do in Chattanooga Before You Die</a>
+<div class="book-img-title">
+  <a href="https://amzn.to/3XdDO9U" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/100_things_chatt.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/3XdDO9U" target="_blank">100 Things to Do in Chattanooga Before You Die</a>
+  </a>
+</div>
 <br>
 
 If you're looking to make the most out of your time here in Chattanooga, check out "100 Things to Do in Chattanooga Before You Die" by Alexi Ruth Engesath. The book is full of must-see spots and hidden gems that make Chattanooga such a amazing place.
 <br><br>
 You'll find everything from epic outdoor adventures and awesome dining spots to cultural attractions and fun activities for the family. The book is easy to navigate, with detailed descriptions and helpful tips for each activity. 
 <br><br>
-<a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
+<div class="book-img-title">
+  <a href="https://amzn.to/4c7KASG" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/landmarks.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
+  </a>
+</div>
+<br>
 This book dives into the rich history of Chattanooga, highlighting key landmarks that have shaped the city. It’s packed with interesting stories and details about places like Lookout Mountain, the Tennessee River, and historic downtown spots. Each landmark is brought to life with engaging narratives and beautiful photos. If you're curious about the city’s past, this book is a great guide to understanding what makes Chattanooga so special.
 <br><br>
-<a href="https://amzn.to/45hUajY" target="_blank">Five-Star Trails: Chattanooga: 40 Spectacular Hikes in and Around the Scenic City</a>
+<div class="book-img-title">
+  <a href="https://amzn.to/45hUajY" class="mr-2p5" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/five_star_trails_chatt.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/45hUajY" target="_blank">Five-Star Trails: Chattanooga: 40 Spectacular Hikes in and Around the Scenic City</a>
+  </a>
+</div>
 <br>
 Written for both novice and experienced hikers, the book highlights the diverse natural beauty of the region with trails featuring stunning views, waterfalls, and historical sites. Each hike comes with a comprehensive description, including trail length, difficulty level, estimated hiking time, and elevation changes. The guide also provides valuable local insights, including the best seasons to hike and practical tips for preparation.
 <br><br>
@@ -63,9 +89,23 @@ Accessibility information for different needs.
 <h2 class="bookstore-h2" id="history">History Books</h2>
 <br>
 
-<a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>. Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
-
-<a href="https://amzn.to/3KxPQmZ" target="_blank">Chattanooga (Then & Now: Tennessee)</a> by Rob Clifton brings you on a journey through the city's history. This book pairs historical photographs with contemporary images, revealing the changes in Chattanooga's landmarks, streets, and neighborhoods. Clifton’s commentary provides context, illustrating how the city has evolved while preserving its heritage. This visual narrative is a valuable resource for anyone interested in Chattanooga's past and present, offering a unique perspective on the city's transformation over the years. Explore the rich history and ongoing development of Chattanooga in this compelling photographic collection.
+<div class="book-img-title">
+  <a href="https://amzn.to/3x723vN" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/hidden_history.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>
+  </a>
+</div>
+<br>
+Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
+<br><br>
+<div class="book-img-title">
+  <a href="https://amzn.to/3KxPQmZ" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/then_and_now.jpg" class="book-size mr-2p5">
+    <a href="https://amzn.to/3KxPQmZ" target="_blank">Chattanooga (Then & Now: Tennessee)</a>
+  </a>
+</div>
+<br>
+Rob Clifton brings you on a journey through the city's history. This book pairs historical photographs with contemporary images, revealing the changes in Chattanooga's landmarks, streets, and neighborhoods. Clifton’s commentary provides context, illustrating how the city has evolved while preserving its heritage. This visual narrative is a valuable resource for anyone interested in Chattanooga's past and present, offering a unique perspective on the city's transformation over the years. Explore the rich history and ongoing development of Chattanooga in this compelling photographic collection.
 
 <h2 id="authors">Local Authors</h2>
 
