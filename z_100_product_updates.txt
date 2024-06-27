@@ -11,6 +11,11 @@ And will have a bunch of Amo to start promoting again
 7. X - standardize event list pages layouts
 8. X - blogpostlayout width increase to 4xl
 
+9. X - remove mas comma's from affiliate page add disclaimer line
+10. X - Add ghost gift store page
+11. - add tag links to event posts
+11. - Move nav into its own component for reusability
+
 
 Options:
 

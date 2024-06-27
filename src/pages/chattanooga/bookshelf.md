@@ -4,7 +4,9 @@
 ---
 
 
-This is a collection of works on the history of Chattanooga, local authors, guides to the outdoors + things to do, and a list of bookstores. By making a purchase through our links, you support local businesses, authors, and this website, as we earn an affiliate commission.
+This is a collection of works on the history of Chattanooga, local authors, guides to the outdoors + things to do, and a list of bookstores. By making a purchase through our links you support local businesses, authors, and this website.
+
+*This website earns an affiliate commission when you make a purchase below*
 
 <div class="flex justify-evenly flex-wrap">
   <h3 class="bookstore-h2"><a href="#setting">Local Setting</a></h4>
