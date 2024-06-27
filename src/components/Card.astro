@@ -38,7 +38,7 @@ const dayOfWeek = daysOfWeek[date.getDay()];
             console.log(highlighted);
             const highlight = t == highlighted ? 'font-semibold' : ''
             console.log(highlight);
-            return <a href={`/tag/${t}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}>{`#${t}`}</a>
+            return <a href={`/tag/${t}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span style="color: #fd2d78">#</span>{`${t}`}</a>
           })
         ) : (
           <span>Tags are not an array.</span>
