@@ -15,7 +15,7 @@ And will have a bunch of Amo to start promoting again
 10. X - Add ghost gift store page
 11. X - add tag links to event posts
 12. X - Make # pink on card and blog post links
-13. - Move nav into its own component for reusability
+13. X - Move nav into its own component for reusability
 13. - show multi event titles on card
 
 
