@@ -50,7 +50,7 @@ const dayOfWeek = daysOfWeek[date.getDay()];
       {tags && tags.length > 0 && (
         <ul>
           {tags.map(tag => (
-            <a class="mr-3" href={`/${tag}`}><span style="color: #fd2d78">#</span>{tag}</a>
+            <a class="mr-3" href={`/tag/${tag}`}><span style="color: #fd2d78">#</span>{tag}</a>
           ))}
         </ul>
       )}

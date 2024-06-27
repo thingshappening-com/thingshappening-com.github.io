@@ -235,7 +235,7 @@ Documentation:
 (28) 6/24 
 - X - highlight events in date lists (woodcraft, tvcu, etc)
 
-(29) 6/26
+(29) 6/25
 1. X - Highlight event list page functionality
 2. X - Add that functionality to remaining pages (tvcu and market square)
 3. X - Underline external website links on card
@@ -243,6 +243,13 @@ Documentation:
 5. X - limit character spacing affiliate page links and increase font size
 6. X - Add book emoji, change from local bookshelf to just bookshelf
 7. X - standardize event list pages layouts
+
+(30) 6/26
+9. X - remove mas comma's from affiliate page add disclaimer line
+10. X - Add ghost gift store page
+11. X - add tag links to event posts
+12. X - Make # pink on card and blog post links
+13. X - Move nav into its own component for reusability
 
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
