@@ -2,6 +2,7 @@
 import Card from '../../components/Card.astro';
 import HomeHeader from '../../components/HomeHeader.astro';
 import Nav from '../../components/Nav.astro';
+import SubNav from '../../components/SubNav.astro';
 import BaseHead from '../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
@@ -76,16 +77,7 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
         <HomeHeader title={`#${tag}`} description={description} />
         <div class="ml-embedded" data-form="ZoK6PR"></div>
   
-        <div class="date-filter-options">
-          <a href="/chattanooga/events/this-weekend">This Weekend</a>
-          <a href="/chattanooga/events/this-week">This Week</a>
-          <a href="/chattanooga/events/all-weekends">Future Weekends</a>
-          <a href="/chattanooga/events/this-month">This Month</a>
-          <a href="/tag/free">#free</a>
-          <a href="/tag/kid-friendly">#kid-friendly</a>
-          <a href="/chattanooga/bookshelf">Bookshelf <span style="color: #fd2d78;">📕</span></a>
-          <a href="/chattanooga/giftshop">Giftshop <span style="color: #fd2d78;">🎁</span></a>
-        </div>
+        <SubNav />
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
           {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
             <Card post={p} highlighted={tag} />
