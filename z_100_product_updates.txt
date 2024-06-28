@@ -18,10 +18,10 @@ And will have a bunch of Amo to start promoting again
 13. X - Move nav into its own component for reusability
 
 14. X - Add photos to all bookshelf posts
-15. - Author, published year, chattanooga relation
-Author, published year, chattanooga relation
-Author, published year, chattanooga relation
-Author, published year, chattanooga relation
+15. X - Author, published year, chattanooga relation
+X - Author, published year, chattanooga relation
+X - Author, published year, chattanooga relation
+X - Author, published year, chattanooga relation
 Author, published year, chattanooga relation
 Author, published year, chattanooga relation
 Author, published year, chattanooga relation

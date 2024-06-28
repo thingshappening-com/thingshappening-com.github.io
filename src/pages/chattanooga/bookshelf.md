@@ -42,9 +42,9 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 </div>
 
 <br><br>
-<div class="book-img-title">
+<div class="book-img-title mb-1">
   <a href="https://amzn.to/4cAlegy" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/extended_stay.jpg" class="book-size mr-2p5">
+    <img src="/images/bookshelf_giftshop/chattanooga/extended_stay.jpg" class="book-size">
   </a>
 </div>
 <div class="mb-0p5">
@@ -63,9 +63,11 @@ This is a collection of works on the history of Chattanooga, local authors, guid
   <b>Overview:</b> In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie corridors of a secluded hotel in Chattanooga. When weary traveler Ethan checks in, he anticipates a brief respite from his troubles, but the hotel's sinister secrets soon ensnare him. As he delves deeper into the mysterious disappearances and ghostly occurrences haunting the premises, Ethan must confront his darkest fears and unravel the hotel's chilling past. With each twist and turn, Cannon masterfully builds suspense, making "Extended Stay" a heart-pounding read that will keep you on the edge of your seat until the final, shocking revelation. <span></span>
 </div>
 
-<h2 class="books<br>tore-h2" id="guides">Guides</h2>
+
 <br><br>
-<div class="book-img-title">
+<h2 class="bookstore-h2 mb-1" id="guides">Guides</h2>
+<br>
+<div class="book-img-title mb-1">
   <a href="https://amzn.to/3XdDO9U" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/100_things_chatt.jpg" class="book-size mr-2p5">
   </a>
@@ -74,29 +76,39 @@ This is a collection of works on the history of Chattanooga, local authors, guid
   <a href="https://amzn.to/3XdDO9U" target="_blank">100 Things to Do in Chattanooga Before You Die</a>
 </div>
 <div class="mb-0p2">
-  <b>Author:</b> Bradley Cannon<span></span>
+  <b>Author:</b> Alexi Ruth Engesath<span></span>
 </div>
 <div class="mb-0p2">
-  <b>Published Year:</b> 2014<span></span>
+  <b>Published Year:</b> 2018<span></span>
 </div>
 <div class="mb-0p2">
-  <b>Chattanooga Relation:</b> Fiction novel set in Chattanooga. In "Extended Stay" by Bradley Cannon, weary traveler Ethan checks into a Chattanooga hotel, uncovering its sinister secrets and confronting ghostly occurrences and mysterious disappearances in a gripping thriller.. <span></span>
-</div>
-<div class="mb-0p2">
-  <b>Overview:</b> If you're looking to make the most out of your time here in Chattanooga, check out "100 Things to Do in Chattanooga Before You Die" by Alexi Ruth Engesath. The book is full of must-see spots and hidden gems that make Chattanooga such a amazing place.
-  <br><br>
-  You'll find everything from epic outdoor adventures and awesome dining spots to cultural attractions and fun activities for the family. The book is easy to navigate, with detailed descriptions and helpful  tips for each activity. 
+  <b>Overview:</b> If you're looking to make the most out of your time here in Chattanooga, check out "100 Things to Do in Chattanooga Before You Die" by Alexi Ruth Engesath. The book is full of must-see spots and hidden gems that make Chattanooga such a amazing place. You'll find everything from epic outdoor adventures and awesome dining spots to cultural attractions and fun activities for the family. The book is easy to navigate, with detailed descriptions and helpful  tips for each activity. 
 </div>
 
 <br><br>
-<div class="book-img-title">
+
+<br><br>
+<h2 class="bookstore-h2 mb-1" id="guides">Guides</h2>
+<br>
+<div class="book-img-title mb-1">
   <a href="https://amzn.to/4c7KASG" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/landmarks.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
   </a>
 </div>
-<br>
-This book dives into the rich history of Chattanooga, highlighting key landmarks that have shaped the city. It’s packed with interesting stories and details about places like Lookout Mountain, the Tennessee River, and historic downtown spots. Each landmark is brought to life with engaging narratives and beautiful photos. If you're curious about the city’s past, this book is a great guide to understanding what makes Chattanooga so special.
+<div class="mb-0p5">
+  <a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jennifer Crutchfield<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2010<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> This book dives into the rich history of Chattanooga, highlighting key landmarks that have shaped the city. It’s packed with interesting stories and details about places like Lookout Mountain, the Tennessee River, and historic downtown spots. Each landmark is brought to life with engaging narratives and beautiful photos. If you're curious about the city’s past, this book is a great guide to understanding what makes Chattanooga so special.
+</div>
+
+
 <br><br>
 <div class="book-img-title">
   <a href="https://amzn.to/45hUajY" class="mr-2p5" target="_blank">
@@ -120,6 +132,7 @@ Key features of the book:
 5. Photography capturing the region's beauty.
 Accessibility information for different needs.
 <br><br>
+
 
 <h2 class="bookstore-h2" id="history">History Books</h2>
 <br>
