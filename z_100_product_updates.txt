@@ -22,8 +22,7 @@ And will have a bunch of Amo to start promoting again
 X - Author, published year, chattanooga relation
 X - Author, published year, chattanooga relation
 X - Author, published year, chattanooga relation
-Author, published year, chattanooga relation
-Author, published year, chattanooga relation
+X - Author, published year, chattanooga relation
 Author, published year, chattanooga relation
 16. - update mobile view
 17. - update local authors section to match

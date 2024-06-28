@@ -64,8 +64,8 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 </div>
 
 
-<br><br>
-<h2 class="bookstore-h2 mb-1" id="guides">Guides</h2>
+<br>
+<h2 class="bookstore-h2 mt-3" id="guides">Guides</h2>
 <br>
 <div class="book-img-title mb-1">
   <a href="https://amzn.to/3XdDO9U" target="_blank">
@@ -87,9 +87,6 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 
 <br><br>
 
-<br><br>
-<h2 class="bookstore-h2 mb-1" id="guides">Guides</h2>
-<br>
 <div class="book-img-title mb-1">
   <a href="https://amzn.to/4c7KASG" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/landmarks.jpg" class="book-size mr-2p5">
@@ -108,16 +105,24 @@ This is a collection of works on the history of Chattanooga, local authors, guid
   <b>Overview:</b> This book dives into the rich history of Chattanooga, highlighting key landmarks that have shaped the city. It’s packed with interesting stories and details about places like Lookout Mountain, the Tennessee River, and historic downtown spots. Each landmark is brought to life with engaging narratives and beautiful photos. If you're curious about the city’s past, this book is a great guide to understanding what makes Chattanooga so special.
 </div>
 
-
 <br><br>
-<div class="book-img-title">
-  <a href="https://amzn.to/45hUajY" class="mr-2p5" target="_blank">
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/45hUajY" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/five_star_trails_chatt.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/45hUajY" target="_blank">Five-Star Trails: Chattanooga: 40 Spectacular Hikes in and Around the Scenic City</a>
   </a>
 </div>
-<br>
-Written for both novice and experienced hikers, the book highlights the diverse natural beauty of the region with trails featuring stunning views, waterfalls, and historical sites. Each hike comes with a comprehensive description, including trail length, difficulty level, estimated hiking time, and elevation changes. The guide also provides valuable local insights, including the best seasons to hike and practical tips for preparation.
+<div class="mb-0p5">
+  <a href="https://amzn.to/45hUajY" target="_blank">Five-Star Trails: Chattanooga: 40 Spectacular Hikes in and Around the Scenic City</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Johnny Molloy<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2020<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> Written for both novice and experienced hikers, the book highlights the diverse natural beauty of the region with trails featuring stunning views, waterfalls, and historical sites. Each hike comes with a comprehensive description, including trail length, difficulty level, estimated hiking time, and elevation changes. The guide also provides valuable local insights, including the best seasons to hike and practical tips for preparation.
 <br><br>
 Key features of the book:
 <br>
@@ -132,6 +137,7 @@ Key features of the book:
 5. Photography capturing the region's beauty.
 Accessibility information for different needs.
 <br><br>
+</div>
 
 
 <h2 class="bookstore-h2" id="history">History Books</h2>
@@ -140,11 +146,45 @@ Accessibility information for different needs.
 <div class="book-img-title">
   <a href="https://amzn.to/3x723vN" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/hidden_history.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>
   </a>
 </div>
 <br>
-Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
+<div class="mb-0p5">
+ <a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b>  Alexandra Walker Clark<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2008<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
+</div>
+
+<div class="book-img-title">
+  <a href="https://amzn.to/3x723vN" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/hidden_history.jpg" class="book-size mr-2p5">
+  </a>
+</div>
+<br>
+<div class="mb-0p5">
+ <a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b>  Alexandra Walker Clark<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2008<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
+</div>
+
+
+
+
+
 <br><br>
 <div class="book-img-title">
   <a href="https://amzn.to/3KxPQmZ" target="_blank">
