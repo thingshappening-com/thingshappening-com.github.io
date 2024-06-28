@@ -162,38 +162,30 @@ Accessibility information for different needs.
   <b>Overview:</b> Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
 </div>
 
-<div class="book-img-title">
-  <a href="https://amzn.to/3x723vN" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/hidden_history.jpg" class="book-size mr-2p5">
+<br><br>
+
+<div class="book-img-title mt-3">
+  <a href="https://amzn.to/3KxPQmZ" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/then_and_now.jpg" class="book-size mr-2p5">   
   </a>
 </div>
 <br>
+
 <div class="mb-0p5">
- <a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>
+ <a href="https://amzn.to/3KxPQmZ" target="_blank">Chattanooga (Then & Now: Tennessee)</a>
 </div>
 <div class="mb-0p2">
-  <b>Author:</b>  Alexandra Walker Clark<span></span>
+  <b>Author:</b>   Rob Clifton<span></span>
 </div>
 <div class="mb-0p2">
-  <b>Published Year:</b> 2008<span></span>
+  <b>Published Year:</b> 2006<span></span>
 </div>
 <div class="mb-0p2">
-  <b>Overview:</b> Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
+  <b>Overview:</b> Rob Clifton brings you on a journey through the city's history. This book pairs historical photographs with contemporary images, revealing the changes in Chattanooga's landmarks, streets, and neighborhoods. Clifton’s commentary provides context, illustrating how the city has evolved while preserving its heritage. This visual narrative is a valuable resource for anyone interested in Chattanooga's past and present, offering a unique perspective on the city's transformation over the years. Explore the rich history and ongoing development of Chattanooga in this compelling photographic collection.
 </div>
-
-
-
 
 
 <br><br>
-<div class="book-img-title">
-  <a href="https://amzn.to/3KxPQmZ" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/then_and_now.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/3KxPQmZ" target="_blank">Chattanooga (Then & Now: Tennessee)</a>
-  </a>
-</div>
-<br>
-Rob Clifton brings you on a journey through the city's history. This book pairs historical photographs with contemporary images, revealing the changes in Chattanooga's landmarks, streets, and neighborhoods. Clifton’s commentary provides context, illustrating how the city has evolved while preserving its heritage. This visual narrative is a valuable resource for anyone interested in Chattanooga's past and present, offering a unique perspective on the city's transformation over the years. Explore the rich history and ongoing development of Chattanooga in this compelling photographic collection.
 
 <h2 class="bookstore-h2" id="authors">Local Authors</h2>
 
