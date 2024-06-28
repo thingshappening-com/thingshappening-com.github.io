@@ -19,11 +19,13 @@ And will have a bunch of Amo to start promoting again
 
 14. X - Add photos to all bookshelf posts
 15. X - Author, published year, chattanooga relation
-X - Author, published year, chattanooga relation
-X - Author, published year, chattanooga relation
-X - Author, published year, chattanooga relation
-X - Author, published year, chattanooga relation
-Author, published year, chattanooga relation
+17. X - Author, published year, chattanooga relation
+18. X - Author, published year, chattanooga relation
+19. X - Author, published year, chattanooga relation
+20. X - Author, published year, chattanooga relation
+21. X - Author, published year, chattanooga relation
+22. audit book links
+23. update spacing and title size
 16. - update mobile view
 17. - update local authors section to match
 18. - Add new book 1

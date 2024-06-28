@@ -17,7 +17,7 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 </div>
 
 <br>
-<h2 class="bookstore-h2" id="setting">Chattanooga Setting</h2>
+<h2 class="bookstore-h2" id="setting">Local Setting</h2>
 
 <br>
 <div class="book-img-title mb-1">

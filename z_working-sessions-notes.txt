@@ -251,6 +251,15 @@ Documentation:
 12. X - Make # pink on card and blog post links
 13. X - Move nav into its own component for reusability
 
+(31) 6/27
+14. X - Add photos to all bookshelf posts
+15. X - Author, published year, chattanooga relation
+17. X - Author, published year, chattanooga relation
+18. X - Author, published year, chattanooga relation
+19. X - Author, published year, chattanooga relation
+20. X - Author, published year, chattanooga relation
+21. X - Author, published year, chattanooga relation
+
 Next website working session:
 - - I think you might want to remove the year from the web address to make it easier to switch dates to 2025. you have the full date in the title already, you can clear out old events after a year
 - - Padding for event website link, underline event website link
