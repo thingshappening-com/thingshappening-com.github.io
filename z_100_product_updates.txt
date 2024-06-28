@@ -17,11 +17,20 @@ And will have a bunch of Amo to start promoting again
 12. X - Make # pink on card and blog post links
 13. X - Move nav into its own component for reusability
 
-14. - Add photos to all bookshelf posts
+14. X - Add photos to all bookshelf posts
 15. - Author, published year, chattanooga relation
-16. - Add 1 book
-16. - Add 1 book
-16. - Add 1 book
+Author, published year, chattanooga relation
+Author, published year, chattanooga relation
+Author, published year, chattanooga relation
+Author, published year, chattanooga relation
+Author, published year, chattanooga relation
+Author, published year, chattanooga relation
+16. - update mobile view
+17. - update local authors section to match
+18. - Add new book 1
+18. - Add new book 2
+19. - Add one new author
+17. - remove over the top language
 
 Options:
 

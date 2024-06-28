@@ -8,51 +8,86 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 
 *This website earns an affiliate commission when you make a purchase below*
 
-<div class="flex justify-evenly flex-wrap">
-  <h3 class="bookstore-h2"><a href="#setting">Local Setting</a></h4>
-  <h3 class="bookstore-h2"><a href="#guides">Guides</a></h4>
-  <h3 class="bookstore-h2"><a href="#history">History</a></h4>
-  <h3 class="bookstore-h2"><a href="#authors"> Local Authors</a></h4>
-  <h3 class="bookstore-h2"><a href="#bookstores">Bookstores</a></h4>
+<div class="flex justify-evenly flex-wrap mb-1 bookstore-nav-wrapper">
+  <h3 class="bookstore-h3"><a href="#setting">Local Setting</a></h4>
+  <h3 class="bookstore-h3"><a href="#guides">Guides</a></h4>
+  <h3 class="bookstore-h3"><a href="#history">History</a></h4>
+  <h3 class="bookstore-h3"><a href="#authors"> Local Authors</a></h4>
+  <h3 class="bookstore-h3"><a href="#bookstores">Bookstores</a></h4>
 </div>
 
 <br>
 <h2 class="bookstore-h2" id="setting">Chattanooga Setting</h2>
 
 <br>
-<div class="book-img-title">
+<div class="book-img-title mb-1">
   <a href="https://amzn.to/4aQqDin" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/babe_ruth.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/4aQqDin" target="_blank">The Girl Who Struck Out Babe Ruth</a>
+    <img src="/images/bookshelf_giftshop/chattanooga/babe_ruth.jpg" class="book-size">
   </a>
 </div>
-<br>
-In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. 
+<div class="mb-0p5">
+  <a href="https://amzn.to/4aQqDin" target="_blank">The Girl Who Struck Out Babe Ruth</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jean L. S. Patrick <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2000<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> On April 1, 1931, 17-year-old Jackie Mitchell struck out Babe Ruth and Lou Gehrig during a postponed exhibition game in Chattanooga after being brought in by Lookouts manager Bert Niehoff. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. <span></span>
+</div>
+
 <br><br>
 <div class="book-img-title">
   <a href="https://amzn.to/4cAlegy" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/extended_stay.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/4cAlegy" target="_blank">Extended Stay</a>
   </a>
 </div>
-<br>
-In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie corridors of a secluded hotel in Chattanooga. When weary traveler Ethan checks in, he anticipates a brief respite from his troubles, but the hotel's sinister secrets soon ensnare him. As he delves deeper into the mysterious disappearances and ghostly occurrences haunting the premises, Ethan must confront his darkest fears and unravel the hotel's chilling past. With each twist and turn, Cannon masterfully builds suspense, making "Extended Stay" a heart-pounding read that will keep you on the edge of your seat until the final, shocking revelation.
+<div class="mb-0p5">
+  <a href="https://amzn.to/4cAlegy" target="_blank">Extended Stay</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Bradley Cannon<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2014<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> Fiction novel set in Chattanooga. In "Extended Stay" by Bradley Cannon, weary traveler Ethan checks into a Chattanooga hotel, uncovering its sinister secrets and confronting ghostly occurrences and mysterious disappearances in a gripping thriller.. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie corridors of a secluded hotel in Chattanooga. When weary traveler Ethan checks in, he anticipates a brief respite from his troubles, but the hotel's sinister secrets soon ensnare him. As he delves deeper into the mysterious disappearances and ghostly occurrences haunting the premises, Ethan must confront his darkest fears and unravel the hotel's chilling past. With each twist and turn, Cannon masterfully builds suspense, making "Extended Stay" a heart-pounding read that will keep you on the edge of your seat until the final, shocking revelation. <span></span>
+</div>
+
+<h2 class="books<br>tore-h2" id="guides">Guides</h2>
 <br><br>
-
-<h2 class="bookstore-h2" id="guides">Guides</h2>
-
-<br>
 <div class="book-img-title">
   <a href="https://amzn.to/3XdDO9U" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/100_things_chatt.jpg" class="book-size mr-2p5">
-    <a href="https://amzn.to/3XdDO9U" target="_blank">100 Things to Do in Chattanooga Before You Die</a>
   </a>
 </div>
-<br>
+<div class="mb-0p5">
+  <a href="https://amzn.to/3XdDO9U" target="_blank">100 Things to Do in Chattanooga Before You Die</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Bradley Cannon<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2014<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> Fiction novel set in Chattanooga. In "Extended Stay" by Bradley Cannon, weary traveler Ethan checks into a Chattanooga hotel, uncovering its sinister secrets and confronting ghostly occurrences and mysterious disappearances in a gripping thriller.. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> If you're looking to make the most out of your time here in Chattanooga, check out "100 Things to Do in Chattanooga Before You Die" by Alexi Ruth Engesath. The book is full of must-see spots and hidden gems that make Chattanooga such a amazing place.
+  <br><br>
+  You'll find everything from epic outdoor adventures and awesome dining spots to cultural attractions and fun activities for the family. The book is easy to navigate, with detailed descriptions and helpful  tips for each activity. 
+</div>
 
-If you're looking to make the most out of your time here in Chattanooga, check out "100 Things to Do in Chattanooga Before You Die" by Alexi Ruth Engesath. The book is full of must-see spots and hidden gems that make Chattanooga such a amazing place.
-<br><br>
-You'll find everything from epic outdoor adventures and awesome dining spots to cultural attractions and fun activities for the family. The book is easy to navigate, with detailed descriptions and helpful tips for each activity. 
 <br><br>
 <div class="book-img-title">
   <a href="https://amzn.to/4c7KASG" target="_blank">
@@ -107,7 +142,7 @@ Curious about the lesser-known stories of Chattanooga? You might want to check o
 <br>
 Rob Clifton brings you on a journey through the city's history. This book pairs historical photographs with contemporary images, revealing the changes in Chattanooga's landmarks, streets, and neighborhoods. Clifton’s commentary provides context, illustrating how the city has evolved while preserving its heritage. This visual narrative is a valuable resource for anyone interested in Chattanooga's past and present, offering a unique perspective on the city's transformation over the years. Explore the rich history and ongoing development of Chattanooga in this compelling photographic collection.
 
-<h2 id="authors">Local Authors</h2>
+<h2 class="bookstore-h2" id="authors">Local Authors</h2>
 
 <a href="https://en.wikipedia.org/wiki/Ishmael_Reed" target="_blank">Ishmael Reed</a> &nbsp; Born in Chattanooga, Tennessee, Ishmael Reed is a prolific American author, poet, essayist, and educator. Reed's work often explores African American culture and history, blending elements of surrealism, folklore, and mythology.
 <br><br>

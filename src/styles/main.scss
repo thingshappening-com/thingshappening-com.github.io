@@ -85,12 +85,20 @@ a:hover {
   }
 }
 
-.bookstore-h2 {
+.bookstore-h3 {
   margin-top: 0 !important;
   padding-top: 0 !important;
   margin-right: 0.5em;
   letter-spacing: 0;
   font-size: 1.3em !important;
+}
+
+.bookstore-h2 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-right: 0.5em;
+  letter-spacing: 0;
+  font-size: 1.8em !important;
 }
 
 .badge-link {
@@ -125,4 +133,20 @@ a:hover {
 
 .mr-2p5 {
   margin-right: 2.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-0p5 {
+  margin-bottom: .5rem;
+}
+
+.mb-0p2 {
+  margin-bottom: .2rem;
+}
+
+.bookstore-nav-wrapper {
+  margin-top: 3em;
 }
