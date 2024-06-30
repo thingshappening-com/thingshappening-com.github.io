@@ -9,62 +9,15 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 *This website earns an affiliate commission when you make a purchase below*
 
 <div class="flex justify-evenly flex-wrap mb-1 bookstore-nav-wrapper">
-  <h3 class="bookstore-h3"><a href="#setting">Local Setting</a></h4>
   <h3 class="bookstore-h3"><a href="#guides">Guides</a></h4>
   <h3 class="bookstore-h3"><a href="#history">History</a></h4>
   <h3 class="bookstore-h3"><a href="#authors"> Local Authors</a></h4>
+    <h3 class="bookstore-h3"><a href="#setting">Local Setting</a></h4>
   <h3 class="bookstore-h3"><a href="#bookstores">Bookstores</a></h4>
 </div>
 
 <br>
-<h2 class="bookstore-h2" id="setting">Local Setting</h2>
 
-<br>
-<div class="book-img-title mb-1">
-  <a href="https://amzn.to/4aQqDin" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/babe_ruth.jpg" class="book-size">
-  </a>
-</div>
-<div class="mb-0p5">
-  <a href="https://amzn.to/4aQqDin" target="_blank">The Girl Who Struck Out Babe Ruth</a>
-</div>
-<div class="mb-0p2">
-  <b>Author:</b> Jean L. S. Patrick <span></span>
-</div>
-<div class="mb-0p2">
-  <b>Published Year:</b> 2000<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Chattanooga Relation:</b> On April 1, 1931, 17-year-old Jackie Mitchell struck out Babe Ruth and Lou Gehrig during a postponed exhibition game in Chattanooga after being brought in by Lookouts manager Bert Niehoff. <span></span>
-</div>
-<div class="mb-0p2">
-  <b>Overview:</b> In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. <span></span>
-</div>
-
-<br><br>
-<div class="book-img-title mb-1">
-  <a href="https://amzn.to/4cAlegy" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/extended_stay.jpg" class="book-size">
-  </a>
-</div>
-<div class="mb-0p5">
-  <a href="https://amzn.to/4cAlegy" target="_blank">Extended Stay</a>
-</div>
-<div class="mb-0p2">
-  <b>Author:</b> Bradley Cannon<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Published Year:</b> 2014<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Chattanooga Relation:</b> Fiction novel set in Chattanooga. In "Extended Stay" by Bradley Cannon, weary traveler Ethan checks into a Chattanooga hotel, uncovering its sinister secrets and confronting ghostly occurrences and mysterious disappearances in a gripping thriller.. <span></span>
-</div>
-<div class="mb-0p2">
-  <b>Overview:</b> In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie corridors of a secluded hotel in Chattanooga. When weary traveler Ethan checks in, he anticipates a brief respite from his troubles, but the hotel's sinister secrets soon ensnare him. As he delves deeper into the mysterious disappearances and ghostly occurrences haunting the premises, Ethan must confront his darkest fears and unravel the hotel's chilling past. With each twist and turn, Cannon masterfully builds suspense, making "Extended Stay" a heart-pounding read that will keep you on the edge of your seat until the final, shocking revelation. <span></span>
-</div>
-
-
-<br>
 <h2 class="bookstore-h2 mt-3" id="guides">Guides</h2>
 <br>
 <div class="book-img-title mb-1">
@@ -87,25 +40,6 @@ This is a collection of works on the history of Chattanooga, local authors, guid
 
 <br><br>
 
-<div class="book-img-title mb-1">
-  <a href="https://amzn.to/4c7KASG" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/landmarks.jpg" class="book-size mr-2p5">
-  </a>
-</div>
-<div class="mb-0p5">
-  <a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
-</div>
-<div class="mb-0p2">
-  <b>Author:</b> Jennifer Crutchfield<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Published Year:</b> 2010<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Overview:</b> This book dives into the rich history of Chattanooga, highlighting key landmarks that have shaped the city. It’s packed with interesting stories and details about places like Lookout Mountain, the Tennessee River, and historic downtown spots. Each landmark is brought to life with engaging narratives and beautiful photos. If you're curious about the city’s past, this book is a great guide to understanding what makes Chattanooga so special.
-</div>
-
-<br><br>
 
 <div class="book-img-title mb-1">
   <a href="https://amzn.to/45hUajY" target="_blank">
@@ -136,11 +70,32 @@ Key features of the book:
 <br>
 5. Photography capturing the region's beauty.
 Accessibility information for different needs.
+
+<br><br>
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/4c7KASG" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/landmarks.jpg" class="book-size mr-2p5">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jennifer Crutchfield<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2010<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> This book dives into the rich history of Chattanooga, highlighting key landmarks that have shaped the city. It’s packed with interesting stories and details about places like Lookout Mountain, the Tennessee River, and historic downtown spots. Each landmark is brought to life with engaging narratives and beautiful photos. If you're curious about the city’s past, this book is a great guide to understanding what makes Chattanooga so special.
+</div>
 <br><br>
 </div>
 
+<br>
 
-<h2 class="bookstore-h2" id="history">History Books</h2>
+<h2 class="bookstore-h2" id="history">History</h2>
 <br>
 
 <div class="book-img-title">
@@ -160,6 +115,47 @@ Accessibility information for different needs.
 </div>
 <div class="mb-0p2">
   <b>Overview:</b> Curious about the lesser-known stories of Chattanooga? You might want to check out this book. It uncovers all the fascinating, hidden tales that you won’t find in the usual history books. It’s got intriguing stories about secret tunnels, forgotten events, and unique characters that have shaped the city. Each chapter reveals a new piece of Chattanooga’s past that’s both surprising and fascinating.
+</div>
+
+<br><br>
+
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/3RPOUOW" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/haunted_chatt.jpg" class="book-size mr-2p5">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/3RPOUOW" target="_blank">Haunted Chattanooga</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jessica Penot, Amy Petulla<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2010<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> This book explores Chattanooga's most haunted locations, including the ghost of the Delta Queen, the spectral porter at Terminal Station, and the restless spirits in the city's underground tunnels. Through detailed accounts and historical context, the authors reveal the supernatural tales that continue to haunt the Scenic City. This book is part of the Haunted America series and combines local folklore, history, and spine-chilling ghost stories.
+</div>
+
+<br><br>
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/3RPOUOW" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/images_of_america.jpg" class="book-size mr-2p5">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/3RPOUOW" target="_blank">Images of America: Chattanooga</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jerry R. Desmond<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 1996<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> Chattanooga (Images of America)gives a visual and historical journey through Chattanooga's transformation from a small river landing (Ross's Landing) to a significant industrial center. This book highlights pivotal moments, such as the arrival of the Western and Atlantic Railroad in 1849 and key Civil War battles like Chickamauga, Lookout Mountain, and Missionary Ridge in 1863.
 </div>
 
 <br><br>
@@ -199,6 +195,80 @@ Reed has also published volumes of poetry, such as <a target="_blank" href="http
 <a href="https://en.wikipedia.org/wiki/Cherie_Priest" target="_blank">Cherie Priest</a> &nbsp; Earned a Master’s degree in Rhetoric and Professional Writing from the University of Tennessee at Chattanooga. Her debut novel, <a target="_blank" href="https://amzn.to/3Kz9qPM">"Four and Twenty Blackbirds"</a> (2005) marked the beginning of her Eden Moore series, which blends Southern Gothic and supernatural elements. 
 <br><br>
 She gained wider recognition for her steampunk series, "The Clockwork Century," beginning with <a href="https://amzn.to/3wWp84p" target="_blank">"Boneshaker"</a> (2009). The novel is set in an alternate history Seattle during the Civil War and involves zombies, airships, and adventure. The series includes several other novels, such as "Dreadnought" and "Ganymede.". You can check out her other works here
+
+<br><br>
+
+<h2 class="bookstore-h2" id="setting">Local Setting</h2>
+
+<br>
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/3XO6s1B" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/dont_cry.jpg" class="book-size">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/3XO6s1B" target="_blank">Don't Cry</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Beverly Barton<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2016<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> On April 1, 1931, 17-year-old Jackie Mitchell struck out Babe Ruth and Lou Gehrig during a postponed exhibition game in Chattanooga after being brought in by Lookouts manager Bert Niehoff. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. <span></span>
+</div>
+
+<br><br>
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/4aQqDin" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/babe_ruth.jpg" class="book-size">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/4aQqDin" target="_blank">The Girl Who Struck Out Babe Ruth</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jean L. S. Patrick <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2000<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> Fiction Romantic suspense novel set in Chattanooga. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> This romantic suspense novel follows a serial killer investigation, with FBI agent J.D. Cass and psychologist Audrey Sherrod working together to uncover the truth. The Chattanooga setting provides a rich backdrop for the unfolding mystery and drama. <span></span>
+</div>
+
+<br><br>
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/4cAlegy" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/extended_stay.jpg" class="book-size">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/4cAlegy" target="_blank">Extended Stay</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Bradley Cannon<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2014<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> Fiction novel set in Chattanooga. In "Extended Stay" by Bradley Cannon, weary traveler Ethan checks into a Chattanooga hotel, uncovering its sinister secrets and confronting ghostly occurrences and mysterious disappearances in a gripping thriller.. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> In "Extended Stay" by Bradley Cannon, a gripping thriller unfolds in the eerie corridors of a secluded hotel in Chattanooga. When weary traveler Ethan checks in, he anticipates a brief respite from his troubles, but the hotel's sinister secrets soon ensnare him. As he delves deeper into the mysterious disappearances and ghostly occurrences haunting the premises, Ethan must confront his darkest fears and unravel the hotel's chilling past. With each twist and turn, Cannon masterfully builds suspense, making "Extended Stay" a heart-pounding read that will keep you on the edge of your seat until the final, shocking revelation. <span></span>
+</div>
+
+<br><br>
 
 <h2 class="bookstore-h2" id="bookstores">Bookstores</h2>
 
