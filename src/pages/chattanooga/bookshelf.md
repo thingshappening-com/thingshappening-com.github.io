@@ -74,12 +74,12 @@ Accessibility information for different needs.
 <br><br>
 
 <div class="book-img-title mb-1">
-  <a href="https://amzn.to/4c7KASG" target="_blank">
+  <a href="https://amzn.to/4cjSZDd" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/landmarks.jpg" class="book-size mr-2p5">
   </a>
 </div>
 <div class="mb-0p5">
-  <a href="https://amzn.to/4c7KASG" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
+  <a href="https://amzn.to/4cjSZDd" target="_blank">Chattanooga Landmarks: Exploring the History of the Scenic City</a>
 </div>
 <div class="mb-0p2">
   <b>Author:</b> Jennifer Crutchfield<span></span>
@@ -99,13 +99,13 @@ Accessibility information for different needs.
 <br>
 
 <div class="book-img-title">
-  <a href="https://amzn.to/3x723vN" target="_blank">
+  <a href="https://amzn.to/3zh0GLF" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/hidden_history.jpg" class="book-size mr-2p5">
   </a>
 </div>
 <br>
 <div class="mb-0p5">
- <a href="https://amzn.to/3x723vN" target="_blank">Hidden History of Chattanooga</a>
+ <a href="https://amzn.to/3zh0GLF" target="_blank">Hidden History of Chattanooga</a>
 </div>
 <div class="mb-0p2">
   <b>Author:</b>  Alexandra Walker Clark<span></span>
@@ -121,12 +121,12 @@ Accessibility information for different needs.
 
 
 <div class="book-img-title mb-1">
-  <a href="https://amzn.to/3RPOUOW" target="_blank">
+  <a href="https://amzn.to/3XEf230" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/haunted_chatt.jpg" class="book-size mr-2p5">
   </a>
 </div>
 <div class="mb-0p5">
-  <a href="https://amzn.to/3RPOUOW" target="_blank">Haunted Chattanooga</a>
+  <a href="https://amzn.to/3XEf230" target="_blank">Haunted Chattanooga</a>
 </div>
 <div class="mb-0p2">
   <b>Author:</b> Jessica Penot, Amy Petulla<span></span>
@@ -141,12 +141,12 @@ Accessibility information for different needs.
 <br><br>
 
 <div class="book-img-title mb-1">
-  <a href="https://amzn.to/3RPOUOW" target="_blank">
+  <a href="https://amzn.to/4blIA8B" target="_blank">
     <img src="/images/bookshelf_giftshop/chattanooga/images_of_america.jpg" class="book-size mr-2p5">
   </a>
 </div>
 <div class="mb-0p5">
-  <a href="https://amzn.to/3RPOUOW" target="_blank">Images of America: Chattanooga</a>
+  <a href="https://amzn.to/4blIA8B" target="_blank">Images of America: Chattanooga</a>
 </div>
 <div class="mb-0p2">
   <b>Author:</b> Jerry R. Desmond<span></span>
@@ -201,28 +201,6 @@ She gained wider recognition for her steampunk series, "The Clockwork Century," 
 <h2 class="bookstore-h2" id="setting">Local Setting</h2>
 
 <br>
-<div class="book-img-title mb-1">
-  <a href="https://amzn.to/3XO6s1B" target="_blank">
-    <img src="/images/bookshelf_giftshop/chattanooga/dont_cry.jpg" class="book-size">
-  </a>
-</div>
-<div class="mb-0p5">
-  <a href="https://amzn.to/3XO6s1B" target="_blank">Don't Cry</a>
-</div>
-<div class="mb-0p2">
-  <b>Author:</b> Beverly Barton<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Published Year:</b> 2016<span></span>
-</div>
-<div class="mb-0p2">
-  <b>Chattanooga Relation:</b> On April 1, 1931, 17-year-old Jackie Mitchell struck out Babe Ruth and Lou Gehrig during a postponed exhibition game in Chattanooga after being brought in by Lookouts manager Bert Niehoff. <span></span>
-</div>
-<div class="mb-0p2">
-  <b>Overview:</b> In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. <span></span>
-</div>
-
-<br><br>
 
 <div class="book-img-title mb-1">
   <a href="https://amzn.to/4aQqDin" target="_blank">
@@ -237,6 +215,52 @@ She gained wider recognition for her steampunk series, "The Clockwork Century," 
 </div>
 <div class="mb-0p2">
   <b>Published Year:</b> 2000<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> On April 1, 1931, 17-year-old Jackie Mitchell struck out Babe Ruth and Lou Gehrig during a postponed exhibition game in Chattanooga after being brought in by Lookouts manager Bert Niehoff. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> In "The Girl Who Struck Out Babe Ruth," a fascinating blend of history and inspiration, meet Jackie Mitchell, a determined 17-year-old pitcher in the 1930s. Defying the odds and societal norms, Jackie finds herself on the mound facing the legendary Babe Ruth. With grit and an unyielding spirit, she delivers a pitch that would forever etch her name in baseball history. <span></span>
+</div>
+
+<br><br>
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/3XLekAR" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/flesh_and_bone.jpg" class="book-size">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/3XLekAR" target="_blank">Flesh and Bone</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Jefferson Bass<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2009<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Chattanooga Relation:</b> Part of the Body Farm series, which centers around Dr. Bill Brockton, a forensic anthropologist. While the series is primarily set in Tennessee, "Flesh and Bone" includes significant scenes and connections to Chattanooga. <span></span>
+</div>
+<div class="mb-0p2">
+  <b>Overview:</b> Thriller that takes you on a ride through the world of forensic anthropology. Dr. Bill Brockton, is thrown into a particularly difficult case when a woman's body is found in an art park, posed like a statue. The twist? Brockton himself becomes a suspect in the murder.. 
+</div>
+
+<br><br>
+
+<div class="book-img-title mb-1">
+  <a href="https://amzn.to/3XO6s1B" target="_blank">
+    <img src="/images/bookshelf_giftshop/chattanooga/dont_cry.jpg" class="book-size">
+  </a>
+</div>
+<div class="mb-0p5">
+  <a href="https://amzn.to/3XO6s1B" target="_blank">Don't Cry</a>
+</div>
+<div class="mb-0p2">
+  <b>Author:</b> Beverly Barton<span></span>
+</div>
+<div class="mb-0p2">
+  <b>Published Year:</b> 2016<span></span>
 </div>
 <div class="mb-0p2">
   <b>Chattanooga Relation:</b> Fiction Romantic suspense novel set in Chattanooga. <span></span>
