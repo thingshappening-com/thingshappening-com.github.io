@@ -16,6 +16,17 @@ const title = 'thingshappening';
 const description = 'The easiest way to find out about things happening in greater Chattanooga';
 const seoDescription = 'The easiest way to find out about things happening';
 
+let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.md');
+let guideFormatted = [];
+
+allGuides.forEach((p) => {
+  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+
+  guideFormatted.push(baseData); // Push base data if no eventDates
+});
+  // console.log(allGuides);
+  // allGuides.forEach((g) => console.log(g.frontmatter));
+  // console.dir(allGuides);
 let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
 
 let allPostsIncludingMultipleDates = [];
@@ -47,6 +58,7 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
 
     return dateA - dateB;
 });
+
 ---
 
 <html lang="en">
@@ -67,6 +79,17 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
         {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
           <Card post={p} />
         </div>)}
+      </section>
+    </article>
+
+    <header id="guides" style="margin: 0 !important" class="pt-10 text-center content">
+      <h1>Guides</h1>  
+    </header>
+    <article class="max-w-6xl mx-auto px-3">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+          {guideFormatted.map(g => <div class="col-span-1">
+            <Card post={g} />
+          </div>)}
       </section>
     </article>
   </main>

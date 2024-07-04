@@ -6,12 +6,14 @@ export interface Props {
   highlighted: string;
 }
 
-const { post, highlighted } = Astro.props;
+let { post, highlighted } = Astro.props;
 
 const date = new Date(post.pubDate);
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayOfWeek = daysOfWeek[date.getDay()];
-
+// console.log(post.frontmatter)
+// const postUrl = post.url
+// post = post.frontmatter ? post.frontmatter : post;
 ---
 
 <div class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden" data-test="article-card">
@@ -23,9 +25,11 @@ const dayOfWeek = daysOfWeek[date.getDay()];
       <h2 class="font-bold text-2xl leading-tight">
         {post.title}
       </h2>
-      <p class="text-lg text-gray-600 mt-4 flex items-center">
-        {`${dayOfWeek}`} {dayjs(post.pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8" src=`${post.iconPath}` alt="icon"></img> : ""}
-      </p>
+      {post.pubDate && (
+        <p class="text-lg text-gray-600 mt-4 flex items-center">
+          {`${dayOfWeek}`} {dayjs(post.pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8" src=`${post.iconPath}` alt="icon"></img> : ""}
+        </p>
+      )}
     </div>
   </a>
 
@@ -34,10 +38,7 @@ const dayOfWeek = daysOfWeek[date.getDay()];
       <div>
         {Array.isArray(post.tags) ? (
           post.tags.map((t) => {
-            console.log(t);
-            console.log(highlighted);
             const highlight = t == highlighted ? 'font-semibold' : ''
-            console.log(highlight);
             return <a href={`/tag/${t}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span style="color: #fd2d78">#</span>{`${t}`}</a>
           })
         ) : (

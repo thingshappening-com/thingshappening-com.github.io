@@ -63,6 +63,5 @@ If you like woodcraft and don't see anything on this list that interests you, I 
   let pathSplit = window.location.pathname.split("/");
   let elId = pathSplit[pathSplit.length - 2];
   let els = document.getElementsByClassName(elId);
-  console.log(els);
   Array.from(els).forEach((el) => el.classList.add("highlighted-date"));
 </script>
