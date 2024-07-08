@@ -1,0 +1,8 @@
+Food trucks:
+- If I were to create a guide post like the hiking one you helped me with for food trucks in chattanooga, what attributes should I include?
+- Can you generate that document again but include these food trucks? Please include any details you are aware of or can find through search for each 
+- do I need to fact check it or are you confident with what you've generateds accuracy?
+- generate a title for social meida
+- for the html you generated, regenerate it. Only use Cuisine Type, Location and Schedule, Menu Highlights, Price Range, and contact information attributes. Also use this HTML template as an example 
+
+
