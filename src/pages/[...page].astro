@@ -44,13 +44,16 @@ export async function getStaticPaths({ paginate }) {
 }
 
 let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.md');
-  let guideFormatted = [];
+let guideFormatted = [];
 
-  allGuides.forEach((g) => {
-    let baseData = Object.assign({}, g.frontmatter, {url: g.url});  // Create a copy of the base data
+allGuides.forEach((g) => {
+  let baseData = Object.assign({}, g.frontmatter, {url: g.url});  // Create a copy of the base data
 
-    guideFormatted.push(baseData); // Push base data if no eventDates
-  });
+  guideFormatted.push(baseData); // Push base data if no eventDates
+});
+
+  console.log("allguides");
+console.log(allGuides);
 
 const { page } = Astro.props;
 let pageTitle = 'thingshappening';
@@ -96,13 +99,13 @@ let seoDescription = '';
       <h1>Guides</h1>  
     </header>
 
-    <!-- <article class="max-w-6xl mx-auto px-3">
+    <article class="max-w-6xl mx-auto px-3">
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
           {guideFormatted.map(g => <div class="col-span-1">
             <Card post={g} />
           </div>)}
       </section>
-    </article> -->
+    </article>
   </main>
   <Paginator page={page} />
   <Footer />
