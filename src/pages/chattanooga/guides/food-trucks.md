@@ -40,7 +40,7 @@ Nonnis Empanadas -->
   </div>
 
   <div class="flex justify-center">
-    <image src="../../images/chattanooga_guides/food/food_truck.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/food/food_truck.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
 
@@ -74,7 +74,7 @@ Nonnis Empanadas -->
   </div>
 
   <div class="flex justify-center">
-    <image src="../../images/chattanooga_guides/food/food_truck2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/food/food_truck2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
 
