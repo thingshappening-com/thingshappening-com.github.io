@@ -12,8 +12,6 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-From their website:
-
 Doors at 6:00 PM
 Show at 7:00 PM
 This is a Standing Show, with limited Premium Seating ticket options

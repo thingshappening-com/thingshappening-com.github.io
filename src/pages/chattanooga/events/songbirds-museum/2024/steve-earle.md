@@ -12,8 +12,6 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-From their website:
-
 Join Us for an Unforgettable Fundraiser: Dinner and a Show with Steve Earle at Songbirds in Chattanooga!
 
 Get ready to immerse yourself in an evening of soul-stirring music, mouthwatering BBQ delights, and unforgettable memories at Songbirds in Chattanooga! We're thrilled to present an exclusive fundraising dinner-and-a-show event featuring the legendary Steve Earle, renowned for his captivating performances and timeless hits.

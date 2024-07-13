@@ -12,8 +12,6 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-From their website:
-
 Doors at 6:00 PM
 Show at 7:00 PM
 Mixed Seated/Standing Show

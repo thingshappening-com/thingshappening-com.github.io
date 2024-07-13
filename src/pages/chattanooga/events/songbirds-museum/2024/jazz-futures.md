@@ -11,8 +11,6 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-From their website:
-
 Doors at 7:00 PM
 Show at 8:00 PM
 Half Seated/Half Standing Show

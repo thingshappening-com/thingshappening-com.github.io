@@ -6,3 +6,25 @@ Food trucks:
 - for the html you generated, regenerate it. Only use Cuisine Type, Location and Schedule, Menu Highlights, Price Range, and contact information attributes. Also use this HTML template as an example 
 
 
+Referencing the post below from Scott Delong https://www.scottdelong.com/challenge/week-11/
+- 10 Kids Weekends Plans for Chattanoogans
+- The Outdoor Guide to Chattanooga and 1 hour out (top spots in town - kayak, mtb, fishing, hiking (waterfalls), climbing both cityish based and 1 hour out). Best times of year for each. 
+- A Chattanooga Sports Guide
+- A Guide to Music in Chattanooga
+
+
+"""
+Matt asked, Can you go over the process you use to create the 10 ultimate guides you mentioned to sit on your site that get natural links etc? I’m in the cycling niche and would love to see how you approach this.
+
+Matt is referring to my suggestion that you start your site by writing 10 absolutely killer, content-filled, authoritative, and beautiful guides that thoroughly cover the “core” of your niche.
+
+For example, I did that on my own site with The Complete Guide To Building A Profitable Website.
+
+There are several reasons I believe in this approach:
+
+You become a better expert just by writing them.
+It sends a great signal to Google if your initial articles are masterpieces.
+They can constantly be referenced in future articles.
+The guides will spark so many stand-alone ideas (make notes of them as you go).
+Above all, it sets the tone – both inside yourself and on your site – for the future.
+"""
