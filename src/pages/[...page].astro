@@ -40,7 +40,7 @@ export async function getStaticPaths({ paginate }) {
       return dateA - dateB;
   });
 
-  return paginate(allPostsIncludingMultipleDates, {pageSize: 18})
+  return paginate(allPostsIncludingMultipleDates, {pageSize: 15})
 }
 
 let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.md');

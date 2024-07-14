@@ -1,5 +1,5 @@
 ---
-  title: "Chattanooga Social: 11 Dog-Friendly Restaurants and Coffeeshops in Chattanooga"
+  title: "Chattanooga Social: 11 Dog-Friendly Restaurants and Coffeeshops"
   iconPath: /images/icons/music.png"
   tags: ["social"]
   layout: "../../../layouts/BlogPostLayout.astro"
