@@ -27,7 +27,7 @@
   </div>
 
   <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/hikes/woods2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/outdoors/hikes/woods2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
   <div class="pb-2">
@@ -52,7 +52,7 @@
   </div>
 
   <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/hikes/simple_woods.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/outdoors/hikes/simple_woods.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
   <div class="pb-2">
@@ -84,7 +84,7 @@
   </div>
 
   <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/hikes/woods3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/outdoors/hikes/woods3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
   <div class="pb-2">
