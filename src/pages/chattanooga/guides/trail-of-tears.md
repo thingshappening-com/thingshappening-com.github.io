@@ -1,5 +1,5 @@
 ---
-  title: "Chattanooga History: Trail of Tears Historic Landmarks"
+  title: "Chattanooga History: Trail of Tears Landmarks"
   iconPath: /images/icons/music.png"
   tags: ["history"]
   layout: "../../../layouts/BlogPostLayout.astro"
