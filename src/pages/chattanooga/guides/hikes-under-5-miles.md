@@ -1,5 +1,5 @@
 ---
-  title: "Chattanooga Hikes: 12 Trails Under 5 Miles"
+  title: "Chattanooga Outdoors: 12 Trails Under 5 Miles"
   iconPath: /images/icons/music.png"
   tags: ["outdoors"]
   layout: "../../../layouts/BlogPostLayout.astro"
