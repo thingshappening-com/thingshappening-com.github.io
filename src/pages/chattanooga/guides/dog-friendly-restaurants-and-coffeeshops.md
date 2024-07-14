@@ -14,7 +14,6 @@
 </style>
 
 <div>
-  <h1>Dog-Friendly Restaurants and Cafes in Chattanooga</h1>
   <div>
     Exploring Chattanooga with your furry friend? Here’s a guide to some of the best dog-friendly restaurants and cafes in the city, ensuring you and your dog have a great time together.
   </div>
@@ -27,7 +26,7 @@
   </div>
 
   <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/social/dogs1.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/social/dog1.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
   <div class="pb-2">
@@ -52,7 +51,7 @@
   </div>
 
   <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/social/dogs2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/social/dog2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
   <div class="pb-2">
@@ -84,7 +83,7 @@
   </div>
 
   <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/social/dogs3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+    <image src="/images/chattanooga_guides/social/dog3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
   <div class="pb-2">
