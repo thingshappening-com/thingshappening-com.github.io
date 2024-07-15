@@ -73,6 +73,9 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
     <article class="max-w-6xl mx-auto px-3">
       <HomeHeader title={title} description={description} />      
       
+      <header style="margin: 0 !important" class="pt-10 text-center content">
+        <h1>Guides</h1>  
+      </header>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
         {guideFormatted.map(g => <div class="col-span-1">
           <Card post={g} />
@@ -81,7 +84,7 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
     </article>
 
     <header id="guides" style="margin: 0 !important" class="pt-10 text-center content">
-      <h1>Guides</h1>  
+      <h1>Calendar</h1>  
     </header>
     <article class="max-w-6xl mx-auto px-3">
       <SubNav />
