@@ -11,7 +11,6 @@ Chattanooga, TN 37411"
       topDetails:
         title: "Kitchen Cabinetmaking 104: Applying Finishes"
         text: "In this class, you’ll delve into the art of applying finishes to your woodworking projects, a crucial step that not only enhances the appearance of your work but also protects it from wear and tear. Here’s what you can expect to learn about oil finishes, varnishes and polyurethanes, stains and dyes, among other techniques."
-        top: true
     - date: "2024-07-20"
       eventTitle: "3 Events on July 20th"
       topDetails:
@@ -26,13 +25,11 @@ Chattanooga, TN 37411"
 
           3. Join Thru Joinery: Half-Laps. Half-lap joints are commonly used in framing, cabinetry, and furniture for their simplicity and strength. The class will cover the different types of half-lap joints and their applications in various woodworking projects.
 
-        top: true
     - date: "2024-07-21"
       eventTitle: "Kitchen Cabinetmaking 105 - Decorative Details and Installation Techniques"
       topDetails:
         title: "Kitchen Cabinetmaking 105: Decorative Details and Installation Techniques"
         text: "Decorative details like molding and trim can transform the look of kitchen cabinets, adding a touch of elegance and personal style. This session will teach students how to add decorative elements and the best practices for installing cabinets securely."
-        top: true
     - date: "2024-07-27"
       eventTitle: "3 Events on July 27th"
       topDetails:
@@ -46,7 +43,6 @@ Chattanooga, TN 37411"
           2. Journey Thru Joinery: Cope and Stick. Cope and stick joints are commonly used in frame and panel construction, especially for cabinet doors. This class will demonstrate the process of creating these joints, which involve intricate cutting and fitting for a seamless finish.
 
           3. Bowl Turning 101: The Basics. Bowl turning is one of the most popular forms of woodturning, allowing for creative expression through shape and wood grain. Beginners will learn the fundamentals of bowl turning, including selecting wood, tool usage, and finishing techniques to create a beautiful, functional bowl.
-        top: true
   eventLink: "https://www.woodcraft.com/pages/store-classes/chattanooga"
   tags: ["woodworking", "craft", "woodcraft-of-chattanooga"]
   time: "Varies"

@@ -6,6 +6,17 @@
   eventDates: ["2024-06-05", "2024-06-12", "2024-06-19", "2024-06-26", "2024-07-03", "2024-07-10", "2024-07-17", "2024-07-24", "2024-07-31", "2024-08-07", "2024-08-14", "2024-08-21", "2024-08-28"]
   eventDatesDetails: [
     {
+      date: "2024-07-17", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "Which ancient civilization built the Machu Picchu complex in Peru?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "The Inca"
+      }
+    },
+    {
       date: "2024-07-24", 
       topDetails: {
         title: "Trivia Participation Prerequisite (answer below)", 
