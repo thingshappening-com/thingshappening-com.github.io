@@ -23,7 +23,9 @@ const dayOfWeek = daysOfWeek[date.getDay()];
 
     <div class="py-6 px-8">
       <h2 class="font-bold text-2xl leading-tight">
-        {post.title}
+        {post.title} {post.pubDate && (
+          `: ${dayjs(post.pubDate).format('MM-DD-YYYY')}`
+        )}
       </h2>
       {post.pubDate && (
         <p class="text-lg text-gray-600 mt-4 flex items-center">

@@ -6,7 +6,58 @@
   time: "10:30am to 1:30pm"
   eventLabel: "Week"
   iconPath: "/images/icons/market.png"
-  eventLink: "https://chattanoogamarket.com/calendar//"
+  eventDatesDetails: [
+    {
+      date: "2024-07-24", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      }
+    },
+    {
+      date: "2024-07-31", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going."
+      }
+    },
+        {
+      date: "2024-07-24", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      }
+    },
+    {
+      date: "2024-08-07", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+      }
+    },
+    {
+      date: "2024-08-14", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success."
+      }
+    },
+    {
+      date: "2024-08-21", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples."
+      }
+    },
+    {
+      date: "2024-08-28", 
+      visitorsTip: {
+        title: "Visitor Tip", 
+        text: "The market operates rain or shine, so check the weather forecast and dress appropriately. Bring an umbrella or wear sunscreen and a hat, depending on the forecast."
+      }
+    }
+  ]
+  eventLink: "https://chattanoogamarket.com/calendar/"
   tags: ["chattanooga-market", "market", "kid-friendly"]
   entranceCost: "Free"
   layout: "../../../../../layouts/BlogPostLayout.astro"

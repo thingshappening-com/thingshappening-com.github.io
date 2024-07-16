@@ -12,8 +12,16 @@ export interface Props {
   youtube?: string;
 }
 
-const { address, eventLink, entranceCost, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
+const { address, eventDatesDetails, eventLink, entranceCost, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
 const date = new Date(pubDate);
+let eventDateDetails;
+if (eventDatesDetails) {
+  eventDateDetails = eventDatesDetails.find((dateObj => dateObj.date == pubDate));
+}
+
+console.log("eventDateDetails");
+console.log(eventDateDetails);
+
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayOfWeek = daysOfWeek[date.getDay()];
 ---
@@ -50,7 +58,6 @@ const dayOfWeek = daysOfWeek[date.getDay()];
           ))}
         </ul>
       )}
-
     </div>
   </div>
 
@@ -68,6 +75,15 @@ const dayOfWeek = daysOfWeek[date.getDay()];
   <section style="margin: 0 !important" class="max-w-4xl mx-auto py-3 lg:py-12 content">
     <slot />
   </section>
+
+  <div>
+    {eventDateDetails && eventDateDetails.visitorsTip && (
+      <div>
+        <h2 class="text-2xl font-semibold	">{eventDateDetails.visitorsTip.title}</h2>
+        <div>{eventDateDetails.visitorsTip.text}</div>
+      </div>
+    )}
+  </div>
 
   <div>
   </div>
