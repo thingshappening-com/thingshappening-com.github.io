@@ -3,7 +3,7 @@
   venue: "Townsend Atelier"
   address: "The Arts Building. 301 East 11th, Chattanooga, TN"
   iconPath: "/images/icons/art.png"
-  eventDates: ["2024-08-16", "2024-08-17", "2024-08-18"]
+  eventDates: ["2024-08-16"]
   eventLink: "https://townsendatelier.com/product/3-day-printmaking-workshop-pochoir-meets-collagraphy/"
   tags: ["art","craft", "townsend-atelier"]
   time: "10am - 3pm"
@@ -11,6 +11,7 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
+2024-08-16 - 2024-08-18
 <br><br>
 Materials included.
 Instructor:  Carrie Pendergrass

@@ -3,7 +3,7 @@
   venue: "Townsend Atelier"
   address: "The Arts Building. 301 East 11th, Chattanooga, TN"
   iconPath: "/images/icons/art.png"
-  eventDates: ["2024-08-24", "2024-08-25"]
+  eventDates: ["2024-08-24"]
   eventLink: "https://townsendatelier.com/product/try-oil-painting-just-bring-yourself/"
   tags: ["art","craft", "townsend-atelier"]
   time: "10am - 5pm"

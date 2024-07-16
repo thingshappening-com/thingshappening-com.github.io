@@ -3,7 +3,7 @@
   venue: "Townsend Atelier"
   address: "The Arts Building. 301 East 11th, Chattanooga, TN"
   iconPath: "/images/icons/art.png"
-  eventDates: ["2024-07-08", "2024-07-09", "2024-07-10", "2024-07-11", "2024-07-12"]
+  eventDates: ["2024-07-08"]
   eventLink: "https://townsendatelier.com/product/5-day-oil-painting-bootcamp-for-beginners-2/"
   tags: ["art","craft", "townsend-atelier"]
   time: "10am - 4pm"

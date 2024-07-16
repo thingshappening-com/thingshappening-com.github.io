@@ -3,7 +3,7 @@
   venue: "Townsend Atelier"
   address: "The Arts Building. 301 East 11th, Chattanooga, TN"
   iconPath: "/images/icons/art.png"
-  eventDates: ["2024-08-05", "2024-08-12", "2024-08-19", "2024-08-26"]
+  eventDates: ["2024-08-05"]
   eventLink: "https://townsendatelier.com/product/palette-knife-painting-techniques-with-mia-bergeron/"
   tags: ["art","craft", "townsend-atelier"]
   time: "5:30pm - 8:30pm"

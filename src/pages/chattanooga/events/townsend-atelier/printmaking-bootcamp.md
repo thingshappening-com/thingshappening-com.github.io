@@ -3,7 +3,7 @@
   venue: "Townsend Atelier"
   address: "The Arts Building. 301 East 11th, Chattanooga, TN"
   iconPath: "/images/icons/art.png"
-  eventDates: ["2024-07-15", "2024-07-16", "2024-07-17", "2024-07-18", "2024-07-19"]
+  eventDates: ["2024-07-15"]
   eventLink: "https://townsendatelier.com/product/printmaking-bootcamp-for-adults/"
   tags: ["art","craft", "townsend-atelier"]
   time: "10am - 3pm"
