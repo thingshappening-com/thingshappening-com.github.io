@@ -4,6 +4,50 @@
   address: "1801 Reggie White Boulevard, Chattanooga, TN 37408"
   iconPath: "/images/icons/market.png"
   eventDates: ["2024-05-05", "2024-05-12", "2024-05-19", "2024-05-25", "2024-05-26", "2024-06-02", "2024-06-09", "2024-06-16", "2024-06-23", "2024-06-30", "2024-07-07", "2024-07-14", "2024-07-21", "2024-07-28", "2024-08-04", "2024-08-11", "2024-08-18", "2024-08-25"]
+  eventDatesDetails: [
+    {
+      date: "2024-08-25", 
+      topDetails: {
+        title: "Visitor Tip", 
+        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      }
+    },
+    {
+      date: "2024-08-18", 
+      topDetails: {
+        title: "Visitor Tip", 
+        text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going.",
+      }
+    },
+    {
+      date: "2024-08-11", 
+      topDetails: {
+        title: "Visitor Tip", 
+        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      }
+    },
+    {
+      date: "2024-08-04", 
+      topDetails: {
+        title: "Visitor Tip", 
+        text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+      }
+    },
+    {
+      date: "2024-07-28", 
+      topDetails: {
+        title: "Visitor Tip", 
+        text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success."
+      }
+    },
+    {
+      date: "2024-07-21", 
+      topDetails: {
+        title: "Visitor Tip", 
+        text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples."
+      }
+    }
+  ]
   time: "11:00am - 4:00pm"
   eventLabel: "Week"
   eventLink: "https://chattanoogamarket.com/calendar/"
