@@ -3,6 +3,7 @@
   layout: "../../layouts/BlogPostLayout.astro"
 ---
 
+* Add Allgood's Used Books and Coffee*
 
 This is a collection of works on the history of Chattanooga, local authors, guides to the outdoors + things to do, and a list of bookstores. By making a purchase through our links you support local businesses, authors, and this website.
 
@@ -303,3 +304,5 @@ She gained wider recognition for her steampunk series, "The Clockwork Century," 
 <a href="https://starlinebooks.indielite.org/" target="_blank">**Star Line Books**</a> &nbsp; Located in the heart of downtown Chattanooga, Star Line Books offers a thoughtfully curated selection of books across various genres. They regularly host author events, book clubs, and other engaging literary gatherings.
 
 <a href="https://shopwinderbinder.com/" target="_blank">**Winder Binder**</a> &nbsp; This unique bookstore and art gallery in Chattanooga specializes in used and rare books, as well as local art and music. It’s a must-visit for book lovers and art enthusiasts alike.
+
+
