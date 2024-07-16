@@ -2,7 +2,8 @@
   title: "Chosen By Fitness: Weighted Support Group"
   venue: "Chosen By Fitness"
   iconPath: "/images/icons/fitness.png"
-  eventDates: ["2024-06-01", "2024-07-06", "2024-08-03", "2024-09-07", "2024-10-05", "2024-11-02"]
+  eventDates: ["2024-06-01"]
+  #TODO ADD BACK , "2024-07-06", "2024-08-03", "2024-09-07", "2024-10-05", "2024-11-02"
   address: "Brainerd Crossroads (BX). 4011 Austin St. Chattanooga, TN 37411"
   eventLink: "https://www.chosenbyfitness.org/copy-of-how-it-works"
   tags: ["chosen-by-fitness", "fitness", "free"]
