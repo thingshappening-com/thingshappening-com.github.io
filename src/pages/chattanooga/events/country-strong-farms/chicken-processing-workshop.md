@@ -11,7 +11,6 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-From the instructors...
 <br><br>
 Instructors Rebecca Boyd and Farmer Kay will walk you through everything you need to know to butcher your own bird from start to finish. They will provide a chicken for you to learn hands-on, and you get to take the finished product home with you, oven ready.
 <br><br>

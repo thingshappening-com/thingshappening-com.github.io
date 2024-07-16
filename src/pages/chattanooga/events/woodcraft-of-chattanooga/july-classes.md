@@ -1,5 +1,5 @@
 ---
-  title: "Woodcraft of Chattanooga: July Classes"
+  title: "Woodcraft"
   venue: "Woodcraft of Chattanooga"
   address: "5824 Brainerd Road
 Chattanooga, TN 37411"
@@ -7,13 +7,16 @@ Chattanooga, TN 37411"
   eventDates: ["2024-07-01", "2024-07-02", "2024-07-05", "2024-07-06", "2024-07-07", "2024-07-08", "2024-07-09", "2024-07-11", "2024-07-12", "2024-07-13", "2024-07-14", "2024-07-16", "2024-07-18", "2024-07-19", "2024-07-20", "2024-07-21", "2024-07-27"]
   eventDatesDetails:
     - date: "2024-07-19"
+      eventTitle: "Kitchen Cabinetmaking 104 - Applying Finishes"
       defaultDetails:
         title: "Kitchen Cabinetmaking 104: Applying Finishes"
         text: "In this class, you’ll delve into the art of applying finishes to your woodworking projects, a crucial step that not only enhances the appearance of your work but also protects it from wear and tear. Here’s what you can expect to learn about oil finishes, varnishes and polyurethanes, stains and dyes, among other techniques."
         top: true
     - date: "2024-07-20"
+      eventTitle: "3 Events on July 20th"
       defaultDetails:
         title: "Editor Note"
+        eventTitle: "3 Events Today"
         text: |
           There are three classes at Woodcraft on July 20th.
 
@@ -25,12 +28,15 @@ Chattanooga, TN 37411"
 
         top: true
     - date: "2024-07-21"
+      eventTitle: "Kitchen Cabinetmaking 105 - Decorative Details and Installation Techniques"
       defaultDetails:
         title: "Kitchen Cabinetmaking 105: Decorative Details and Installation Techniques"
         text: "Decorative details like molding and trim can transform the look of kitchen cabinets, adding a touch of elegance and personal style. This session will teach students how to add decorative elements and the best practices for installing cabinets securely."
         top: true
     - date: "2024-07-27"
+      eventTitle: "3 Events on July 27th"
       defaultDetails:
+        eventTitle: "3 Events Today"
         title: "Editor Note"
         text: |
           There are three classes at Woodcraft on July 20th.
