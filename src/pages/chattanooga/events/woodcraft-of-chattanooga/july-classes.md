@@ -5,6 +5,42 @@
 Chattanooga, TN 37411"
   iconPath: "/images/icons/craftsman.png"
   eventDates: ["2024-07-01", "2024-07-02", "2024-07-05", "2024-07-06", "2024-07-07", "2024-07-08", "2024-07-09", "2024-07-11", "2024-07-12", "2024-07-13", "2024-07-14", "2024-07-16", "2024-07-18", "2024-07-19", "2024-07-20", "2024-07-21", "2024-07-27"]
+  eventDatesDetails:
+    - date: "2024-07-19"
+      defaultDetails:
+        title: "Kitchen Cabinetmaking 104: Applying Finishes"
+        text: "In this class, you’ll delve into the art of applying finishes to your woodworking projects, a crucial step that not only enhances the appearance of your work but also protects it from wear and tear. Here’s what you can expect to learn about oil finishes, varnishes and polyurethanes, stains and dyes, among other techniques."
+        top: true
+    - date: "2024-07-20"
+      defaultDetails:
+        title: "Editor Note"
+        text: |
+          There are three classes at Woodcraft on July 20th.
+
+          1. Spindle Turning 103: Taming of the Skew. The skew chisel is considered one of the most versatile tools in woodturning but also one of the most challenging to master. This class will focus on safe and effective techniques for using the skew chisel to create detailed and precise spindle work.
+
+          2. Join Thru Joinery: Mortise and Tenons. The mortise and tenon joint is one of the strongest and oldest woodworking joints, used in furniture making for thousands of years. Students will practice creating these joints by hand and machine, ensuring tight fits and structural integrity.
+
+          3. Join Thru Joinery: Half-Laps. Half-lap joints are commonly used in framing, cabinetry, and furniture for their simplicity and strength. The class will cover the different types of half-lap joints and their applications in various woodworking projects.
+
+        top: true
+    - date: "2024-07-21"
+      defaultDetails:
+        title: "Kitchen Cabinetmaking 105: Decorative Details and Installation Techniques"
+        text: "Decorative details like molding and trim can transform the look of kitchen cabinets, adding a touch of elegance and personal style. This session will teach students how to add decorative elements and the best practices for installing cabinets securely."
+        top: true
+    - date: "2024-07-27"
+      defaultDetails:
+        title: "Editor Note"
+        text: |
+          There are three classes at Woodcraft on July 20th.
+
+          1. Journey Thru Joinery: Rabbets and Dados Rabbets and dados are essential joints in cabinet and bookshelf construction, providing strong, hidden connections. Participants will learn the precise techniques for cutting these joints using both hand tools and power tools.
+
+          2. Journey Thru Joinery: Cope and Stick. Cope and stick joints are commonly used in frame and panel construction, especially for cabinet doors. This class will demonstrate the process of creating these joints, which involve intricate cutting and fitting for a seamless finish.
+
+          3. Bowl Turning 101: The Basics. Bowl turning is one of the most popular forms of woodturning, allowing for creative expression through shape and wood grain. Beginners will learn the fundamentals of bowl turning, including selecting wood, tool usage, and finishing techniques to create a beautiful, functional bowl.
+        top: true
   eventLink: "https://www.woodcraft.com/pages/store-classes/chattanooga"
   tags: ["woodworking", "craft", "woodcraft-of-chattanooga"]
   time: "Varies"
@@ -12,10 +48,9 @@ Chattanooga, TN 37411"
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-The sheer number of classes and events Woodcraft puts on is impressive! If you're just starting out in woodwork, want to learn a new technique or just want to socialize with likeminded people, I think you'll find what you're looking for below. Check the event website for more information on each class.
 
 <br>
-<b><p style="font-size: 20px;"> Classes:</p></b>
+<b><p style="font-size: 20px;">Full Schedule of Woodcraft events for July:</p></b>
 <br>
 <b class="2024-07-01">July 1st:</b> Sawdust Social: Campfire Roasting Fork
 <br>
@@ -56,6 +91,7 @@ The sheer number of classes and events Woodcraft puts on is impressive! If you'r
 <b class="2024-07-18">July 18th:</b> Kitchen Cabinetmaking 103: Shaker Doors and Drawer Fronts
 <br>
 <b class="2024-07-19 2024-07-18">July 18th and 19th:</b> Spindle Turning 102: Furniture
+<br>
 <b class="2024-07-19">July 19th:</b> Kitchen Cabinetmaking 104: Applying Finishes
 <br>
 <b class="2024-07-20">July 20th:</b> Spindle Turning 103: Taming of the Skew

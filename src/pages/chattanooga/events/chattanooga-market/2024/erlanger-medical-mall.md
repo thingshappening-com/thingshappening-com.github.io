@@ -9,51 +9,58 @@
   eventDatesDetails: [
     {
       date: "2024-07-24", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end.",
+        bottom: true
       }
     },
     {
       date: "2024-07-31", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going."
+        text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going.",
+        bottom: true
       }
     },
-        {
+    {
       date: "2024-07-24", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+        text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end.",
+        bottom: true
       }
     },
     {
       date: "2024-08-07", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+        text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends.",
+        bottom: true
       }
     },
     {
       date: "2024-08-14", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success."
+        text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success.",
+        bottom: true
       }
     },
     {
       date: "2024-08-21", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples."
+        text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples.",
+        bottom: true
       }
     },
     {
       date: "2024-08-28", 
-      visitorsTip: {
+      defaultDetails: {
         title: "Visitor Tip", 
-        text: "The market operates rain or shine, so check the weather forecast and dress appropriately. Bring an umbrella or wear sunscreen and a hat, depending on the forecast."
+        text: "The market operates rain or shine, so check the weather forecast and dress appropriately. Bring an umbrella or wear sunscreen and a hat, depending on the forecast.",
+        bottom: true
       }
     }
   ]
