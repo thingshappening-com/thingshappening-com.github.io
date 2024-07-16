@@ -11,7 +11,6 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-From the event website...
 <br><br>
 Every Monday for 4 weeks. Time to kick your paintings up a notch? This intermediate and advanced class is designed for students to work at their own pace. Receive individual instruction and discover your own unique style. Each session will begin with a brief review of one of the fundamentals of painting: using design in a composition, painting atmospheric and linear perspective, mixing colors, relating values, and anything the students would like to cover. See how to manipulate your source material to create the painting you want.
 <br><br>

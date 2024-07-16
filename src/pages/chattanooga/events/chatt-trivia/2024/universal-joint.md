@@ -4,6 +4,74 @@
   address: "532 Lookout St, Chattanooga, TN 37403"
   iconPath: "/images/icons/trivia.png"
   eventDates: ["2024-06-05", "2024-06-12", "2024-06-19", "2024-06-26", "2024-07-03", "2024-07-10", "2024-07-17", "2024-07-24", "2024-07-31", "2024-08-07", "2024-08-14", "2024-08-21", "2024-08-28"]
+  eventDatesDetails: [
+    {
+      date: "2024-07-24", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "What is the smallest country in the world by land area?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Vatican City"
+      }
+    },
+    {
+      date: "2024-07-31", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "Which band released the album 'Dark Side of the Moon' in 1973?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Pink Floyd"
+      }
+    },
+    {
+      date: "2024-08-07", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "What is the name of the famous statue created by Michelangelo, which depicts the biblical hero David?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "David"
+      }
+    },
+    {
+      date: "2024-08-14", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "In what year were the first modern Olympic Games held?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "1896"
+      }
+    },
+    {
+      date: "2024-08-21", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "In Norse mythology, what is the name of the world tree that connects the nine worlds?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Yggdrasil"
+      }
+    },
+    {
+      date: "2024-08-28", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "Who is known as 'the father of the computer' for his conceptual design of a general-purpose computing machine?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Charles Babbage"
+      }
+    }
+  ]
   eventLink: "https://www.chatttrivia.com/"
   tags: ["universal-joint","chatt-trivia", "trivia"]
   time: "7pm"

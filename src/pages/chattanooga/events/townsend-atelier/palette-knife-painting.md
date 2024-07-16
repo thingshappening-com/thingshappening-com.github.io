@@ -11,7 +11,6 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-From the event website...
 <br><br>
 August 5,12,19,26 @ Townsend Atelier
 Instructor:  Mia Bergeron

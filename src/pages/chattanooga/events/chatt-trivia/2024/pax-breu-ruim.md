@@ -4,6 +4,74 @@
   address: " 516 East Main Street, Chattanooga, TN"
   iconPath: "/images/icons/trivia.png"
   eventDates: ["2024-06-09", "2024-06-16", "2024-06-23", "2024-06-30", "2024-07-07", "2024-07-14", "2024-07-21", "2024-07-28", "2024-08-04", "2024-08-11", "2024-08-18", "2024-08-25"]
+  eventDatesDetails: [
+    {
+      date: "2024-07-21", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "Which is the only country in the world that lies entirely in the Southern Hemisphere and begins with the letter P?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Papua New Guinea"
+      }
+    },
+    {
+      date: "2024-07-28", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "Which film won the first Academy Award for Best Picture in 1929?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Wings"
+      }
+    },
+    {
+      date: "2024-08-04", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "What is the name of the closest star to Earth, other than the Sun?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Proxima Centauri"
+      }
+    },
+    {
+      date: "2024-08-11", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: " Which composer is often referred to as the Father of the Symphony"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Joseph Haydn"
+      }
+    },
+    {
+      date: "2024-08-18", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "Which tennis player holds the record for the most Grand Slam singles titles in the Open Era as of 2023?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Serena Williams"
+      }
+    },
+    {
+      date: "2024-08-25", 
+      topDetails: {
+        title: "Trivia Participation Prerequisite (answer below)", 
+        text: "In Greek mythology, who is the god of the underworld?"
+      },
+      bottomDetails: {
+        title: "Answer", 
+        text: "Hades"
+      }
+    }
+  ]
   eventLink: "https://www.chatttrivia.com/"
   tags: ["pax-breu-ruim", "chatt-trivia", "trivia"]
   time: "2:30pm"

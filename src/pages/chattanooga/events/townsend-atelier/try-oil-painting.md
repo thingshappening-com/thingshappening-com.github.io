@@ -11,7 +11,6 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-From the website:
 <br><br>
 August 24 & 25
 <br>

@@ -11,7 +11,6 @@
   layout: "../../../../layouts/BlogPostLayout.astro"
 ---
 
-From the website...
 <br><br>
 Materials included.
 Instructor:  Carrie Pendergrass
