@@ -8,13 +8,13 @@ Chattanooga, TN 37411"
   eventDatesDetails:
     - date: "2024-07-19"
       eventTitle: "Kitchen Cabinetmaking 104 - Applying Finishes"
-      defaultDetails:
+      topDetails:
         title: "Kitchen Cabinetmaking 104: Applying Finishes"
         text: "In this class, you’ll delve into the art of applying finishes to your woodworking projects, a crucial step that not only enhances the appearance of your work but also protects it from wear and tear. Here’s what you can expect to learn about oil finishes, varnishes and polyurethanes, stains and dyes, among other techniques."
         top: true
     - date: "2024-07-20"
       eventTitle: "3 Events on July 20th"
-      defaultDetails:
+      topDetails:
         title: "Editor Note"
         eventTitle: "3 Events Today"
         text: |
@@ -29,13 +29,13 @@ Chattanooga, TN 37411"
         top: true
     - date: "2024-07-21"
       eventTitle: "Kitchen Cabinetmaking 105 - Decorative Details and Installation Techniques"
-      defaultDetails:
+      topDetails:
         title: "Kitchen Cabinetmaking 105: Decorative Details and Installation Techniques"
         text: "Decorative details like molding and trim can transform the look of kitchen cabinets, adding a touch of elegance and personal style. This session will teach students how to add decorative elements and the best practices for installing cabinets securely."
         top: true
     - date: "2024-07-27"
       eventTitle: "3 Events on July 27th"
-      defaultDetails:
+      topDetails:
         eventTitle: "3 Events Today"
         title: "Editor Note"
         text: |

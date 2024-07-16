@@ -19,9 +19,6 @@ if (eventDatesDetails) {
   eventDateDetails = eventDatesDetails.find((dateObj => dateObj.date == pubDate));
 }
 
-console.log("eventDateDetails");
-console.log(eventDateDetails);
-
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayOfWeek = daysOfWeek[date.getDay()];
 ---
@@ -72,10 +69,10 @@ const dayOfWeek = daysOfWeek[date.getDay()];
   </div>}
 
   <div>
-    {eventDateDetails && eventDateDetails.defaultDetails.top && (
+    {eventDateDetails && eventDateDetails.topDetails && (
       <div>
-        <h2 class="text-2xl font-semibold	pt-12">{eventDateDetails.defaultDetails.title}</h2>
-        <div style="white-space: pre-wrap;">{eventDateDetails.defaultDetails.text}</div>
+        <h2 class="text-2xl font-semibold	pt-12">{eventDateDetails.topDetails.title}</h2>
+        <div style="white-space: pre-wrap;">{eventDateDetails.topDetails.text}</div>
       </div>
     )}
   </div>
@@ -86,10 +83,10 @@ const dayOfWeek = daysOfWeek[date.getDay()];
   </section>
 
   <div>
-    {eventDateDetails && eventDateDetails.defaultDetails.bottom && (
+    {eventDateDetails && eventDateDetails.bottomDetails && (
       <div>
-        <h2 class="text-2xl font-semibold	">{eventDateDetails.defaultDetails.title}</h2>
-        <div>{eventDateDetails.defaultDetails.text}</div>
+        <h2 class="text-2xl font-semibold	">{eventDateDetails.bottomDetails.title}</h2>
+        <div>{eventDateDetails.bottomDetails.text}</div>
       </div>
     )}
   </div>
