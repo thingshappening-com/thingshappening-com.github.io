@@ -4,7 +4,7 @@
   address: "5824 Brainerd Road
 Chattanooga, TN 37411"
   iconPath: "/images/icons/craftsman.png"
-  eventDates: ["2024-07-01", "2024-07-02", "2024-07-05", "2024-07-06", "2024-07-07", "2024-07-08", "2024-07-09", "2024-07-11", "2024-07-12", "2024-07-13", "2024-07-14", "2024-07-16", "2024-07-18", "2024-07-19", "2024-07-20", "2024-07-21", "2024-07-27"]
+  eventDates: ["2024-07-19", "2024-07-20", "2024-07-21", "2024-07-27"]
   eventDatesDetails:
     - date: "2024-07-19"
       eventTitle: "Kitchen Cabinetmaking 104 - Applying Finishes"
