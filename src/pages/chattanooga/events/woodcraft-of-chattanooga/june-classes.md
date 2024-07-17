@@ -4,7 +4,7 @@
   address: "5824 Brainerd Road
 Chattanooga, TN 37411"
   iconPath: "/images/icons/craftsman.png"
-  eventDates: ["2024-06-15", "2024-06-17", "2024-06-18", "2024-06-20", "2024-06-21", "2024-06-22", "2024-06-23", "2024-06-25", "2024-06-28", "2024-06-29"]
+  eventDates: []
   eventLink: "https://www.woodcraft.com/pages/store-classes/chattanooga"
   tags: ["woodworking", "craft", "woodcraft-of-chattanooga"]
   time: "Varies"

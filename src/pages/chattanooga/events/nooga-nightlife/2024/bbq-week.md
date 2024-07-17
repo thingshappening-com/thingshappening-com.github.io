@@ -1,6 +1,7 @@
 ---
   title: "Nooga Nightlife: BBQ Week"
-  eventDates: ["2024-06-10", "2024-06-11", "2024-06-12", "2024-06-13", "2024-06-14", "2024-06-15", "2024-06-16"]
+  eventDates: []
+  # TODO ADD BACK "2024-06-10", "2024-06-11", "2024-06-12", "2024-06-13", "2024-06-14", "2024-06-15", "2024-06-16"
   address: "Varies"
   eventLink: "https://chattanoogabbqweek.com/"
   iconPath: "/images/icons/food.png"

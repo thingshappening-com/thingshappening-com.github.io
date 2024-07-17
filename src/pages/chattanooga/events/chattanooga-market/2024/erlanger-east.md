@@ -3,7 +3,8 @@
   venue: "Erlanger East Hospital"
   address: "1751 Gunbarrel Road, Chattanooga, TN 37421"
   iconPath: "/images/icons/market.png"
-  eventDates: ["2024-05-10", "2024-06-14", "2024-07-12"]
+  eventDates: []
+  # TODO ADD BACK "2024-05-10", "2024-06-14", "2024-07-12"
   time: "10:30am to 1:30pm"
   eventLabel: "Week"
   eventLink: "https://chattanoogamarket.com/calendar/"
