@@ -8,44 +8,68 @@
   eventDatesDetails: [
     {
       date: "2024-08-25", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Exfoliating Scrubs: Make exfoliating scrubs using local honey, oats, and other natural ingredients."
       }
     },
     {
       date: "2024-08-18", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going.",
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Natural Home Cleaners: Create eco-friendly home cleaners using ingredients like vinegar, citrus, and essential oils."
       }
     },
     {
       date: "2024-08-11", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Healthy Baby Food: Prepare homemade baby food purees using fresh, organic produce."
       }
     },
     {
       date: "2024-08-04", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "DIY Gift Jars: Layer dry ingredients for soups, cookies, or bread mixes in jars as thoughtful gifts."
       }
     },
     {
       date: "2024-07-28", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Pickle Everything: Experiment with pickling different vegetables like carrots, cucumbers, and radishes."
       }
     },
     {
       date: "2024-07-21", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Natural Dyes: Use vegetable scraps like beetroot or onion skins to create natural dyes for fabric."
       }
     }
   ]
