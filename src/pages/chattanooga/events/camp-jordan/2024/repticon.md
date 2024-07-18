@@ -5,7 +5,7 @@
   eventLabel: "Day"
   iconPath: "/images/icons/expo.png"
   eventLink: "https://repticon.com/"
-  eventDates: ["2024-08-24", "2024-08-25"]
+  eventDates: ["2024-08-24"]
   time: "8am - 9pm"
   entranceCost: "$6 - $15"
   ticketsLink: "https://repticon.com/repticon-chattanooga/"
@@ -13,5 +13,5 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
-
+<b>August 24th and 25th</b>
 🦎 Repticon is a premier organizer of reptile and exotic animal expos across the U.S., featuring a diverse mix of vendors, breeders, and educators. At these family-friendly events, attendees can explore and learn about exotic animals that are not typically available in local pet shops. Knowledgeable breeder-vendors are on hand to educate, and the event includes a series of expert-led seminars on herpetology-related topics.🐍

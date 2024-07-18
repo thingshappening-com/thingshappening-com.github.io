@@ -76,7 +76,7 @@
     }
   ]
   eventLink: "https://chattanoogamarket.com/calendar/"
-  tags: ["chattanooga-market", "market", "kid-friendly"]
+  tags: ["chattanooga-market", "free", "kid-friendly"]
   entranceCost: "Free"
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---

@@ -5,7 +5,7 @@
   eventLabel: "Day"
   iconPath: "/images/icons/expo.png"
   eventLink: "https://www.farleycon.com/"
-  eventDates: ["2024-08-03", "2024-08-04"]
+  eventDates: ["2024-08-03"]
   time: "5am-5pm"
   entranceCost: "$20"
   ticketsLink: "https://www.eventbrite.com/e/farleycon-pop-culture-comic-book-expo-tickets-796913137647?aff=oddtdtcreator"
@@ -13,4 +13,5 @@
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---
 
+<b>August 3rd and 4th</b>
 FarleyCon is back on August 3rd and 4th, 2024, at Camp Jordan Arena! Experience a weekend filled with special guests, panels, vendors, and cosplay. Ideal for comic fans and cosplayers alike, there's something for everyone. Get your tickets now for the FarleyCon Pop Culture & Comic Book Expo, where pop culture comes alive!

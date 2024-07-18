@@ -76,7 +76,7 @@
   time: "11:00am - 4:00pm"
   eventLabel: "Week"
   eventLink: "https://chattanoogamarket.com/calendar/"
-  tags: ["chattanooga-market", "market", "kid-friendly"]
+  tags: ["chattanooga-market", "free", "kid-friendly"]
   entranceCost: "Free - except Beer Festival"
   layout: "../../../../../layouts/BlogPostLayout.astro"
 ---

@@ -3,7 +3,8 @@
   venue: "Camp Jordan Arena"
   venueDetails: "Kitchen Pavillion"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
-  eventDates: ["2024-05-03", "2024-05-04"]
+  eventDates: []
+  # "2024-05-03", "2024-05-04"
   eventLabel: "Day"
   time: "7am-12am"
   entranceCost: "Free" 

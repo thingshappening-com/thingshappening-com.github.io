@@ -3,7 +3,8 @@
   venue: "Camp Jordan Arena"
   address: "323 Camp Jordan Pkwy, East Ridge, TN 37412"
   iconPath: "/images/icons/fitness.png"
-  eventDates: ["2024-07-05", "2024-07-06"]
+  eventDates: []
+  # "2024-07-05", "2024-07-06"
   eventLabel: "Day"
   eventLink: "https://combatsportsnow.com/events"
   tags: ["camp-jordan", "sports"]
