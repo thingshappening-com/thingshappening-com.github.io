@@ -10,51 +10,68 @@
   eventDatesDetails: [
     {
       date: "2024-07-24", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      },
+      topDetails: {
+        title: "Market Fresh Idea",
+        text: "Farm-to-Table Dinners: Host a farm-to-table dinner party featuring all fresh market ingredients."
       }
     },
     {
       date: "2024-07-31", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going.",
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Homemade Bread: Use freshly milled flour to bake homemade bread or other baked goods.",
       }
     },
     {
-      date: "2024-07-24", 
-      topDetails: {
+      date: "2024-08-07",
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
-      }
-    },
-    {
-      date: "2024-08-07", 
+      },
       topDetails: {
-        title: "Visitor Tip", 
-        text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+        title: "Market Fresh Idea", 
+        text: "DIY Candle Making: Use beeswax from the market to make natural, homemade candles.",
       }
     },
     {
       date: "2024-08-14", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
-        text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success."
+        text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Natural Home Cleaners: Create eco-friendly home cleaners using ingredients like vinegar, citrus, and essential oils.",
       }
     },
     {
       date: "2024-08-21", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Decorative Gourds: Use decorative gourds and pumpkins from the market for seasonal home decor.",
       }
     },
     {
       date: "2024-08-28", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "The market operates rain or shine, so check the weather forecast and dress appropriately. Bring an umbrella or wear sunscreen and a hat, depending on the forecast.",
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Cooking Classes: Use market ingredients to host cooking classes or demonstrations for friends and family.",
       }
     }
   ]
