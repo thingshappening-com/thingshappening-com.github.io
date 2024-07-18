@@ -8,44 +8,68 @@
   eventDatesDetails: [
     {
       date: "2024-08-17", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Homemade Pasta: Make fresh pasta from scratch using local eggs and flour."
       }
     },
     {
       date: "2024-08-10", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "If you get there early and don't see a vendor with a coffee offering, there is a Starbucks very close by to help get your morning (or afternoon) going.",
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Stuffed Vegetables: Prepare stuffed peppers or squash using fresh vegetables and grains."
       }
     },
     {
       date: "2024-08-31", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Parking can be busy around midday. For the best spots, try arriving right at the start of the market or closer to the end."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Artisan Bread: Bake artisan bread using freshly milled flour and local ingredients."
       }
     },
     {
       date: "2024-08-24", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Well-behaved pets are welcome at the market, making it a fun outing for the whole family, including furry friends."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Natural Beauty Products: Create natural beauty products like face masks and scrubs using market ingredients."
       }
     },
     {
       date: "2024-07-27", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Think about your weekly meals before you go. This way, you can plan your purchases and ensure your trip to the market is a success."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "Herbal Tea Blends: Dry fresh herbs to create your own herbal tea blends."
       }
     },
     {
       date: "2024-07-20", 
-      topDetails: {
+      bottomDetails: {
         title: "Visitor Tip", 
         text: "Don't hesitate to ask vendors about their products. They can offer great advice, cooking tips, and sometimes even samples."
+      },
+      topDetails: {
+        title: "Market Fresh Idea", 
+        text: "DIY Potpourri: Dry flowers, citrus peels, and herbs to create fragrant potpourri for your home."
       }
     }
   ]
