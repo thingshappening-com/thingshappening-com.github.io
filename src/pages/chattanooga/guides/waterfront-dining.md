@@ -1,7 +1,7 @@
 ---
   title: "Chattanooga Social: Waterfront Dining"
   iconPath: /images/icons/music.png"
-  tags: ["day-trips"]
+  tags: ["social"]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>
