@@ -41,6 +41,7 @@ Projects:
   - Gifts page builout (large)
   - Get LLC
 
+- site search and navigation: all tags, guides, calendar. search working. pagination for just guides or calendar
 - Affiliate disclosure, motivations, attributes sidenav pages
 - show multi event titles on card
 - Move it to an object (eventsDetails: [{}])

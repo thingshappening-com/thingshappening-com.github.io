@@ -1,5 +1,5 @@
 ---
-  title: "Chattanooga Social: Waterfront Dining"
+  title: "Chattanooga Social: 12 Spots for Scenic Waterfront Dining"
   iconPath: /images/icons/music.png"
   tags: ["social"]
   layout: "../../../layouts/BlogPostLayout.astro"
