@@ -13,7 +13,7 @@ export interface Props {
   youtube?: string;
 }
 
-const { address, eventDatesDetails, eventLink, entranceCost, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
+const { address, author, eventDatesDetails, eventLink, entranceCost, lastUpdated, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
 const date = new Date(pubDate);
 let eventDateDetails;
 if (eventDatesDetails) {
@@ -58,6 +58,17 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
             <a class="mr-3" href={`/tag/${tag}`}><span style="color: #fd2d78">#</span>{tag}</a>
           ))}
         </ul>
+      )}
+    </div>
+    <div class="mt-2">
+      {author && (
+        <div><b>Original Author:</b> {author}</div>
+      )}
+    </div>
+
+    <div class="mt-2">
+      {lastUpdated && (
+        <div><b>Last Updated:</b> {lastUpdated}</div>
       )}
     </div>
   </div>

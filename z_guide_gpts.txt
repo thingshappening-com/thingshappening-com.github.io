@@ -1,3 +1,12 @@
+"""
+look up Sharp’s Antiques and Estate Sales in Soddy Daisy, TN. then give me a description, include items people might find. include a review. site your sources 
+
+put it into the html format
+
+...then... try to do a bit more research, then generate again using the sources from before and your new sources
+"""
+
+
 Food trucks:
 - If I were to create a guide post like the hiking one you helped me with for food trucks in chattanooga, what attributes should I include?
 - Can you generate that document again but include these food trucks? Please include any details you are aware of or can find through search for each 
