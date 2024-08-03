@@ -1,4 +1,6 @@
 """
+https://chatgpt.com/c/21f79a52-c22b-4adb-b3a6-17878815725f
+
 look up Sharp’s Antiques and Estate Sales in Soddy Daisy, TN. then give me a description, include items people might find. include a review. site your sources 
 
 put it into the html format

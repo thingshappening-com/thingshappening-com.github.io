@@ -1,8 +1,8 @@
 ---
-  title: "Antiquing in Chattanooga: Top Spots for Unique Finds"
+  title: "Chattanooga Antiquing: Top Spots for Unique Finds"
   iconPath: /images/icons/music.png"
   tags: ["social"]
-  author: "Jack Bauers"
+  author: "Jack Burnham"
   lastUpdated: "7/20/2024"
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
