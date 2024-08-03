@@ -1,7 +1,9 @@
 ---
   title: "Chattanooga Social: Guide to Coffeeshops in Neighboring Cities"
   iconPath: /images/icons/music.png"
-  tags: ["day-trips", "social"]
+  author: "Jessica Vaillancourt -  Contributing Writer"
+  lastUpdated: "6/17/2024"
+  tags: ["social"]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>
@@ -13,80 +15,422 @@
   }
 </style>
 <div>
-  <div>
-    Curious about the best coffee spots in the cities surrounding Chattanooga? Whether you're a local looking to explore new cafes or a visitor in need of a caffeine fix, this list will serve as your guide to the top coffee shops in the area. Each spot offers its own unique charm and specialty brews. Recommendations are always welcome, so feel free to share your favorites!
+  <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
+    <div class="flex flex-col justify-center">
+      <image src="/images/chattanooga_guides/social/coffee1.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+      <div class="text-center"><em>Charming coffee shop</em></div>
+    </div>
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">1.</span>&nbsp;&nbsp;Jitters Coffee Cafe - Jasper, TN</h2>
-    <div class="mb-0p5"><b>Location:</b> 3401B Main St, Jasper, TN 37347</div>
-    <div class="mb-0p5"><b>Description:</b> Located at 3401B Main St, Jitters Coffee Cafe is a cozy establishment known for its delicious coffee and friendly service. They offer a variety of coffee drinks, light bites, and an extensive tea selection. It's a perfect spot to relax and enjoy a casual, cozy atmosphere. They are particularly noted for their great coffee and desserts​ (Zmenu)​​ (MapQuest)​​ (Restaurantji)​.</div>
+  <div class="text-2xl">
+    Whether you’re a coffee connoisseur looking for the perfect brew or simply someone who enjoys a pleasant place to relax, these cafes cater to all preferences and tastes. Enjoy the warm, friendly service, savor the carefully crafted beverages, and indulge in the delicious food options available at each location. These cafes are not just about coffee; they are about creating spaces where people can come together, share moments, and build community.
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">2.</span>&nbsp;&nbsp;Spill Coffee - South Pittsburg, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> Spill Coffee in South Pittsburg offers a modern, inviting space to enjoy a variety of coffee blends. Their menu features everything from classic espresso drinks to creative seasonal specials. It's a great place to unwind with a book or catch up with friends.</div>
+  <div class="pb-2 text-2xl">
+    <h2><span class="color-pink">1.</span>&nbsp;&nbsp;Jitters Coffee Cafe</h2>
+    <div>
+      Jitters Coffee Cafe, located at 3401B Main St, Jasper, TN 37347, is a cozy coffee shop known for its friendly service and high-quality beverages. The cafe offers a variety of coffee drinks, including espresso, cappuccinos, lattes, and frappes. They also serve a range of teas and boba drinks, making it a versatile spot for all beverage lovers​​.
+    </div>
+    <br>
+    <div>
+      Jitters Coffee Cafe is characterized by its warm and inviting atmosphere, perfect for relaxing or socializing. The interior is designed to be casual and cozy, making it an ideal spot for both locals and visitors to unwind​​.
+      <br>
+      <div>
+      Visitors to Jitters Coffee Cafe can expect a warm welcome and a variety of delicious beverages. The cafe is popular for its extensive drink menu, which includes not only coffee but also tea and boba. They also serve light bites and desserts, such as cakes and pastries​​.
+      </div>
+    </div>
+    <br>
+    <div>
+      Jitters Coffee Cafe has become a beloved local spot in Jasper since its establishment. The cafe is run by a dedicated team that emphasizes customer service and community engagement. They are known for recommending local hikes and activities to their customers​​.
+    </div>
+    <br>
+    <div>
+      The cafe is a popular spot, especially in the mornings and during lunchtime. It is suitable for all ages and experience levels. The staff is known for their friendliness and willingness to assist customers in selecting the perfect drink​​.
+    </div>
+    <br>
+    <div>
+      The best times to visit Jitters Coffee Cafe are during weekdays in the mid-morning or early afternoon to avoid the busiest times. The cafe is open Monday to Friday from 8:00 AM to 5:00 PM and on Saturdays from 8:00 AM to 3:00 PM​​.
+    </div>
+    <br>
+    <div>
+      "Jitters Coffee Cafe is better than Starbucks! The frappes are delicious, and the service is top-notch." Another reviewer mentioned, "The variety of drinks available is incredible, and the home-style southern cooking is a pleasant surprise"​​.
+    </div>
+    <br>
+    <div>
+      Jitters Coffee Cafe offers a delightful experience with its excellent coffee, friendly service, and cozy atmosphere. It is a must-visit spot for anyone in Jasper looking for a great cup of coffee and a welcoming environment. For more information, you can visit the <a href="https://www.zmenu.com/jitters-coffee-cafe-jasper-online-menu/" target="_blank">official website</a>.
+    </div>
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">3.</span>&nbsp;&nbsp;Coffee Community Collective - Soddy Daisy, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> Coffee Community Collective in Soddy Daisy is more than just a coffee shop; it's a hub for community events and local art. Stop by for a cup of their expertly brewed coffee and enjoy the vibrant atmosphere. They often host community activities, making it a lively spot for locals.</div>
+
+  <div class="pb-2 text-2xl">
+    <h2><span class="color-pink">2.</span>&nbsp;&nbsp;Spill Coffee</h2>
+    <div>
+      Spill Coffee, located at 104 4th St, South Pittsburg, TN 37380, is a charming coffee shop known for its trendy decor and welcoming atmosphere. The cafe features a variety of coffee drinks, including classic drip coffee, cold brew, espresso, cappuccinos, lattes, and specialty drinks like the Almond Joy latte. They also offer a range of teas and a selection of ice cream​​.
+    </div>
+    <br>
+    <div>
+      In addition to coffee and tea, Spill Coffee serves an assortment of baked goods and light snacks. The menu includes pastries, cookies, and other treats, making it a perfect spot for breakfast or an afternoon pick-me-up​​.
+    </div>
+    <br>
+    <div>
+      The interior of Spill Coffee is decorated with neon signs and greenery walls, creating a vibrant and inviting environment. The cafe provides ample seating, including tables and chairs suitable for studying, working, or socializing with friends​​.
+    </div>
+    <br>
+    <div>
+      Since its opening, Spill Coffee has become a beloved spot in South Pittsburg. The cafe is known for its community-focused approach and friendly staff who strive to make each visit enjoyable​​.
+    </div>
+    <br>
+    <div>
+      Visitors to Spill Coffee can expect a warm welcome and high-quality beverages. The cafe is popular among locals and visitors alike, especially during the morning rush and lunchtime. The staff is known for their friendliness and willingness to help customers choose the perfect drink​​.
+    </div>
+    <br>
+    <div>
+      Spill Coffee is busiest in the mornings and around lunchtime. It is suitable for all ages and experience levels, from casual coffee drinkers to connoisseurs​​.
+    </div>
+    <br>
+    <div>
+      The best times to visit Spill Coffee are during weekdays in the mid-morning or early afternoon to avoid the busiest times. The cafe is open Monday to Friday from 7:00 AM to 6:00 PM and on Saturdays from 7:00 AM to 11:00 AM​​.
+    </div>
+    <br>
+    <div>
+      One guest mentioned, "Spill Coffee has the best coffee in town! The Almond Joy latte is a must-try, and the atmosphere is so cozy." Another reviewer mentioned, "Great place to relax with friends. The staff is friendly, and the ice cream is a delightful treat"​​.
+    </div>
+    <br>
+    <div>
+      Spill Coffee offers a unique and enjoyable coffee experience with its excellent beverages, welcoming atmosphere, and community-focused approach. It is a must-visit spot for anyone in South Pittsburg looking for a great cup of coffee.
+    </div>
   </div>
 
-  <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/social/coffee1.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+
+  <div class="pb-2 text-2xl">
+    <h2><span class="color-pink">3.</span>&nbsp;&nbsp;Coffee Community Collective</h2>
+    <div>
+      Coffee Community Collective, located at 10161 Dayton Pike, Soddy-Daisy, TN 37379, is a unique coffee shop that blends community engagement with high-quality coffee offerings. The shop is part of the Northside Neighborhood House initiative and aims to provide a welcoming space for community members to gather and connect​​.
+    </div>
+    <br>
+    <div>
+      The Collective serves a variety of coffee drinks including drip coffee, espresso, lattes, cappuccinos, and specialty drinks like the Roasted Hazelnut Latte and Mocha Latte. They also offer a selection of teas and light snacks such as pastries and baked goods​​.
+    </div>
+    <br>
+    <div>
+      <div>
+      The interior of Coffee Community Collective is designed to be warm and inviting, with comfortable seating and a cozy atmosphere. It provides a great environment for working, studying, or simply relaxing with a cup of coffee​​.
+      </div>
+      <br>
+      <div>
+      Visitors to Coffee Community Collective can expect friendly service and a range of delicious beverages. The cafe is popular among locals, especially during the morning rush and lunchtime. The staff is known for their professionalism and customer-oriented approach​​.
+      </div>
+      <br>
+      <div>
+        Since its opening, Coffee Community Collective has been an integral part of the Soddy-Daisy community. The cafe not only serves great coffee but also supports local social services by providing office space for non-profit partners to assist those in need​​.
+      </div>
+      <br>
+      <div>
+        The cafe is busiest in the mornings and around lunchtime. It is suitable for all ages and experience levels, from casual coffee drinkers to connoisseurs​​.
+      </div>
+      <br>
+      <div>
+        The best times to visit are during weekdays in the mid-morning or early afternoon to avoid the busiest periods. The cafe operates Monday to Thursday from 7:30 AM to 3:00 PM, and on Fridays from 7:30 AM to 2:00 PM​​.
+      </div>
+      <br>
+      <div>
+      "The coffee is fantastic, and the atmosphere is so welcoming. I love coming here to relax and catch up with friends." Another reviewer mentioned, "The staff is incredibly friendly, and the coffee is always great. I especially enjoy the community-focused approach of this place"​​.
+      </div>
+    </div>
+    <br>
+    <div>
+      Coffee Community Collective offers a unique blend of community support and excellent coffee. It is a must-visit spot for anyone in Soddy-Daisy looking for a great cup of coffee and a welcoming environment. For more information, you can visit the <a href="https://www.nnhouse.org" target="_blank">official website</a>.
+    </div>
+  </div>
+
+  <div class="pb-2 text-2xl">
+    <h2><span class="color-pink">4.</span>&nbsp;&nbsp;Corner Coffee</h2>
+    <div>
+      Corner Coffee, located at 48 Court St, Trenton, GA 30752, is a charming local coffee shop known for its welcoming atmosphere and excellent service. The cafe offers a variety of coffee drinks, including drip coffee, espresso, lattes, cappuccinos, and specialty drinks such as the Almond Joy Latte and Mocha Latte. They also offer a range of teas and seasonal beverages​​.
+    </div>
+    <br>
+    <div>
+      In addition to its extensive coffee and tea selection, Corner Coffee serves a variety of food items. Their menu includes breakfast options like the Morning Panini, waffles, and loaded oatmeal, as well as lunch items such as the Chicken Pesto Panini and various wraps. The cafe also offers a selection of pastries and baked goods​​.
+    </div>
+    <br>
+    <div>
+      The interior of Corner Coffee is designed to be cozy and inviting, with comfortable seating and a peaceful environment. It's an ideal spot for relaxing, studying, or catching up with friends​​.
+    </div>
+    <br>
+    <div>
+      Visitors to Corner Coffee can expect a warm welcome and consistently excellent coffee. The cafe is popular during the morning rush and around lunchtime. The staff is known for their friendliness and willingness to help customers choose the perfect drink​​.
+    </div>
+    <div class="flex justify-center " style="margin-bottom: 1.5em">
+      <div class="flex flex-col justify-center">
+        <image src="/images/chattanooga_guides/social/coffee2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+        <div class="text-center"><em>Barista ready to prepare a fresh cup of coffee</em></div>
+      </div>
+    </div>
+    <br>
+    <div>
+        Since its establishment, Corner Coffee has become a beloved spot for both locals and visitors in Trenton. The cafe is known for its community-oriented approach and friendly staff who provide personalized service​​.
+    </div>
+    <br>
+    <div>
+        Corner Coffee is busiest in the mornings and around lunchtime. It is suitable for all ages and experience levels, from casual coffee drinkers to connoisseurs​​.
+    </div>
+    <br>
+    <div>
+        The best times to visit Corner Coffee are during weekdays in the mid-morning or early afternoon to avoid the busiest periods. The cafe is open Wednesday to Friday from 7:00 AM to 2:00 PM and on Saturdays from 8:00 AM to 2:00 PM​​.
+    </div>
+    <br>
+    <div>
+      "Corner Coffee is a hidden gem in Trenton. The coffee is fantastic, and the food is delicious. The staff makes you feel right at home." Another reviewer mentioned, "The atmosphere is cozy and inviting. It's a great place to relax with a cup of coffee and a good book"​​.
+    </div>
+    <br>
+    <div>
+      Corner Coffee offers a delightful experience with its excellent coffee, delicious food, and cozy atmosphere. It is a must-visit spot for anyone in Trenton looking for a great cup of coffee and a welcoming environment. For more information, you can visit the <a href="https://www.restaurantji.com/ga/trenton/corner-coffee-/" target="_blank">official website</a>.
+    </div>
   </div>
 
 
-  <div class="pb-2">
-    <h2><span class="color-pink">4.</span>&nbsp;&nbsp;Corner Coffee - Trenton, GA</h2>
-    <div class="mb-0p5"><b>Description:</b> Corner Coffee in Trenton, Georgia, is a charming cafe known for its warm hospitality and delicious coffee. It's a great spot to unwind and enjoy a quiet moment in a cozy setting. The cafe also offers a selection of baked goods to complement your coffee.</div>
+  <div class="pb-2 text-2xl">
+    <h2><span class="color-pink">5.</span>&nbsp;&nbsp;Mean Mug Coffeehouse</h2>
+    <div>
+      Mean Mug Coffeehouse, located at 2711 Battlefield Pkwy, Fort Oglethorpe, GA 30742, is a cozy café offering a variety of high-quality coffee and food options. Known for its welcoming atmosphere and friendly service, this coffeehouse has become a favorite among locals and visitors alike​​.
+    </div>
+    <br>
+    <div>
+      Mean Mug serves a full range of coffee drinks, including drip coffee, espresso, lattes, cappuccinos, and specialty drinks like the Almond Joy Latte and Mocha Latte. They also offer Kyoto-style cold brew and slow bar options. In addition to coffee, they serve a variety of teas and seasonal beverages​​.
+    </div>
+    <br>
+    <div>
+      The menu at Mean Mug Coffeehouse includes a wide selection of food items beyond just baked goods. Breakfast options feature the Morning Panini, breakfast sandwiches, smoked salmon bagels, and loaded oatmeal. For lunch, patrons can enjoy items like the Chicken Pesto Panini, various wraps, and veggie bowls. Freshly baked pastries, including cinnamon rolls, biscuits, scones, muffins, and breads, are also available​​.
+    </div>
+    <br>
+    <div>
+      The interior of Mean Mug Coffeehouse is designed to be both comfortable and inviting, with a variety of seating options suitable for working, studying, or socializing. The atmosphere is laid-back, making it an ideal spot for relaxation and enjoying a cup of coffee​​.
+    </div>
+    <br>
+    <div>
+      Since its establishment, Mean Mug Coffeehouse has become a staple in the community. The coffeehouse was founded by Matt Lewis and Monica Smith and has expanded to several locations, including Fort Oglethorpe. The café is known for its community engagement and support of local events​​.
+    </div>
+    <br>
+    <div>
+      Mean Mug Coffeehouse is busiest in the mornings and around lunchtime. It is suitable for all ages and experience levels, offering something for both casual coffee drinkers and connoisseurs​​.
+    </div>
+    <br>
+    <div>
+      The best times to visit Mean Mug Coffeehouse are during weekdays in the mid-morning or early afternoon to avoid the busiest periods. The café is open Monday to Saturday from 7:00 AM to 5:00 PM and on Sundays from 8:00 AM to 4:00 PM​​.
+    </div>
+    <br>
+    <div>
+      "The latte I ordered was amazing, and the staff was very friendly. Great place to work on a Saturday morning." Another reviewer mentioned, "The breakfast biscuit was larger than I expected and delicious. The atmosphere is cozy, and the service is excellent"​​.
+    </div>
+    <br>
+    <div>
+      Mean Mug Coffeehouse offers a unique and enjoyable coffee experience with its excellent beverages, delicious food, and welcoming atmosphere. It is a must-visit spot for anyone in Fort Oglethorpe looking for a great cup of coffee and a comfortable place to relax. For more information, you can visit the <a href="https://www.meanmugcoffee.com" target="_blank">official website</a>.
+    </div>
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">5.</span>&nbsp;&nbsp;Mean Mug Coffeehouse - Fort Oglethorpe, GA</h2>
-    <div class="mb-0p5"><b>Description:</b> Mean Mug Coffeehouse in Fort Oglethorpe offers a unique blend of excellent coffee and a welcoming environment. Their menu includes a variety of beverages and tasty treats, making it a popular spot for locals and visitors alike. The rustic decor adds to its charm.</div>
+
+  <div class="pb-2 text-2xl">
+    <h2><span class="color-pink">6.</span>&nbsp;&nbsp;Buenos Dias Coffee</h2>
+    <div>
+      Buenos Dias Coffee, located at 802 Chickamauga Ave, Rossville, GA 30741, is a charming and cozy café offering a variety of high-quality coffee and food options. Known for its welcoming atmosphere and friendly service, this coffeehouse has become a favorite among locals and visitors alike.
+    </div>
+    <br>
+    <div>
+      Buenos Dias Coffee serves a range of delicious food and drinks, including freshly brewed coffees like the Dulce de Leche Latte and Tres Leches Cold Brew. The menu features both sweet and savory crepes, such as the queso fresco crepe and elote waffle. Alternate milk choices are available for those with dietary restrictions, and there are often gluten-free and vegan options.
+    </div>
+    <br>
+    <div>
+      The interior of Buenos Dias Coffee is designed to be both comfortable and inviting, with a variety of seating options suitable for working, studying, or socializing. The atmosphere is laid-back, making it an ideal spot for relaxation and enjoying a cup of coffee.
+    </div>
+    <br>
+    <div>
+      Buenos Dias Coffee is a woman-owned business, adding a unique touch to its identity. The owners, Jeannette and Ken Katz, bring extensive dining and hospitality experience, which is reflected in the quality of service and food offered at the café. Their background in Salvadoran cuisine also influences the menu, adding a cultural twist to the offerings.
+    </div>
+    <br>
+    <div>
+      Buenos Dias Coffee is busiest in the mornings and around lunchtime. It is suitable for all ages and experience levels, offering something for both casual coffee drinkers and connoisseurs.
+    </div>
+    <br>
+    <div>
+      The best times to visit Buenos Dias Coffee are during weekdays in the mid-morning or early afternoon to avoid the busiest periods. The café is open Tuesday to Saturday, with extended hours on Fridays. It is closed on Sundays and Mondays.
+    </div>
+    <br>
+    <div>
+      "The ladies here are always so kind and welcoming. It's so nice to have a high-quality, woman-owned coffee shop in Rossville! Keep it up!" Another reviewer mentioned, "Such a cute cafe! Great meeting place for business, cafe with friends, or just a solo special day. You need to try this one!"
+    </div>
+    <br>
+    <div>
+      Buenos Dias Coffee offers a unique and enjoyable coffee experience with its excellent beverages, delicious food, and welcoming atmosphere. It is a must-visit spot for anyone in Rossville looking for a great cup of coffee and a comfortable place to relax. For more information, you can visit the <a href="http://buenosdiascoffeecafe.com" target="_blank">official website</a>.
+    </div>
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">6.</span>&nbsp;&nbsp;Buenos Dias Coffee - Rossville, GA</h2>
-    <div class="mb-0p5"><b>Description:</b> Buenos Dias Coffee in Rossville is a delightful cafe with a focus on quality coffee and friendly service. Their expertly crafted drinks are perfect for starting your day on the right note. The cozy interior and friendly baristas make it a must-visit.</div>
-  </div>
 
-  <div class="pb-2">
+  <div class="pb-2 text-2xl">
     <h2><span class="color-pink">7.</span>&nbsp;&nbsp;Just Love Coffee Cafe - Cleveland, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> Just Love Coffee Cafe in Cleveland offers a fun and relaxed atmosphere with a diverse menu of coffee drinks and food options. It's a great place to hang out with friends or get some work done. Their signature waffles are a popular choice among regulars.</div>
+    <div>
+      Just Love Coffee Cafe, located at 2181 Parker St NE, Cleveland, TN 37312, offers a welcoming and friendly atmosphere ideal for socializing, studying, or just enjoying a cup of coffee. The cafe is known for its clean interiors and wheelchair accessibility, making it a comfortable and convenient spot for everyone.
+    </div>
+    <br>
+    <div>
+      The cafe provides a delightful blend of hand-crafted coffee and unique, waffle-ironed food creations. Their coffee menu includes a variety of single-origin coffees and expertly crafted blends, with popular drinks such as the Toffee Coffee Latte, Real Pumpkin Latte, and iced caramel macchiato with almond milk. The cafe also participates in direct trade and organic coffee, supporting sustainable farming communities.
+    </div>
+    <br>
+    <div>
+      The food menu is equally impressive, featuring Instagram-worthy waffle-ironed items like waffled sandwiches, omelets, wraps, and the Flying Pig. They also offer savory sliders, avocado toast, and a special kids' menu. Seasonal and festive drinks are available, adding variety throughout the year. Notable food items include the Spinach Feta Womelette, Waffle with Berries, and the Tomato Basil Soup paired with a three-cheese grilled cheese.
+    </div>
+    <br>
+    <div>
+      Brad Emendorfer, inspired by the mission of Just Love Coffee to be a catalyst for love, opened the Cleveland location. The cafe aims to support local youth and individuals with special needs by providing them with job opportunities and community involvement. Brad’s background in the restaurant industry and his commitment to the community are reflected in the cafe’s operations and outreach programs.
+    </div>
+    <br>
+    <div>
+      Visitors consistently praise the friendly service, delicious coffee, and unique food offerings. The cafe is described as a hidden gem with a cozy atmosphere, making it a favorite among locals. It’s recommended to try the cafe au lait, the wakey wakey for breakfast, and the strawberry dragon drink. The cafe also offers free Wi-Fi, making it a great spot for remote work or study sessions.
+    </div>
+    <br>
+    <div>
+      Just Love Coffee Cafe is open daily from 6 AM to 5 PM. The best times to visit are during mid-morning or early afternoon on weekdays to avoid the busiest periods. The cafe is also open during the holiday season with special hours, making it a perfect spot to enjoy seasonal drinks and festive vibes.
+    </div>
+    <br>
+    <div>
+      "We literally 'Just Love' this place! My kids always order the wakey wakey, and personally, I’ve ordered different menu items only to be impressed with everything. Can’t go wrong with breakfast, lunch, or even an early dinner here." Another reviewer mentioned, "Just had the best iced caramel macchiato with almond milk. Absolutely delicious. Better than Starbucks and Dunkin hands down."
+    </div>
+    <br>
+    <div>
+      Just Love Coffee Cafe offers a unique and enjoyable coffee experience with its excellent beverages, delicious food, and welcoming atmosphere. It is a must-visit spot for anyone in Cleveland looking for a great cup of coffee and a comfortable place to relax. For more information, you can visit the <a href="https://justlovecoffeecafe.com/tn-cleveland/menu/" target="_blank">official website</a>.
+    </div>
   </div>
+
 
   <div class="flex justify-center">
     <image src="/images/chattanooga_guides/social/coffee2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
   </div>
 
 
-  <div class="pb-2">
+  <div class="pb-2 text-2xl">
     <h2><span class="color-pink">8.</span>&nbsp;&nbsp;Local Coffee of East Ridge - East Ridge, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> Local Coffee of East Ridge is a beloved neighborhood spot known for its excellent coffee and friendly baristas. The cozy ambiance makes it a perfect place to enjoy a leisurely coffee break. They also offer a variety of pastries and light snacks.</div>
+    <div>
+      Local Coffee of East Ridge, located at 5330 Ringgold Rd, East Ridge, TN 37412, is a cozy coffee shop known for its welcoming atmosphere and friendly staff. This cafe provides a great environment for relaxing, socializing, or getting some work done.
+    </div>
+    <br>
+    <div>
+      The cafe offers a variety of coffee and food options. The coffee menu includes classic choices like espresso, drip coffee, and specialty drinks such as iced lattes and moccachinos. They also serve tasty baked goods and light meals, with popular items including cinnamon rolls, muffins, and soup. Occasionally, paninis and other savory items are featured.
+    </div>
+    <br>
+    <div>
+      Local Coffee of East Ridge has established itself as a beloved local spot, appreciated for its cozy atmosphere and excellent service.
+    </div>
+    <br>
+    <div>
+      Visitors often highlight the cozy and relaxing atmosphere of the cafe. The staff is praised for their friendliness and efficiency. The cafe tends to be less crowded in the mid-morning and early afternoon, making these the best times to visit for a quieter experience. It’s a great place to enjoy a cup of coffee, a light meal, or to host small gatherings.
+    </div>
+    <br>
+    <div>
+      One visitor shared, "I absolutely love this place. Me and my boyfriend come here every Saturday and any other day he isn't working. The staff is fantastic. The coffee here is the best. The atmosphere here is the best. The people are the best. It’s really just the best." Another reviewer mentioned, "What a place to enjoy a nice cup of coffee and amazing food! Perfect that it's local and easy access for a long stay or a quick visit when I am on the go. I would recommend this place over any other!! Come check it out for yourself!"
+    </div>
+    <br>
+    <div>
+      Local Coffee of East Ridge offers a delightful coffee experience with its excellent beverages, delicious food, and inviting atmosphere. It’s a must-visit spot for anyone in East Ridge looking for a great cup of coffee and a comfortable place to relax. For more information, you can visit their <a href="https://www.mapquest.com/us/tennessee/local-coffee-of-east-ridge-431473034" target="_blank">official page</a>.
+    </div>
   </div>
 
-  <div class="pb-2">
+
+  <div class="pb-2 text-2xl">
     <h2><span class="color-pink">9.</span>&nbsp;&nbsp;Mayfly Coffee - Signal Mountain, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> Mayfly Coffee on Signal Mountain is a must-visit for coffee lovers. With its high-quality brews and charming setting, it's an ideal spot to enjoy a relaxing morning or afternoon coffee. The serene environment and beautiful views make it a great place to unwind.</div>
+    <div>
+      Mayfly Coffee, located at 708 Mississippi Ave, Signal Mountain, TN 37377, is a cozy coffee shop known for its warm and inviting atmosphere. This cafe is perfect for enjoying a cup of coffee, meeting friends, or getting some work done.
+    </div>
+    <br>
+    <div>
+      The cafe offers a diverse menu with a focus on freshly roasted, high-quality coffee. Their offerings include a range of single-origin coffees and unique blends such as the Dead Drift from Mexico and the Ascent from Peru. Seasonal lattes, espresso drinks, and popular items like the salted caramel peanut butter and white chocolate espresso are customer favorites.
+    </div>
+    <br>
+    <div>
+      In addition to coffee, Mayfly Coffee serves a variety of food items, including breakfast sandwiches, bagels, rolls, and pastries like blueberry muffins and cinnamon rolls. The Mabbit Springs burrito and Taft on an everything bagel are particularly popular. The cafe also offers draft beer, making it a great spot for both morning and afternoon visits.
+    </div>
+    <br>
+    <div>
+      Mayfly Coffee is part of the Cadence Coffee Company family and reflects a love for adventure and the outdoors. The shop is known for its commitment to quality and community involvement.
+    </div>
+    <br>
+    <div>
+      Visitors often praise the friendly staff and the delicious coffee. With plenty of seating and outlets, it's an ideal place for a cozy work session. The best times to visit are during mid-morning or early afternoon on weekdays to avoid the crowds. The cafe is open Monday to Saturday from 7 AM to 3 PM and is closed on Sundays.
+    </div>
+    <br>
+    <div>
+      "I love Dead Drift! It is amazing, smooth, bold… perfection in a cup!!!" Another reviewer mentioned, "Used to live in the Chattanooga area and enjoyed going to Mayfly coffee to try all of the different varieties and roasts they offer. I moved to the Detroit area and still order the coffee online when I can. Great place, great coffee, always freshly roasted, very reliable deliveries. Would recommend trying them all. Base camp is my favorite."
+    </div>
+    <br>
+    <div>
+      Mayfly Coffee offers a unique and enjoyable coffee experience with its excellent beverages, delicious food, and welcoming atmosphere. It’s a must-visit spot for anyone on Signal Mountain looking for a great cup of coffee and a comfortable place to relax. For more information, you can visit their <a href="https://www.mayflycoffee.com" target="_blank">official website</a>.
+    </div>
   </div>
 
-  <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/social/coffee3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+  <div class="flex justify-center mb-2" style="margin-bottom: 1.5em">
+    <div class="flex flex-col justify-center">
+      <image src="/images/chattanooga_guides/social/coffee3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+      <div class="text-center"><em>Inviting cafe exterior and patio</em></div>
+    </div>
   </div>
 
-
-  <div class="pb-2">
+  <div class="pb-2 text-2xl">
     <h2><span class="color-pink">10.</span>&nbsp;&nbsp;Be Caffeinated - Red Bank, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> Be Caffeinated in Red Bank offers a vibrant and lively atmosphere with a focus on community. Their extensive menu of coffee and tea options ensures there's something for everyone. The energetic vibe and friendly staff make it a favorite local hangout.</div>
+    <div>
+      Be Caffeinated, located at 3601 Dayton Blvd, Red Bank, TN 37415, is a cozy coffee shop known for its community-focused atmosphere. This cafe primarily operates as a drive-thru, making it a convenient stop for commuters in the Red Bank/Hixson area. The Red Bank location, which opened in 2019, emphasizes fostering community, cultivating kindness, and ensuring a joyful experience for both customers and employees.
+    </div>
+    <br>
+    <div>
+      The cafe offers a diverse range of coffee drinks and other beverages. Popular options include the Blueberry Moc-Iatto, Hazelnut Bliss, Chattahooligan, Fresh Brewed Coffee, and French Press. In addition to coffee, Be Caffeinated serves a selection of pastries and light snacks, featuring items like Asiago bagels and other baked goods sourced from local suppliers. Seasonal drinks are also available, keeping the menu fresh and exciting.
+    </div>
+    <br>
+    <div>
+      Founded by Chris Wood and Doug Lee, Be Caffeinated started in Red Bank and has expanded to multiple locations around Chattanooga. The brand is committed to supporting the local community by sourcing products locally and participating in local charities. Their roasting operations are managed by New Wave Coffee Roasters, known for their musically inspired roasts and award-winning coffee.
+    </div>
+    <br>
+    <div>
+      Visitors often praise the friendly and knowledgeable staff, who are known for catering to dietary restrictions and offering personalized recommendations. The atmosphere is welcoming, making it a favorite spot for many locals. The drive-thru setup ensures quick service, but it can get busy during peak hours, such as weekday mornings. It's recommended to visit during mid-morning or early afternoon to avoid the rush.
+    </div>
+    <br>
+    <div>
+      "I absolutely love this place. Me and my boyfriend come here every Saturday and any other day he isn't working. The staff is fantastic. The coffee here is the best. The atmosphere here is the best. The people are the best. It’s really just the best." Another reviewer mentioned, "What a place to enjoy a nice cup of coffee and amazing food! Perfect that it's local and easy access for a long stay or a quick visit when I am on the go. I would recommend this place over any other!! Come check it out for yourself!"
+    </div>
+    <br>
+    <div>
+      Be Caffeinated offers a unique and enjoyable coffee experience with its excellent beverages, delicious food, and community-driven mission. It’s a must-visit spot for anyone in Red Bank looking for a great cup of coffee and a welcoming atmosphere. For more information, you can visit their <a href="https://www.becaffcoffee.com" target="_blank">official website</a>.
+    </div>
   </div>
 
-  <div class="pb-2">
+
+  <div class="pb-2 text-2xl">
     <h2><span class="color-pink">11.</span>&nbsp;&nbsp;4 Corners Cafe - Ooltewah, TN</h2>
-    <div class="mb-0p5"><b>Description:</b> 4 Corners Cafe in Ooltewah is a hidden gem that offers delicious coffee and a welcoming environment. It's a perfect spot to enjoy a quiet coffee or catch up with friends. They also serve a variety of breakfast and lunch items to pair with your coffee.</div>
+    <div>
+      4 Corners Cafe, located at 9408 Apison Pike #102, Ooltewah, TN 37363, is a welcoming and cozy cafe known for its friendly and efficient staff. This cafe offers a casual dining experience that is perfect for both locals and visitors.
+    </div>
+    <br>
+    <div>
+      The menu at 4 Corners Cafe features a variety of coffee drinks and food options. Popular items include the chai latte, mocha Frostaccino, and various espresso drinks. For breakfast, they offer options like breakfast burritos and pastries. Lunch and dinner options include the Pesto Turkey Panini, Reuben sandwich, Hawaiian Chicken, Avocado Melt, Tuna Melt, and Chicken Salad Sandwich. The cafe caters to different dietary preferences with vegetarian and organic options available.
+    </div>
+    <br>
+    <div>
+      4 Corners Cafe has established itself as a beloved local spot in Ooltewah. The cafe prides itself on offering high-quality food and beverages while fostering a community atmosphere. Their mission is to provide excellent service and delicious meals to all their customers, making it a staple in the area.
+    </div>
+    <br>
+    <div>
+      Visitors frequently praise the friendly service, delicious food, and great coffee. The cafe offers a free library and plays fantastic music, adding to its cozy charm. The prices are reasonable, and the portions are generous. It tends to get busy during breakfast and lunch hours, so visiting mid-morning or early afternoon might provide a more relaxed experience.
+    </div>
+    <br>
+    <div>
+      "Very very friendly. Large amount of food and the food was great!!! The best chicken salad sandwich I've eaten in ANY restaurant." Another reviewer mentioned, "I had a Reuben and my husband had a Chicken Salad sandwich. We both agreed it was the best sandwich we have had in a long time. We will be back to dine in next time. If you have not eaten there, you should give it a try - YUMMY."
+    </div>
+    <br>
+    <div>
+      4 Corners Cafe is a must-visit spot in Ooltewah for its excellent food, friendly service, and inviting atmosphere. Whether you're stopping by for a quick coffee or a full meal, the cafe offers a delightful experience. For more information, you can visit their <a href="https://www.restaurantji.com/tn/ooltewah/4-corners-cafe-/" target="_blank">Restaurantji page</a>.
+    </div>
   </div>
 
-  <div style="margin-top: 3em;">Exploring these coffee spots will not only satisfy your caffeine cravings but also give you a taste of the local culture and hospitality. If you have any recommendations or hidden gems to add to the list, we'd love to hear from you!</div>
+  <br><br>
+  <div class="text-2xl">
+    Exploring these coffee spots will not only satisfy your caffeine cravings but also immerse you in the rich tapestry of local culture and hospitality. Each cafe offers a unique atmosphere and menu, reflecting the diverse flavors and experiences of the community. From the artisan brews at Mayfly Coffee to the community-driven mission of Be Caffeinated, and the cozy charm of 4 Corners Cafe, these establishments provide more than just a cup of coffee—they offer a slice of local life.
+    <br><br>
+    We encourage you to explore these local gems and discover your favorite spot. And if you have any recommendations or know of hidden gems that should be added to the list, we'd love to hear from you! Sharing your experiences and discoveries helps us all enjoy the best our local coffee culture has to offer. So, next time you're in the mood for a great cup of coffee, consider visiting one of these cafes and experiencing the local flavor and hospitality firsthand.
+  </div>
 </div>

@@ -1,6 +1,13 @@
 make this concluding paragraph much better. Also make it longer
 
 """
+OUTDOORS GUIDE:
+look up Jitters Coffee Cafe - Jasper, TN. then give me a detailed description, include as much as information as possible about the cave, it's type, water features, geology, history. It's address or approximate location. Include details on crowds, recommended experience level. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews. No swimming details needed. site your sources, make sure the information you provide is accurate
+
+put it into the html format
+"""
+
+"""
 https://chatgpt.com/c/21f79a52-c22b-4adb-b3a6-17878815725f
 
 look up Sharp’s Antiques and Estate Sales in Soddy Daisy, TN. then give me a description, include items people might find. include a review. site your sources 
