@@ -29,35 +29,35 @@ allGuides.forEach((p) => {
   // console.dir(allGuides);
 let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
 
-let allPostsIncludingMultipleDates = [];
+// let allPostsIncludingMultipleDates = [];
 
-allPosts.forEach((p) => {
-  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+// allPosts.forEach((p) => {
+//   let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
 
-  if (baseData.eventDates) {
-    baseData.eventDates.forEach((date, i) => {
-      let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
-      const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
+//   if (baseData.eventDates) {
+//     baseData.eventDates.forEach((date, i) => {
+//       let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
+//       const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
 
-      allPostsIncludingMultipleDates.push(again);
-    })
-  } else {
-    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
-  }
-});
+//       allPostsIncludingMultipleDates.push(again);
+//     })
+//   } else {
+//     allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+//   }
+// });
 
 
-const today = new Date();
-today.setDate(today.getDate() - 1);  // Move back by one day
-today.setHours(0,0,0,0);
+// const today = new Date();
+// today.setDate(today.getDate() - 1);  // Move back by one day
+// today.setHours(0,0,0,0);
 
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
-    const dateA = new Date(a.pubDate);
-    const dateB = new Date(b.pubDate);
+// allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
+// allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+//     const dateA = new Date(a.pubDate);
+//     const dateB = new Date(b.pubDate);
 
-    return dateA - dateB;
-});
+//     return dateA - dateB;
+// });
 
 ---
 
