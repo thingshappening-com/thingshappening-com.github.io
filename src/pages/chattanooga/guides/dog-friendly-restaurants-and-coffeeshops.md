@@ -1,6 +1,8 @@
 ---
   title: "Chattanooga Social: 9 Dog-Friendly Restaurants and Coffeeshops"
   iconPath: /images/icons/music.png"
+  author: "Jessica Vaillancourt -  Contributing Writer"
+  lastUpdated: "6/09/2024"
   tags: ["social"]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---

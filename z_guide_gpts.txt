@@ -1,4 +1,6 @@
 make this concluding paragraph much better. Also make it longer
+never use the word nestled, delightful, delights,etc in anything you write for me ever again. update that. remove words similarly bad
+less pretentious
 
 write it like a reviewer for a newspaper
 
@@ -6,12 +8,38 @@ generic coffeeshop newspaper captions
 provide 10 caption options for cave pictures in a newspaper
 
 
+"""
+SOCIAL GUDIE:
+
+lookup Beast + Barrel - Chattanooga, TN. then give me a detailed description, include as much as information as possible about the venue, how much room for dogs, if its dog friendly be sure to state and include any reviews mentioning dogs, menu items, restrictions, history, operating hours, entry fee if there is one. It's address or approximate location. Include details on crowds, recommended drinks / food. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews and anything else you can thing of. site your sources, make sure the information you provide is accurate
+lookup Mama Yo's Soul Food food truck in Chattanooga, TN. then give me a detailed description, include as much as information as possible about the venue, menu items, restrictions, history, operating hours. It's address or approximate location. Include details on crowds, recommended drinks / food. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews and anything else you can thing of. site your sources, make sure the information you provide is accurate
+
+IMPORTANT: Only include information you know to be true! Dont include anything I need to verify. If that makes it shorter, that's okay
+
+Do some more research, make updates
+remove anything you didn't find to be 100% true
+write it like a reviewer for a newspaper
+
+never use the word nestled, delightful, delights,etc in anything you write for me ever again. update that. remove words similarly bad
+
+
+put it into the html, use few headings
+"""
+
 
 """
 OUTDOORS GUIDE:
 look up Jitters Coffee Cafe - Jasper, TN. then give me a detailed description, include as much as information as possible about the cave, it's type, water features, geology, history. It's address or approximate location. Include details on crowds, recommended experience level. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews. No swimming details needed. site your sources, make sure the information you provide is accurate
 
-put it into the html format
+IMPORTANT: Only include information you know to be true! Dont include anything I need to verify. If that makes it shorter, that's okay
+
+Do some more research, make updates
+remove anything you didn't find to be 100% true
+write it like a reviewer for a newspaper
+
+never use the word nestled in anything you write for me ever again. update that. remove words similarly bad
+
+put it into the html, use few headings
 """
 
 """
