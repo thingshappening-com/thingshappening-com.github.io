@@ -28,7 +28,7 @@ const { tag } = Astro.params;
 let filteredPosts = (await Astro.glob('../**/*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
 
 let allPostsIncludingMultipleDates = [];
-const description = 'The easiest way to find out about things happening in greater Chattanooga';
+const description = 'The easiest way to find out about things to do in greater Chattanooga';
 const title = 'thingshappening';
 const seoDescription = 'The easiest way to find out about things happening';
 
