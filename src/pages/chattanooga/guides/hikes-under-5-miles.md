@@ -1,6 +1,8 @@
 ---
-  title: "Chattanooga Outdoors: 12 Hikes Under 5 Miles"
+  title: "Chattanooga Outdoors: 10 Hikes Under 5 Miles"
   iconPath: /images/icons/music.png"
+  author: "Jack Burnham - Local Guide"
+  lastUpdated: "7/18/2024"
   tags: ["outdoors"]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
@@ -15,103 +17,450 @@
 </style>
 
 <div>
+  <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
+    <div class="flex flex-col justify-center">
+      <image src="/images/chattanooga_guides/outdoors/hikes/woods2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+      <div class="text-center"><em>Trail winding through the forest</em></div>
+    </div>
+  </div>
+
+  <div class="text-2xl">
+    Chattanooga offers a wealth of hiking opportunities that showcase its stunning landscapes, lush forests, and picturesque trails. Whether you’re an experienced hiker or just looking for a quick outdoor escape, the area is brimming with short but rewarding hikes. We’ve put together a list of fifteen fantastic hikes, each under five miles, that are perfect for a day adventure. These trails allow you to immerse yourself in nature, enjoy breathtaking views, and experience the diverse ecosystems of the region without committing to a lengthy trek. So lace up your hiking boots and get ready to explore some of the best short hikes Chattanooga has to offer.
+  </div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">1.</span>&nbsp;&nbsp;Stringers Ridge via Blue Trail - Chattanooga, TN</h2>
   <div>
-    Chattanooga is a paradise for hikers with its scenic landscapes, lush forests, and beautiful trails. For those looking for shorter adventures, we've compiled a list of fifteen fantastic hikes under five miles. Whether you're a seasoned hiker or a beginner, these trails offer the perfect opportunity to enjoy the great outdoors without committing to a long trek.
+    Stringers Ridge via Blue Trail offers a moderately challenging hike in Chattanooga, spanning 3.3 miles with an elevation gain of 508 feet. This well-groomed singletrack trail features rolling hills and short steep sections, making it suitable for both hikers and mountain bikers. The trail provides a blend of urban wilderness and natural beauty, with scenic views of the Tennessee River and downtown Chattanooga.
+  </div>
+  <br>
+  <div>
+    The 92-acre park includes 7 miles of multi-use trails, with some sections designated for foot traffic only. The geology and ecology of the area are typical of the Tennessee River Gorge, featuring diverse plant life and occasional wildlife sightings. The park's efforts to preserve this natural area ensure a peaceful hiking experience.
+  </div>
+  <br>
+  <div>
+    The trail can get busy, especially on weekends and during peak hours. For a quieter experience, consider visiting on weekdays or early in the morning. The trail is open year-round from sunrise to sunset and is free to the public.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the trail for its accessibility and scenic views. One reviewer noted, "The Blue Trail offers great views and a good workout without being too strenuous." Another mentioned, "A perfect escape from the city with beautiful surroundings and well-maintained paths."
+  </div>
+  <br>
+  <div>
+    Stringers Ridge via Blue Trail is a must-visit for those seeking a blend of urban and natural hiking experiences. The trailheads on Old Bell Avenue and Spears Avenue provide ample parking and facilities, making it convenient for a day out in nature. For more details, visit <a href="https://outdoorchattanooga.com/stringers-ridge/" target="_blank">Outdoor Chattanooga</a>.
+  </div>
+</div>
+
+
+  <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
+    <div class="flex flex-col justify-center">
+      <image src="/images/chattanooga_guides/outdoors/hikes/woods3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+      <div class="text-center"><em>Hike on a peaceful trail</em></div>
+    </div>
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">1.</span>&nbsp&nbsp Stringers Ridge via Blue Trail</h2>
-    <div class="mb-0p5"><b>Distance:</b> 3.3 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Located near downtown Chattanooga, Stringers Ridge offers a serene escape with stunning views of the city and Tennessee River. The loop trail is perfect for a quick hike and features a mix of wooded paths and open vistas.</div>
-    <div class="mb-0p5"><b>Highlights:</b> City views, moderate terrain, close to downtown, excellent for a quick escape into nature.</div>
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">2.</span>&nbsp;&nbsp;Rainbow Lake and Bee Branch Trail Loop - Signal Mountain, TN</h2>
+  <div>
+    Rainbow Lake and Bee Branch Trail Loop offers a moderately challenging 4.6-mile hike in Signal Mountain, TN, with an elevation gain of 826 feet. This trail combines gravel paths with rugged terrain, providing a mix of easy and challenging sections. Built in 1916 as part of the Signal Mountain Hotel, Rainbow Lake is a popular outdoor destination.
+  </div>
+  <br>
+  <div>
+    The trail starts at the Rainbow Lake Trailhead on Ohio Avenue, passing a golf course and an old spring house. Hikers can descend directly to the dam or take a 2.3-mile loop around the lake, leading to Middle Creek, ideal for cooling off. The nearby 100-foot suspension bridge over the creek connects to the Cumberland Trail.
+  </div>
+  <br>
+  <div>
+    The trail can get busy, especially on weekends. For a quieter experience, visit on weekdays or early mornings. The trail is open daily from sunrise to sunset and is free to the public.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the trail for its scenic beauty and variety. One reviewer noted, "A great mix of easy paths and challenging rocky sections. Perfect for a day out with the family." Another mentioned, "The views from the suspension bridge are stunning, and the hike offers a good workout without being too strenuous."
+  </div>
+  <br>
+  <div>
+    The trail traverses typical Tennessee River Gorge geology, featuring diverse plant life, including hemlocks and laurels, and occasional wildlife sightings.
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy shoes due to rocky sections.</li>
+      <li>Bring water, especially in summer.</li>
+      <li>Check weather conditions before heading out.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information, visit <a href="https://outdoorchattanooga.com/rainbow-lake/" target="_blank">Outdoor Chattanooga</a>.
+  </div>
+</div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">3.</span>&nbsp;&nbsp;Glen Falls Trail - Lookout Mountain, GA</h2>
+  <div>
+    The Glen Falls Trail, located on Lookout Mountain in Georgia, offers a moderately challenging yet highly rewarding hiking experience. This 1.2-mile round trip hike features an ascent of less than 500 feet, making it suitable for a wide range of hikers. The trail is known for its beautiful scenery, including lush woodlands, unique rock formations, and cascading waterfalls.
+  </div>
+  <br>
+  <div>
+    The trailhead can be found on Ochs Highway, and parking is available in a small roadside pullout lot. As you begin your hike, you'll be greeted by a mature forest and meadows filled with wildflowers. Be mindful of poison ivy and poison oak along the trail, so wearing long pants is advisable.
+  </div>
+  <br>
+  <div>
+    The hike includes several points of interest:
+    <ul class="text-2xl">
+      <li><strong>Rock Formations:</strong> Lookout Mountain's geology is on full display, with fascinating rock formations throughout the trail.</li>
+      <li><strong>Waterfalls:</strong> The trail features three waterfalls. The upper falls cascade into a circular wading pool, a perfect spot for a refreshing dip.</li>
+      <li><strong>Historical Significance:</strong> The area was historically significant during the Civil War, particularly during the Chattanooga Campaign.</li>
+      <li><strong>Natural Tunnel:</strong> A cave-like passage leading from Glen Falls to the trailhead on the north end of Ochs Highway.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    Best times to visit are during the spring and after heavy rainfall, when the waterfalls are at their most impressive. The trail can get crowded, especially on weekends and holidays, so early mornings or weekdays are the best times for a quieter experience.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the Glen Falls Trail for its scenic beauty and variety. One hiker noted, "It's like stepping through a magical gate into a secret garden," describing the upper falls area. Another highlighted the trail's accessibility and rewarding views despite its short length.
+  </div>
+  <br>
+  <div>
+    For those seeking a mix of natural beauty and a bit of history, Glen Falls Trail on Lookout Mountain is a must-visit. Whether you're a seasoned hiker or just looking for a picturesque walk, this trail offers a memorable adventure.
+  </div>
+  <br>
+</div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">4.</span>&nbsp;&nbsp;Edwards Point Trail - Signal Mountain, TN</h2>
+  <div>
+    Edwards Point Trail offers a moderately challenging 5.8-mile round trip hike from Signal Point, with an elevation gain of approximately 990 feet. This trail provides hikers with stunning views of the Tennessee River Gorge, Middle Creek Gorge, and Chattanooga Valley.
+  </div>
+  <br>
+  <div>
+    The trail starts at Signal Point and descends steeply around 200 feet down wooden stairs known as "the mousetrap." The first major viewpoint is Julia Falls Overlook, offering breathtaking vistas of the gorge and the 95-foot Julia Falls. The trail then becomes rocky and technical, winding through lush hardwood forests and past rock gardens.
+  </div>
+  <br>
+  <div>
+    For an alternative route, the Rainbow Lake Trail offers a 4-mile round trip hike with an elevation gain of around 740 feet. This trail features similar scenic beauty and connects with the Cumberland Trail at the 100-foot suspension bridge over Middle Creek.
+  </div>
+  <br>
+  <div>
+    The trail can get busy, especially on weekends and holidays. For a quieter experience, visit on weekdays or early mornings. The trail is open daily from sunrise to sunset and is free to the public. Parking is available at both Signal Point and Rainbow Lake trailheads, but spaces can fill up quickly.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the trail for its scenic beauty and well-maintained paths. One reviewer noted, "The hike to Edwards Point offers some of the best views in the Chattanooga area. The trail is well-maintained, and the scenery is breathtaking." Another mentioned, "It's a moderately challenging hike with a few rocky sections, but the views from Edwards Point make it all worth it. Highly recommend!"
+  </div>
+  <br>
+  <div>
+    The trail traverses typical Cumberland Plateau geology, featuring diverse plant life, including hardwood trees and various shrubs. The lush forest and blooming plants change with the seasons, providing a vibrant backdrop throughout the year.
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy shoes due to rocky sections.</li>
+      <li>Bring water, especially in summer.</li>
+      <li>Check weather conditions before heading out.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information, visit <a href="https://www.visitchattanooga.com" target="_blank">Visit Chattanooga</a>.
+  </div>
+</div>
+
+
+  <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
+    <div class="flex flex-col justify-center">
+      <image src="/images/chattanooga_guides/outdoors/hikes/simple_woods.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+      <div class="text-center"><em>Trail through the a forested landscape</em></div>
+    </div>
   </div>
 
-  <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/outdoors/hikes/woods2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">5.</span>&nbsp;&nbsp;Cravens House Loop Trail - Chattanooga, TN</h2>
+  <div>
+    The Cravens House Loop Trail on Lookout Mountain near Chattanooga, TN, offers a moderately challenging 4.2-mile hike with an elevation gain of approximately 728 feet. This trail features a mix of historical sites, scenic views, and diverse geology, making it a popular choice for both history buffs and nature enthusiasts.
+  </div>
+  <br>
+  <div>
+    The trailhead is located at the historic Cravens House, a significant Civil War site. From here, hikers can explore the forested landscape, which includes impressive moss-covered rock formations and historical markers. The trail meanders through areas that saw heavy action during the Civil War, adding an educational element to the hike.
+  </div>
+  <br>
+  <div>
+    One of the highlights is the ascent via the Gum Spring Trail, a steady climb that rewards hikers with panoramic views once they reach the Bluff Trail. The Bluff Trail section is particularly scenic, with towering sandstone cliffs on one side and sharp drop-offs on the other, offering breathtaking views of the Tennessee River and distant mountains.
+  </div>
+  <br>
+  <div>
+    The trail can be muddy after rain, so appropriate footwear is recommended. The hike is accessible year-round, but the best times to visit are during spring and fall when the weather is more temperate, and the foliage is either blooming or changing colors.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the Cravens House Loop Trail for its combination of natural beauty and historical significance. One hiker noted, "The views from the Bluff Trail are simply spectacular, especially in the fall. It's a moderately challenging hike but well worth the effort." Another reviewer mentioned, "The historical markers along the trail add an interesting element, and the climb to Sunset Rock offers a great workout with a rewarding view at the top."
+  </div>
+  <br>
+  <div>
+    The trail can be crowded, especially on weekends and holidays, as it is a popular spot for both locals and tourists. However, starting early in the day or visiting during the week can help avoid the heaviest crowds.
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy shoes due to rocky sections.</li>
+      <li>Bring water, especially in summer.</li>
+      <li>Check weather conditions before heading out.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    To reach the trailhead, head towards St. Elmo and follow US 11 (Cummings Hwy) until the signs for Hwy 148, which goes up Lookout Mountain. Turn left on Hwy 148 and continue up the mountain. Just past the Ruby Falls entrance, you will see a sign for Military Rd. Turn right on Military Rd and follow the signs to Cravens House. The road is narrow, so be cautious of oncoming traffic.
+  </div>
+  <br>
+  <div>
+    For more information, visit <a href="https://www.alltrails.com/trail/us/tennessee/cravens-house-loop-trail" target="_blank">AllTrails</a> and the <a href="https://www.nps.gov/chch/planyourvisit/cravens-house.htm" target="_blank">National Park Service</a>.
+  </div>
+</div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">6.</span>&nbsp;&nbsp;Lula Lake Classic Loop - Near Chattanooga, TN</h2>
+  <div>
+    The Lula Lake Classic Loop, located on Lookout Mountain near Chattanooga, TN, offers a picturesque and moderately challenging hike. Spanning approximately 4.4 miles, this loop features an elevation gain of 613 feet and typically takes about 1 hour and 54 minutes to complete. The trail is a popular choice for hiking, running, and walking, drawing visitors with its stunning natural features, including the famous Lula Lake and the impressive 110-foot Lula Falls.
+  </div>
+  <br>
+  <div>
+    Starting from the parking lot, hikers follow a gravel road down to a meadow, crossing a footbridge before embarking on a scenic journey through various trails. The route includes segments of South Creek, Homestead, Turkey, Bluff, and High Adventure trails, among others. The hike offers a mix of terrain, from easy paths to more rugged sections, providing a bit of adventure for all skill levels. The trails are well-marked and maintained by the Lula Lake Land Trust.
+  </div>
+  <br>
+  <div>
+    The surrounding geology features the rugged beauty of the Tennessee River Gorge, with diverse plant life including hemlocks and laurels. Wildlife sightings are common, adding to the trail's natural charm. The conservation efforts of the Lula Lake Land Trust ensure the preservation of this pristine environment.
+  </div>
+  <br>
+  <div>
+    The Lula Lake Classic Loop can get busy, particularly on weekends when the area is open to the public. To avoid crowds, consider visiting on weekdays or early in the morning. Reservations are required to access the area, and the trail is open only on the first and last weekends of each month. It is advisable to check the Lula Lake Land Trust website for the latest schedule and to secure a reservation.
+  </div>
+  <br>
+  <div>
+    Hikers have praised the Lula Lake Classic Loop for its breathtaking views and well-maintained paths. One reviewer noted, "The hike is absolutely beautiful, with stunning views of the falls and the lake. It's a great mix of easy walking and more challenging sections." Another mentioned, "Lula Lake is a hidden gem. The trails are well-marked, and the scenery is spectacular. It's a must-do hike if you're in the Chattanooga area."
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy hiking shoes due to the varied terrain.</li>
+      <li>Bring plenty of water, especially during the summer months.</li>
+      <li>Plan ahead and make reservations early, as the number of visitors is limited.</li>
+      <li>Follow all trail guidelines to help preserve the natural beauty of the area.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information and to make reservations, visit the <a href="https://www.lulalake.org" target="_blank">Lula Lake Land Trust website</a>.
+  </div>
+</div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">7.</span>&nbsp;&nbsp;Big Soddy Creek Gulf - Soddy-Daisy, TN</h2>
+  <div>
+    Big Soddy Creek Gulf, located in Soddy-Daisy, TN, just north of Chattanooga, is a pristine 285-acre wilderness area offering a variety of outdoor activities. The main trail is an easy 1-mile hike along Big Soddy Creek, leading to the confluence with Board Camp Creek. The trail features scenic views, swimming holes, and beautiful rock formations.
+  </div>
+  <br>
+  <div>
+    The trailhead is accessible from Back Valley Road, with ample parking and porta potties available. The first mile of the trail is relatively flat and follows an old railroad bed, making it suitable for all ages and fitness levels. Along the way, you'll encounter several swimming holes perfect for a refreshing dip during the summer months.
+  </div>
+  <br>
+  <div>
+    The hike includes several points of interest:
+    <ul class="text-2xl">
+      <li><strong>Waterfalls:</strong> The main trail features multiple waterfalls, especially after heavy rain. A notable waterfall is located about 1 mile down the trail.</li>
+      <li><strong>Creeks:</strong> Big Soddy Creek and Board Camp Creek offer beautiful water views and excellent swimming spots.</li>
+      <li><strong>Historical Sites:</strong> The trail passes by old ruins and remnants of the area's mining history.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    Best times to visit are during the spring and after rainfall when the waterfalls are most active. The trail can get busy on weekends and holidays, so visiting on weekdays or early mornings is recommended for a quieter experience.
+  </div>
+  <br>
+  <div>
+    Visitors have praised Big Soddy Creek Gulf for its scenic beauty and accessibility. One reviewer mentioned, "A great trail for families with plenty of spots to swim and relax," while another noted, "Beautiful scenery and easy hiking make this a perfect day trip."
+  </div>
+  <br>
+  <div>
+    For those seeking a mix of natural beauty and easy hiking, Big Soddy Creek Gulf offers a memorable adventure. The trail is open daily from sunrise to sunset and is free to the public.
+  </div>
+  <br>
+  <div>
+    Sources: <a href="https://exploringchatt.com" target="_blank">Exploring Chatt</a>, <a href="https://outdoorchattanooga.com" target="_blank">Outdoor Chattanooga</a>, <a href="https://sidewalkshoes.com" target="_blank">Sidewalk Shoes</a>
+  </div>
+</div>
+
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">8.</span>&nbsp;&nbsp;Sunset Rock via Bluff Trail - Lookout Mountain, TN</h2>
+  <div>
+    Sunset Rock via Bluff Trail offers a moderately challenging 3-mile round trip hike on Lookout Mountain, TN, with an elevation gain of approximately 570 feet. This trail provides hikers with stunning views of the Tennessee River and downtown Chattanooga, as well as historical significance tied to the Civil War.
+  </div>
+  <br>
+  <div>
+    The trail begins at Point Park, where you can park for a $7 entrance fee, and descends steeply down metal-grated steps that connect with the Bluff Trail. The Bluff Trail winds along the side of Lookout Mountain, featuring impressive rock walls and several steep drop-offs, making it a popular spot for rock climbers.
+  </div>
+  <br>
+  <div>
+    As you hike, you'll pass under the towering bluffs and eventually reach a set of steps that lead up to Sunset Rock. The final ascent to the viewpoint is steep but rewards hikers with expansive westward views, making it a perfect spot for watching the sunset.
+  </div>
+  <br>
+  <div>
+    The trail can get busy, especially on weekends and during sunset. For a quieter experience, consider visiting on weekdays or early mornings. The trail is open year-round from sunrise to sunset, and there are additional parking spots available at the Cravens House trailhead for a slightly longer hike.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the trail for its scenic beauty and historical context. One reviewer noted, "The views from Sunset Rock are incredible, and the hike itself is well worth the effort. The historical markers along the way add a fascinating element to the hike." Another mentioned, "It's a great hike with some challenging sections, but the payoff at the top is amazing. Highly recommend for anyone visiting Chattanooga."
+  </div>
+  <br>
+  <div>
+    The trail traverses typical Lookout Mountain geology, featuring diverse plant life and occasional wildlife sightings. The bluffs along the trail are a significant draw for rock climbers, and the area is known for its rich Civil War history.
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy shoes due to rocky sections and steep steps.</li>
+      <li>Bring plenty of water, especially in warmer weather.</li>
+      <li>Be mindful of the drop-offs and keep an eye on children and pets.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information, visit <a href="https://www.hikethesouth.com" target="_blank">Hike The South</a>.
+  </div>
+</div>
+
+
+  <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
+    <div class="flex flex-col justify-center">
+      <image src="/images/chattanooga_guides/outdoors/hikes/woods3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
+      <div class="text-center"><em>A trail by a brook for nature enthusiasts to explore</em></div>
+    </div>
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">2.</span>&nbsp&nbsp Rainbow Lake and Bee Branch Trail Loop</h2>
-    <div class="mb-0p5"><b>Distance:</b> 2.2 miles</div>
-    <div class="mb-0p5"><b>Description:</b> This trail on Signal Mountain is known for its picturesque scenery, including a beautiful lake and cascading streams. The relatively easy hike is ideal for families and those looking to enjoy nature without too much exertion.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Scenic lake, gentle streams, family-friendly, historical suspension bridge.</div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">9.</span>&nbsp;&nbsp;Cloudland Canyon West Rim Loop - Rising Fawn, GA</h2>
+  <div>
+    Cloudland Canyon West Rim Loop offers a moderately challenging 5-mile lollipop-style hike with an elevation gain of approximately 1,270 feet. This trail is known for its breathtaking views of the canyon, rugged geology, and dense woodlands.
+  </div>
+  <br>
+  <div>
+    The trail begins at the main trailhead near the Interpretive Center. It initially descends through a series of switchbacks, crossing Daniel Creek via a footbridge before climbing back up to the canyon rim. The loop section of the trail can be hiked clockwise or counterclockwise, with most hikers preferring the counterclockwise route for the best views.
+  </div>
+  <br>
+  <div>
+    The trail follows the rim of the canyon, offering several side trails to overlooks with stunning vistas. The terrain is a mix of sandy, rocky, and root-laden paths, making it a diverse and engaging hike. The geology includes sandstone formations and steep drop-offs, typical of the Cumberland Plateau.
+  </div>
+  <br>
+  <div>
+    The trail can get busy, especially on weekends and during peak seasons like spring and fall. For a quieter experience, consider visiting on weekdays or early mornings. The trail is open year-round from 7am to 10pm, with a $5 parking fee or an annual pass available for $50.
+  </div>
+  <br>
+  <div>
+    Visitors have praised the trail for its scenic beauty and well-maintained paths. One reviewer noted, "The views from the West Rim Loop are incredible, and the hike itself is well worth the effort. The overlooks provide some of the best scenery in Georgia." Another mentioned, "It's a moderately challenging hike with diverse terrain and stunning canyon views. Highly recommend for anyone visiting the area."
+  </div>
+  <br>
+  <div>
+    The trail traverses typical Cumberland Plateau geology, featuring diverse plant life and occasional wildlife sightings. The area is known for its rich natural history and is a favorite among local hikers.
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy shoes due to rocky and uneven sections.</li>
+      <li>Bring plenty of water, especially in warmer weather.</li>
+      <li>Be mindful of the drop-offs and keep an eye on children and pets.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information, visit <a href="https://www.hikethesouth.com" target="_blank">Hike The South</a>.
+  </div>
+</div>
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">10.</span>&nbsp;&nbsp;Audubon Acres Loop - Chattanooga, TN</h2>
+  <div>
+    Audubon Acres Loop offers a serene and family-friendly hiking experience through the 130-acre Elise Chapin Wildlife Sanctuary. With over 5 miles of interconnected trails, hikers can enjoy a variety of landscapes including forest, meadow, and creekside environments.
+  </div>
+  <br>
+  <div>
+    The main loop trails include the Creek Loop (1.0 mile), which follows South Chickamauga Creek and features a swinging bridge, and the Trek to Little Owl Village (1.9 miles), leading to a historical Native American site. The Chickamauga Loop to Resurrection Rock (1.3 miles) offers a scenic overlook ideal for relaxing and picnicking.
+  </div>
+  <br>
+  <div>
+    The terrain is mostly flat with natural surfaces, making the trails accessible for hikers of all skill levels. The diverse ecology includes hardwood forests, open meadows, and wetlands, providing habitats for various wildlife such as deer, owls, and numerous bird species. The sanctuary is particularly noted for its spring wildflowers and autumn foliage.
+  </div>
+  <br>
+  <div>
+    The trails are popular year-round, but weekdays and early mornings offer a more peaceful experience. The sanctuary is open daily with a small admission fee of $6 for adults. The visitor center includes a gift shop and an archaeological museum with Native American artifacts.
+  </div>
+  <br>
+  <div>
+    Visitors have praised Audubon Acres for its tranquility and natural beauty. One reviewer mentioned, "A beautiful spot for a relaxing hike. The trails are well-marked and the swinging bridge is a highlight." Another noted, "Great for families. The history and scenery make it a special place to visit."
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear comfortable walking shoes.</li>
+      <li>Bring water and snacks, especially for longer hikes.</li>
+      <li>Check the weather before heading out to avoid muddy conditions.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information, visit <a href="https://www.chattanoogaaudubon.org" target="_blank">Chattanooga Audubon Society</a>.
+  </div>
+</div>
+
+
+<div class="pb-2 text-2xl">
+  <h2><span class="color-pink">11.</span>&nbsp;&nbsp;Bay Point Loop Trail - Harrison Bay State Park, TN</h2>
+  <div>
+    The Bay Point Loop Trail, located in Harrison Bay State Park near Chattanooga, TN, offers a scenic and family-friendly hiking experience. This 4.3-mile loop trail is generally considered easy to moderate, with a few small climbs, making it suitable for hikers of all skill levels. The trail meanders along the shoreline of Chickamauga Lake, providing beautiful water views and opportunities to spot wildlife.
+  </div>
+  <br>
+  <div>
+    Starting from the marina, the Bay Point Loop Trail takes hikers through a variety of terrains, including hard-packed gravel and typical dirt hiking paths. The trailhead is easily accessible from the main park entrance, and parking is available near the marina. The loop follows several peninsulas, offering continuous views of the lake and shallow bays. The trail is mostly flat, but can become muddy after rain, so proper footwear is recommended.
+  </div>
+  <br>
+  <div>
+    Harrison Bay State Park spans 1,200 acres along the Chickamauga Lake shoreline. The park is rich in natural beauty, featuring forests, native grasslands, and abundant wildlife. Hikers can expect to see a variety of birds, including shorebirds, wintering waterfowl, and occasional sightings of deer and other wildlife. The park’s conservation efforts help maintain the pristine condition of this natural habitat.
+  </div>
+  <br>
+  <div>
+    The Bay Point Loop Trail can get busy, especially on weekends. For a quieter experience, it is best to visit on weekdays or early in the morning. The park is open daily from 8:00 AM to 10:00 PM, and the trail is accessible year-round.
+  </div>
+  <br>
+  <div>
+    Hikers frequently praise the trail for its accessibility and scenic views. One reviewer mentioned, "The Bay Point Loop Trail is a pleasant walk with beautiful scenery. It's a great way to get some exercise while enjoying views of the lake." Another noted, "A nice trail for a family outing. The path is well-marked and easy to follow, with plenty of spots to stop and take in the views."
+  </div>
+  <br>
+  <div>
+    Tips for hiking:
+    <ul class="text-2xl">
+      <li>Wear sturdy shoes, as the trail can be muddy after rain.</li>
+      <li>Bring water, especially during the summer months.</li>
+      <li>Enjoy the benches along the trail for rest and lake views.</li>
+      <li>Plan your visit to avoid peak times for a more peaceful hike.</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    For more information, visit the <a href="https://tnstateparks.com/parks/harrison-bay" target="_blank">Harrison Bay State Park website</a>.
+  </div>
+</div>
+
+<br>
+  <div class="text-2xl">
+    Chattanooga is a paradise for hikers, offering scenic landscapes, lush forests, and beautiful trails that cater to all levels of experience. For those seeking shorter adventures, we have compiled a list of fifteen fantastic hikes under five miles. Whether you’re a seasoned hiker or just starting out, these trails provide the perfect opportunity to enjoy the great outdoors without the commitment of a long trek. From serene lakeside paths to invigorating forest trails, each hike showcases the natural beauty of the Chattanooga area. So, grab your hiking boots, bring along some water, and set out to explore these incredible trails. Enjoy the fresh air, the stunning views, and the satisfaction of a day well spent in nature. If you have a favorite trail that we missed, let us know, and we’ll be sure to add it to our list.
   </div>
 
-  <div class="pb-2">
-    <h2><span class="color-pink">3.</span>&nbsp&nbsp Glen Falls Trail</h2>
-    <div class="mb-0p5"><b>Distance:</b> 1.2 miles</div>
-    <div class="mb-0p5"><b>Description:</b> A hidden gem on Lookout Mountain, Glen Falls Trail features a short, easy hike with the reward of a stunning waterfall. The trail winds through lush forest and rocky outcrops, making it a favorite among locals.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Waterfall, lush forest, rocky outcrops, picturesque wooden bridge.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">4.</span>&nbsp&nbsp Edwards Point Trail</h2>
-    <div class="mb-0p5"><b>Distance:</b> 3.8 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Starting at the Signal Point overlook, this trail leads to Edwards Point, offering breathtaking views of the Tennessee River Gorge. The hike is moderately challenging with a rewarding vista at the end.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Panoramic views, moderately challenging, river gorge, ideal for photography.</div>
-  </div>
-
-  <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/outdoors/hikes/simple_woods.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">5.</span>&nbsp&nbsp Cravens House Look Trail</h2>
-    <div class="mb-0p5"><b>Distance:</b> 3.4 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Located on Lookout Mountain, this historic trail begins at the Cravens House and takes you through a scenic forest to Sunset Rock. The trail is moderately difficult but offers beautiful views and historical insights.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Historic site, forested trail, Sunset Rock, rich Civil War history.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">6.</span>&nbsp&nbsp Lula Lake Classic Loop</h2>
-    <div class="mb-0p5"><b>Distance:</b> 4.4 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Open on the first and last weekends of the month, this trail system features stunning waterfalls and lake views. The main loop is under five miles and offers a moderately easy hike with plenty of natural beauty.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Waterfalls, lake views, limited access, requires an entrance fee, great for a weekend adventure.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">7.</span>&nbsp&nbsp Big Soddy Creek Gulf</h2>
-    <div class="mb-0p5"><b>Distance:</b> 3.5 miles</div>
-    <div class="mb-0p5"><b>Description:</b> A relatively new addition to Chattanooga's trail system, this trail offers a peaceful hike along Big Soddy Creek. The trail is easy and perfect for a leisurely hike with opportunities for wildlife spotting.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Creekside hike, wildlife spotting, peaceful environment, ideal for nature lovers.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">8.</span>&nbsp&nbsp Sunset Rock via the Bluff Trail</h2>
-    <div class="mb-0p5"><b>Distance:</b> 3 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Starting from Ochs Gateway, this trail follows the edge of Lookout Mountain and leads to the iconic Sunset Rock. The hike is moderately challenging but offers spectacular views and a rewarding destination.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Edge trail, Sunset Rock, spectacular views, perfect for sunset hikes.</div>
-  </div>
-
-  <div class="flex justify-center">
-    <image src="/images/chattanooga_guides/outdoors/hikes/woods3.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">9.</span>&nbsp&nbsp Cloudland Canyon West Rim Loop</h2>
-    <div class="mb-0p5"><b>Distance:</b> 4.7 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Just over the Georgia state line, this loop trail in Cloudland Canyon State Park is worth the short drive. The trail offers diverse scenery, including canyon views, waterfalls, and lush forest.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Canyon views, waterfalls, diverse scenery, excellent for a scenic day trip.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">10.</span>&nbsp&nbsp Harrison Bay: Bay Point Loop</h2>
-    <div class="mb-0p5"><b>Distance:</b> 4.3 miles</div>
-    <div class="mb-0p5"><b>Description:</b> This loop trail in Harrison Bay State Park offers beautiful views of the bay and is suitable for all skill levels. The trail is mostly flat, making it an easy and enjoyable hike.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Bay views, flat terrain, wildlife viewing, ideal for a relaxing walk.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">11.</span>&nbsp&nbsp Audubon Acres Loop</h2>
-    <div class="mb-0p5"><b>Distance:</b> 3.3 miles</div>
-    <div class="mb-0p5"><b>Description:</b> Located in East Brainerd, Audubon Acres offers a network of trails through lush forests and along South Chickamauga Creek. It's a great spot for bird watching and enjoying nature. Requires an entrance fee.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Bird watching, creekside trails, lush forest, educational opportunities.</div>
-  </div>
-
-  <div class="pb-2">
-    <h2><span class="color-pink">12.</span>&nbsp&nbsp Enterprise South Nature Park: Poe Run to Hidden Lake</h2>
-    <div class="mb-0p5"><b>Distance:</b> 2.9 miles</div>
-    <div class="mb-0p5"><b>Description:</b> This out-and-back trail through interconnected paths, including the Poe Run Path, totals around 2.9 miles. The trails are well-marked and offer a peaceful hike through wooded areas.</div>
-    <div class="mb-0p5"><b>Highlights:</b> Well-marked trails, peaceful environment, wooded paths, excellent for a quick retreat into nature.</div>
-  </div>
 </div>
