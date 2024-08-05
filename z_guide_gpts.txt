@@ -7,6 +7,16 @@ write it like a reviewer for a newspaper
 generic coffeeshop newspaper captions
 provide 10 caption options for cave pictures in a newspaper
 
+"""
+QUICKER WAY (maybe less quality)
+
+analyze this day trip planner. look up each item in the plan online. then give me a detailed description, include as much as information as possible about the venue, menu items, restrictions, history, operating hours. It's address or approximate location. Include details on crowds, recommended drinks / food. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews and anything else you can thing of. site your sources, make sure the information you provide is accurate
+... copy of day trip planner.
+
+using the html below as a template merge your new content into it
+
+"""
+
 
 """
 SOCIAL GUDIE:
