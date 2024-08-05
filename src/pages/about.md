@@ -1,5 +1,5 @@
 ---
-  title: "Motivations"
+  title: "About / Motivation"
   layout: "../layouts/BlogPostLayout.astro"
 ---
 

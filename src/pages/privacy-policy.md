@@ -15,7 +15,7 @@
 
   <div>
     <h2>2. Data Controller</h2>
-    <p>The data controller responsible for your personal data is ThingsHappening.com. If you have any questions about this Privacy Policy, please contact us at [Insert Contact Information].</p>
+    <p>The data controller responsible for your personal data is ThingsHappening.com. If you have any questions about this Privacy Policy, please contact us at jack@thingshappening.com.</p>
   </div>
 
   <div>
@@ -69,7 +69,7 @@
       <li><b>Objection:</b> You have the right to object to the processing of your personal data based on legitimate interests or for direct marketing purposes.</li>
       <li><b>Data portability:</b> You have the right to receive your personal data in a structured, commonly used, and machine-readable format and transmit it to another data controller.</li>
     </ul>
-    <p>To exercise these rights, please contact us at [Insert Contact Information].</p>
+    <p>To exercise these rights, please contact us at jack@thingshappening.com.</p>
   </div>
 
   <div>

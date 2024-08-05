@@ -3,9 +3,10 @@ import Squiggle from './Squiggle.astro'
 // import Social from './Social.astro'
 ---
 
-<footer class="py-6 lg:py-12 text-center">
-  <div class="text-sm" data-test="footer-text">&copy;<script type="text/javascript"> document.write(new Date().getFullYear()); </script> thingshappening</div>
-  <a class="text-sm" href="/privacy-policy">Privacy Policy</a>
+<footer class="py-6 lg:py-12 text-center flex flex-col">
+  <div data-test="footer-text">&copy;<script type="text/javascript"> document.write(new Date().getFullYear()); </script> thingshappening</div>
+  <a href="/about">About</a>
+  <a href="/privacy-policy">Privacy Policy</a>
   <!-- <Social /> -->
 </footer>
 
