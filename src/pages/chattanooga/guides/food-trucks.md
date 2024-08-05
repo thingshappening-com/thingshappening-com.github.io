@@ -297,4 +297,8 @@ Nonnis Empanadas -->
   <div class="text-2xl">
     Chattanooga's food truck scene offers a wide variety of tasty options, each with its own unique flavors and style. From the savory empanadas at Nonni's Empanadas to the smoky barbecue at Chatter Box Cafe, there’s something for everyone. These food trucks not only serve great food but also bring the community together in a fun, vibrant setting. Whether you need catering for an event or just want a quick bite, Chattanooga’s food trucks have you covered. Keep an eye out for new additions to the scene, and if we've missed your favorite, let us know so we can include it next time. Enjoy your culinary adventure!
   </div>
+
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
+  <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
+  <div><h2 style="padding-bottom: 0 !important;"><span>2.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/antiquing/" target="_blank">Antique Shops Guide</a></h2></div>
 </div>

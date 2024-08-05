@@ -433,4 +433,8 @@
     <br><br>
     We encourage you to explore these local gems and discover your favorite spot. And if you have any recommendations or know of hidden gems that should be added to the list, we'd love to hear from you! Sharing your experiences and discoveries helps us all enjoy the best our local coffee culture has to offer. So, next time you're in the mood for a great cup of coffee, consider visiting one of these cafes and experiencing the local flavor and hospitality firsthand.
   </div>
+
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
+  <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/waterfront-dining/" target="_blank">Waterfront Dining</a></h2></div>
+  <div><h2 style="padding-bottom: 0 !important;"><span>2.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/antiquing/" target="_blank">Antique Shops Guide</a></h2></div>
 </div>

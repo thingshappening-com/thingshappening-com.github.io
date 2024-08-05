@@ -457,5 +457,7 @@
   </div>
 </div>
 
-
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
+  <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
+  <div><h2 style="padding-bottom: 0 !important;"><span>2.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/antiquing/" target="_blank">Antique Shops Guide</a></h2></div>
 </div>
