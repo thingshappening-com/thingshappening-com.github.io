@@ -20,7 +20,7 @@
     <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
       <div class="flex flex-col justify-center">
         <image src="/images/chattanooga_guides/social/water_dining1.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 1em;">
-        <div class="text-center"><em>Historical despicition of Cherokee on the trail</em></div>
+        <div class="text-center"><em>Black and white drawing of a waterfront dining scene</em></div>
       </div>
     </div>
     <div class="text-2xl">
@@ -113,7 +113,7 @@
   <div class="flex justify-center mb-2" style="margin-bottom: 3.5em">
     <div class="flex flex-col justify-center">
       <image src="/images/chattanooga_guides/social/water_dining2.webp" class="responsive-box" style="width: 20em; height: 20em; margin-bottom: 2em; margin-top: 3.5em;">
-      <div class="text-center"><em>Historical despicition of Cherokee on the trail</em></div>
+      <div class="text-center"><em>Riverboat dining in black and white</em></div>
     </div>
   </div>
 

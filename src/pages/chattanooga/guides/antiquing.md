@@ -1,5 +1,5 @@
 ---
-  title: "Chattanooga Antiquing: Top Spots for Unique Finds"
+  title: "Antiquing: Top Spots for Unique Finds"
   iconPath: /images/icons/music.png"
   tags: ["social"]
   author: "Jessica Vaillancourt -  Contributing Writer"

@@ -1,5 +1,5 @@
 ---
-  title: "Chattanooga Food Trucks: 6 of the Best Bites on Wheels"
+  title: "6 of the Best Bites on Wheels in Chattanooga"
   author: "Jessica Vaillancourt -  Contributing Writer"
   lastUpdated: "7/24/2024"
   tags: ["food"]

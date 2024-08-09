@@ -4,7 +4,9 @@ less pretentious
 
 write it like a reviewer for a newspaper
 
-generic coffeeshop newspaper captions
+generic coffeeshop newspaper captions. 
+Less colorful.
+
 provide 10 caption options for cave pictures in a newspaper
 
 """
