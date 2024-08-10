@@ -24,9 +24,6 @@ allGuides.forEach((p) => {
 
   guideFormatted.push(baseData); // Push base data if no eventDates
 });
-  // console.log(allGuides);
-  // allGuides.forEach((g) => console.log(g.frontmatter));
-  // console.dir(allGuides);
 let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
 
 // let allPostsIncludingMultipleDates = [];

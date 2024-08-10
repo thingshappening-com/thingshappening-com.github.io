@@ -3,7 +3,7 @@
   author: "Jack Burnham - Local Guide"
   lastUpdated: "08/08/2024"
   iconPath: /images/icons/music.png"
-  tags: ["outdoors"]
+  tags: [{type: "guide", tag: "outdoors"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>

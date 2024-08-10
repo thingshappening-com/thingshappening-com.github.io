@@ -1,20 +1,32 @@
 ---
-import Card from '../../components/Card.astro';
-import HomeHeader from '../../components/HomeHeader.astro';
-import Nav from '../../components/Nav.astro';
-import SubNav from '../../components/SubNav.astro';
-import BaseHead from '../../components/Head/BaseHead.astro';
+import Card from '../../../components/Card.astro';
+import HomeHeader from '../../../components/HomeHeader.astro';
+import Nav from '../../../components/Nav.astro';
+import SubNav from '../../../components/SubNav.astro';
+import BaseHead from '../../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../**/*.md');
+  const allPosts = await Astro.glob('../../**/*.md');
 
-  let tags = new Set(allPosts.flatMap(post => post.frontmatter.tags));
+  console.log("allpppp");
+  console.log(allPosts[0].frontmatter);
+  // Extract tags with type "guide" and create a Set to ensure uniqueness
+  let tags = new Set(allPosts.flatMap(post => 
+  post.frontmatter.tags 
+    ? post.frontmatter.tags
+        .filter(tagObject => tagObject.type === "guide")
+        .map(tagObject => tagObject.tag)
+    : []  // Return an empty array if there are no tags
+));
+  // Convert the Set to an Array
   tags = Array.from(tags);
   tags = tags.filter(element => element !== undefined);
 
+  // Create paths for each tag
+  console.log("i am here")
   const paths = tags.map(tag => {    
     return {
-      params: { tag },
+      params: { tag }
     };
   });
 
@@ -25,13 +37,14 @@ const { tag } = Astro.params;
 
 // Since we cannot share allPosts between getStaticPaths and the component,
 // we need to fetch them again here for filtering
-let filteredPosts = (await Astro.glob('../**/*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
+let filteredPosts = (await Astro.glob('../../**/*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
 
-let allPostsIncludingMultipleDates = [];
+// let allPostsIncludingMultipleDates = [];
 const description = 'The easiest way to find out about things to do in greater Chattanooga';
 const title = 'thingshappening';
 const seoDescription = 'The easiest way to find out about things happening';
 
+let allPostsIncludingMultipleDates = [];
 filteredPosts.forEach((p) => {
   let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
 
@@ -46,17 +59,7 @@ filteredPosts.forEach((p) => {
   }
 });
 
-const today = new Date();
-today.setDate(today.getDate() - 1);  // Move back by one day
-today.setHours(0,0,0,0);
 
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
-    const dateA = new Date(a.pubDate);
-    const dateB = new Date(b.pubDate);
-
-    return dateA - dateB;
-});
 ---
 
 <html>
@@ -77,9 +80,9 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
         <HomeHeader title={`#${tag}`} description={description} />
         <div class="ml-embedded" data-form="ZoK6PR"></div>
   
-        <SubNav />
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
           {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
+            {console.log(p.frontmatter)}
             <Card post={p} highlighted={tag} />
           </div>)}
         </section>

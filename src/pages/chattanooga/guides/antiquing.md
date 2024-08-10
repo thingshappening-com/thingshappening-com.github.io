@@ -1,7 +1,7 @@
 ---
   title: "Antiquing: Top Spots for Unique Finds"
   iconPath: /images/icons/music.png"
-  tags: ["social"]
+  tags: [{type: "guide", tag: "social"}]
   author: "Jessica Vaillancourt -  Contributing Writer"
   lastUpdated: "7/20/2024"
   layout: "../../../layouts/BlogPostLayout.astro"

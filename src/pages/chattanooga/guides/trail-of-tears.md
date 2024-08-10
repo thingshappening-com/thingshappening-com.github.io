@@ -3,7 +3,7 @@
   iconPath: /images/icons/music.png"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "8/02/2024"
-  tags: ["history"]
+  tags: [{type: "guide", tag: "history"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>

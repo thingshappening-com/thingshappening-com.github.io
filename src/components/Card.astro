@@ -14,7 +14,6 @@ const dayOfWeek = daysOfWeek[date.getDay()];
 
 let eventDateDetails;
 if (post.eventDatesDetails) {
-  console.log(post.eventDatesDetails)
   eventDateDetails = post.eventDatesDetails.find((dateObj => dateObj.date == post.pubDate));
 }
 const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDetails.eventTitle : dayjs(post.pubDate).format('MM-DD-YYYY');
@@ -45,7 +44,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
         {Array.isArray(post.tags) ? (
           post.tags.map((t) => {
             const highlight = t == highlighted ? 'font-semibold' : ''
-            return <a href={`/tag/${t}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span style="color: #fd2d78">#</span>{`${t}`}</a>
+            return <a href={`/tag/${t.type}/${t.tag}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span style="color: #fd2d78">#</span>{`${t.tag}`}</a>
           })
         ) : (
           <span>Tags are not an array.</span>

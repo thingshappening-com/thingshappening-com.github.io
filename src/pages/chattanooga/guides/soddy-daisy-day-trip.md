@@ -3,7 +3,7 @@
   iconPath: /images/icons/music.png"
   author: "Jessica Vaillancourt -  Contributing Writer"
   lastUpdated: "06/27/2024"
-  tags: ["day-trips"]
+  tags: [{type: "guide", tag: "day-trips"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>

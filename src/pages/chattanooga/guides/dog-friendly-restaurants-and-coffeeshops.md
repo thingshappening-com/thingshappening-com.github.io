@@ -3,7 +3,7 @@
   iconPath: /images/icons/music.png"
   author: "Jessica Vaillancourt -  Contributing Writer"
   lastUpdated: "6/09/2024"
-  tags: ["social"]
+  tags: [{type: "guide", tag: "social"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>
