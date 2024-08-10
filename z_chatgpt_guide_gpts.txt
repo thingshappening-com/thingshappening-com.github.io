@@ -38,6 +38,53 @@ never use the word nestled, delightful, delights,etc in anything you write for m
 put it into the html, use few headings
 """
 
+"""
+FARMS GUIDE example
+
+look up Mayfield Dairy Farms (Athens, TN). then give me a detailed description, include as much as information as possible about the type of farm, events, access to the public, if it's a good place to take your kids and why, operating hours. It's address or approximate location. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews. site your sources, make sure the information you provide is accurate, that's the most important
+
+write it like a reviewer for a newspaper. never use the word nestled in anything you write for me ever again. update that. remove words similarly bad
+
+put the information you just generated into an html document using this as a template
+
+<div class="pb-2 text-2xl">
+  <div>
+    <h2><span class="color-pink">7.</span>&nbsp;&nbsp;Southern Belle Riverboat</h2>
+  </div>
+  <div>Location: 151 Riverfront Pkwy, Pier 2, Chattanooga, TN 37402</div>
+  <br>
+  <div>
+    The Southern Belle Riverboat offers a unique dining experience on the Tennessee River. Enjoy a delicious meal while cruising along the river and taking in the scenic views.
+  </div>
+  <br>
+  <div>
+    Dining on the Southern Belle Riverboat combines great food with a picturesque cruise. The boat offers various themed cruises, including lunch, dinner, and special events.
+  </div>
+  <br>
+  <div>
+    The menu varies by cruise but typically includes:
+    <ul class="text-2xl">
+      <li>Buffet Style: Prime Rib, Fried Chicken</li>
+      <li>Seafood Options: Shrimp, Salmon</li>
+      <li>Desserts: Cheesecake, Chocolate Cake</li>
+    </ul>
+  </div>
+  <br>
+  <div>
+    Cruises operate daily with varying times depending on the type of cruise. Advance booking is recommended.
+  </div>
+  <br>
+  <div>
+    "An amazing experience with great food and beautiful views. The dinner cruise is a must-do." <br> "Loved the riverboat ride. The staff was friendly and the buffet was excellent."
+  </div>
+  <br>
+  <div>
+    Book tickets in advance to ensure availability, especially for the dinner and themed cruises. Arrive early to enjoy the full experience and secure good seating.
+  </div>
+</div>
+"""
+
+
 
 """
 OUTDOORS GUIDE:
@@ -49,7 +96,7 @@ Do some more research, make updates
 remove anything you didn't find to be 100% true
 write it like a reviewer for a newspaper
 
-never use the word nestled in anything you write for me ever again. update that. remove words similarly bad
+write it like a reviewer for a newspaper. never use the word nestled in anything you write for me ever again. update that. remove words similarly bad
 
 put it into the html, use few headings
 """
