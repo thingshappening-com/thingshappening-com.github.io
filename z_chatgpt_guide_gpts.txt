@@ -1,3 +1,4 @@
+make this opening paragraph much better. Also make it longer
 make this concluding paragraph much better. Also make it longer
 never use the word nestled, delightful, delights,etc in anything you write for me ever again. update that. remove words similarly bad
 less pretentious
@@ -7,13 +8,20 @@ write it like a reviewer for a newspaper
 generic coffeeshop newspaper captions. 
 Less colorful.
 
+generate a simple drawing of a coffee cup and beans. Black and white. thin lines
+generate a black and white nature drawings of hiking trail. it should be minimalistic, few details
 provide 10 caption options for cave pictures in a newspaper
+provide 10 generic caption options for the photos you generated
+
 
 """
 QUICKER WAY (maybe less quality)
 
 analyze this day trip planner. look up each item in the plan online. then give me a detailed description, include as much as information as possible about the venue, menu items, restrictions, history, operating hours. It's address or approximate location. Include details on crowds, recommended drinks / food. Include any useful tips. Include details on when the best times to go are. include a couple of visitor reviews and anything else you can thing of. site your sources, make sure the information you provide is accurate
 ... copy of day trip planner.
+
+write it like a reviewer for a newspaper - remove most headings. never use the word nestled, delightful, delights,etc in anything you write for me ever again. update that. remove words similarly bad
+less pretentious
 
 using the html below as a template merge your new content into it
 
