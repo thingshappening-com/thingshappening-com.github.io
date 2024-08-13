@@ -54,6 +54,7 @@ allGuides.forEach((g) => {
 
   guideFormatted.push(baseData); // Push base data if no eventDates
 });
+guideFormatted = guideFormatted.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
 const { page } = Astro.props;
 let pageTitle = 'thingshappening';
