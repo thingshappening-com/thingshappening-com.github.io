@@ -26,11 +26,11 @@
 
 
   <div class="text-2xl">
-    The Trail of Tears represents one of the darkest periods in American history, particularly for the Cherokee Nation, and has deep ties to the Chattanooga area. This tragic event occurred as part of the Indian Removal Act of 1830, a federal law that sought to forcibly relocate Native American tribes from their homelands in the southeastern United States to designated territories west of the Mississippi River, in what is now Oklahoma. The removal process was harsh and devastating, leading to the suffering and deaths of thousands of Native Americans.
+    The Trail of Tears stands as a profoundly tragic chapter in American history, particularly for the Cherokee Nation, and its connection to the Chattanooga area is both significant and sorrowful. This dark period unfolded as a result of the Indian Removal Act of 1830, a federal mandate that aimed to forcibly displace Native American tribes from their ancestral homelands in the southeastern United States to designated territories west of the Mississippi River, in what is now Oklahoma. The implementation of this policy led to immense suffering, as entire communities were uprooted from the lands they had inhabited for generations.
     <br><br>
-    <div>
-    In 1838, the Cherokee were among the last to be forcibly removed from their lands. This grueling journey, covering over 1,000 miles, was marked by extreme hardship, disease, and death, with an estimated 4,000 Cherokee lives lost along the way. Chattanooga served as a significant departure point for many of these groups, making it a crucial location in the history of the Trail of Tears.
-    </div>
+    In 1838, the Cherokee Nation, among the last of the tribes to be removed, faced a harrowing journey that spanned over 1,000 miles. This forced migration, now known as the Trail of Tears, was fraught with unimaginable hardships. The Cherokee people endured extreme conditions, including exposure to harsh weather, inadequate supplies, and rampant disease. These factors contributed to the deaths of approximately 4,000 Cherokee, making the journey a somber symbol of the devastation inflicted upon Native American communities.
+    <br><br>
+    Chattanooga played a pivotal role in this history, serving as a major departure point for many of the Cherokee groups who were forced to leave their homes. The city’s landscape is deeply intertwined with the events of the Trail of Tears, marking it as a place of both historical significance and remembrance. As you explore the region, it's important to recognize and reflect upon the profound impact this event had on the Cherokee Nation and the enduring legacy it has left on the area. Understanding this history is essential to appreciating the full scope of Chattanooga’s past and the resilience of those who endured this tragic journey.
   </div>
 
   <div class="pb-2 text-2xl">
