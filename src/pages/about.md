@@ -12,4 +12,14 @@
       I'm open to feedback and/or ideas, please send them to jack@thingshappening.com.
     </p>
   </div>
+
+  <div>
+    <h1 style="margin-top: 5rem; margin-bottom: 4rem;" class="mx-auto max-w-4xl text-center content">Meet the Authors</h1>
+    <div style="margin-bottom: 3rem;" id="viki-vaillancourt">
+      <b>Viki Vaillancourt</b> is an avid explorer of Chattanooga’s outdoors and history, with a keen eye for uncovering hidden gems in the area. As a contributing writer to the website, Viki brings her passion for the city’s natural beauty and rich past to life in her articles. Her 20 years in Chattanooga have given her plenty of time to discover those off-the-beaten-path spots, and she loves sharing them with others in a warm, engaging way. Whether it's a quiet trail or a piece of Chattanooga's history, Viki is always on the lookout for something new to share.
+    </div>
+    <div id="jack-burnham">
+      <b>Jack Burnham</b> is your go-to guide for all things Chattanooga. After calling the city home for seven years, he's spent countless hours exploring its trails, uncovering hidden gems, and delving into the rich history that makes Chattanooga so unique. With a deep love for the outdoors and a knack for finding those off-the-beaten-path spots, Jack shares his discoveries with a laid-back, friendly style that makes every adventure feel like exploring with an old friend.
+    </div>
+  </div>
 </div>
