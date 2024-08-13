@@ -1,7 +1,7 @@
 ---
   title: "9 Dog-Friendly Restaurants and Coffeeshops"
   iconPath: /images/icons/music.png"
-  author: "Jessica Vaillancourt -  Contributing Writer"
+  author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "6/09/2024"
   tags: [{type: "guide", tag: "social"}]
   layout: "../../../layouts/BlogPostLayout.astro"

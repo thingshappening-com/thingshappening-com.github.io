@@ -1,6 +1,6 @@
 ---
   title: "6 of the Best Bites on Wheels in Chattanooga"
-  author: "Jessica Vaillancourt -  Contributing Writer"
+  author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "7/24/2024"
   tags: [{type: "guide", tag: "food"}]
   layout: "../../../layouts/BlogPostLayout.astro"

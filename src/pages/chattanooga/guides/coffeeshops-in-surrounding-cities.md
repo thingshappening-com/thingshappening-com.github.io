@@ -1,7 +1,7 @@
 ---
   title: "Chattanooga Social: Guide to Coffeeshops in Neighboring Cities"
   iconPath: /images/icons/music.png"
-  author: "Jessica Vaillancourt -  Contributing Writer"
+  author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "6/17/2024"
   tags: [{type: "guide", tag: "social"}]
   layout: "../../../layouts/BlogPostLayout.astro"

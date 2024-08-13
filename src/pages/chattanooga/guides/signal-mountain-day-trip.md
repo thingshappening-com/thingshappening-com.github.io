@@ -1,7 +1,7 @@
 ---
   title: "Day Trip Planner: Signal Mountain"
   iconPath: /images/icons/music.png"
-  author: "Jessica Vaillancourt -  Contributing Writer"
+  author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "06/14/2024"
   tags: [{type: "guide", tag: "day-trips"}]
   layout: "../../../layouts/BlogPostLayout.astro"
