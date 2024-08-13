@@ -3,7 +3,7 @@
   iconPath: "../../../images/icons/market.png"
   tags: [{type: "guide", tag: "social"}]
   author: "Viki Vaillancourt -  Contributing Writer"
-  pubDate: "07/20/2024"
+  lastUpdated: "07/20/2024"
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>

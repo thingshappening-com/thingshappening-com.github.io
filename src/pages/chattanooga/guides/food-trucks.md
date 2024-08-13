@@ -1,7 +1,7 @@
 ---
   title: "6 of the Best Bites on Wheels in Chattanooga"
   author: "Viki Vaillancourt -  Contributing Writer"
-  lastUpdated: "7/24/2024"
+  lastUpdated: "07/24/2024"
   iconPath: "../../../images/icons/food.png"
   tags: [{type: "guide", tag: "food"}]
   layout: "../../../layouts/BlogPostLayout.astro"
@@ -45,7 +45,7 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Menu Highlights:</strong> The menu at California Smothered Burrito is both diverse and indulgent, offering something for everyone:
+    The menu at California Smothered Burrito is both diverse and indulgent, offering something for everyone:
     <ul class="text-2xl">
       <li><strong>Smothered Burrito:</strong> A crowd favorite, this burrito is packed with your choice of chicken, beef, or vegetarian fillings, black beans, rice, and a plethora of fresh toppings, all smothered in white queso and green chili. It’s served with a side of chips and salsa.</li>
       <li><strong>Chicken Enchilada Burrito:</strong> Another popular choice, this burrito features tender chicken, rice, sour cream, and enchilada sauce, topped with queso and black olives.</li>
@@ -55,7 +55,7 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Operating Hours and Locations:</strong> Unlike traditional brick-and-mortar establishments, California Smothered Burrito is constantly on the move. The truck operates at various locations throughout Chattanooga, including popular spots like the Chattanooga Market and local events. To find out where they’ll be next, following their social media pages on <a href="https://www.facebook.com/CaliforniaSmotheredBurritos" target="_blank">Facebook</a> and <a href="https://www.instagram.com/california_smothered_burrito/" target="_blank">Instagram</a> is essential.
+     Unlike traditional brick-and-mortar establishments, California Smothered Burrito is constantly on the move. The truck operates at various locations throughout Chattanooga, including popular spots like the Chattanooga Market and local events. To find out where they’ll be next, following their social media pages on <a href="https://www.facebook.com/CaliforniaSmotheredBurritos" target="_blank">Facebook</a> and <a href="https://www.instagram.com/california_smothered_burrito/" target="_blank">Instagram</a> is essential.
   </div>
   <br>
   <div>
@@ -63,7 +63,7 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Visitor Reviews:</strong> Patrons consistently praise the truck for its generous portions and flavorful offerings. One reviewer raved about the “smothered burrito with green chili,” highlighting the perfect blend of ingredients and the fresh, made-to-order quality. Another lauded the “Ultimate Nachos,” describing them as a delectable and must-try item. The friendly service and vibrant atmosphere further enhance the dining experience.
+    Patrons consistently praise the truck for its generous portions and flavorful offerings. One reviewer raved about the “smothered burrito with green chili,” highlighting the perfect blend of ingredients and the fresh, made-to-order quality. Another lauded the “Ultimate Nachos,” describing them as a delectable and must-try item. The friendly service and vibrant atmosphere further enhance the dining experience.
   </div>
   <br>
   <div>
@@ -83,7 +83,7 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>A Culinary Journey:</strong> The menu at Rolling J's Mobile Bistro offers a delightful array of options that cater to diverse palates. Signature items include:
+    The menu at Rolling J's Mobile Bistro offers a delightful array of options that cater to diverse palates. Signature items include:
     <ul class="text-2xl">
       <li><strong>Smoked Brisket:</strong> Tender and flavorful, served with cider slaw, grilled asparagus, and mashed potatoes.</li>
       <li><strong>Pulled Pork:</strong> A Southern staple, paired with traditional slaw and creamy baked mac & cheese.</li>
@@ -93,7 +93,7 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Operating Hours and Locations:</strong> Rolling J's Mobile Bistro operates from Monday to Saturday, 11:00 AM to 3:00 PM. However, as a food truck, its location can vary. The best way to keep track of its whereabouts and operating hours is by following their social media pages on <a href="https://www.facebook.com/RollingJsMobileBistro" target="_blank">Facebook</a> and <a href="https://www.instagram.com/rollingjsmobilebistro/" target="_blank">Instagram</a>.
+     Rolling J's Mobile Bistro operates from Monday to Saturday, 11:00 AM to 3:00 PM. However, as a food truck, its location can vary. The best way to keep track of its whereabouts and operating hours is by following their social media pages on <a href="https://www.facebook.com/RollingJsMobileBistro" target="_blank">Facebook</a> and <a href="https://www.instagram.com/rollingjsmobilebistro/" target="_blank">Instagram</a>.
   </div>
   <br>
   <div>
@@ -101,7 +101,6 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Tips for the Best Experience:</strong>
     <ul class="text-2xl">
       <li><strong>Best Times to Visit:</strong> Weekdays are generally less crowded, making it a good time to enjoy a leisurely meal without the wait.</li>
       <li><strong>Stay Updated:</strong> Keep an eye on their social media for real-time updates on locations and menu specials.</li>
@@ -126,7 +125,7 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Menu Highlights:</strong> The menu at Tacos El Tote is a testament to the culinary traditions of Mexico, featuring a variety of dishes that cater to different tastes and preferences. Some of the standout items include:
+    The menu at Tacos El Tote is a testament to the culinary traditions of Mexico, featuring a variety of dishes that cater to different tastes and preferences. Some of the standout items include:
     <ul class="text-2xl">
       <li><strong>Quesabirria Tacos:</strong> These tacos are a fan favorite, filled with succulent birria meat and melted mozzarella cheese, and served with a side of savory birria broth for dipping. The combination of flavors is simply irresistible.</li>
       <li><strong>Pastor Tacos:</strong> Seasoned pork tacos that offer a perfect balance of spice and flavor, making them a staple for taco enthusiasts.</li>
@@ -139,11 +138,11 @@ Nonnis Empanadas -->
   </div>
   <br>
   <div>
-    <strong>Operating Hours and Tips for Visiting:</strong> Tacos El Tote operates from Monday to Friday, 8:00 AM to 8:00 PM, and is closed on weekends. Given its popularity, the food truck can get quite busy, especially during peak hours. To avoid long waits, it’s advisable to visit during off-peak times.
+    Tacos El Tote operates from Monday to Friday, 8:00 AM to 8:00 PM, and is closed on weekends. Given its popularity, the food truck can get quite busy, especially during peak hours. To avoid long waits, it’s advisable to visit during off-peak times.
   </div>
   <br>
   <div>
-    <strong>Visitor Reviews:</strong> The reviews for Tacos El Tote are overwhelmingly positive, with many customers lauding the quality of the food and the exceptional service. One reviewer highlighted the “quality Birria, like literally the best street corn,” while another mentioned the “delicious and savory veggie burrito bowl.” The consistent praise from patrons underscores the food truck’s commitment to delivering an authentic and enjoyable dining experience.
+    The reviews for Tacos El Tote are overwhelmingly positive, with many customers lauding the quality of the food and the exceptional service. One reviewer highlighted the “quality Birria, like literally the best street corn,” while another mentioned the “delicious and savory veggie burrito bowl.” The consistent praise from patrons underscores the food truck’s commitment to delivering an authentic and enjoyable dining experience.
   </div>
   <br>
   <div>

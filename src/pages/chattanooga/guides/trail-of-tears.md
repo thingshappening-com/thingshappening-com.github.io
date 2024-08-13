@@ -2,7 +2,7 @@
   title: "Chattanooga History: Trail of Tears Landmarks"
   iconPath: "../../../images/icons/history.png"
   author: "Jack Burnham - Local Guide"
-  lastUpdated: "8/02/2024"
+  lastUpdated: "08/02/2024"
   tags: [{type: "guide", tag: "history"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---

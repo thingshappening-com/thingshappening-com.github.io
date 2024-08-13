@@ -1,7 +1,7 @@
 ---
   title: "Chattanooga Social: 12 Spots for Scenic Waterfront Dining"
   author: "Jack Burnham - Local Guide"
-  lastUpdated: "8/04/2024"
+  lastUpdated: "08/04/2024"
   iconPath: "../../../images/icons/food.png"
   tags: [{type: "guide", tag: "social"}]
   layout: "../../../layouts/BlogPostLayout.astro"
