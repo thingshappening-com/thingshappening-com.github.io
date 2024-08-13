@@ -8,7 +8,10 @@ export interface Props {
 
 let { post, highlighted } = Astro.props;
 
-const date = new Date(post.pubDate);
+const pubDate = post.pubDate || post.lastUpdated
+console.log(post);
+console.log(pubDate);
+const date = new Date(pubDate);
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayOfWeek = daysOfWeek[date.getDay()];
 
@@ -30,9 +33,9 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
           `: ${subTitle}`
         )}
       </h2>
-      {post.pubDate && (
+      {(post.pubDate || post.lastUpdated) && (
         <p class="text-lg text-gray-600 mt-4 flex items-center">
-          {`${dayOfWeek}`} {dayjs(post.pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8" src=`${post.iconPath}` alt="icon"></img> : ""}
+          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8" src=`${post.iconPath}` alt="icon"></img> : ""}
         </p>
       )}
     </div>

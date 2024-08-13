@@ -1,6 +1,6 @@
 ---
   title: "Day Trip Planner: Signal Mountain"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/car.png"
   author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "06/14/2024"
   tags: [{type: "guide", tag: "day-trips"}]

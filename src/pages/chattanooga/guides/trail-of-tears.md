@@ -1,6 +1,6 @@
 ---
   title: "Chattanooga History: Trail of Tears Landmarks"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/history.png"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "8/02/2024"
   tags: [{type: "guide", tag: "history"}]

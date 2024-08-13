@@ -1,6 +1,6 @@
 ---
   title: "9 Dog-Friendly Restaurants and Coffeeshops"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/coffee-cup.png"
   author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "6/09/2024"
   tags: [{type: "guide", tag: "social"}]

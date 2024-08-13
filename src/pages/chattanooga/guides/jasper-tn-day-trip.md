@@ -1,6 +1,6 @@
 ---
   title: "Day Trip Planner: Jasper, TN"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/car.png"
   author: "Viki Vaillancourt -  Contributing Writer"
   lastUpdated: "08/05/2024"
   tags: [{type: "guide", tag: "day-trips"}]

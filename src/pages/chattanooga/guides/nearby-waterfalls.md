@@ -1,6 +1,6 @@
 ---
   title: "Chattanooga Outdoors: 12 Waterfalls In and Around Chattanooga"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/pine-tree.png"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "7/25/2024"
   tags: [{type: "guide", tag: "outdoors"}]

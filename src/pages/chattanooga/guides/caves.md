@@ -1,6 +1,6 @@
 ---
   title: "Chattanooga Outdoors: 10 Caves To Explore Near Chattanooga"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/pine-tree.png"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "7/05/2024"
   tags: [{type: "guide", tag: "outdoors"}]

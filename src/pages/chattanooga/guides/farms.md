@@ -2,7 +2,7 @@
   title: "7 Farm Adventures in Chattanooga"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "08/08/2024"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/barn.png"
   tags: [{type: "guide", tag: "outdoors"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---

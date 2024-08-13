@@ -1,9 +1,9 @@
 ---
   title: "Antiquing: Top Spots for Unique Finds"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/market.png"
   tags: [{type: "guide", tag: "social"}]
   author: "Viki Vaillancourt -  Contributing Writer"
-  lastUpdated: "7/20/2024"
+  pubDate: "07/20/2024"
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>

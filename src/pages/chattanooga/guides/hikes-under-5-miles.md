@@ -1,6 +1,6 @@
 ---
   title: "Chattanooga Outdoors: 10 Hikes Under 5 Miles"
-  iconPath: /images/icons/music.png"
+  iconPath: "../../../images/icons/pine-tree.png"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "7/18/2024"
   tags: [{type: "guide", tag: "outdoors"}]
