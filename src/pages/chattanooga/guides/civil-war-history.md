@@ -1,9 +1,9 @@
 ---
-  title: "Civil War"
+  title: "Exploring Chattanooga’s Civil War Landmarks"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "08/15/2024"
   iconPath: "../../../images/icons/history.png"
-  tags: [{type: "guide", tag: "exhibits"}]
+  tags: [{type: "guide", tag: "history"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>
