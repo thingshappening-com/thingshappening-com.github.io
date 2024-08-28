@@ -199,8 +199,9 @@ A modest but supremely significant Civil War-related venue, the Brown's Ferry Fe
     <div>
 The Union army in Chattanooga, Tennessee was trapped and under siege by Confederate forces commanded by General Braxton Bragg. If they ran out of food, the Union soldiers were going to be in serious trouble without supply lines. Union generals including Ulysses S. Grant, George Thomas and William T. Sherman then learned of the situation in Chattanooga and planned a risky operation at Brown's Ferry to reopen supply lines During the night of October 27,1863 Union forces launched a rarely successful nighttime raid on this Ferry, and freed it from Confederate control. This operation enabled the Union to open and maintain the "Cracker Line," a critical supply route that thwarted Rosecrans' defeat, saved his army at Chattanooga. It was a masterstroke of military strategy and played an important role in the eventual Union triumph during this campaign.
     </div>
+    <br>
     <div>
-    An often ignored historic footprint, Brown's Ferry is a meandering expanse for many seeking to reflect upon the significance of this time in American history. The road and ferry crossing are accessible from the Lookout Valley end of Chattanooga, Tenn., with no regular hours or entrance fees -- so you're free to visit anytime. The area is not over developed for tourism so it still feels somewhat authentic and�non-commercialised.
+    An often ignored historic footprint, Brown's Ferry is a meandering expanse for many seeking to reflect upon the significance of this time in American history. The road and ferry crossing are accessible from the Lookout Valley end of Chattanooga, Tenn., with no regular hours or entrance fees -- so you're free to visit anytime. The area is not over developed for tourism so it still feels somewhat authentic and non-commercialised.
     </div>
 </div>
 
