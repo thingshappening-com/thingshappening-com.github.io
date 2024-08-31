@@ -1,3 +1,15 @@
+Workflow:
+generate details with chatgpt
+humanize with bypass gpt
+ask chatgpt to correct innacuracies "leave this text as it is, ignore grammatical errors, ignore poor sentence structure. Only update details in the post you see as factually inaccurate. Please please please dont update the text outside of the facts that are inaccurate"
+run it through originality.ai
+ask chatgpt to put it into your html template
+
+
+
+
+
+
 generate an opening paragraph for a blog post on these places (like youre a guide/history website)
 make this opening paragraph much better. Also make it longer
 make this concluding paragraph much better. Also make it longer
