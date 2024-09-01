@@ -5,8 +5,18 @@ description: string;
 }
 const { title, description } = Astro.props;
 ---
+<style>
+  .responsive-header {
+      font-size: 7rem;
+  }
+  @media (max-width: 800px) {
+      .responsive-header {
+          font-size: 3rem;
+      }
+  }
+</style>
 
 <header class="mx-auto max-w-3xl flex flex-col text-center items-center content">
-  <h1 class="mb-4" data-test="header-title">{title}</h1>
+  <h1 class="mb-4 responsive-header" data-test="header-title">{title}</h1>
   <p data-test="header-description">{description}</p>
 </header>
