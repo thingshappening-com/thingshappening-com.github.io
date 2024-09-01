@@ -1,13 +1,8 @@
 .content {
   h1 {
-    @apply font-display uppercase font-bold leading-none;
-    margin-bottom: 0.25em;
+    @apply font-display uppercase leading-none;
 
-    font-size: min(max(3rem, 6.25vw), 7rem);
-
-    @supports (font-size: clamp(3rem, 6.25vw, 7rem)) {
-      font-size: clamp(3rem, 6.25vw, 7rem);
-    }
+    @apply text-7xl mb-6;
   }
 
   h2 {
@@ -44,7 +39,7 @@
   }
 
   a {
-    @apply font-bold underline text-hot-pink;
+    @apply font-bold underline text-customGreen1;
 
     &:hover {
       @apply text-black;

@@ -3,7 +3,7 @@
 }
 
 .blog-tags a {
-  @apply font-bold underline text-hot-pink;
+  @apply font-bold underline text-customGreen1;
 
   &:hover {
     @apply text-black;
@@ -20,15 +20,15 @@
 }
 
 .searchResultTitle {
-  color: #fd2d78 !important;
+  color: #3CB371 !important;
 }
 
 ::-moz-selection {
   color: white;
-  background: #fd2d78;
+  background: #3CB371;
 }
 
 ::selection {
   color: white;
-  background: #fd2d78;
+  background: #3CB371;
 }

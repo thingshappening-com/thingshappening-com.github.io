@@ -52,7 +52,7 @@
   bottom: 0;
   width: 100%; /* Adjust the width of the line */
   height: 2px; /* Adjust the height of the line */
-  background-color: #fd2d78; /* Change the color of the line */
+  background-color: #3CB371; /* Change the color of the line */
   transition: width 0.3s ease; /* Add transition effect for width change */
 }
 @media screen and (max-width: 767px) {
@@ -67,11 +67,11 @@
 }
 
 .date-filter-options a:hover {
-  color: #fd2d78
+  color: #3CB371
 }
 
 a:hover {
-  color: #fd2d78 !important;
+  color: #3CB371 !important;
 }
 
 .hide-on-small {
@@ -102,7 +102,7 @@ a:hover {
 }
 
 .badge-link {
-  background-color: #fd2d78;
+  background-color: #3CB371;
   color: white;
   border-radius: 50%;
   padding: 5px 15px;
@@ -113,16 +113,16 @@ a:hover {
 }
 
 .highlighted-date {
-  background-color: #fd2d78;
+  background-color: #3CB371;
   color: white;
 }
 
 .underline-pink {
-  border-bottom: 2px solid #fd2d78;
+  border-bottom: 2px solid #3CB371;
 }
 
 .color-pink {
-  color: #fd2d78;
+  color: #3CB371;
 }
 
 

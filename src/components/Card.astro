@@ -24,7 +24,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
 
 <div class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden" data-test="article-card">
   <a href={post.url}
-  class="transition-all duration-75 ease-in-out h-full top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl"
+  class="transition-all duration-75 ease-in-out h-full top-0 hover:-top-2 shadow-lg bg-white rounded-xl"
   >
 
     <div class="py-6 px-8">
@@ -47,7 +47,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
         {Array.isArray(post.tags) ? (
           post.tags.map((t) => {
             const highlight = t == highlighted ? 'font-semibold' : ''
-            return <a href={`/tag/${t.type}/${t.tag}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span style="color: #fd2d78">#</span>{`${t.tag}`}</a>
+            return <a href={`/tag/${t.type}/${t.tag}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span class="text-customGreen1">#</span>{`${t.tag}`}</a>
           })
         ) : (
           <span>Tags are not an array.</span>

@@ -55,7 +55,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
       {tags && tags.length > 0 && (
         <ul>
           {tags.map(tag => {
-            return <a class="mr-3" href={`/tag/${tag.type}/${tag.tag}`}><span style="color: #fd2d78">#</span>{tag.tag}</a>
+            return <a class="mr-3" href={`/tag/${tag.type}/${tag.tag}`}><span class="text-customGreen1">#</span>{tag.tag}</a>
           })}
         </ul>
       )}
