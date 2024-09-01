@@ -130,3 +130,11 @@
     @apply leading-normal;
   }
 }
+
+@media (max-width: 800px) {
+  .content {
+    h1 {
+     font-size: 3em;
+    }
+  }
+}

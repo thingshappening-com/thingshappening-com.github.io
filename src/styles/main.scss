@@ -74,13 +74,13 @@ a:hover {
   color: #3CB371 !important;
 }
 
-.hide-on-small {
-  display: none; /* Hide by default */
+.small-txt-xs {
+  font-size: 1.25rem !important;
 }
 
 /* This media query applies to screens that are 640px or wider */
 @media (min-width: 640px) {
-  .hide-on-small {
+  .small-txt-xs {
     display: block; /* Show on medium screens and larger */
   }
 }
