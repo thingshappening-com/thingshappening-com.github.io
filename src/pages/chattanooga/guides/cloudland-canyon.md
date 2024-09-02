@@ -212,13 +212,64 @@
           </b>
         </div>      
       </div>
-      <br>
       <div>
         <p>
+          This is a 6 mile out and back trail. It will guide you down into the valley of the canyon as it follows along various creeks. In the springtime the wildflowers add for an extraoridnary experience. It's a pretty difficult trail so be adequetely prepared mentally and physically. Neaby are Sitton and Case cave's, accessible by guided tour only, so if you want to make it an even more adventurous day, be sure to book a tour in advance.
         </p>
       </div>
     </div>  
   </div>
+
+  <div class="flex flex-col justify-center items-center mb-16 mt-16">
+    <image src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
+    <div class="text-center">
+      <em>Cloudland Canyon Vista</em>
+    </div>
+  </div>
+
+  <div class="pb-3 text-2xl">
+    <div>
+      <h2>Intermediate/Advanced MTB Rides&nbsp;<span class="color-pink"><b>.</b></span></h2>
+    </div>
+    <div>
+      <div class="pb-3">
+        <div><span class="color-pink"><b>1.</b>&nbsp;</span>Tailings Run + CCC + North Hogsback</div>
+        <div><b>Distance:</b> 4 - 5 miles</div>
+        <div>
+          <b>
+            <a href="https://www.google.com/maps/place/5+Points+Mountain+Biking/@34.8509806,-85.4248505,17z/data=!3m1!4b1!4m6!3m5!1s0x886046111bb370ab:0x85946697eb99245d!8m2!3d34.8509806!4d-85.4248505!16s%2Fg%2F11bwl0mf99?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+              Directions
+            </a>
+          </b>
+        </div>      
+      </div>
+      <div>
+        <p>
+          Park at 5 Points and begin riding north on Tailings Run, this is a 1.5 mile expert trail. Take Tailings to the Clouldland Canyon Connector (CCC) and ride the CCC (an easy trail) a few miles down until you get to the fork where a left turn will lead you onto the North Hogsback route. Note that once you get to 5 points, you're two thirds of the way through your ride on CCC. North Hogsback is another expert rated trail totaling 1.1 miles in distance. Take North Hogsback all the way to the 5 Points parking lot.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div>
+      <div class="pb-3">
+        <div><span class="color-pink"><b>1.</b>&nbsp;</span>Bankhead + Kettle Bottom</div>
+        <div><b>Distance:</b> 5 - 6 miles</div>
+        <div>
+          <b>
+            <a href="https://www.google.com/maps/place/5+Points+Mountain+Biking/@34.8509806,-85.4248505,17z/data=!3m1!4b1!4m6!3m5!1s0x886046111bb370ab:0x85946697eb99245d!8m2!3d34.8509806!4d-85.4248505!16s%2Fg%2F11bwl0mf99?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+              Directions
+            </a>
+          </b>
+        </div>      
+      </div>
+      <div>
+        <p>
+          Park at 5 Points and begin by taking Bankhead 0.4 miles to Clouldland Canyon Connector (CCC). Take a right on CCC until you get to the 5 Points intersection. At 5 Points find Kettle Bottom trail. Kettle Bottom is rated as an intermediate trail. You can either take it as a full loop or there is an alternate path that's slightly shorter (about 1/3 of a mile shorter). Both options take you back to 5 Points intersection where you'll take a right on CCC back to Bankhead and follow that back to the parking lot.
+        </p>
+      </div>    
+  </div>
+
+
 
   <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
   <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
