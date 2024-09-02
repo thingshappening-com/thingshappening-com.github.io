@@ -26,7 +26,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
 ---
 
 <article class="max-w-5xl mx-auto px-3 text-xl tracking-wide">
-  <header style="margin: 0 !important" class="mx-auto max-w-4xl text-center content">
+  <header class="mx-auto max-w-4xl text-center content">
      <h1>{title} {pubDate && (
       `: ${subTitle}`
     )}</h1>  
@@ -93,7 +93,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
   </div>
 
   <!-- Content -->
-  <section style="margin: 0 !important" class="max-w-6xl mx-auto py-3 lg:py-12 content">
+  <section class="max-w-6xl mx-auto content">
     <slot />
   </section>
 
