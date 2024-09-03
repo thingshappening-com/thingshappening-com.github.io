@@ -38,12 +38,12 @@
   </h4>
 
   <div class="pb-3 text-2xl" id="easier-hikes">
-    <div>
-      <h2>Easier Hikes&nbsp;<span class="color-pink"><b>.</b></span></h2>
+    <div class="pb-3">
+      <h2 class="text-5xl">Easier Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div class="pb-3">
-        <div><span class="color-pink"><b>1.</b>&nbsp;</span>Meadowlands Trail</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>Meadowlands Trail</div>
         <div><b>Distance:</b> 1 mile</div>
         <div>
           <b>
@@ -65,7 +65,7 @@
     <br>
     <div>
       <div class="pb-3">
-        <div><span class="color-pink"><b>2.</b>&nbsp;</span>Overlook Trail</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>Overlook Trail</div>
         <div><b>Distance:</b> 1 mile</div>
         <div>
           <b>
@@ -81,8 +81,8 @@
     </div>
     <br>
     <div>
-      <div class="pb-3">
-        <div><span class="color-pink"><b>3.</b>&nbsp;</span>Backcountry Loop Trail</div>
+      <div class="pb-3 mr-2">
+        <div class="text-3xl"><span class="color-pink mr-2"><b>3.</b></span>Backcountry Loop Trail</div>
         <div><b>Distance:</b> 2 miles</div>
         <div><b>Rating:</b> 4.6/5 <a href="https://www.alltrails.com/ar/trail/us/georgia/two-mile-backcountry-loop-trail" target="_blank">AllTrails</a></div>
         <div>
@@ -108,14 +108,14 @@
 
   <div class="pb-3 text-2xl" id="mtb-easy">
     <div>
-      <h2>Easier MTB Rides&nbsp;<span class="color-pink"><b>.</b></span></h2>
+      <h2 class="text-5xl">Easier MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div class="pb-8">
       The easier MTB rides below are from the 5 Points Recreation Area. Make sure you have proper gear and check the weather conditions and trail reports before your excursion. 
     </div>
     <div class="pb-8">
       <div class="pb-3">
-        <div><span class="color-pink"><b>1.</b>&nbsp;</span>Bankhead + Cloudland Canyon Connector + Shale Flats loop</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>Bankhead + Cloudland Canyon Connector + Shale Flats loop</div>
         <div><b>Distance:</b> 3-4 miles</div>
         <div>
           <b>
@@ -136,7 +136,7 @@
     </div>
     <div>
     <div class="pb-3">
-      <div><span class="color-pink"><b>2.</b>&nbsp;</span>Cloudland Canyon Connector (and back)</div>
+      <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>Cloudland Canyon Connector (and back)</div>
         <div><b>Distance:</b> 6.8 miles</div>
         <div>
           <b>
@@ -161,11 +161,11 @@
 
   <div class="pb-3 text-2xl" id="advanced-hikes">
     <div>
-      <h2>Intermediate/Advanced Hikes&nbsp;<span class="color-pink"><b>.</b></span></h2>
+      <h2 class="text-5xl">Intermediate/Advanced Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div class="pb-3">
-        <div><span class="color-pink"><b>1.</b>&nbsp;</span>West Rim Loop</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>West Rim Loop</div>
         <div><b>Distance:</b> 4.7 miles</div>
         <div>
           <b>
@@ -184,7 +184,7 @@
     <br>
     <div class="pb-6">
       <div class="pb-3">
-        <div><span class="color-pink"><b>2.</b>&nbsp;</span>Waterfalls Trail</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>Waterfalls Trail</div>
         <div><b>Distance:</b> 1.8 miles</div>
         <div>
           <b>
@@ -202,7 +202,7 @@
     </div>  
     <div>
       <div class="pb-3">
-      <div><span class="color-pink"><b>3.</b>&nbsp;</span>Sitton's Gulch Trail</div>
+      <div class="text-3xl"><span class="color-pink mr-2"><b>3.</b></span>Sitton's Gulch Trail</div>
         <div><b>Distance:</b> 6 miles</div>
         <div>
           <b>
@@ -227,13 +227,13 @@
     </div>
   </div>
 
-  <div class="pb-3 text-2xl">
+  <div class="pb-12 text-2xl">
     <div>
-      <h2>Intermediate/Advanced MTB Rides&nbsp;<span class="color-pink"><b>.</b></span></h2>
+      <h2 class="text-5xl">Intermediate/Advanced MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div class="pb-3">
-        <div><span class="color-pink"><b>1.</b>&nbsp;</span>Tailings Run + CCC + North Hogsback</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>Tailings Run + CCC + North Hogsback</div>
         <div><b>Distance:</b> 4 - 5 miles</div>
         <div>
           <b>
@@ -252,7 +252,7 @@
     <br>
     <div>
       <div class="pb-3">
-        <div><span class="color-pink"><b>1.</b>&nbsp;</span>Bankhead + Kettle Bottom</div>
+        <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>Bankhead + Kettle Bottom</div>
         <div><b>Distance:</b> 5 - 6 miles</div>
         <div>
           <b>
@@ -266,10 +266,78 @@
         <p>
           Park at 5 Points and begin by taking Bankhead 0.4 miles to Clouldland Canyon Connector (CCC). Take a right on CCC until you get to the 5 Points intersection. At 5 Points find Kettle Bottom trail. Kettle Bottom is rated as an intermediate trail. You can either take it as a full loop or there is an alternate path that's slightly shorter (about 1/3 of a mile shorter). Both options take you back to 5 Points intersection where you'll take a right on CCC back to Bankhead and follow that back to the parking lot.
         </p>
-      </div>    
+      </div>   
+    </div>
+    </div>  
   </div>
-
-
+  <div class="pb-3 text-2xl">
+    <div>
+      <h2 class="text-5xl">Disc Golf<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div>
+      <div><b>Holes:</b> 18</div>
+      <div><b><a href="https://maps.app.goo.gl/EVRWySGiXBkXsZB8A" target="_blank">Directions</a></b></div>
+      <br>
+      <div>
+        <p>
+          Are you a disc golfer who's a sucker for scenery? The Cloudland Canyon State Park Disc Golf Course might be the course you're looking for. The course is easy to follow and well marked but some parts have been reported to be a little overgrown. The course has concrete tee's and though there are rest rooms in the state park, there are not restrooms readily available on the course. You have to pay the $5 entry fee to get into the park, but there's no additional fee after that. It's about a 5 minute drive from the park entrance to the course.
+        </p>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div class="flex flex-col justify-center items-center mb-16 mt-16">
+    <image src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Creekside_Disc_Golf_-_1023296199.jpg" class="responsive-box mb-2" alt="disc and target">
+    <div class="text-center">
+      <em>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Creekside_Disc_Golf_-_1023296199.jpg" target="_blank">Disc and Target</a> 
+        by formatc1. CC license 2.0.
+      </em>
+    </div>
+  </div> 
+  <div class="pb-3 text-2xl">
+    <div>
+      <h2 class="text-5xl">Camping<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div class="mb-5">
+      <div><a href="https://gastateparks.reserveamerica.com/camping/map_of_cloudland-canyon-state-park/r/campgroundMap.do?page=map&search=site&contractCode=GA&parkId=530148" target="_blank">Park Campsite Map</a></div>
+      <div><a href="https://gastateparks.reserveamerica.com/camping/cloudland-canyon-state-park/r/campsiteCalendar.do?page=calendar&search=site&contractCode=GA&parkId=530148" target="_blank">Park Campsite Availability</a></div>
+    </div>
+    <div>
+      <div>
+        <p>
+          Cloudland Canyon State Park offers pretty much every type of camping experience you have in mind. Want to camp out in a yurt? The have that. Want to bring your uncle Dave's RV? They have spots for that. Want to rent a cabin with friends? They can make that happen. You get the point. They also have primitive campsites for the folks who prefer the BYO tent lifestyle. There are additional fee's depending on what youre doing, make sure to check their website for rental and campsite availablility and registration. In the popular season's (we're looking and you spring and fall) you may need to book a few weeks in advance.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center items-center mb-16 mt-16">
+    <image src="https://upload.wikimedia.org/wikipedia/commons/6/67/Series_of_Glamping_Yurts_near_Llansantffraed-in-Elwel%2C_Powys.jpg" class="responsive-box mb-2" alt="disc and target">
+    <div class="text-center">
+      <em>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/6/67/Series_of_Glamping_Yurts_near_Llansantffraed-in-Elwel%2C_Powys.jpg" target="_blank">Yurt Campgound</a> 
+        by Bill Nicholls. CC license 2.0.
+      </em>
+    </div>
+  </div>
+  <div class="pb-3">
+    <div>
+      <h2 class="text-5xl">Fishing<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div>
+      <div>
+        <p class="mb-3">
+          The bad news? There is only one fishing spot in the campground. The good news? It's a pretty nice fishing spot. Cloudland Canyon has a pond that measure's about one acre. It's stocked with channel catfish which can be harvested from the day after labor day through the end of November. All other times are catch and release. If you don't have your fishing license, don't fret it's not needed for this location.
+        </p>
+        <p class="mb-3">
+          The easiest way to access the pond is via the <a href="#easier-hikes">Meadowlands Trail</a>, referenced above.
+        </p>
+        <p>
+          Important note: There is no fishing allowed in any of the park creeks.
+        </p>
+      </div>
+    </div>
+  </div>
 
   <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
   <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
