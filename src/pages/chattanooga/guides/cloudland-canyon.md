@@ -160,8 +160,8 @@
   </div>
 
   <div class="pb-3 text-2xl" id="advanced-hikes">
-    <div>
-      <h2 class="text-5xl">Intermediate/Advanced Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
+    <div class="">
+      <h2 class="text-5xl w-full break-words">Intermediate/Advanced Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div class="pb-3">
@@ -229,7 +229,7 @@
 
   <div class="pb-12 text-2xl">
     <div>
-      <h2 class="text-5xl">Intermediate/Advanced MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
+      <h2 class="text-5xl w-full break-words">Intermediate/Advanced MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div class="pb-3">
@@ -272,7 +272,7 @@
   </div>
   <div class="pb-3 text-2xl">
     <div>
-      <h2 class="text-5xl">Disc Golf<span class="color-pink ml-1"><b>.</b></span></h2>
+      <h2 class="text-5xl w-full break-words">Disc Golf<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div><b>Holes:</b> 18</div>
@@ -297,7 +297,7 @@
   </div> 
   <div class="pb-3 text-2xl">
     <div>
-      <h2 class="text-5xl">Camping<span class="color-pink ml-1"><b>.</b></span></h2>
+      <h2 class="text-5xl w-full break-words">Camping<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div class="mb-5">
       <div><a href="https://gastateparks.reserveamerica.com/camping/map_of_cloudland-canyon-state-park/r/campgroundMap.do?page=map&search=site&contractCode=GA&parkId=530148" target="_blank">Park Campsite Map</a></div>
@@ -322,7 +322,7 @@
   </div>
   <div class="pb-3">
     <div>
-      <h2 class="text-5xl">Fishing<span class="color-pink ml-1"><b>.</b></span></h2>
+      <h2 class="text-5xl w-full break-words">Fishing<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div>
