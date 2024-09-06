@@ -37,7 +37,7 @@
     </a>
   </h4>
 
-  <div class="pb-3 text-2xl" id="easier-hikes">
+  <section class="pb-3 text-2xl" id="easier-hikes">
     <div class="pb-3">
       <h2 class="text-5xl">Easier Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -97,7 +97,7 @@
         There's no direct Google location for this trail. I linked to the closest parking in the directions above. This paired with the <a href="https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/CloudlandCanyon_TrailMap.pdf">trail</a> map should get you there. This is a trail loop to access primitive campsites and is also a nice 2 mile hike to explore a less frequently traveled, but still fairly easy hike. As with all of the other trails in the park remember to bring appropriate footware, something that can handle moisture and rocky terrain. Like the Meadowlands Trail the closest parking will be at the disc golf course.
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
     <image src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork">
@@ -106,7 +106,7 @@
     </div>
   </div>
 
-  <div class="pb-3 text-2xl" id="mtb-easy">
+  <section class="pb-3 text-2xl" id="mtb-easy">
     <div>
       <h2 class="text-5xl">Easier MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -150,7 +150,7 @@
         Arguably the most popular trail in the 5 points system, take this trail out and back for close to a seven mile ride. You'll start by parking at the Ascalon Trailhead linked above and should be able to access CCC. The nice thing about this rise is it's a green the whole way and your main navigation note is to stay on the trail. CCC connects to many other trails in the 5 points network so you'll see a lot of forks, but just take CCC every time. The trail ends at Hinkie Road (RT 157). Then turn around and head back to Ascalon Trailhead where you parked.
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
     <image src="/images/chattanooga_guides/outdoors/cloudland/mtb-map.png" class="responsive-box pb-1" alt="5 Points Trail Map">
@@ -159,7 +159,7 @@
     </div>
   </div>
 
-  <div class="pb-3 text-2xl" id="advanced-hikes">
+  <section class="pb-3 text-2xl" id="advanced-hikes">
     <div class="">
       <h2 class="text-5xl w-full break-words">Intermediate/Advanced Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -218,7 +218,7 @@
         </p>
       </div>
     </div>  
-  </div>
+  </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
     <image src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
@@ -227,7 +227,7 @@
     </div>
   </div>
 
-  <div class="pb-12 text-2xl">
+  <section class="pb-12 text-2xl">
     <div>
       <h2 class="text-5xl w-full break-words">Intermediate/Advanced MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -269,8 +269,8 @@
       </div>   
     </div>
     </div>  
-  </div>
-  <div class="pb-3 text-2xl">
+  </section>
+  <section class="pb-3 text-2xl">
     <div>
       <h2 class="text-5xl w-full break-words">Disc Golf<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -285,7 +285,7 @@
       </div>
     </div>
     <br>
-  </div>
+  </section>
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
     <image src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Creekside_Disc_Golf_-_1023296199.jpg" class="responsive-box mb-2" alt="disc and target">
     <div class="text-center">
@@ -295,7 +295,7 @@
       </em>
     </div>
   </div> 
-  <div class="pb-3 text-2xl">
+  <section class="pb-3 text-2xl">
     <div>
       <h2 class="text-5xl w-full break-words">Camping<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -310,7 +310,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
     <image src="https://upload.wikimedia.org/wikipedia/commons/6/67/Series_of_Glamping_Yurts_near_Llansantffraed-in-Elwel%2C_Powys.jpg" class="responsive-box mb-2" alt="disc and target">
     <div class="text-center">
@@ -320,7 +320,7 @@
       </em>
     </div>
   </div>
-  <div class="pb-3">
+  <section class="pb-3">
     <div>
       <h2 class="text-5xl w-full break-words">Fishing<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -337,7 +337,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
   <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
   <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
