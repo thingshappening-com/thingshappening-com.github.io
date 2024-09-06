@@ -338,6 +338,27 @@
       </div>
     </div>
   </section>
+    <section class="pb-3">
+    <div>
+      <h2 class="text-5xl w-full break-words">Eating Nearby<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div>
+      <div>
+        <p class="mb-3">
+          Are you visiting Cloudland Canyon for a day hike and want to get a bite to eat at a restaurant or cafe after? Maybe the fire wouldn't start to cook the frank and beans while you were camping. You have a few options nearby. Here are a few options:
+          <div>1. <a href="https://www.google.com/maps/place/Hope+House+Caf%C3%A9+via+A+Hand+UP+Ministry/@34.8624676,-85.5052369,16z/data=!3m1!4b1!4m6!3m5!1s0x8860495b22a64865:0xae6b460ec25c91b0!8m2!3d34.8624632!4d-85.5026566!16s%2Fg%2F11rct_1ng3?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Hope House Cafe.</a> This cafe is a 10-15 minute drive from the mountain with great breakfast and lunch food options. It has charming atomosphere that's inviting after a day's hike.</div>
+          <div>2. <a target="_blank" href="https://www.google.com/maps/place/Canyon+Grill/@34.8094493,-85.4776323,17z/data=!3m1!4b1!4m6!3m5!1s0x88604890a875279f:0xf22124328698ea0d!8m2!3d34.8094449!4d-85.475052!16s%2Fg%2F1thxwyt0?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D">Canyon Grill.</a> If it's closer to dinnertime Canyon Grill will be what you're looking for. It has a great menu with highly rated seafood, steaks, and fried okra. The menu may have given it away but if it's not clear this is the most expensive option in this list. It's about 5-10 minutes from the park.</div>
+          <div>3. <a target="_blank" href="https://www.google.com/maps/place/Thatcher's+Bbq+And+Grille/@34.8719566,-85.5113424,16z/data=!3m1!4b1!4m6!3m5!1s0x88604ead5f4137e1:0xef1ed00dbded4cae!8m2!3d34.8719522!4d-85.5087621!16s%2Fg%2F1tj33w22?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D">Thatcher's Bbq And Grille.</a> A great lunch or dinner bbq option after your outdoor adventures, the menu features your bbq restaurant favorites like brisket and for dessert banana pudding. The menu has some gluten free options. </div>
+        </p>
+        <p class="mb-3">
+          The easiest way to access the pond is via the <a href="#easier-hikes">Meadowlands Trail</a>, referenced above.
+        </p>
+        <p>
+          Important note: There is no fishing allowed in any of the park creeks.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
   <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
