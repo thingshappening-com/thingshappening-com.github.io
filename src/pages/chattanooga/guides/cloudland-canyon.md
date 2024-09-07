@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="text-2xl">
-      When it comes to exploring nearby parks it's easy to pick one that's closest to home. Whether that's Prentice Cooper, Stringers Ridge, or another park for you, we all have our defaults. But travel a bit further south (~20-25 miles depending) and you likely won't regret a trip to Cloudland Canyon State Park in Rising Fawn, Georgia. It was recently featured on The Discoverer as the <a href="https://www.thediscoverer.com/blog/the-best-state-park-in-each-state/XvHyVpKgiwAG5akA" target="_blank">best state park</a> in Georgia. After investigating a little further you'll quickly find out why. It has over 60 miles of trails ranging from easy to difficult with some of the best views you'll come across. In this guide let's take a look at more of what this nearby trail system treasure has to offer. For the <a href="#mtb-easy">MTB section</a> please note that if you do not own a mountain bike you can rent one
+       Travel a bit south of Chattanooga (~20-25 miles depending) and you likely won't regret a trip to Cloudland Canyon State Park in Rising Fawn, Georgia. It was recently featured on The Discoverer as the <a href="https://www.thediscoverer.com/blog/the-best-state-park-in-each-state/XvHyVpKgiwAG5akA" target="_blank">best state park</a> in Georgia. After investigating a little further you'll quickly find out why. It has over 60 miles of hiking, biking, and horseback riding trails ranging from easy to difficult with some of the best views you could hope for. There's plenty to do with the whole family for a day or weekend visit. In this guide let's take a look at more of what this nearby trail system treasure has to offer.
       <br><br>
     </div>
 
