@@ -18,12 +18,9 @@
 <div>
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Cloudland_Canyon_State_Park_%288648810088%29.jpg" class="responsive-box mb-2" alt="canyon waterfall">
+      <image src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
       <div class="text-center">
-        <em>
-          <a href="https://commons.wikimedia.org/wiki/File:Cloudland_Canyon_State_Park_(8648810088).jpg" target="_blank">Cloudland Canyon State Park</a> 
-          by Jeff Gunn. CC license 2.0.
-        </em>
+        <em>Cloudland Canyon Vista</em>
       </div>
     </div>
     <div class="text-2xl">
@@ -100,9 +97,9 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork">
+    <image src="/images/chattanooga_guides/outdoors/cloudland/trail-shot.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork">
     <div class="text-center">
-      <em>West Rim and Overlook Trail fork</em>
+      <em>On the trail in CCSP</em>
     </div>
   </div>
 
@@ -221,10 +218,10 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
-    <div class="text-center">
-      <em>Cloudland Canyon Vista</em>
-    </div>
+      <image src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork" alt="hiking trail">
+      <div class="text-center">
+        <em>Hiking trails fork in the park</em>
+      </div>
   </div>
 
   <section class="pb-12 text-xl2">
@@ -320,6 +317,17 @@
       </em>
     </div>
   </div>
+
+  <div class="flex flex-col justify-center items-center mb-16 mt-16">
+    <image src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Cloudland_Canyon_State_Park_%288648810088%29.jpg" class="responsive-box mb-2" alt="canyon waterfall">
+    <div class="text-center">
+      <em>
+        <a href="https://commons.wikimedia.org/wiki/File:Cloudland_Canyon_State_Park_(8648810088).jpg" target="_blank">Cloudland Canyon State Park</a> 
+        by Jeff Gunn. CC license 2.0.
+      </em>
+    </div>
+  </div>
+
   <section class="pb-3 text-xl2">
     <div>
       <h2 class="text-5xl w-full break-words">Fishing<span class="color-pink ml-1"><b>.</b></span></h2>
@@ -356,7 +364,7 @@
   </section>
     <section class="pb-3 text-xl2">
     <div>
-      <h2 class="text-5xl w-full break-words">Other ideas / notes of interest<span class="color-pink ml-1"><b>.</b></span></h2>
+      <h2 class="text-5xl w-full break-words">Other Ideas / Notes of Interest<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
       <div class="">
@@ -388,6 +396,15 @@
           Friends of Cloudland Canyon State Park are almost always seeking volunteers for various maintenance, hospitality, and fundraising roles regularly. If you're interested in helping maintain this wonderful park you can find more details <a href="https://friendsofcloudlandcanyon.org/volunteering/" target="_blank">here</a>.
         </div>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2 class="text-5xl w-full break-words">Closing Time<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div>
+      I hope this guide left you feeling inspired for a visit to this magical park. I know I'm ready to go back now after putting it together. If you feel like I left anything out or you have any questions please reach out to <a href="mailto:jack@thingshappening.com">jack@thingshappening.com</a>
     </div>
   </section>
   <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
