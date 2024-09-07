@@ -138,3 +138,10 @@
     }
   }
 }
+
+.large-marker li::marker {
+  font-size: 1.2em; /* Adjust size as needed */
+  // margin-right: 0 !important;
+  // padding-right:0;
+  // text-indent: -0.5em !important;
+}

@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{astro,js,jsx,svelte,ts,tsx,vue,md}",
   ],
   important: true,
+  variants: {
+    extend: {
+      textColor: ['marker'],
+    }
+  },
   theme: {
     borderColor: (theme) => ({
       ...theme("colors"),
@@ -105,6 +110,7 @@ module.exports = {
         body: ["Poppins", "sans-serif"],
       },
       fontSize: {
+        "xl2": "1.38rem",
         "7xl": "5rem",
         "8xl": "6rem",
         "9xl": "7rem",

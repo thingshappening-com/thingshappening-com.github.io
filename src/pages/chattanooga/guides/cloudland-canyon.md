@@ -1,7 +1,7 @@
 ---
   title: "A Guide to Georgia’s Best State Park 20 Miles from Chattanooga"
   author: "Jack Burnham - Local Guide"
-  lastUpdated: "09/01/2024"
+  lastUpdated: "09/07/2024"
   iconPath: "../../../images/icons/pine-tree.png"
   tags: [{type: "guide", tag: "outdoors"}]
   layout: "../../../layouts/BlogPostLayout.astro"
@@ -32,17 +32,17 @@
     </div>
 
   <h4 class="pb-10">
-    <a href="https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/CloudlandCanyon_TrailMap.pdf">
+    <a href="https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/CloudlandCanyon_TrailMap.pdf" target="_blank">
       Trail Map pdf
     </a>
   </h4>
 
-  <section class="pb-3 text-2xl" id="easier-hikes">
+  <section class="pb-3 text-xl2" id="easier-hikes">
     <div class="pb-3">
       <h2 class="text-5xl">Easier Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
-      <div class="pb-3">
+      <div class="pb-3" id="meadowlands-trail">
         <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>Meadowlands Trail</div>
         <div><b>Distance:</b> 1 mile</div>
         <div>
@@ -106,7 +106,7 @@
     </div>
   </div>
 
-  <section class="pb-3 text-2xl" id="mtb-easy">
+  <section class="pb-3 text-xl2" id="mtb-easy">
     <div>
       <h2 class="text-5xl">Easier MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -159,7 +159,7 @@
     </div>
   </div>
 
-  <section class="pb-3 text-2xl" id="advanced-hikes">
+  <section class="pb-3 text-xl2" id="advanced-hikes">
     <div class="">
       <h2 class="text-5xl w-full break-words">Intermediate/Advanced Hikes<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -227,7 +227,7 @@
     </div>
   </div>
 
-  <section class="pb-12 text-2xl">
+  <section class="pb-12 text-xl2">
     <div>
       <h2 class="text-5xl w-full break-words">Intermediate/Advanced MTB Rides<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -270,7 +270,7 @@
     </div>
     </div>  
   </section>
-  <section class="pb-3 text-2xl">
+  <section class="pb-3 text-xl2">
     <div>
       <h2 class="text-5xl w-full break-words">Disc Golf<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -320,7 +320,7 @@
       </em>
     </div>
   </div>
-  <section class="pb-3">
+  <section class="pb-3 text-xl2">
     <div>
       <h2 class="text-5xl w-full break-words">Fishing<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -338,7 +338,7 @@
       </div>
     </div>
   </section>
-    <section class="pb-3">
+    <section class="pb-3 text-xl2">
     <div>
       <h2 class="text-5xl w-full break-words">Eating Nearby<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -350,16 +350,46 @@
           <div>2. <a target="_blank" href="https://www.google.com/maps/place/Canyon+Grill/@34.8094493,-85.4776323,17z/data=!3m1!4b1!4m6!3m5!1s0x88604890a875279f:0xf22124328698ea0d!8m2!3d34.8094449!4d-85.475052!16s%2Fg%2F1thxwyt0?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D">Canyon Grill.</a> If it's closer to dinnertime Canyon Grill will be what you're looking for. It has a great menu with highly rated seafood, steaks, and fried okra. The menu may have given it away but if it's not clear this is the most expensive option in this list. It's about 5-10 minutes from the park.</div>
           <div>3. <a target="_blank" href="https://www.google.com/maps/place/Thatcher's+Bbq+And+Grille/@34.8719566,-85.5113424,16z/data=!3m1!4b1!4m6!3m5!1s0x88604ead5f4137e1:0xef1ed00dbded4cae!8m2!3d34.8719522!4d-85.5087621!16s%2Fg%2F1tj33w22?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D">Thatcher's Bbq And Grille.</a> A great lunch or dinner bbq option after your outdoor adventures, the menu features your bbq restaurant favorites like brisket and for dessert banana pudding. The menu has some gluten free options. </div>
         </p>
-        <p class="mb-3">
-          The easiest way to access the pond is via the <a href="#easier-hikes">Meadowlands Trail</a>, referenced above.
-        </p>
-        <p>
-          Important note: There is no fishing allowed in any of the park creeks.
-        </p>
       </div>
     </div>
   </section>
-
+  </section>
+    <section class="pb-3 text-xl2">
+    <div>
+      <h2 class="text-5xl w-full break-words">Other ideas / notes of interest<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div>
+      <div class="">
+        <div class="mb-3">
+          <span class="text-2xl"><b>Road Bike</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span> The varuiys park areas are mostly interconnected through low-medium trafficked roads depending on when you visit. It can be a great place to ride your bike around nature, get some exercise, and potentially see some wildlife if you're lucky.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Horseback Ride</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span> There are some trails in the park that allow for horseback riding. You have to BYO horse, no guided tours are provided by the park. Riding trails are at the 5 Points Recreation Area with parking at <a href="https://www.google.com/maps/place/Ascalon+Trailhead/@34.836966,-85.4412667,17z/data=!3m1!4b1!4m6!3m5!1s0x8860489de9aa9e81:0xaa78f71a6429baa9!8m2!3d34.8369616!4d-85.4386864!16s%2Fg%2F11cjhz867p?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ascalon Trailhead</a>.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Picnic</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span> Some free access picnic tables are scattered throughout the park, but you can also rent a larger picnic table for an event or family function. Find availablity <a href="https://gastateparks.reserveamerica.com/campsiteFilterAction.do?sitefilter=Picnic%20Shelter&startIdx=0&contractCode=GA&parkId=530148&_gl=1*178u764*_ga*OTUyMDE4MTMyLjE3MjUyMDUzNzU.*_ga_NY38CG84RB*MTcyNTczMTk2OC44LjAuMTcyNTczMTk2OC4wLjAuMA.." target="_blank">here</a>.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Waterfalls</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
+          Waterfalls. If you read through this guide (thanks if you did, big fan of you) you will have seen multiple mentions of waterfalls in the park. There's Hemlock Falls and Cherokee Falls, both are most easily accessed via the <a href="#meadowlands-trail">Meadowlands Trail</a>. The water levels can can vary significantly depending on rainfall but when they are flowing it's really a sight to behold.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Events</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
+          Throughout the year this state parks hosts a wide variety of outdoor events, usually 5-10 per month. See if there is something you might like at <a href="https://explore.gastateparks.org/events?p=38" target="_blank">GA State Parks website</a>.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Volunteer</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
+          Friends of Cloudland Canyon State Park are almost always seeking volunteers for various maintenance, hospitality, and fundraising roles regularly. If you're interested in helping maintain this wonderful park you can find more details <a href="https://friendsofcloudlandcanyon.org/volunteering/" target="_blank">here</a>.
+        </div>
+      </div>
+    </div>
+  </section>
   <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
   <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
   <div><h2 style="padding-bottom: 0 !important;"><span>2.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/antiquing/" target="_blank">Antique Shops Guide</a></h2></div>
