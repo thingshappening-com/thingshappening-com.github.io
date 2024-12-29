@@ -1,9 +1,9 @@
 ---
   title: "Civil War History"
   author: "Jack Burum - Local Guide"
-  lastUpdated: "09/10/2024"
-  iconPath: "../../../images/icons/pine-tree.png"
-  tags: [{type: "guide", tag: "outdoors"}]
+  lastUpdated: "12/29/2024"
+  iconPath: "../../../images/icons/history.png"
+  tags: [{type: "guide", tag: "history"}]
   layout: "../../../layouts/BlogPostLayout.astro"
 ---
 <style>
@@ -18,9 +18,9 @@
 <div>
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
+      <image src="/images/chattanooga_guides/history/monument_tennessee.jpg" class="w-6/12 pb-1" alt="chick battlefield monument">
       <div class="text-center">
-        <em>Cloudland Canyon Vista</em>
+        <em>Chickamauga Battlefield Monument</em>
       </div>
     </div>
     <section class="text-2xl">
@@ -150,9 +150,9 @@
     </div>    
   
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/outdoors/cloudland/trail-shot.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork">
+    <image src="/images/chattanooga_guides/history/path.jpg" class="responsive-box pb-1" alt="civil war park path">
     <div class="text-center">
-      <em>On the trail in CCSP</em>
+      <em>Walking path at Chickamauga Battlefield</em>
     </div>
   </div>
 
@@ -163,24 +163,33 @@
     <div>
       <div>
         <div class="mb-3">
-          <span class="text-2xl"><b>Volunteer</b></span>
+          <span class="text-2xl"><b>Bragg Reservation</b></span>
           <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
-          Friends of Cloudland Canyon State Park are almost always seeking volunteers for various maintenance, hospitality, and fundraising roles regularly. If you're interested in helping maintain this wonderful park you can find more details <a href="https://friendsofcloudlandcanyon.org/volunteering/" target="_blank">here</a>.
+          This historic site is the location for the headquarters of Confederate General Bragg. It exists in the Missionary Ridge area of Chattanooga (off of South Crest Road) with monuments dedicated to the General. In very close proximity is also the Monuments of Sherman's Brigade.
         </div>
-        <p class="mb-3">
-          The easiest way to access the pond is via the <a href="#easier-hikes">Meadowlands Trail</a>, referenced above.
-        </p>
-        <p>
-          Important note: There is no fishing allowed in any of the park creeks.
-        </p>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Orchard Knob Reservation</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
+          Another historic Civil War site within Chattanooga's city limits. This reservation is a dedicated space memorializing the command post of Union General Ulysses S. Grant. This is where Grant and his officers planned key initiatives like the charge up Missionary Ridge.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Forest Hills Cemetery</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
+          Located in the St Elmo neighborhood of Chattanooga. This cemetery was established in 1880. It houses historic gravesites of Civil War officers and other notable figures of the time. It sits at the base of Lookout Mountain and is noted for it's serene beauty and historical significance.
+        </div>
+        <div class="mb-3">
+          <span class="text-2xl"><b>Chattanooga National Cemeter</b></span>
+          <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
+          Located in Missionary Ridge, this cemetery was erstablished in 1863 during the Civil War by Union General George H Thomas following the Battle of Chattanooga. It was initially going to be a burrial ground for Union soliders exclusively but later expanded to include veterans of future wars. Thousands of Union soliders are burried here and a small number of Confederate soliders as well.
+        </div>
       </div>
     </div>
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork" alt="hiking trail">
+      <image src="/images/chattanooga_guides/history/war_canons.jpg" class="w-6/12 h-6/12 pb-1" alt="war cannons">
       <div class="text-center">
-        <em>Hiking trails fork in the park</em>
+        <em>Civil War Cannons</em>
       </div>
   </div>
 
@@ -189,10 +198,13 @@
       <h2 class="text-5xl w-full break-words">Closing Time<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div>
-      I hope this guide left you feeling inspired for a visit to this magical park. I know I'm ready to go back now after putting it together. If you feel like I left anything out or you have any questions please reach out to <a href="mailto:jack@thingshappening.com">jack@thingshappening.com</a>
+      Anyone with a deep interest in history knows Chattanooga has had some key moments in time in America's short existence. I hope this Chattanooga Civil War overview offers some new facts / details for those both familiar and new to this history. Furthermore I hope you embark on a history adventure by exploring the landmarks noted throughout this guide. If I missed anything or something needs correcting, please email me at  <a href="mailto:jack@thingshappening.com">jack@thingshappening.com</a>. Thanks for reading.
     </div>
   </section>
-  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
-  <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
-  <div><h2 style="padding-bottom: 0 !important;"><span>2.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/antiquing/" target="_blank">Antique Shops Guide</a></h2></div>
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Other Posts:</h1>
+  <div>
+    <h2 style="padding-bottom: 0 !important;">
+      <li><a href="/chattanooga/guides/cloudland-canyon" target="_blank">Cloudland Canyon State Park</a></li> 
+    </h2>
+  </div>
 </div>

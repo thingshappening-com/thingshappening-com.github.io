@@ -1,7 +1,7 @@
 ---
   title: "A Guide to Georgia’s Best State Park 20 Miles from Chattanooga"
   author: "Jack Burnham - Local Guide"
-  lastUpdated: "09/07/2024"
+  lastUpdated: "12/24/2024"
   iconPath: "../../../images/icons/pine-tree.png"
   tags: [{type: "guide", tag: "outdoors"}]
   layout: "../../../layouts/BlogPostLayout.astro"
@@ -406,7 +406,10 @@
       I hope this guide left you feeling inspired for a visit to this magical park. I know I'm ready to go back now after putting it together. If you feel like I left anything out or you have any questions please reach out to <a href="mailto:jack@thingshappening.com">jack@thingshappening.com</a>
     </div>
   </section>
-  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Similar Posts:</h1>
-  <div><h2 style="padding-bottom: 0 !important;"><span>1.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/coffeeshops-in-surrounding-cities/" target="_blank">Coffeeshop Guide</a></h2></div>
-  <div><h2 style="padding-bottom: 0 !important;"><span>2.</span>&nbsp;&nbsp; <a href="/chattanooga/guides/antiquing/" target="_blank">Antique Shops Guide</a></h2></div>
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Other Posts:</h1>
+  <div>
+    <h2 style="padding-bottom: 0 !important;">
+      <li><a href="/chattanooga/guides/civil-war-history" target="_blank">Civil War History</a></li> 
+    </h2>
+  </div>
 </div>
