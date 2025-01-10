@@ -1,5 +1,5 @@
 ---
-  title: "A Guide to Georgia’s Best State Park 20 Miles from Chattanooga"
+  title: "The Guide to Georgia’s Best State Park 20 Miles from Chattanooga"
   author: "Jack Burnham - Local Guide"
   lastUpdated: "12/24/2024"
   iconPath: "../../../images/icons/pine-tree.png"
