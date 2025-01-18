@@ -1,6 +1,5 @@
 ---
-  title: "Civil War History"
-  author: "Jack Burum - Local Guide"
+  title: "History Tour: The Civil War in Chattanooga"
   lastUpdated: "12/29/2024"
   iconPath: "../../../images/icons/history.png"
   tags: [{type: "guide", tag: "history"}]
