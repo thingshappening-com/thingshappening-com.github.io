@@ -100,7 +100,7 @@
           UT Chattanooga Men's Divison 1 Basketball
         </div>
         <div>
-          UTC Men's hoops has been a member of Division 1 sports since 1977. The team actively compete's in the Southeastern Conference (SoCon). They've had 12 appearances in the NCAA tournament, they're last being in 2022. The furthest they've advanced is to the sweet sixteen in 1997 where they defeated Georgia and Illinois before being knocked out by Providence. The most notable professional player to come out of program is Gerald Wilkings who played 13 NBA seasons from 1985-1998. You can find a list of active pro players here(https://gomocs.com/sports/2024/1/31/mocs-in-pro-hoops.aspx). The Moc's game's are played at McKenzie Arena and the regular season run's from November - Februrary. 
+          UTC Men's hoops has been a member of Division 1 sports since 1977. The team actively compete's in the Southeastern Conference (SoCon). They've had 12 appearances in the NCAA tournament, they're last being in 2022. The furthest they've advanced is to the sweet sixteen in 1997 where they defeated Georgia and Illinois before being knocked out by Providence. The most notable professional player to come out of program is Gerald Wilkings who played 13 NBA seasons from 1985-1998. You can find a list of active pro players <a href="https://gomocs.com/sports/2024/1/31/mocs-in-pro-hoops.aspx" target="_blank">here</a>. The Moc's game's are played at McKenzie Arena and the regular season run's from November - Februrary. 
         </div>
       </div>
       <div class="pb-5">
@@ -162,7 +162,7 @@
     </div>
     <div class="pb-3">
       <div class="pb-5">
-        <div>
+       <div>
           Haven't found exactly what you're looking for? Maybe you'd be interested in Chattanooga's women's <a href="https://chattanoogarollerderby.com/" target="_blank">roller derby</a> or <a href="https://www.noogarugby.com/" target="_blank">Nooga Ruby</a> (mens and womens clubs) which runs from January - April.
         </div>
       </div>
