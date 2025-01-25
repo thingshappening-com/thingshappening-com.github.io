@@ -17,7 +17,7 @@
 <div>
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/history/monument_tennessee.jpg" class="w-6/12 pb-1" alt="chick battlefield monument">
+      <img src="/images/chattanooga_guides/history/monument_tennessee.jpg" class="lg:w-6/12 pb-1" alt="chick battlefield monument">
       <div class="text-center">
         <em>Chickamauga Battlefield Monument</em>
       </div>
@@ -149,7 +149,7 @@
     </div>    
   
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/history/path.jpg" class="responsive-box pb-1" alt="civil war park path">
+    <img src="/images/chattanooga_guides/history/path.jpg" class="responsive-box pb-1" alt="civil war park path">
     <div class="text-center">
       <em>Walking path at Chickamauga Battlefield</em>
     </div>
@@ -186,7 +186,7 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/history/war_canons.jpg" class="w-6/12 h-6/12 pb-1" alt="war cannons">
+      <img src="/images/chattanooga_guides/history/war_canons.jpg" class="lg:w-6/12 lg:h-6/12 pb-1" alt="war cannons">
       <div class="text-center">
         <em>Civil War Cannons</em>
       </div>

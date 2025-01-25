@@ -17,7 +17,7 @@
 <div>
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
+      <img src="/images/chattanooga_guides/outdoors/cloudland/vista.jpg" class="responsive-box pb-1" alt="overlook of the canyon">
       <div class="text-center">
         <em>Cloudland Canyon Vista</em>
       </div>
@@ -96,7 +96,7 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/outdoors/cloudland/trail-shot.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork">
+    <img src="/images/chattanooga_guides/outdoors/cloudland/trail-shot.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork">
     <div class="text-center">
       <em>On the trail in CCSP</em>
     </div>
@@ -149,7 +149,7 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/outdoors/cloudland/mtb-map.png" class="responsive-box pb-1" alt="5 Points Trail Map">
+    <img src="/images/chattanooga_guides/outdoors/cloudland/mtb-map.png" class="responsive-box pb-1" alt="5 Points Trail Map">
     <div class="text-center">
       <em>5 Points MTB Trail Map</em>
     </div>
@@ -217,7 +217,7 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork" alt="hiking trail">
+      <img src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.jpg" class="responsive-box pb-1" alt="West Rim and Overlook Trail fork" alt="hiking trail">
       <div class="text-center">
         <em>Hiking trails fork in the park</em>
       </div>
@@ -283,7 +283,7 @@
     <br>
   </section>
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Creekside_Disc_Golf_-_1023296199.jpg" class="responsive-box mb-2" alt="disc and target">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Creekside_Disc_Golf_-_1023296199.jpg" class="responsive-box mb-2" alt="disc and target">
     <div class="text-center">
       <em>
         <a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Creekside_Disc_Golf_-_1023296199.jpg" target="_blank">Disc and Target</a> 
@@ -308,7 +308,7 @@
     </div>
   </section>
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="https://upload.wikimedia.org/wikipedia/commons/6/67/Series_of_Glamping_Yurts_near_Llansantffraed-in-Elwel%2C_Powys.jpg" class="responsive-box mb-2" alt="disc and target">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Series_of_Glamping_Yurts_near_Llansantffraed-in-Elwel%2C_Powys.jpg" class="responsive-box mb-2" alt="disc and target">
     <div class="text-center">
       <em>
         <a href="https://upload.wikimedia.org/wikipedia/commons/6/67/Series_of_Glamping_Yurts_near_Llansantffraed-in-Elwel%2C_Powys.jpg" target="_blank">Yurt Campgound</a> 
@@ -351,7 +351,7 @@
     </div>
   </section>
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Cloudland_Canyon_State_Park_%288648810088%29.jpg" class="responsive-box mb-2" alt="canyon waterfall">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Cloudland_Canyon_State_Park_%288648810088%29.jpg" class="responsive-box mb-2" alt="canyon waterfall">
     <div class="text-center">
       <em>
         <a href="https://commons.wikimedia.org/wiki/File:Cloudland_Canyon_State_Park_(8648810088).jpg" target="_blank">Cloudland Canyon State Park</a> 

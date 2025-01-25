@@ -1,6 +1,6 @@
 ---
   title: "A Playbook for Chattanooga Sports"
-  lastUpdated: "01/22/2025"
+  lastUpdated: "01/25/2025"
   iconPath: "../../../images/icons/fitness.png"
   tags: [{type: "guide", tag: "sports"}]
   layout: "../../../layouts/BlogPostLayout.astro"
@@ -17,7 +17,7 @@
 <div>
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <image src="/images/chattanooga_guides/sports/at&t_field2.jpg" class="w-6/12 pb-1" alt="at&t field">
+      <img src="/images/chattanooga_guides/sports/at&t_field2.jpg" class="lg:w-6/12 pb-1" alt="at&t field">
       <div class="text-center">
         <em>AT&T Field</em>
       </div>
@@ -57,7 +57,7 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/sports/finley_stadium.jpg" class="w-6/12 pb-1" alt="finley stadium">
+    <img src="/images/chattanooga_guides/sports/finley_stadium.jpg" class="lg:w-6/12 pb-1" alt="finley stadium">
     <div class="text-center">
       <em>Finley Stadium</em>
     </div>
@@ -131,7 +131,7 @@
   </section>
 
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
-    <image src="/images/chattanooga_guides/sports/mckenzie_arena.jpg" class="w-6/12 pb-1" alt="mckenzie arena">
+    <img src="/images/chattanooga_guides/sports/mckenzie_arena.jpg" class="lg:w-6/12 pb-1" alt="mckenzie arena">
     <div class="text-center">
       <em>McKenzie Arena</em>
     </div>
