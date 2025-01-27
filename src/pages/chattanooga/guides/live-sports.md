@@ -1,5 +1,5 @@
 ---
-  title: "A Playbook for Chattanooga Sports"
+  title: "A Playbook for Chattanooga Live Sports"
   lastUpdated: "01/25/2025"
   iconPath: "../../../images/icons/fitness.png"
   tags: [{type: "guide", tag: "sports"}]
