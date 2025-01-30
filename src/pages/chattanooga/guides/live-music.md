@@ -66,7 +66,7 @@
           Honorable mentions
         </div>
         <div>
-          There is no shortage of bars and restaurants offering musical performances on various days. If one of the previously mentioned venues doesn't have a show for you some other places to check out include <a href="https://linktr.ee/Cherrystreettavern" target="_blank">Cherry Street Tavern</a>, <a href="https://www.puckettsrestaurant.com/music#chattanoogamusic" target="_blank">Puckett's</a>, <a href="https://www.hificlydeschattanooga.com/live-music" target="_blank">Hi-Fi Clyde's</a>, <a href="https://www.tremonttavern.com/social-calendar-events" target="_blank">Tremont Tavern (Tuesday open mic)</a>,
+          There is no shortage of bars and restaurants offering musical performances on various days. If one of the previously mentioned venues doesn't have a show for you some other places to check out include <a href="https://linktr.ee/Cherrystreettavern" target="_blank">Cherry Street Tavern</a>, <a href="https://www.puckettsrestaurant.com/music#chattanoogamusic" target="_blank">Puckett's</a>, <a href="https://www.hificlydeschattanooga.com/live-music" target="_blank">Hi-Fi Clyde's</a>, <a href="https://www.tremonttavern.com/social-calendar-events" target="_blank">Tremont Tavern (Tuesday open mic)</a>.
         </div>
       </div>
     </div>
@@ -201,7 +201,7 @@
     </div>
   </section>
 
-  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Other Posts:</h1>
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Other Guides:</h1>
   <div>
     <h2 style="padding-bottom: 0 !important;">
       <li><a href="/chattanooga/guides/civil-war-history" target="_blank">Civil War History</a></li> 

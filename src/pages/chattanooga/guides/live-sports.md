@@ -27,7 +27,7 @@
       <h2 class="text-5xl">Overview<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <p>
-      Looking for a live sports fix? There's a chance there's a Chattanooga team out there you're overlooking. Whether you're cheering for the mocs at Finley Stadium, enjoying high-energy soccer matches, or exploring unique sports like roller derby, the city likely has something to offer you. This guide also highlights some of the best sports bars for live games so you can stay connected to the action out with a local crowd, if that's your kind of thing.
+      Looking for a live sports fix? Are you wondering what teams there are to go see in town? Chattanooga has a wide range of local clubs, some of these you may be familiar with, like the AA baseball team the Lookouts, others are newer to town, like the Strike ABA basketball team. Whether you're cheering for the Mocs at Finley Stadium, enjoying high-energy soccer matches with passionate local crows, or exploring unique sports like roller derby, the city likely has something to offer you. This guide also highlights some of the best sports bars for live games so you can stay connected to the action out with a local crowd.
     </p>
     <br><br>
   </section>
@@ -41,16 +41,65 @@
         <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>
           UT Chattanooga (UTC) Men's FCS Football
         </div>
+        <div class="pb-10">
+          The UTC Mocs football team plays in the Southeastern Conference (SoCon). Since 1982 the program has competed in the NCAA Division 1-AA or FCS leagues, in its entirety the program has been active since 1904. The most notable alumni to play for the program is former NFL Hall of Fame player Terrell Owens who played at UTC from 1992-1995 and now has a dedicated street, Terrell Owens Way, in town. 
+        </div>
+        <div class="pb-10">
+          The Mocs football team plays at Finley Stadium in the heart of Chattanooga, the stadium can hold a little over 20,000 people and features an AstroTurf field. The Mocs football season runs from late August through late November.
+        </div>
         <div>
-          The UTC Mocs football team plays in the Southeastern Conference (SoCon). Since 1982 the program has competed in the NCAA Division 1-AA or FCS leagues, in its entirety the program has been active since 1904. The most notable alumni to play for the program is former NFL Hall of Fame player Terrell Owens who played at UTC from 1992-1995 and now has a dedicated street, Terrell Owens Way, in town. The mocs football team play's at Finley Stadium in the heart of Chattanooga with the season running from late August through late November.
+          Finley Stadium also periodically hosts <a href="/chattanooga/guides/live-music" target="_blank">live music</a> events throughout the year, check out our guide on that <a href="/chattanooga/guides/live-music" target="_blank">here</a>.
         </div>
       </div>
       <div class="pb-5">
         <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>
           High School Football
         </div>
+        <div class="pb-10">
+          Friday night lights in the Chattanooga area offers a handful of different options for watching local talent compete for bragging rights and often state championships. Some notable programs in the area include the Baylor Red Raiders, McCallie Blue Tornado, Chattanooga Central HS, East Hamilton Hurricanes and the Signal Mountain Eagles. Baylor and McCallie are noted rivals and last competed against one another in the state championship in 2024.
+        </div>
         <div>
-          Friday night lights in the Chattanooga area offers a handful of different options for watching local talent compete for bragging rights and often state Championships. Some notable programs in the area include the Baylor Red Raiders, McCallie Blue Tornado, Chattanooga Central HS, East Hamilton Hurricanes and the Signal Mountain Eagles. Baylor and McCallie are noted rivals and last competed against one another in the state championship in 2024.
+          Finley Stadium, home of the Chattanooga FC and UT Chattanooga Mocs Football regularly hosts important games, offering a unique opportunity for the young athletes to showcase their talent on a professional field amongst their schools passionate fan bases.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex flex-col justify-center items-center mb-16 mt-16">
+    <img src="/images/chattanooga_guides/sports/terrell_owens_way.jpg" class="lg:w-6/12 pb-1" alt="Terrell Owens Way">
+    <div class="text-center">
+      <em>Terrell Owens Way in Chattanooga</em>
+    </div>
+  </div>
+
+  <section class="text-2xl">
+    <div class="pb-5">
+      <h2 class="text-4xl">Soccer<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div class="pb-3">
+      <div class="pb-10">
+        <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>
+          Chattanooga Football Club (FC)
+        </div>
+        <div class="pb-10">
+          Of the two professional soccer programs in the area the Chattanooga FC was the first, founded in 2009. The team has participated in various leagues over the years, prior to 2024 the team played in the National Independent Soccer Association, but will now be playing in the MLS Next Pro league. According to their <a href="https://www.mlsnextpro.com/chattanoogafc/" target="_blank">online schedule</a> the season runs from March - October.  Chattanooga FC plays at Finley Stadium which holds roughly 20,000 attendees in downtown Chattanooga and has a devoted fan base locally known as the Chattahooligans. 
+        </div>
+        <div class="pb-10">
+          In 2019 the club became one of the first American sports teams to offer ownership shares of the club to fans, allowing fans to match their emotional investment with a financial investment in their local team.
+        </div>
+        <div>
+          An interesting fact about Chattanooga FC, one of its founders, Marshall Brock, is also the original owner of Clumpies Ice Cream before it was later purchased by Rock City Inc
+        </div>
+      </div>
+      <div class="pb-5">
+        <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>
+          Chattanooga Red Wolves SC
+        </div>
+        <div class="pb-5">
+          The more recent pro soccer club was founded in 2018 and was one of the inaugural members of the USL League One, a third-tier US pro soccer league. The team plays their games at CHI Memorial Stadium and the schedule runs from March - October. The newer stadium can support roughly 5,500 fans and the club offers several family-friendly events throughout the year like Rusty's Birthday Bash or an Easter Egg hunt. Check their team <a href="https://www.chattanoogaredwolves-sc.com/" target="_blank">schedule</a> for any upcoming events and details.
+        </div>
+        <div>
+          In addition to being an early member of the USL League One, the SC also was a founding team in the USL W League in 2018. The Lady Red Wolves also host their games at CHI Memorial Stadium, Tennessee’s first professional soccer-specific venue.
         </div>
       </div>
     </div>
@@ -65,30 +114,6 @@
 
   <section class="text-2xl">
     <div class="pb-5">
-      <h2 class="text-4xl">Soccer<span class="color-pink ml-1"><b>.</b></span></h2>
-    </div>
-    <div class="pb-3">
-      <div class="pb-10">
-        <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>
-          Chattanooga Football Club (FC)
-        </div>
-        <div>
-          Of the two professional soccer programs in the area the Chattanooga FC was the first, founded in 2009. The team has participated in various leagues over the years, prior to 2024 the team played in the National Independent Soccer Association, but will now be playing in the MLS Next Pro league. According to their <a href="https://www.mlsnextpro.com/chattanoogafc/" target="_blank">online schedule</a> the season runs from March - October.  Chattanooga FC plays at Finley Stadium which holds roughly 20,000 attendees in downtown Chattanooga and has a devoted fan base locally known as the Chattahooligans. 
-        </div>
-      </div>
-      <div class="pb-5">
-        <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>
-          Chattanooga Red Wolves SC
-        </div>
-        <div>
-          The more recent pro soccer club was founded in 2018 and was one of the inaugural members of the USL League One, a 3rd tier US pro soccer league. The team plays their games at CHI Memorial Stadium and the schedule runs from March - October. The club offers serveral family-friendly events throughout the year like Rusty's Birthday Bash or an Easter Egg hunt. Check their team <a href="https://www.chattanoogaredwolves-sc.com/" target="_blank">schedule</a> for any upcoming events and details.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="text-2xl">
-    <div class="pb-5">
       <h2 class="text-4xl">Basketball<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <div class="pb-3">        
@@ -96,16 +121,25 @@
         <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>
           UT Chattanooga Men's Division 1 Basketball
         </div>
+        <div class="pb-10">
+          UTC Men's hoops has been a member of Division 1 sports since 1977. The team actively competes in the Southeastern Conference (SoCon). They've had 12 appearances in the NCAA tournament, the last being in 2022. The furthest they've advanced is to the sweet sixteen in 1997 where they defeated Georgia and Illinois before being knocked out by Providence. One of the more notable professional players to come out of the program is Gerald Wilkings who played 13 NBA seasons from 1985-1998. You can find a list of active pro players <a href="https://gomocs.com/sports/2024/1/31/mocs-in-pro-hoops.aspx" target="_blank">here</a>. The Mocs' games are played at McKenzie Arena and the regular season runs from November - February. 
+        </div>
         <div>
-          UTC Men's hoops has been a member of Division 1 sports since 1977. The team actively compete's in the Southeastern Conference (SoCon). They've had 12 appearances in the NCAA tournament, the last being in 2022. The furthest they've advanced is to the sweet sixteen in 1997 where they defeated Georgia and Illinois before being knocked out by Providence. One of the more notable professional player to come out of the program is Gerald Wilkings who played 13 NBA seasons from 1985-1998. You can find a list of active pro players <a href="https://gomocs.com/sports/2024/1/31/mocs-in-pro-hoops.aspx" target="_blank">here</a>. The mocs games are played at McKenzie Arena and the regular season runs from November - February. 
+          The Mocs mens team has won 12 SoCon conference tournament titles beginning in 1981 and the most recent coming in 2022. Their most successful campaign came in the 1996-1997 season where they advanced to the NCAA Division 1 Tournament after entering as a 14 seed. They defeated University of Georgia (3 seed) in the opener and University of Illinois (8 seed) in the round of 32 before losing to Providence in the Sweet Sixteen.
+        </div>
+        <div>
+          A fun note to end on, this team has made the National Invitation Tournament (NIT) 4 times their last being in 1987 and their best coming in 1985 where they advanced to the quarterfinals.
         </div>
       </div>
       <div class="pb-10">
         <div class="text-3xl"><span class="color-pink mr-2"><b>2.</b></span>
           UT Chattanooga Women's Division 1 Basketball
         </div>
+        <div class="pb-10">
+          UTC Women's basketball has been competing since 1977 and is actively a member of the Southern Conference (SoCon). They've had 17 NCAA tournament appearances in that time, with the furthest they've advanced being the final 32 in 2004 after defeating Rutgers in the first round before losing to Vanderbilt. The Lady Mocs had a notable run from 2013-2017, winning five straight SoCon tournaments. The Lady Mocs' games are played at McKenzie Arena, and the regular season runs from November - February.
+        </div>
         <div>
-          UTC Women's basketball has been competing since 1977 are also actively a member of the Southeastern Conference (SoCon). They've had 17 NCAA tournament appearances in that time, with the furthest they've advanced being the final 32 in 2004 after defeating Rutgers in the first round before losing to Vanderbilt. The Lady Mocs had a notable run from 2013-2017 winning 5 straight SoCon tournaments. The Lady Mocs games are played at McKenzie Arena and the regular season runs from November - February.
+          The Lady Mocs have won 20 SoCon championships. That's good for the most in conference history. Their most recent conference tournament victory coming in 2024 over UNC Greensboro. With these tournament titles, the team has been in 17 NCAA tournaments with the furtherst they've advanced being the final 32.
         </div>
       </div>
       <div class="pb-10">
@@ -113,7 +147,7 @@
           Chattanooga Strike Men's ABA team
         </div>
         <div>
-          Joining the American Basketball Association men's professional basketball league in 2024 are the Chattanooga Strike. The league itself is a relaunch of the original ABA which merged with the NBA in 1976. Their 20 game schedule runs from late October - February, home games being played at Midtown Arena.
+          Joining the American Basketball Association men's professional basketball league in 2024 are the Chattanooga Strike. The league itself is a relaunch of the original ABA which merged with the NBA in 1976. Their 20 game schedule runs from late October - February, home games being played at Midtown Arena. Some of the other local teams they'll be matched up against in coming years include the Atlanta Aliens and the Stone Mountain Strong Steppers.
         </div>
       </div>
       <div class="pb-5">
@@ -121,7 +155,7 @@
           Covenant College Men's and Women's Division III Basketball
         </div>
         <div>
-          Interested in a game with a view? Watch the Scots of Covenant College play home games on top of Chattanooga's famous Lookout Mountain. Find a seat closer to the and take a walk around campus afterwards. For the hoops junkie this could be a fun change of pace or just something new to do. Still in the NCAA, the regular season runs from November - February.
+          Interested in a game with a view? Watch the Scots of Covenant College play home games on top of Chattanooga's famous Lookout Mountain. Find a seat closer to the and take a walk around campus afterwards. For the hoops junkie this could be a fun change of pace or just something new to do. Still in the NCAA, the Scots compete in the Collegiate Conference of the South (CCS) and their regular season runs from November - February.
         </div>
       </div>
     </div>
@@ -144,7 +178,7 @@
           Chattanooga Lookouts
         </div>
         <div class="pb-5">
-          A historic and locally beloved AA professional baseball team in Chattanooga. Known by some baseball fans for the stunts ownership used to to draw in fans including having a pair of camels behind the right field fence during the 1996 season. History also tells us that in 1931 the New York Yankees played an exhibition game against the Lookouts during which a 17 year-old girl, Jackie Mitchell, pitched for the Lookouts and struck out MLB legends Lou Gehrig and Babe Ruth. Store that fact for future trivia games. Games are played at AT&T Field.
+          A historic and locally beloved AA professional baseball team in Chattanooga. Known by some baseball fans for the stunts ownership used to draw in fans including having a pair of camels behind the right field fence during the 1996 season. History also tells us that in 1931 the New York Yankees played an exhibition game against the Lookouts during which a 17 year-old girl, Jackie Mitchell, pitched for the Lookouts and struck out MLB legends Lou Gehrig and Babe Ruth. Store that fact for future trivia games. Games are played at AT&T Field.
         </div>
         <div>
           The AA ballclub has featured a number of MLB stars throughout its history, recent notables include Joey Votto, Chris Sale, and Trevor Hoffman. Hall of Famers that have had stints with the program include Harmon Killebrew, Nolan Ryan, Satchel Paige, and Willie Stargell.
@@ -192,7 +226,7 @@
     </div>
   </section>
 
-  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Other Posts:</h1>
+  <h1 style="padding-bottom: 0 !important; padding-top: 1em;">Other Guides:</h1>
   <div>
     <h2 style="padding-bottom: 0 !important;">
       <li><a href="/chattanooga/guides/civil-war-history" target="_blank">Civil War History</a></li> 
