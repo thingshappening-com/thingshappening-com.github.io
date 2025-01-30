@@ -194,11 +194,18 @@
     <div class="pb-3">
       <div class="pb-5">
        <div>
-          Haven't found exactly what you're looking for? Maybe you'd be more interested in Chattanooga's women's <a href="https://chattanoogarollerderby.com/" target="_blank">roller derby</a> or <a href="https://www.noogarugby.com/" target="_blank">Nooga Ruby</a> (mens and womens clubs) which runs from January - April.
+          Haven't found exactly what you're looking for? Maybe you'd be more interested in Chattanooga's women's <a href="https://chattanoogarollerderby.com/" target="_blank">roller derby</a> or <a href="https://www.noogarugby.com/" target="_blank">Nooga Ruby</a> (mens and womens clubs) which runs from January - April. Then there's also <a href="https://www.cbatournament.com/" target="">bass fishing tournaments</a> brought to you by the Chattanooga Bass Association for the sportsmen in the area throughout the year. We'd be remiss not to mention Boyd's Speedway, a dirt race track which closed after being purchased for land in 2023. Boyd's had been a local racing staple since 1952. Legend has it you can still here the derby on warm Friday evenings in East Ridge in July, that's what I've heard anyway.
         </div>
       </div>
     </div>
   </section>
+
+  <div class="flex flex-col justify-center items-center mb-16 mt-16">
+    <img src="/images/chattanooga_guides/sports/camp_jordan_arena.jpg" class="lg:w-6/12 pb-1" alt="camp jordan arena">
+    <div class="text-center">
+      <em>Camp Jordan Arena</em>
+    </div>
+  </div>
 
   <section class="text-2xl">
     <div class="pb-5">
