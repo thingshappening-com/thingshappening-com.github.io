@@ -1,6 +1,6 @@
 ---
   title: "A Playbook for Chattanooga Live Sports"
-  lastUpdated: "01/25/2025"
+  lastUpdated: "01/29/2025"
   iconPath: "../../../images/icons/fitness.png"
   tags: [{type: "guide", tag: "sports"}]
   layout: "../../../layouts/BlogPostLayout.astro"

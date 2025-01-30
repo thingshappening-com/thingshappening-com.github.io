@@ -110,6 +110,9 @@
     <p class="pb-3">
       The first, and also largest, of four national military parks. Spanning 9,532 acres in total, the park consists of four different sections. It should be noted up front that the sections of the park are not interconnected. To see the entire park, you would have to drive to each section. Each section should be no more than a 20 minute drive from one another. The park is dedicated to the various areas of Chattanooga and North Georgia where the Civil War had its greatest impact. Many of the park sections provide a self guided (through the National Park Service app) or guided walking tours.
     </p>
+    <p class="pb-3">
+      Chickamauga Battlefield contains roughly 50 miles of hiking trails. Many of these trails follow the roads set up by the military and in present day they are accompanied by the various historical monuments, some which have been posted here. If you've already covered all 50 miles of trail, check out our guide on <a href="/chattanooga/guides/cloudland-canyon/" target="_blank">Cloudland Canyon State Park for more hikes nearby</a>.
+    </p>
     <div>
       <div class="pb-3">
         <div class="text-3xl"><span class="color-pink mr-2"><b>1.</b></span>Chickamauga Battlefield</div>
