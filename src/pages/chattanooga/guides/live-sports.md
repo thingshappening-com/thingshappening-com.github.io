@@ -12,6 +12,10 @@
       width: 28em !important;
       height: 28em !important;
     }
+
+    .test-things {
+      padding: 0;
+    }
   }
 </style>
 
@@ -19,7 +23,7 @@
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
       <img src="/images/chattanooga_guides/sports/at&t_field2.jpg" class="lg:w-6/12 pb-1" alt="at&t field">
-      <div class="text-center">
+      <div class="text-center ">
         <em>AT&T Field</em>
       </div>
     </div>
