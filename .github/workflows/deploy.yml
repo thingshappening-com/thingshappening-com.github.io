@@ -36,8 +36,8 @@ jobs:
           retention-days: 1
           include-hidden-files: true
 
-      - name: Debug: Confirm artifact uploaded
-        run: echo "✅ Artifact uploaded!"
+      # - name: Debug: Confirm artifact uploaded
+      #   run: echo "✅ Artifact uploaded!"
 
   deploy:
     needs: build
