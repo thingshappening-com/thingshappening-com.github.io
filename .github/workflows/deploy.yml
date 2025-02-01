@@ -21,18 +21,25 @@ jobs:
         run: npm install
 
       - name: Build site
-        run: npm run build  # Modify this if your build command is different
+        run: npm run build  # ⚠️ Make sure `dist` is actually generated
 
-      - name: Ensure pages directory exists
-        run: mkdir -p dist
+      - name: Verify build output (Debugging Step)
+        run: |
+          echo "Checking contents of dist after build:"
+          ls -l dist || echo "⚠️ WARNING: dist directory is empty!"
 
-      - name: Upload artifact for GitHub Pages (Consistent name!)
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-artifact@v4
         with:
-          name: github-pages  # ✅ This MUST match deploy-pages@v2 expectations
+          name: github-pages  # ✅ MUST match the deploy step
           path: dist
           retention-days: 1
           include-hidden-files: true
+
+      - name: List uploaded artifact contents (Debugging Step)
+        run: |
+          echo "Checking uploaded artifact contents:"
+          ls -R dist || echo "⚠️ WARNING: No files were uploaded!"
 
   deploy:
     needs: build
@@ -43,11 +50,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download artifact (Consistent name!)
+      - name: Download artifact for deployment
         uses: actions/download-artifact@v4
         with:
-          name: github-pages  # ✅ MUST match the name used in upload-artifact
+          name: github-pages  # ✅ MUST match the upload step
           path: dist
+
+      - name: Verify downloaded artifact contents (Debugging Step)
+        run: |
+          echo "Checking contents of dist after download:"
+          ls -R dist || echo "⚠️ WARNING: dist directory is empty after download!"
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
