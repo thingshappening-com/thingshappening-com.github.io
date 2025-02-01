@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # ✅ Ensure latest version
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
@@ -26,10 +26,10 @@ jobs:
       - name: Ensure pages directory exists
         run: mkdir -p dist
 
-      - name: Upload artifact (Fixing the issue!)
-        uses: actions/upload-artifact@v4  # ✅ No deprecated v3 issues
+      - name: Upload artifact for GitHub Pages (Consistent name!)
+        uses: actions/upload-artifact@v4
         with:
-          name: github-pages-artifact-${{ github.run_id }}
+          name: github-pages  # ✅ This MUST match deploy-pages@v2 expectations
           path: dist
           retention-days: 1
           include-hidden-files: true
@@ -41,23 +41,17 @@ jobs:
       name: github-pages
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # ✅ Ensure latest version
+        uses: actions/checkout@v4
 
-      - name: Download artifact (Fixing the issue!)
-        uses: actions/download-artifact@v4  # ✅ No deprecated v3 issues
+      - name: Download artifact (Consistent name!)
+        uses: actions/download-artifact@v4
         with:
-          name: github-pages-artifact-${{ github.run_id }}
+          name: github-pages  # ✅ MUST match the name used in upload-artifact
           path: dist
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4  # ✅ Ensures proper Pages setup
-
-      - name: Upload artifact for Pages deployment
-        uses: actions/upload-artifact@v4  # ✅ Fully compatible
-        with:
-          name: github-pages-deploy-${{ github.run_id }}
-          path: dist
+        uses: actions/configure-pages@v4
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # ✅ Latest version
+        uses: actions/deploy-pages@v2
