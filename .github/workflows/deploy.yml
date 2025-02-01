@@ -23,10 +23,10 @@ jobs:
       - name: Build site
         run: npm run build  # ⚠️ Make sure `dist` is generated
 
-      - name: Debug: Show build output before uploading
-        run: |
-          echo "🛠️ Checking build output..."
-          ls -R dist || echo "⚠️ ERROR: dist directory is missing or empty!"
+      # - name: Debug: Show build output before uploading
+      #   run: |
+      #     echo "🛠️ Checking build output..."
+      #     ls -R dist || echo "⚠️ ERROR: dist directory is missing or empty!"
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-artifact@v4
@@ -54,10 +54,10 @@ jobs:
           name: github-pages  # ✅ MUST match upload step
           path: dist
 
-      - name: Debug: Show downloaded artifact contents
-        run: |
-          echo "📦 Checking downloaded artifact contents..."
-          ls -R dist || echo "⚠️ ERROR: dist directory is empty after download!"
+      # - name: Debug: Show downloaded artifact contents
+      #   run: |
+      #     echo "📦 Checking downloaded artifact contents..."
+      #     ls -R dist || echo "⚠️ ERROR: dist directory is empty after download!"
 
       - name: Ensure dist directory exists (Fix path issues)
         run: mkdir -p dist
