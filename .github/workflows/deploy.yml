@@ -14,8 +14,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository
-        uses: actions/checkout@v4  # Ensure latest version
+      - name: Checkout repository
+        uses: actions/checkout@v4  # ✅ Latest version
 
       - name: Install, build, and upload your site
         uses: withastro/action@v1
@@ -29,8 +29,8 @@ jobs:
       - name: Ensure pages directory exists
         run: mkdir -p dist
 
-      - name: Upload artifact (Using v4)
-        uses: actions/upload-artifact@v4
+      - name: Upload artifact using v4 (Fixing the issue!)
+        uses: actions/upload-artifact@v4  # ✅ No deprecated v3 issues
         with:
           name: github-pages-artifact-${{ github.run_id }}
           path: dist
@@ -44,14 +44,17 @@ jobs:
       name: github-pages
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # Ensure latest version
+        uses: actions/checkout@v4  # ✅ Latest version
 
-      - name: Download artifact (Using v4)
-        uses: actions/download-artifact@v4
+      - name: Download artifact using v4 (Fixing the issue!)
+        uses: actions/download-artifact@v4  # ✅ No deprecated v3 issues
         with:
           name: github-pages-artifact-${{ github.run_id }}
           path: dist
 
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4  # ✅ Updated for GitHub Pages support
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Ensure latest version
+        uses: actions/deploy-pages@v2  # ✅ Latest version
