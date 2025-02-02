@@ -12,10 +12,6 @@
       width: 28em !important;
       height: 28em !important;
     }
-
-    .test-things {
-      padding: 0.0;
-    }
   }
 </style>
 
@@ -216,7 +212,10 @@
         </div>
         <div class="pb-3">
           <span class="pr-2">📅</span><a href="https://gomocs.com/sports/womens-basketball/schedule" target="_blank">Updated Schedule.</a>
-        </div>        
+        </div>
+        <div class="pb-3">
+          <b>Entrance note:</b><span> McKenzie Arena has a clear bag policy for entrance, more on that <a href="https://gomocs.com/sports/2019/9/24/clear-bag-policy.aspx" target="_blank">here</a>.</span>
+        </div>   
       </div>
       <div class="pb-10">
         <div class="text-3xl pb-5"><span class="color-pink mr-2"><b>3.</b></span>
@@ -233,7 +232,13 @@
         </div>
         <div class="pb-3">
           <span class="pr-2">📅</span><a href="https://strikebasketball.com/schedule-tickets/" target="_blank">Schedule and Tickets.</a>
-        </div>        
+        </div>
+        <div class="pb-3">
+          <span class="font-bold">Interesting ABA rule variation:</span>
+          <div class="pb-5">If a player doesn't get the ball over half court in seven seconds, it results in a turnover and a 3D light is lit. 
+          </div>
+          <div>When the 3D light is on is when the real fun start, a two point shot is worth three points, a three point shot is worth four points, and a half court shot is worth five points. I'm pulling hard for some seven second violations</div>
+        </div>
       </div>
       <div class="pb-5">
         <div class="text-3xl pb-5"><span class="color-pink mr-2"><b>4.</b></span>
@@ -255,6 +260,9 @@
           <span class="pr-2">📅</span><a href="https://athletics.covenant.edu/sports/womens-basketball/schedule" target="_blank">Women's Schedule.</a>
         </div>
       </div>
+    </div>
+    <div class="pb-3">
+      <span class="font-bold">A Game at Barnes:</span><span> The small college atmosphere of a Scots basketball game can be a welcomed bit of novelty for those who haven't been to a Division 3 game before. It's high level basketball, on top of a mountain, at a great price; free for regular season games. I'm not so sure you'll be able to top that.</span>
     </div>
   </section>
 
@@ -291,7 +299,19 @@
         </div>
         <div class="pb-3">
           <span class="pr-2">📅</span><a href="https://www.milb.com/chattanooga/schedule/2025-04" target="_blank">Updated Schedule.</a>
-        </div>          
+        </div>
+        <div class="pb-3">
+          <span class="font-bold"></span><span>  </span>
+        </div>
+        <div class="pb-3">
+          <span class="font-bold">An Evening at AT&T Field:</span>
+          <div class="pb-5">
+            If you've been to minor league baseball games before, chances are they weren't the most well attended and could get a little boring. You'll probably have a different experience at a Lookouts game. 
+          </div>
+          <div>
+            The games are well attended and there's often a fun promo. Years past promos have been $0.25 hot dog nights, $2 drink specials, and fireworks fridays.
+          </div>
+        </div>        
       </div>
     </div>
   </section>
@@ -309,7 +329,7 @@
         Then there's also <a href="https://www.cbatournament.com/" target="">bass fishing tournaments</a> brought to you by the Chattanooga Bass Association for the sportsmen in the area throughout the year. 
       </div>
       <div>
-        We'd be remiss not to mention Boyd's Speedway, a dirt race track which closed after being purchased for land in 2023. Boyd's had been a local racing staple since 1952. Legend has it you can still here the derby on warm Friday evenings in East Ridge in July, that's what I've heard anyway.
+        We'd be remiss not to mention Boyd's Speedway, a dirt race track which closed after being purchased for land in 2023. Boyd's had been a local racing staple since 1952. Legend has it you can still hear the derby on warm Friday evenings in East Ridge in July, that's what I've heard anyway.
       </div>
     </div>
   </section>
@@ -339,7 +359,7 @@
     <h2 class="text-4xl pb-5">FAQs</h2>
     <div>
       <div class="font-bold pb-5">What are the best family-friendly sports games?</div>
-      <div>Most of the professional teams in the area have some form of kids events for different games. The Lookouts host a popular "Princess Night" where children are encourage to dress up as their favorite princess. They also have a Kids Club, which costs $20, and then each member gets free admission to every Sunday home game. The Chattanooga FC host a "Star Wars Night" on May 4th and generally are deeply involved in local youth development.</div>
+      <div>Most of the professional teams in the area have some form of kids events for different games. The Lookouts host a popular "Princess Night" where children are encouraged to dress up as their favorite princess. They also have a Kids Club, which costs $20, and then each member gets free admission to every Sunday home game. The Chattanooga FC hosts a "Star Wars Night" on May 4th and generally are deeply involved in local youth development.</div>
       <div class="font-bold pb-5">How much do Chattanooga sports tickets cost?</div>
       <div class="pb-5">Individual games for MOCs basketball games are between $12-20. Lookouts baseball games can vary but tend to be between $10-15. Chattanooga FC home games average a little over $20 per ticket.</div>
       <div class="font-bold pb-5">Are there free or cheap sports events?</div>
