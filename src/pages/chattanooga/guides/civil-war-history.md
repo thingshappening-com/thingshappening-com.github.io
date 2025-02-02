@@ -200,6 +200,47 @@
     </div>
   </section>
 
+  <section>
+    <div>
+      <h2 class="text-5xl w-full break-words">Summary of Key Civil War Sites<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <table class="w-full border-collapse border border-gray-300 shadow-md rounded-lg overflow-hidden">
+        <thead>
+            <tr class="bg-gray-100 text-gray-700 text-left uppercase text-sm">
+                <th class="px-4 py-2 border border-gray-300">Site</th>
+                <th class="px-4 py-2 border border-gray-300">Historical Significance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white hover:bg-gray-50 transition duration-200">
+                <td class="px-4 py-3 border border-gray-300 font-semibold">Lookout Mountain</td>
+                <td class="px-4 py-3 border border-gray-300">Site of the famous "Battle Above the Clouds" in 1863, where Union forces took control.</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+                <td class="px-4 py-3 border border-gray-300 font-semibold">Chickamauga Battlefield</td>
+                <td class="px-4 py-3 border border-gray-300">The bloodiest two-day battle of the Civil War, resulting in over 34,000 casualties.</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50 transition duration-200">
+                <td class="px-4 py-3 border border-gray-300 font-semibold">Missionary Ridge</td>
+                <td class="px-4 py-3 border border-gray-300">Key victory for Union forces under General Grant, breaking Confederate defenses in Chattanooga.</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+                <td class="px-4 py-3 border border-gray-300 font-semibold">Orchard Knob</td>
+                <td class="px-4 py-3 border border-gray-300">Used by General Grant as a command post to observe the battles for Chattanooga.</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50 transition duration-200">
+                <td class="px-4 py-3 border border-gray-300 font-semibold">Moccasin Bend</td>
+                <td class="px-4 py-3 border border-gray-300">A key supply route for Union forces and a crucial position in the siege of Chattanooga.</td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+                <td class="px-4 py-3 border border-gray-300 font-semibold">The Cravens House</td>
+                <td class="px-4 py-3 border border-gray-300">Occupied by Confederate forces before being overtaken by Union soldiers during the Battle of Lookout Mountain.</td>
+            </tr>
+        </tbody>
+    </table>
+
+  </section>
+
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
       <img src="/images/chattanooga_guides/history/war_canons.jpg" class="lg:w-6/12 lg:h-6/12 pb-1" alt="war cannons">
       <div class="text-center">

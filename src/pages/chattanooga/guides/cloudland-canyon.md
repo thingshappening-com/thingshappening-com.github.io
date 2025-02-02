@@ -268,6 +268,9 @@
   </section>
 
   <section>
+    <div>
+      <h2 class="text-5xl w-full break-words">Hiking Breakdown<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
     <table class="w-full border-collapse border border-gray-300 shadow-md rounded-lg overflow-hidden">
       <thead>
           <tr class="bg-gray-100 text-gray-700 text-left uppercase text-sm">
@@ -306,6 +309,60 @@
               <td class="px-4 py-3 border border-gray-300 text-green-600 font-semibold">Easy</td>
               <td class="px-4 py-3 border border-gray-300">Panoramic canyon views</td>
               <td class="px-4 py-3 border border-gray-300">Great for <strong>first-time visitors</strong> or those with limited mobility.</td>
+          </tr>
+      </tbody>
+  </table>
+  </section>
+
+  <section>
+    <div>
+      <h2 class="text-5xl w-full break-words">MTB Breakdown<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <table class="w-full border-collapse border border-gray-300 shadow-md rounded-lg overflow-hidden">
+      <thead>
+          <tr class="bg-gray-100 text-gray-700 text-left uppercase text-sm">
+              <th class="px-4 py-2 border border-gray-300">Trail Name</th>
+              <th class="px-4 py-2 border border-gray-300">Distance</th>
+              <th class="px-4 py-2 border border-gray-300">Difficulty</th>
+              <th class="px-4 py-2 border border-gray-300">Terrain Type</th>
+              <th class="px-4 py-2 border border-gray-300">Pro Tip</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white hover:bg-gray-50 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Raccoon Mountain</td>
+              <td class="px-4 py-3 border border-gray-300">16+ miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-red-600 font-semibold">Hard</td>
+              <td class="px-4 py-3 border border-gray-300">Rocky, technical climbs, flowy descents</td>
+              <td class="px-4 py-3 border border-gray-300">Bring extra water—limited refill spots on the trail.</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Stringers Ridge</td>
+              <td class="px-4 py-3 border border-gray-300">5 miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-green-600 font-semibold">Easy</td>
+              <td class="px-4 py-3 border border-gray-300">Smooth singletrack, beginner-friendly</td>
+              <td class="px-4 py-3 border border-gray-300">Great for a quick ride close to downtown.</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Enterprise South</td>
+              <td class="px-4 py-3 border border-gray-300">10 miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-yellow-600 font-semibold">Moderate</td>
+              <td class="px-4 py-3 border border-gray-300">Smooth & fast, rolling hills</td>
+              <td class="px-4 py-3 border border-gray-300">Ride early to avoid hikers on multi-use trails.</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">White Oak Mountain</td>
+              <td class="px-4 py-3 border border-gray-300">12 miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-red-600 font-semibold">Hard</td>
+              <td class="px-4 py-3 border border-gray-300">Steep climbs, technical features</td>
+              <td class="px-4 py-3 border border-gray-300">Expect **tight switchbacks** and **rugged terrain**.</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Five Points</td>
+              <td class="px-4 py-3 border border-gray-300">20+ miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-yellow-600 font-semibold">Moderate</td>
+              <td class="px-4 py-3 border border-gray-300">Well-maintained singletrack, good flow</td>
+              <td class="px-4 py-3 border border-gray-300">Perfect for an all-day adventure—bring snacks!</td>
           </tr>
       </tbody>
   </table>
