@@ -266,6 +266,51 @@
     </div>
     </div>  
   </section>
+
+  <section>
+    <table class="w-full border-collapse border border-gray-300 shadow-md rounded-lg overflow-hidden">
+      <thead>
+          <tr class="bg-gray-100 text-gray-700 text-left uppercase text-sm">
+              <th class="px-4 py-2 border border-gray-300">Trail Name</th>
+              <th class="px-4 py-2 border border-gray-300">Distance</th>
+              <th class="px-4 py-2 border border-gray-300">Difficulty</th>
+              <th class="px-4 py-2 border border-gray-300">What You’ll See</th>
+              <th class="px-4 py-2 border border-gray-300">Pro Tip</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white hover:bg-gray-50 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Waterfalls Trail</td>
+              <td class="px-4 py-3 border border-gray-300">2 miles round trip</td>
+              <td class="px-4 py-3 border border-gray-300 text-red-600 font-semibold">Hard (steep stairs)</td>
+              <td class="px-4 py-3 border border-gray-300">Hemlock Falls, Cherokee Falls</td>
+              <td class="px-4 py-3 border border-gray-300">Bring <strong>waterproof shoes</strong>—the rocks near the falls can be slippery!</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">West Rim Loop Trail</td>
+              <td class="px-4 py-3 border border-gray-300">5 miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-yellow-600 font-semibold">Moderate</td>
+              <td class="px-4 py-3 border border-gray-300">Canyon overlooks, rock formations</td>
+              <td class="px-4 py-3 border border-gray-300">Best <strong>sunset views</strong> in the park—head here in the evening for golden hour.</td>
+          </tr>
+          <tr class="bg-white hover:bg-gray-50 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Sitton’s Gulch Trail</td>
+              <td class="px-4 py-3 border border-gray-300">6 miles</td>
+              <td class="px-4 py-3 border border-gray-300 text-red-600 font-semibold">Hard</td>
+              <td class="px-4 py-3 border border-gray-300">Wildflowers, river views, remote scenery</td>
+              <td class="px-4 py-3 border border-gray-300"><strong>Fewer crowds</strong> than other trails—perfect for solitude seekers.</td>
+          </tr>
+          <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
+              <td class="px-4 py-3 border border-gray-300 font-semibold">Overlook Trail</td>
+              <td class="px-4 py-3 border border-gray-300">1 mile</td>
+              <td class="px-4 py-3 border border-gray-300 text-green-600 font-semibold">Easy</td>
+              <td class="px-4 py-3 border border-gray-300">Panoramic canyon views</td>
+              <td class="px-4 py-3 border border-gray-300">Great for <strong>first-time visitors</strong> or those with limited mobility.</td>
+          </tr>
+      </tbody>
+  </table>
+
+  </section>
   <section class="pb-3 text-xl2">
     <div>
       <h2 class="text-5xl w-full break-words">Disc Golf<span class="color-pink ml-1"><b>.</b></span></h2>
