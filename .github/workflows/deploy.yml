@@ -3,7 +3,7 @@ name: Deploy Astro to GitHub Pages
 on:
   push:
     branches:
-      - main  # Deploy directly from main
+      - main  # Adjust if your default branch is different
   workflow_dispatch:  # Allows manual deployment
 
 permissions:
@@ -30,33 +30,18 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: astro-build
-          path: dist
-          retention-days: 1  # Temporary storage for 1 day
+          path: dist  # Ensure this matches your build output directory
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     permissions:
       pages: write
       id-token: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: astro-build
-          path: dist
-
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
