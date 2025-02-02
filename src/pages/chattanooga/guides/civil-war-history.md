@@ -17,18 +17,21 @@
 <div>
   <div class="pb-2 text-2xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
-      <img src="/images/chattanooga_guides/history/soldiers_with_flag.jpg" class="lg:w-6/12 lg:h-6/12 pb-1" alt="soliders with flag monument">
+      <img src="/images/chattanooga_guides/history/soldiers_with_flag.jpg" class="lg:w-6/12 lg:h-6/12 pb-1" alt="soldiers with flag monument">
       <div class="text-center">
-        <em>Soliders Hoisting Flag</em>
+        <em>soldiers Hoisting Flag</em>
       </div>
     </div>
     <section class="text-2xl">
       <div class="pb-3">
         <h2 class="text-5xl">Overview<span class="color-pink ml-1"><b>.</b></span></h2>
       </div>
-      <p>
-       Chattanooga and it's surrounding areas are entrenteched with civil war history. The two primpary campaigns were the Battles of Chickamauga and the Chattanooga Campaign (composed of five separate but interconnected battles). The Battle of Chickamauga is on record as the second most deadly battle of the Civil War after the Battle of Gettysburg. The Union victory over in the Chattanooga Campaign marks a turning point in the civil war as Chattanooga was a major transportation hub referred to as the "Gateway to the Deep South". It gave the Union control of the supply lines and allowed troops to move effectively into the heart of the confederacy.
-      <br><br>
+      <p class="pb-8">
+        Chattanooga and its surrounding areas are entrenched with civil war history. The two primary campaigns were the Battles of Chickamauga and the Chattanooga Campaign (composed of five separate but related battles).
+      </p>
+      <p class="pb-8">
+        The Battle of Chickamauga is on record as the second most deadly battle of the Civil War after the Battle of Gettysburg. The Union victory in the Chattanooga Campaign marks a turning point in the civil war as Chattanooga was a major transportation hub referred to as the "Gateway to the Deep South". It gave the Union control of the supply lines and allowed troops to move effectively into the heart of the confederacy.
+      </p>
     </section>
     <section class="text-2xl">
       <div class="pb-5">
@@ -42,12 +45,15 @@
         <div><b>Union Losses<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 1,657 killed. 9,756 wounded. 4,757 captured or missing.</div>
       </div>
       <div class="pb-3">        
-        <p class="pb-3">
-          Previously mentioned as the second most deadly battle during the american civil war. This battle was a major victory for the confederate army as the Union had been winning battles and advancing further south. 
+        <p class="pb-8">
+          Previously mentioned as the second most deadly battle during the American Civil War. This battle was a major victory for the confederate army as the Union had been winning battles and advancing further south. 
+        </p>
+        <p class="pb-8">
+          This battle was initiated by the Union forces under leadership of Major General William Rosecrans following his victory of the Tullahoma Campaign in Murfreesboro, Tennessee. Confederate leadership was provided by General Braxton Bragg. 
         </p>
         <p>
-          This battle was initiated by the Union forces under leadership of Major General William Rosecrans following his victory of the Tullahoma Campaign in Murfreesboro, Tennessee. Confederate leadership was provided by General Braxton Bragg. During the attack a series of miscommunications by Union leadership opened a gap in their defensive lines which the confederate army exploited, causing the Union to retreat to Chattanooga (after significant casualities). This set the stage for the Chattanooga Campaign.
-        </p>        
+          During the attack a series of miscommunications by Union leadership opened a gap in their defensive lines which the confederate army exploited, causing the Union to retreat to Chattanooga (after significant casualities). This set the stage for the Chattanooga Campaign.
+        </p>
       </div>
     </section>
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
@@ -71,25 +77,45 @@
         <p class="pb-4">
           The Chattanooga Campaign is an umbrella title composed of five separate battles (summarized below) that occurred in Chattanooga from October-November 1963 following the Battle of Chickamauga. After the Union defeat the Union army sent significant reinforcements to Chattanooga to help with their mission. Ultimately the Union forces were victorious during the Chattanooga Campaign, a significant victory that opened the door for further advancement south of Union troops.
         </p>
-        <div class="pb-4">
-          <b>Battle of Wauhatchie<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
-          This was the fist battle of the Chattanooga Campaign which took place on October 28th and 29th of 1963. The Union was victorious during this battle, a signficant victory as they had been struggling to feed and supply their troops and horses. This victory opened up transportation routes for much needed ammunition, food, and reinforcement troops. Before this confederate forces were able to stalk and raid Union supply wagons with views from atop Lookout Mountain.
+        <div class="pb-7">
+          <div class="pb-5">
+            <b>Battle of Wauhatchie<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
+          This was the first battle of the Chattanooga Campaign which took place on October 28th and 29th of 1963. The Union was victorious during this battle, a significant victory as they had been struggling to feed and supply their troops and horses. 
+          </div>          
+          <div>
+            This victory opened up transportation routes for much needed ammunition, food, and reinforcement troops. Before this confederate forces were able to stalk and raid Union supply wagons with views from atop Lookout Mountain.
+          </div>
         </div>
-        <div class="pb-4">
-          <b>Battle of Orchard Knob<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
-          Occuring on November 23rd 1863 this was a relatively small but significant battle. After Union General was given information by confederate desserters that the confederates were falling back the General Thomas gave a recon order to observe and report back on confederate numbers. Following the recon Union soliders overtook Orchard Knob swiftly with limited casulaties on both sides. Orchard Knob became Grant and Thomas's headquaraters for the rest of the battles.
+        <div class="pb-7">
+          <div class="pb-5">
+            <b>Battle of Orchard Knob<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
+            Occuring on November 23rd 1863 this was a relatively small but significant battle. After Union General was given information by confederate deserters that the confederates were falling back the, General Thomas gave a recon order to observe and report back on confederate numbers. 
+          </div>          
+          <div>
+            Following the recon Union soldiers overtook Orchard Knob swiftly with limited casualties on both sides. Orchard Knob became Grant and Thomas's headquarters for the rest of the battles.
+          </div>
+        </div>  
+        <div class="pb-7">
+          <div class="pb-5">
+            <b>Battle of Lookout Mountain<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
+            Occuring on November 24rd 1863 this became known as the "Battle Above the Clouds" due to the fog that greatly affected visibility on Lookout Mountain. 
+          </div>          
+          <div>
+            This battle secured the Confederate left flank and forced them to abandon Lookout Mountain. It gave the Union control over a critical position overlooking Chattanooga.
+          </div>
         </div>
-        <div class="pb-4">
-          <b>Battle of Lookout Mountain<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
-          Occuring on November 24rd 1863 this became known as the "Battle Above the Clouds" due to the fog that greatly affected visibility on Lookout Mountain. This battle secured the Confederate left flank and forced them to abandon Lookout Mountain. It gave the Union control over a critical position overlooking Chattanooga.
-        </div>
-        <div class="pb-4">
-          <b>Battle of Missionary Ridge<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
-          Often regarded as the decisive battle of the campaign, it took place on November 27th 1863. Union forces unexpectedly took forces up to the heights of Missionary Ridge, defeating General Bragg’s Confederate army and forcing them to retreat into Georgia. The victory ended Confederate control of Chattanooga and opened the path for the Union forces Atlanta Campaign.
-        </div>        
+        <div class="pb-7">
+          <div class="pb-5">
+            <b>Battle of Missionary Ridge<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
+            Often regarded as the decisive battle of the campaign, it took place on November 27th 1863. Union forces unexpectedly took forces up to the heights of Missionary Ridge, defeating General Bragg’s Confederate army and forcing them to retreat into Georgia.
+          </div>          
+          <div>
+            The victory ended Confederate control of Chattanooga and opened the path for the Union forces Atlanta Campaign.
+          </div>
+        </div>                       
         <div class="pb-4">
           <b>Battle of Ringgold Gap<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 
-          After the Union victory of Missionary Rdige they pursued the confederate's into Ringgold Georgia, following the Confederate retreat. The Union attacked on November 27th 1893 but the Confederate's held off the attack and were considered victorious in this last battle of the Chattanooga Campaign.
+          After the Union victory of Missionary Ridge they pursued the confederate's into Ringgold, Georgia, following the Confederate retreat. The Union attacked on November 27th 1893 but the Confederate's held off the attack and were considered victorious in this last battle of the Chattanooga Campaign.
         </div>        
       </div>
     </section>
@@ -107,10 +133,19 @@
     <div class="pb-3">
       <h2 class="text-5xl">Chickamauga and Chattanooga National Military Park<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
-    <p class="pb-3">
-      The first, and also largest, of four national military parks. Spanning 9,532 acres in total, the park consists of four different sections. It should be noted up front that the sections of the park are not interconnected. To see the entire park, you would have to drive to each section. Each section should be no more than a 20 minute drive from one another. The park is dedicated to the various areas of Chattanooga and North Georgia where the Civil War had its greatest impact. Many of the park sections provide a self guided (through the National Park Service app) or guided walking tours.
+    <p class="pb-5">
+      The first, and also largest, of four national military parks. Spanning 9,532 acres in total, the park consists of four different sections.
     </p>
-    <p class="pb-3">
+    <p class="pb-5">
+      It should be noted up front that the sections of the park are not interconnected. To see the entire park, you would have to drive to each section.
+    </p>
+    <p class="pb-5">
+      Each section should be no more than a 20 minute drive from one another. 
+    </p>
+    <p class="pb-5">
+      The park is dedicated to the various areas of Chattanooga and North Georgia where the Civil War had its greatest impact. Many of the park sections provide a self guided (through the National Park Service app) or guided walking tours.    
+    </p>
+    <p class="pb-5">
       Chickamauga Battlefield contains roughly 50 miles of hiking trails. Many of these trails follow the roads set up by the military and in present day they are accompanied by the various historical monuments, some which have been posted here. If you've already covered all 50 miles of trail, check out our guide on <a href="/chattanooga/guides/cloudland-canyon/" target="_blank">Cloudland Canyon State Park for more hikes nearby</a>.
     </p>
     <div>
@@ -124,8 +159,20 @@
           </b>
         </div>      
       </div>
-      <p class="pb-3">
-        The first largest section section of the park, about ~5300 acres. If you're driving through during visitors center hours, they have a great museum and staff to help with all your questions. In this park you can take a driving or guided tour of the various Civil War points of interest. The self guided driving tour can be accessed through the National Park Service app on your phone. At the various tour stops you'll encouter momuments dedicated to various events, war heros, and those defeated. The largest is The Wilder Brigade Monument, standing at 85 feet tall, it's a tower that overlooks the south end of the Battlefield. The tower is open to visitors seasonally (spring, summer and fall) and wether permitting. You'll see a number of a hikers, bikers, and even horsebike riders throughout the park so be careful on your driving tour.
+      <p class="pb-5">
+        The first on the list is the largest section of the park, about 5300 acres. If you're driving through during visitors center hours, they have a great museum and staff to help with all your questions.
+      </p>
+      <p class="pb-5">
+        In this park you can take a driving or guided tour of the various Civil War points of interest. The self guided driving tour can be accessed through the National Park Service app on your phone.
+      </p>
+      <p class="pb-5">
+        At the various tour stops you'll encounter monuments dedicated to various events, war heroes, and those defeated.
+      </p>
+      <p class="pb-5">
+        The largest is The Wilder Brigade Monument, standing at 85 feet tall, it's a tower that overlooks the south end of the Battlefield. The tower is open to visitors seasonally (spring, summer and fall) and weather permitting.
+      </p>
+      <p class="pb-5">
+        You'll see a number of hikers, bikers, and even horseback riders throughout the park so be careful on your driving tour.
       </p>
     </div>
     <br>
@@ -140,21 +187,46 @@
           </b>
         </div>
       </div>
-      <div>
-        The Lookout Moutain Battlefield is the second significant section of the park composed of ~3000 acres of land. The park does have a $10 entry fee, children under 16 are welcome for free. This park is in dedication to the significance of Looutout Mountain during the Civil War including the Battle of Lookout Mountain aka "The Battle Above the Clouds". If you're visiting for more than a couple of hours consider doing a hike, Lookout Mountain has more than 30 miles of trails to it's name, a map of them can be found <a href="https://www.nps.gov/chch/planyourvisit/upload/Lookout-Mountain-Battlefield-Trail-Map.pdf" target="_blank">here</a>. Multiple park points of interest follow.
+      <div class="pb-5">
+        The Lookout Mountain Battlefield is the second significant section of the park composed of ~3000 acres of land.
       </div>
+      <p class="pb-5"> 
+        The park does have a $10 entry fee, children under 16 are welcome for free. This park is in dedication to the significance of Lookout Mountain during the Civil War including the Battle of Lookout Mountain aka "The Battle Above the Clouds".        
+      </p>
+      <p class="pb-5">        
+        If you're visiting for more than a couple of hours consider doing a hike, Lookout Mountain has more than 30 miles of trails to it's name, a map of them can be found <a href="https://www.nps.gov/chch/planyourvisit/upload/Lookout-Mountain-Battlefield-Trail-Map.pdf" target="_blank">here</a>. Multiple park points of interest follow.
+      </p>
     </div>
     <div class="mb-3">
       <span class="text-2xl"><b>Point Park</b></span>
       <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
       <div><a href="https://www.google.com/maps/place/Cravens+House/@35.0138001,-85.3440526,17z/data=!3m1!4b1!4m6!3m5!1s0x88605c6de1538183:0xac9efb01a09cf8d3!8m2!3d35.0138001!4d-85.3414723!16s%2Fg%2F1td2n6fw?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">Directions</a></div>
-      Enter Point Park through iconic castle-like towers. In the park you'll find 10 acres of monuments and dedications mainly in form of civil war cannons and information plaques, but most notably the New York Peace Monument which was gifted from New York as a peace offering following the war. The park offers panoramic views of the city and the Tennessee River, making it a popular spot for sightseers and photographers. Civil War cannons, and informative plaques detailing the area's history.
+      <p class="pb-5"> 
+        Enter Point Park through iconic castle-like towers. 
+      </p>
+      <p class="pb-5"> 
+        In the park you'll find 10 acres of monuments and dedications mainly in the form of civil war cannons and information plaques, but most notably the New York Peace Monument which was gifted from New York as a peace offering following the war.
+      </p>
+      <p class="pb-5"> 
+        The park offers panoramic views of the city and the Tennessee River, making it a popular spot for sightseers and photographers. Civil War cannons, and informative plaques detailing the area's history.
+      </p>
     </div>
     <div class="mb-3">
       <span class="text-2xl"><b>Cravens House</b></span>
       <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
       <div><a href="https://www.google.com/maps/place/Point+Park/@35.0099052,-85.3463446,17z/data=!3m1!4b1!4m6!3m5!1s0x88605c6de457dd83:0xf4f0600f269541a2!8m2!3d35.0099052!4d-85.3437643!16s%2Fg%2F1tdq1w07?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D">Directions</a></div>
-      This is a very pretty interesting house from the point of view of the family which resided as well as the war more generally. Robert Craven was an iron master, somewhat wealthy for his time, who originally built this six bedroom house for his family. As the war ensued it became a shelter for Confederate generals, while the militiamen would sleep in tents outside on the property. The Craven's stuck around with war encircling them for a period of time but following the Battle of Lookout Mountain, which in part took place on their property, they decided to leave. The Union forces used the house after the battle. Once the war ended the Craven's came back and Robert built the house again from scratch. What remains now is rebuilt home made to resemble the appearance of the house post war.
+      <p class="pb-5"> 
+        This is a very pretty interesting house from the point of view of the family which resided as well as the war more generally. 
+      </p>
+      <p class="pb-5"> 
+        Robert Craven was an iron master, somewhat wealthy for his time, who originally built this six bedroom house for his family. 
+      </p>
+      <p class="pb-5"> 
+        As the war ensued it became a shelter for Confederate generals, while the militiamen would sleep in tents outside on the property. The Craven's stuck around with war encircling them for a period of time but following the Battle of Lookout Mountain, which in part took place on their property, they decided to leave.
+      </p>
+      <p class="pb-5"> 
+        The Union forces used the house after the battle. Once the war ended the Craven's came back and Robert built the house again from scratch. What remains now is rebuilt home made to resemble the appearance of the house post war.
+      </p>       
     </div>    
   
   <div class="flex flex-col justify-center items-center mb-16 mt-16">
@@ -194,7 +266,7 @@
         <div class="mb-3">
           <span class="text-2xl"><b>Chattanooga National Cemetery</b></span>
           <span class="text-customGreen1 text-4xl font-bold">.&nbsp</span>
-          Located in Missionary Ridge, this cemetery was established in 1863 during the Civil War by Union General George H Thomas following the Battle of Chattanooga. It was initially going to be a burrial ground for Union soliders exclusively but later expanded to include veterans of future wars. Thousands of Union soliders are burried here and a small number of Confederate soliders as well.
+          Located in Missionary Ridge, this cemetery was established in 1863 during the Civil War by Union General George H Thomas following the Battle of Chattanooga. It was initially going to be a burrial ground for Union soldiers exclusively but later expanded to include veterans of future wars. Thousands of Union soldiers are buried here and a small number of Confederate soldiers as well.
         </div>
       </div>
     </div>
@@ -207,37 +279,30 @@
     <table class="w-full border-collapse border border-gray-300 shadow-md rounded-lg overflow-hidden">
         <thead>
             <tr class="bg-gray-100 text-gray-700 text-left uppercase text-sm">
-                <th class="px-4 py-2 border border-gray-300">Site</th>
-                <th class="px-4 py-2 border border-gray-300">Historical Significance</th>
+                <th class="px-4 py-2 border border-gray-300">🏛️ Site</th>
+                <th class="px-4 py-2 border border-gray-300">📜 Historical Significance</th>
             </tr>
         </thead>
         <tbody>
             <tr class="bg-white hover:bg-gray-50 transition duration-200">
-                <td class="px-4 py-3 border border-gray-300 font-semibold">Lookout Mountain</td>
-                <td class="px-4 py-3 border border-gray-300">Site of the famous "Battle Above the Clouds" in 1863, where Union forces took control.</td>
+                <td class="px-4 py-3 border border-gray-300 font-semibold">🏞️ Lookout Mountain</td>
+                <td class="px-4 py-3 border border-gray-300">⚔️ Site of the famous "Battle Above the Clouds" in 1863, where Union forces took control.</td>
             </tr>
             <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
-                <td class="px-4 py-3 border border-gray-300 font-semibold">Chickamauga Battlefield</td>
-                <td class="px-4 py-3 border border-gray-300">The bloodiest two-day battle of the Civil War, resulting in over 34,000 casualties.</td>
+                <td class="px-4 py-3 border border-gray-300 font-semibold">🩸 Chickamauga Battlefield</td>
+                <td class="px-4 py-3 border border-gray-300">💀 The bloodiest two-day battle of the Civil War, resulting in over 34,000 casualties.</td>
             </tr>
             <tr class="bg-white hover:bg-gray-50 transition duration-200">
-                <td class="px-4 py-3 border border-gray-300 font-semibold">Missionary Ridge</td>
-                <td class="px-4 py-3 border border-gray-300">Key victory for Union forces under General Grant, breaking Confederate defenses in Chattanooga.</td>
+                <td class="px-4 py-3 border border-gray-300 font-semibold">🔭 Orchard Knob</td>
+                <td class="px-4 py-3 border border-gray-300">📢 Used by General Grant as a command post to observe the battles for Chattanooga.</td>
             </tr>
             <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
-                <td class="px-4 py-3 border border-gray-300 font-semibold">Orchard Knob</td>
-                <td class="px-4 py-3 border border-gray-300">Used by General Grant as a command post to observe the battles for Chattanooga.</td>
-            </tr>
-            <tr class="bg-white hover:bg-gray-50 transition duration-200">
-                <td class="px-4 py-3 border border-gray-300 font-semibold">Moccasin Bend</td>
-                <td class="px-4 py-3 border border-gray-300">A key supply route for Union forces and a crucial position in the siege of Chattanooga.</td>
-            </tr>
-            <tr class="bg-gray-50 hover:bg-gray-100 transition duration-200">
-                <td class="px-4 py-3 border border-gray-300 font-semibold">The Cravens House</td>
-                <td class="px-4 py-3 border border-gray-300">Occupied by Confederate forces before being overtaken by Union soldiers during the Battle of Lookout Mountain.</td>
+                <td class="px-4 py-3 border border-gray-300 font-semibold">🔥 Missionary Ridge</td>
+                <td class="px-4 py-3 border border-gray-300">🎖️ Key victory for Union forces, breaking Confederate defenses in Chattanooga.</td>
             </tr>
         </tbody>
     </table>
+
 
   </section>
 
