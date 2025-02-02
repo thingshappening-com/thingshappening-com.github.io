@@ -1,6 +1,6 @@
 ---
   title: "A Playbook for Chattanooga Live Sports"
-  lastUpdated: "01/29/2025"
+  lastUpdated: "02/01/2025"
   iconPath: "../../../images/icons/fitness.png"
   tags: [{type: "guide", tag: "sports"}]
   layout: "../../../layouts/BlogPostLayout.astro"
@@ -28,13 +28,10 @@
       <h2 class="text-5xl">Overview<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <p class="pb-10">
-      Looking for a live sports fix? Are you wondering what teams there are to go see in town? 
+      Want to experience the summer nights of with the Lookouts fans or the energy of a Chattanooga FC match brought to you by your very own Chattahooligans? If you love baseball, soccer, football, or how about something slightly different, like maybe a Division 3 basketball game on top of Lookout Mountain? Chattanooga’s sports scene has something for everyone.
     </p>
     <p class="pb-10">
-      Chattanooga has a wide range of local clubs, some of these you may be familiar with, like the AA baseball team the Lookouts, others are newer to town, like the Strike ABA basketball team. 
-    </p>
-    <p class="pb-10">
-      Whether you're cheering for the Mocs at Finley Stadium, enjoying high-energy soccer matches with passionate local crows, or exploring unique sports like roller derby, the city likely has something to offer you. This guide also highlights some of the best sports bars for live games so you can stay connected to the action out with a local crowd.
+      This guide also highlights off the beaten path sports and we end with some suggestions on sports bars for live games so you can stay connected with your favorite team amongst a crowd of like-minded, or sometimes not so like minded people.
     </p>
   </section>
 
@@ -64,6 +61,10 @@
         </div>
         <div class="pb-3">
           <span class="pr-2">📅</span><a href="https://gomocs.com/sports/football/schedule/2024" target="_blank">Updated Schedule.</a>
+        </div>
+        <div class="pb-3">
+          <span class="font-bold">Best Seats at Finley Stadium:</span>
+          <div class="pb-5">Looking to be more in the action? You should sit on the east side student section where the energy is palpable. If you prefer a slightly calmer, shaded view, try the west-side seats closer to the press box.</div>
         </div>
       </div>
       <div class="pb-5">
