@@ -26,15 +26,36 @@
     <div class="pb-3">
       <h2 class="text-5xl">Overview<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
-    <p>
-      Chattanooga as a city prides itself in its musical roots and contemporary artists and venues. Famed Blues artist Bessie Smith called Chattanooga home as she and her siblings raised themselves on street performances. Glenn Miller Orchestra popularized the song Chattanooga Choo Choo and Johnny Cash published the song Chattanooga City Limits, each bringing attention upon the southeast Tennessee city. Bluegrass, country and folk music scenes are prominent in the area's modern day with its close proximity to and influence from the Appalachian mountains.
+    <p class="pb-10">
+      Did you know Chattanooga prides itself in its musical roots? Legendary blues singer Bessie Smith, aka the "Empress of the Blues",  called Chattanooga home as she and her six siblings literally raised themselves on street performances. She then went on to be arguably the most popular blues singer of the 1930's. For a taste of her music check out of her most popular songs, "Downhearted Blues", below.
     </p>
-    <br><br>
+    <div class="flex flex-col justify-center items-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ob_sW2_2Zw?si=QAI1g27MY7V56HEd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="pb-10" allowfullscreen>
+      </iframe>
+    </div>
+    <p class="pb-10">
+      In exploring Chattanooga's musical history I've also come to learn of the Glenn Miller Orchestra. They're the group that popularized the song "Chattanooga Choo Choo" which was written for the musical film "Sun Valley Serenade" in 1941. The song went on to be nominated for an Oscar for best song that year and was such a standout success it was awarded the first ever Gold Record for selling 1.2 million copies.
+    </p>
+    <p class="pb-10">
+      <span class="font-bold">Fun fact:</span> The Glenn Miller Orchestra still performs to this day. If you want to check out a live performance view their event schedule <a href="https://glennmillerorchestra.com/tour-schedule/" target="_blank">here</a>.
+    </p>
+    <div class="flex flex-col justify-center items-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QGZ6jigic_I?si=_piA1AOixQ4riga-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="pb-10" allowfullscreen></iframe>
+    </div>
+    <p class="pb-10">
+      If you're interested in listening to contemporary artists hailing from the Chattanooga area be sure to check out the music profiles of country star <a href="https://open.spotify.com/artist/3oSJ7TBVCWMDMiYjXNiCKE" target="_blank">Kane Brown</a>, <a href="https://open.spotify.com/artist/1v3tdpIdBSW14rHUfiEVOv" target="_blank">Lauren Alaina</a>, or maybe 2000's R&B and Pop star <a href="https://open.spotify.com/artist/23zg3TcAtWQy7J6upgbUnj" target="_blank">Usher</a>. 
+    </p>
+    <p class="pb-10">
+      Bluegrass, country and folk music scenes are still prominent in the area's today, with its close proximity to and influence from the Appalachian mountains.
+    </p>
   </section>
 
   <section class="text-2xl">
-    <div class="pb-5">
+    <div class="pb-3">
       <h2 class="text-4xl">Local Bars<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+    <div class="pb-10">
+      In exploring the Chattanooga live music scene you'll probably find a performance going on any night of the week. In saying that, there were a few standout spots worth highlighting below, but there were so many good options we had to add an honorable mentions section to do this list to do it justice and shoutout more of the local establishments supporting our cities artists. If you don't see you're favorite spot in the list, please <a href="mailto:jack@thingshappening.com" target="_blank">reach out</a>.
     </div>
     <div class="pb-3">
       <div class="pb-10">
@@ -80,6 +101,9 @@
     <div class="pb-5">
       <h2 class="text-4xl">Recurring Music Events<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+    <div class="pb-10">
+      Do you think free weekend outdoor concerts in the summer sound like a good time? If you answered no, I'm not sure this guide is for you, but if you're still with me, I've great news; Chattanooga has two recurring concert series in the warmer months. Most weekends you'll have your choice between a downtown riverfront live show or one at the popular marketplace of Ooltewah's Cambridge square. We recently added a third option to this list to keep things exciting.
+    </div>
     <div class="pb-3">
       <div class="pb-10">
         <div class="text-3xl pb-2"><span class="color-pink mr-2"><b>1.</b></span>
@@ -112,6 +136,12 @@
     <div class="pb-5">
       <h2 class="text-5xl">Larger Music Venues<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+    <div class="pb-10">
+      Are you looking for bigger named acts, high quality production, and a seat to yourself? There's a few options in Chattanooga and a lot of them take place in beautifully architected, historic theatres.
+    </div>    
+    <div class="pb-10">
+      Do the acoustics, kinder prices, and diverse lineups of a mid-sized venue sound like it's more up your alley? Chattanooga's got your bases covered.
+    </div>    
     <div class="pb-3">        
       <div class="pb-10">
         <div class="text-3xl pb-2"><span class="color-pink mr-2"><b>1.</b></span>
@@ -151,6 +181,9 @@
     <div class="pb-5">
       <h2 class="text-4xl">Festivals<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+    <div class="pb-10">
+      If you're looking for the excitement of a music festival, Chattanooga has a few options for you. Some of the local favorites haven't been going on recently, but there's a couple new kids in town that may grab your attention. See your favorite performances, discover new artists, and feel the energy of a multistage festival at one of this year's  music festivals.
+    </div>  
     <div class="pb-3">
       <div class="pb-5">
         <div class="text-3xl pb-2"><span class="color-pink mr-2"><b>1.</b></span>
@@ -194,8 +227,11 @@
     </div>
     <div class="pb-3">
       <div class="pb-5">
+        <div class="pb-5">
+          There's plenty of live music to be enjoyed by locals and visitors alike in Chattanooga. Come to town for a festival, go see a free concert at the riverfront, check out lineups at Barrelhouse Ballroom, see a larger show in a historic theatre, have a beer and enjoy a casual show, Chattanooga has an option for everyone.
+        </div>
         <div>
-          There's plenty of live music to be enjoyed by locals and visitors alike in Chattanooga. Get your tickets or enjoy the free concerts we've listed, the artists and the city would love for you to get out and show your support. If you feel like we've missed anything, do not hesitate to reach out as the details provided here are subject to change.
+          Get your tickets (or enjoy the free concerts) we've listed, the artists and the city would love for you to get out and show your support. If you feel like we've missed anything, do not hesitate to reach out as the details provided here are subject to change.
         </div>
       </div>
     </div>
