@@ -27,20 +27,39 @@
       <h2 class="text-5xl">Overview<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
     <p class="pb-10">
-      Did you know Chattanooga prides itself in its musical roots? Legendary blues singer Bessie Smith, aka the "Empress of the Blues",  called Chattanooga home as she and her six siblings literally raised themselves on street performances. She then went on to be arguably the most popular blues singer of the 1930's. For a taste of her music check out of her most popular songs, "Downhearted Blues", below.
+      Did you know Chattanooga prides itself in its musical roots? Legendary blues singer Bessie Smith, aka the "Empress of the Blues", called Chattanooga home as she and her six siblings literally raised themselves on street performances. She then went on to be arguably the most popular blues singer of the 1930's. For a taste of her music check out of her most popular songs, "Downhearted Blues", below.
     </p>
-    <div class="flex flex-col justify-center items-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ob_sW2_2Zw?si=QAI1g27MY7V56HEd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="pb-10" allowfullscreen>
-      </iframe>
-    </div>
+    <div class="flex justify-center items-center">
+      <div class="relative w-full max-w-3xl aspect-video">
+        <iframe 
+          class="absolute top-0 left-0 w-full h-full pb-10"
+          src="https://www.youtube.com/embed/4Ob_sW2_2Zw?si=QAI1g27MY7V56HEd" 
+          title="Bessie Smith Downhearted Blues" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>    
     <p class="pb-10">
       In exploring Chattanooga's musical history I've also come to learn of the Glenn Miller Orchestra. They're the group that popularized the song "Chattanooga Choo Choo" which was written for the musical film "Sun Valley Serenade" in 1941. The song went on to be nominated for an Oscar for best song that year and was such a standout success it was awarded the first ever Gold Record for selling 1.2 million copies.
     </p>
     <p class="pb-10">
       <span class="font-bold">Fun fact:</span> The Glenn Miller Orchestra still performs to this day. If you want to check out a live performance view their event schedule <a href="https://glennmillerorchestra.com/tour-schedule/" target="_blank">here</a>.
     </p>
-    <div class="flex flex-col justify-center items-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/QGZ6jigic_I?si=_piA1AOixQ4riga-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="pb-10" allowfullscreen></iframe>
+    <div class="flex justify-center items-center">
+      <div class="relative w-full max-w-3xl aspect-video">
+        <iframe 
+          class="absolute top-0 left-0 w-full h-full pb-10"
+          src="https://www.youtube.com/embed/QGZ6jigic_I?si=_piA1AOixQ4riga-" 
+          title="Glenn Miller Orchestra Chattanooga Choo Choo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
     <p class="pb-10">
       If you're interested in listening to contemporary artists hailing from the Chattanooga area be sure to check out the music profiles of country star <a href="https://open.spotify.com/artist/3oSJ7TBVCWMDMiYjXNiCKE" target="_blank">Kane Brown</a>, <a href="https://open.spotify.com/artist/1v3tdpIdBSW14rHUfiEVOv" target="_blank">Lauren Alaina</a>, or maybe 2000's R&B and Pop star <a href="https://open.spotify.com/artist/23zg3TcAtWQy7J6upgbUnj" target="_blank">Usher</a>. 
@@ -238,8 +257,18 @@
         <div class="pb-10">
           If you've made it all the way to the end of this guide, you're in luck, we're going to send you off with one more historical Chattanooga song. Have you ever heard of Johnny Cash? On the not so off chance you have and you have interest in Chattanooga, here's his song "Chattanooga City Limit Sign". For even more on history in Chattanooga, take a look at our guide on the American civil war in this city <a href="/chattanooga/guides/civil-war-history" target="_blank">here</a>.
         </div>
-        <div class="flex flex-col justify-center items-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RO9tXeeREls?si=m-uAM3-nKSJpHSyN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="flex justify-center items-center">
+          <div class="relative w-full max-w-3xl aspect-video">
+            <iframe 
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/RO9tXeeREls?si=m-uAM3-nKSJpHSyN" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
