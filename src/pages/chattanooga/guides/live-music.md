@@ -132,6 +132,8 @@
     </div>
   </section>
 
+  <p class="pb-10">If you like being outdoors for concerts, there's a good chance you'd like outdoor activities at the <a href="chattanooga/guides/cloudland-canyon" target="_blank">best state park in Georgia</a> just outside of Chattanooga. We wrote a <a href="chattanooga/guides/cloudland-canyon" target="_blank">guide</a> for you.</p>
+
   <section class="text-2xl">
     <div class="pb-5">
       <h2 class="text-5xl">Larger Music Venues<span class="color-pink ml-1"><b>.</b></span></h2>
@@ -227,11 +229,17 @@
     </div>
     <div class="pb-3">
       <div class="pb-5">
-        <div class="pb-5">
+        <div class="pb-10">
           There's plenty of live music to be enjoyed by locals and visitors alike in Chattanooga. Come to town for a festival, go see a free concert at the riverfront, check out lineups at Barrelhouse Ballroom, see a larger show in a historic theatre, have a beer and enjoy a casual show, Chattanooga has an option for everyone.
         </div>
-        <div>
+        <div class="pb-10">
           Get your tickets (or enjoy the free concerts) we've listed, the artists and the city would love for you to get out and show your support. If you feel like we've missed anything, do not hesitate to reach out as the details provided here are subject to change.
+        </div>
+        <div class="pb-10">
+          If you've made it all the way to the end of this guide, you're in luck, we're going to send you off with one more historical Chattanooga song. Have you ever heard of Johnny Cash? On the not so off chance you have and you have interest in Chattanooga, here's his song "Chattanooga City Limit Sign". For even more on history in Chattanooga, take a look at our guide on the American civil war in this city <a href="/chattanooga/guides/civil-war-history" target="_blank">here</a>.
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RO9tXeeREls?si=m-uAM3-nKSJpHSyN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
