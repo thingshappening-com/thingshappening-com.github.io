@@ -42,11 +42,11 @@ export async function getStaticPaths({ paginate }) {
 
   // return paginate(allPostsIncludingMultipleDates, {pageSize: 15})
 
-  let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.md');
+  let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.mdx');
   return paginate(allGuides, {pageSize: 15})
 }
 
-let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.md');
+let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.mdx');
 let guideFormatted = [];
 
 allGuides.forEach((g) => {

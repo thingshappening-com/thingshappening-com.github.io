@@ -16,7 +16,7 @@ const title = 'thingshappening';
 const description = 'A simpler way to find  things to do in greater Chattanooga';
 const seoDescription = 'A simpler way to find  things happening';
 
-let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.md');
+let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.mdx');
 let guideFormatted = [];
 
 allGuides.forEach((p) => {
@@ -26,7 +26,7 @@ allGuides.forEach((p) => {
 });
 guideFormatted = guideFormatted.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
-let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.md');
+let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.mdx');
 
 // let allPostsIncludingMultipleDates = [];
 

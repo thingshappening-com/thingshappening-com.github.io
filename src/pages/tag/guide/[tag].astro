@@ -6,7 +6,7 @@ import SubNav from '../../../components/SubNav.astro';
 import BaseHead from '../../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../../**/*.md');
+  const allPosts = await Astro.glob('../../**/*.mdx');
 
   console.log("allpppp");
   console.log(allPosts[0].frontmatter);
@@ -37,7 +37,7 @@ const { tag } = Astro.params;
 
 // Since we cannot share allPosts between getStaticPaths and the component,
 // we need to fetch them again here for filtering
-let filteredPosts = (await Astro.glob('../../**/*.md')).filter(post => post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
+let filteredPosts = (await Astro.glob('../../**/*.mdx')).filter(post => post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
 
 // let allPostsIncludingMultipleDates = [];
 const description = 'A simpler way to find  things to do in greater Chattanooga';
