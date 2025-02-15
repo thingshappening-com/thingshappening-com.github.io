@@ -1,0 +1,21 @@
+brew packages I installed:
+brew install webp - for webp conversions
+brew list imagemagick - sometimes the conversion rotated the image and figma / preview dont support edits to webp
+
+commands:
+note you can change quality, 80 is high I usually did 60 for a smaller image
+```
+cwebp -q 50 jpg_file_path -o webp_file_path
+```
+
+rotate image
+```
+magick woodshop1.webp -rotate 90 woodshop1.webp
+```
+
+this didnt seem super useful after using cwebp 50, but supposedly does more compression
+```
+magick mogrify -format webp -quality 60 /path/to/images/*.webp
+```
+
+
