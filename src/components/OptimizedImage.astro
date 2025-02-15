@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const { src, alt, width = 500, height = 300 } = Astro.props;
+const { src, alt, loading = "lazy", width = 500, height = 300 } = Astro.props;
 ---
 
-<Image src={src} alt={alt} width={width} height={height} format="webp" />
+<Image src={src} alt={alt} width={width} height={height} loading={loading} format="webp" />
