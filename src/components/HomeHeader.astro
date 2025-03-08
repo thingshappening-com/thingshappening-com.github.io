@@ -3,11 +3,11 @@ export interface Props {
 title: string;
 description: string;
 }
-const { title, description } = Astro.props;
+const { title, description, city } = Astro.props;
 ---
 <style>
   .responsive-header {
-      font-size: 7rem;
+      font-size: 6rem;
   }
   @media (max-width: 800px) {
       .responsive-header {
@@ -16,7 +16,6 @@ const { title, description } = Astro.props;
   }
 </style>
 
-<header class="mx-auto max-w-3xl flex flex-col text-center items-center content">
-  <h1 class="mb-4 responsive-header" data-test="header-title">{title}</h1>
-  <p data-test="header-description">{description}</p>
+<header class="mx-auto max-w-4xl flex flex-col text-center items-center content">
+  <h2 data-test="header-description" class="font-jakarta font-normal text-5xl lg:pb-20">{description} <span class="text-customGreen1">{city}</span></h2>
 </header>

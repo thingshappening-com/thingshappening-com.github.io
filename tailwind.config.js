@@ -108,6 +108,7 @@ module.exports = {
       fontFamily: {
         display: ["Londrina Solid", "sans-serif"],
         body: ["Poppins", "sans-serif"],
+        jakarta: ["'Plus Jakarta Sans'", "sans-serif"]
       },
       fontSize: {
         "xl2": "1.38rem",
