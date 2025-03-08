@@ -26,7 +26,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
 ---
 
 <article class="max-w-5xl mx-auto px-3 text-xl tracking-wide">
-  <header class="mx-auto max-w-4xl text-center content">
+  <header class="mx-auto max-w-5xl text-center content pb-10">
      <h1>{title} {pubDate && (
       `: ${subTitle}`
     )}</h1>  
@@ -93,7 +93,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
   </div>
 
   <!-- Content -->
-  <section class="max-w-6xl mx-auto content">
+  <section class="max-w-6xl mx-auto content font-body">
     <slot />
   </section>
 

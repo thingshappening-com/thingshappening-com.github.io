@@ -1,20 +1,22 @@
 .content {
   h1 {
-    @apply font-display uppercase leading-none;
+    @apply font-jakarta leading-none;
 
-    @apply text-7xl mb-6;
+    @apply text-5xl mb-6;
+    font-weight: 600;
   }
 
   h2 {
-    @apply text-4xl font-bold leading-none py-6 tracking-tight;
+    @apply font-jakarta text-5xl font-semibold leading-none py-6 tracking-tight;
+    font-weight: 500;
   }
 
   h3 {
-    @apply text-xl font-bold leading-none py-6;
+    @apply font-jakarta text-xl font-semibold leading-none py-6;
   }
 
   h4 {
-    @apply font-bold uppercase tracking-widest leading-none py-6;
+    @apply font-jakarta font-semibold uppercase tracking-widest leading-none py-6;
   }
 
   >p {
