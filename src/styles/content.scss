@@ -5,6 +5,7 @@
     @apply text-5xl mb-6;
     font-weight: 600;
   }
+  
 
   h2 {
     @apply font-jakarta text-5xl font-semibold leading-none py-6 tracking-tight;
@@ -136,7 +137,8 @@
 @media (max-width: 800px) {
   .content {
     h1 {
-     font-size: 3em;
+     font-size: 2.25em;
+     font-weight: 400;
     }
   }
 }
