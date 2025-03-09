@@ -100,6 +100,8 @@ module.exports = {
         xl: ".75rem",
       },
       colors: {
+        tealOutsideGuide: "#07bd8e",
+        darkTeal: "#065F46",
         black: "#12151E",
         "hot-pink": "#3CB371",
         beige: "#FFF8F0E6",

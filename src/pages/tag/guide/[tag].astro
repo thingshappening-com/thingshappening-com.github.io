@@ -40,9 +40,9 @@ const { tag } = Astro.params;
 let filteredPosts = (await Astro.glob('../../**/*.mdx')).filter(post => post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
 
 // let allPostsIncludingMultipleDates = [];
-const description = 'A simpler way to find  things to do in greater Chattanooga';
+const description = 'A simple way to find  things to do in greater Chattanooga';
 const title = 'thingshappening';
-const seoDescription = 'A simpler way to find  things happening';
+const seoDescription = 'A simple way to find  things happening';
 
 let allPostsIncludingMultipleDates = [];
 filteredPosts.forEach((p) => {

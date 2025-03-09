@@ -13,7 +13,7 @@ export interface Props {
   youtube?: string;
 }
 
-const { address, author, eventDatesDetails, eventLink, entranceCost, lastUpdated, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
+const { address, author, readTime, eventDatesDetails, eventLink, entranceCost, lastUpdated, originalDate, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
 const date = new Date(pubDate);
 let eventDateDetails;
 if (eventDatesDetails) {
@@ -24,14 +24,12 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 const dayOfWeek = daysOfWeek[date.getDay()];
 const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDetails.eventTitle : dayjs(pubDate).format('MM-DD-YYYY');
 ---
-
-<article class="max-w-5xl mx-auto px-3 text-xl tracking-wide">
-  <header class="mx-auto max-w-5xl text-center content pb-10">
-     <h1>{title} {pubDate && (
-      `: ${subTitle}`
-    )}</h1>  
-  </header>
-
+<div class="header-styles pt-20 mb-24 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-lg">
+  <header class="max-w-5xl content">
+    <h1>{title} {pubDate && (
+     `: ${subTitle}`
+   )}</h1>  
+ </header>
   <div>
     {pubDate ? <div><b>When:</b> {pubDate} {`(${dayOfWeek})`}</div> : ""}
     {time ? <div><b>Time:</b> {time}</div> : ""}
@@ -45,7 +43,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
         if(ticketsLink && ticketsLink.includes("http")) {
           return <a target="_blank" class="mr-1 mt-5 underline-pink" href={ticketsLink}>Tickets Link</a>
         } else if (ticketsLink) {
-         return <div><b>Tickets Link:</b> {ticketsLink}</div>
+        return <div><b>Tickets Link:</b> {ticketsLink}</div>
         } else {
           ""
         }
@@ -67,11 +65,23 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
     </div>
 
     <div class="mt-2">
+      {readTime && (
+        <div><b>Read time:</b> {readTime}</div>
+      )}
+    </div>
+    <div class="mt-2">
       {lastUpdated && (
-        <div><b>Last Updated:</b> {lastUpdated}</div>
+        <div><b>Last updated:</b> {lastUpdated}</div>
+      )}
+    </div>
+    <div class="mt-2">
+      {originalDate && (
+        <div><b>Published on:</b> {originalDate}</div>
       )}
     </div>
   </div>
+</div>
+<article class="max-w-5xl mx-auto px-3 text-xl tracking-wide">
 
   <!-- Image -->
   {hero && <img class="rounded-xl mx-auto" style="min-width: 80%;" loading="lazy" src={hero} alt={title} />}
