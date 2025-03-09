@@ -25,12 +25,12 @@ const dayOfWeek = daysOfWeek[date.getDay()];
 const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDetails.eventTitle : dayjs(pubDate).format('MM-DD-YYYY');
 ---
 <div class="header-styles pt-20 pb-20 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-lg">
-  <header class="max-w-5xl content">
+  <header class="max-w-5xl content max-w-5xl mx-auto px-3 text-xl tracking-wide">
     <h1>{title} {pubDate && (
      `: ${subTitle}`
    )}</h1>  
  </header>
-  <div>
+  <div class="max-w-5xl content max-w-5xl mx-auto px-3">
     {pubDate ? <div><b>When:</b> {pubDate} {`(${dayOfWeek})`}</div> : ""}
     {time ? <div><b>Time:</b> {time}</div> : ""}
     {venue ? <div><b>Venue:</b> {venue}</div> : ""}
@@ -51,11 +51,11 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
     </div>
     <div class="mt-2">
       {tags && tags.length > 0 && (
-        <ul>
+        <div>
           {tags.map(tag => {
             return <a class="mr-3" href={`/tag/${tag.type}/${tag.tag}`}><span class="text-customGreen1">#</span>{tag.tag}</a>
           })}
-        </ul>
+        </div>
       )}
     </div>
     <div class="mt-2">
