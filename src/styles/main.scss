@@ -5,7 +5,8 @@
 @import "./custom";
 
 .header-styles {
-  height: 350px;
+  // height: 350px;
+  height: fit-content;
   background-color: #065F46;
   color: white;
   display: flex;
