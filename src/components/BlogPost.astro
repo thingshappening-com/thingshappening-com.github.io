@@ -24,7 +24,7 @@ const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 const dayOfWeek = daysOfWeek[date.getDay()];
 const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDetails.eventTitle : dayjs(pubDate).format('MM-DD-YYYY');
 ---
-<div class="header-styles pt-20 pb-20 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-lg">
+<div class="header-styles mb-10 pt-12 pb-12 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-lg">
   <header class="max-w-5xl content max-w-5xl mx-auto px-3 text-xl tracking-wide">
     <h1>{title} {pubDate && (
      `: ${subTitle}`

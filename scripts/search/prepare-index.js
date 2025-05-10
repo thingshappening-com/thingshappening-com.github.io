@@ -10,7 +10,7 @@ import grayMatter from "gray-matter";
   const srcDir = path.join(process.cwd(), "src");
   const publicDir = path.join(process.cwd(), "public");
   const contentDir = path.join(srcDir, "pages");
-  let contentFilePattern = path.join(contentDir, "**", "*.md");
+  let contentFilePattern = path.join(contentDir, "**", "*.mdx");
 
   if(os.platform().includes("win")) {
     contentFilePattern = contentFilePattern.replaceAll("\\", "/");
@@ -21,7 +21,7 @@ import grayMatter from "gray-matter";
 
   const getSlugFromPathname = (pathname, date = null) => {
     if (date) {
-      pathname = pathname.replace(".md", `/${date}`)
+      pathname = pathname.replace(".mdx", `/${date}`)
       pathname = pathname.split(/pages\//).pop();
       return pathname
     } else {

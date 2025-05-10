@@ -28,7 +28,7 @@ allGuides.forEach((p) => {
 guideFormatted = guideFormatted.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
 // change to mdx
-let allEvents = await Astro.glob<MarkdownFrontmatter>('./chattanooga/events/**/*.md');
+let allEvents = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/**/*.mdx');
   console.log("yoo")
   console.log(allEvents);
 
