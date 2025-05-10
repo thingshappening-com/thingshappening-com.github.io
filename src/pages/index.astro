@@ -27,37 +27,40 @@ allGuides.forEach((p) => {
 });
 guideFormatted = guideFormatted.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
-let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.mdx');
+// change to mdx
+let allEvents = await Astro.glob<MarkdownFrontmatter>('./chattanooga/events/**/*.md');
+  console.log("yoo")
+  console.log(allEvents);
 
-// let allPostsIncludingMultipleDates = [];
+let allPostsIncludingMultipleDates = [];
 
-// allPosts.forEach((p) => {
-//   let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+allEvents.forEach((p) => {
+  let baseData = Object.assign({}, p.frontmatter, {url: p.url});
 
-//   if (baseData.eventDates) {
-//     baseData.eventDates.forEach((date, i) => {
-//       let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
-//       const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
+  if (baseData.eventDates) {
+    baseData.eventDates.forEach((date, i) => {
+      let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
+      const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
 
-//       allPostsIncludingMultipleDates.push(again);
-//     })
-//   } else {
-//     allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
-//   }
-// });
+      allPostsIncludingMultipleDates.push(again);
+    })
+  } else {
+    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+  }
+});
 
 
-// const today = new Date();
-// today.setDate(today.getDate() - 1);  // Move back by one day
-// today.setHours(0,0,0,0);
+const today = new Date();
+today.setDate(today.getDate() - 1);  // Move back by one day
+today.setHours(0,0,0,0);
 
-// allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
-// allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
-//     const dateA = new Date(a.pubDate);
-//     const dateB = new Date(b.pubDate);
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
+    const dateA = new Date(a.pubDate);
+    const dateB = new Date(b.pubDate);
 
-//     return dateA - dateB;
-// });
+    return dateA - dateB;
+});
 
 ---
 
@@ -68,24 +71,9 @@ let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.mdx');
 </head>
 
 <body class="text-black font-body leading-normal personality-casual">
-  <Nav />
+  <Nav />  
   <main class="lg:pt-20">
-    <article class="max-w-6xl mx-auto px-3">
-      <HomeHeader title={title} city={city} description={description} />      
-      
-      <!-- <header style="margin: 0 !important" class="pt-10 text-center content">
-        <h1>Guides</h1>  
-      </header> -->
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {guideFormatted.map(g => <div class="col-span-1">
-          <Card post={g} />
-        </div>)}
-      </section>
-    </article>
-
-    <!-- <header id="guides" style="margin: 0 !important" class="pt-10 text-center content">
-      <h1>Calendar</h1>  
-    </header>
+    <HomeHeader title={title} city={city} description={description} />      
     <article class="max-w-6xl mx-auto px-3">
       <SubNav />
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
@@ -93,7 +81,18 @@ let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/*.mdx');
           <Card post={p} />
         </div>)}
       </section>
-    </article> -->
+    </article>
+    <article class="max-w-6xl mx-auto px-3">      
+      
+      <header style="margin: 0 !important" class="pt-10 text-center content">
+        <h1>Guides</h1>  
+      </header>
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+        {guideFormatted.map(g => <div class="col-span-1">
+          <Card post={g} />
+        </div>)}
+      </section>
+    </article>
   </main>
 
   <Footer />

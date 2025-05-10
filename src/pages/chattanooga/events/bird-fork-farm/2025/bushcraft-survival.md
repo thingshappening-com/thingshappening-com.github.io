@@ -2,10 +2,10 @@
   title: "Bushcraft / Survival 101"
   venue: "Bird Fork Farm"
   address: "Dunlap, TN (address provided after registration)"
-  pubDate: "2024-05-25"
+  pubDate: "2025-05-25"
   iconPath: "/images/icons/barn.png"
   eventLink: "https://birdforkfarm.square.site/events"
-  tags: ["bird-fork-farm", "farm", "outdoors"]
+  tags: [{type: "event", tag: "farm"}, {type: "event", tag: "outdoors"}]
   entranceCost: "$95"
   time: "9:30 AM - 4:30 PM CDT"
   layout: "../../../../../layouts/BlogPostLayout.astro"

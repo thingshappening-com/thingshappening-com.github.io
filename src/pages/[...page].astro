@@ -7,62 +7,64 @@ import Card from '../components/Card.astro';
 import Footer from '../components/Footer/Footer.astro'
 import Paginator from '../components/Paginator.astro'
 
-
 export async function getStaticPaths({ paginate }) {  
-  // let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/events/**/*.md');
+  // Load events
+  let allPosts = await Astro.glob<MarkdownFrontmatter>('./chattanooga/events/**/*.md');
+  let allPostsIncludingMultipleDates = [];
 
-  // let allPostsIncludingMultipleDates = [];
+  allPosts.forEach((p) => {
+    let baseData = Object.assign({}, p.frontmatter, { url: p.url });
 
-  // allPosts.forEach((p) => {
-  //   let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+    if (baseData.eventDates) {
+      baseData.eventDates.forEach((date) => {
+        const title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`;
+        const again = Object.assign({}, baseData, {
+          pubDate: date,
+          title,
+          url: `${baseData.url}/${date}`,
+          type: 'event',
+        });
 
-  //   if (baseData.eventDates) {
-  //     baseData.eventDates.forEach((date, i) => {
-  //       let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
-  //       const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
+        allPostsIncludingMultipleDates.push(again);
+      });
+    } else {
+      allPostsIncludingMultipleDates.push(Object.assign({}, baseData, { type: 'event' }));
+    }
+  });
 
-  //       allPostsIncludingMultipleDates.push(again);
-  //     })
-  //   } else {
-  //     allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
-  //   }
-  // });
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
-  // const today = new Date();
-  // today.setDate(today.getDate());  // Move back two days
-  // today.setHours(0,0,0,0);
+  allPostsIncludingMultipleDates = allPostsIncludingMultipleDates
+    .filter((post) => new Date(post.pubDate) >= today)
+    .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
 
-  // allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
-  // allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
-  //     const dateA = new Date(a.pubDate);
-  //     const dateB = new Date(b.pubDate);
-
-  //     return dateA - dateB;
-  // });
-
-  // return paginate(allPostsIncludingMultipleDates, {pageSize: 15})
-
+  // Load guides
   let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.mdx');
-  return paginate(allGuides, {pageSize: 15})
+  let formattedGuides = allGuides.map((g) =>
+    Object.assign({}, g.frontmatter, { url: g.url, type: 'guide' })
+  );
+
+  let combined = [...allPostsIncludingMultipleDates, ...formattedGuides].sort((a, b) => {
+    const dateA = new Date(a.pubDate || a.lastUpdated);
+    const dateB = new Date(b.pubDate || b.lastUpdated);
+    return dateB - dateA;
+  });
+
+  return paginate(combined, { pageSize: 15 });
 }
 
-let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.mdx');
-let guideFormatted = [];
-
-allGuides.forEach((g) => {
-  let baseData = Object.assign({}, g.frontmatter, {url: g.url});  // Create a copy of the base data
-
-  guideFormatted.push(baseData); // Push base data if no eventDates
-});
-guideFormatted = guideFormatted.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
-
 const { page } = Astro.props;
+
+let guides = page.data.filter((p) => p.type === 'guide');
+let events = page.data.filter((p) => p.type === 'event');
+
 let pageTitle = 'thingshappening';
-const pageDescription = 'A simple way to find  things to do in greater Chattanooga';
+const pageDescription = 'A simple way to find things to do in greater Chattanooga';
 let seoTitle = 'thingshappening.com';
 let seoDescription = '';
-
 ---
+
 
 <html lang="en">
 
@@ -89,30 +91,30 @@ let seoDescription = '';
 
       <div class="ml-embedded" data-form="ZoK6PR"></div>
 
-      <!-- <header id="guides" style="margin: 0 !important" class="pt-14 text-center content">
+      <header id="guides" style="margin: 0 !important" class="pt-14 text-center content">
         <h1>Guides</h1>  
-      </header> -->
+      </header>
       
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {guideFormatted.map(g => <div class="col-span-1">
+        {guides.map(g => <div class="col-span-1">
           <Card post={g} />
+        </div>)}
+      </section>
+      
+    </article>
+
+    <header style="margin: 0 !important" class="pt-14 text-center content">
+      <h1>Calendar</h1>  
+    </header>
+    <article class="max-w-6xl mx-auto px-3">
+      <SubNav />
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+        {events.map(e => <div class="col-span-1">
+          <Card post={e} />
         </div>)}
       </section>
     </article>
 
-    <!-- <header style="margin: 0 !important" class="pt-14 text-center content">
-      <h1>Calendar</h1>  
-    </header>
-
-
-    <article class="max-w-6xl mx-auto px-3">
-      <SubNav />
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {page.data.map(p => <div class="col-span-1">
-          <Card post={p} />
-        </div>)}
-      </section>
-    </article> -->
     <Paginator page={page} />
   </main>
   <Footer />
