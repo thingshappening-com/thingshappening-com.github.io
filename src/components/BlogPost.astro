@@ -96,7 +96,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
   <div>
     {eventDateDetails && eventDateDetails.topDetails && (
       <div>
-        <h2 class="text-2xl font-semibold	pt-12">{eventDateDetails.topDetails.title}</h2>
+        {eventDateDetails.topDetails.title && <h2 class="text-2xl font-semibold	pt-12">{eventDateDetails.topDetails.title}</h2>}
         <div style="white-space: pre-wrap;">{eventDateDetails.topDetails.text}</div>
       </div>
     )}
