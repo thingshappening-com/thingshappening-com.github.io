@@ -4,9 +4,8 @@ import Nav from '../components/Nav.astro';
 import SubNav from '../components/SubNav.astro';
 import HomeHeader from '../components/HomeHeader.astro';
 import Card from '../components/Card.astro';
-import Footer from '../components/Footer/Footer.astro'
-// import { prefetch } from 'astro:prefetch';
-// import { object } from 'astro/zod';
+import Footer from '../components/Footer/Footer.astro';
+import Paginator from '../components/Paginator.astro';
 
 interface MarkdownFrontmatter {
   date: number;
@@ -17,55 +16,55 @@ const seoDescription = 'Helping you explore and enjoy your local city! Things Ha
 const description = "A simple way to find things happening in";
 const city = "Chattanooga";
 
-let allGuides = await Astro.glob<MarkdownFrontmatter>('./chattanooga/guides/*.mdx');
-let guideFormatted = [];
+const allGuides = await Astro.glob('./chattanooga/guides/*.mdx');
+const allEvents = await Astro.glob('./chattanooga/**/**/*.mdx');
 
-allGuides.forEach((p) => {
-  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
+// Format guides
+const guides = allGuides.map((p) => ({
+  ...p.frontmatter,
+  url: p.url,
+  type: 'guide',
+}));
 
-  guideFormatted.push(baseData); // Push base data if no eventDates
-});
-guideFormatted = guideFormatted.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
-
-// change to mdx
-let allEvents = await Astro.glob<MarkdownFrontmatter>('./chattanooga/**/**/*.mdx');
-  console.log("yoo")
-  console.log(allEvents);
-
-let allPostsIncludingMultipleDates = [];
-
-allEvents.forEach((p) => {
-  let baseData = Object.assign({}, p.frontmatter, {url: p.url});
-
-  if (baseData.eventDates) {
-    baseData.eventDates.forEach((date, i) => {
-      let title = baseData.eventLabel ? `${baseData.title}` : `${baseData.title}`
-      const again = Object.assign({}, baseData, {pubDate: date, title: title, url: `${baseData.url}/${date}`}); 
-
-      allPostsIncludingMultipleDates.push(again);
-    })
+// Format events with multiple dates
+const events = [];
+for (const p of allEvents) {
+  const base = { ...p.frontmatter, url: p.url, type: 'event' };
+  if (base.eventDates) {
+    base.eventDates.forEach((date) => {
+      events.push({ ...base, pubDate: date, url: `${base.url}/${date}` });
+    });
   } else {
-    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+    events.push(base);
   }
-});
+}
 
-
+// Filter & sort events
 const today = new Date();
-today.setDate(today.getDate() - 1);  // Move back by one day
-today.setHours(0,0,0,0);
+today.setDate(today.getDate() - 1);
+today.setHours(0, 0, 0, 0);
 
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.filter(post => new Date(post.pubDate) >= today);
-allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
-    const dateA = new Date(a.pubDate);
-    const dateB = new Date(b.pubDate);
+const sortedEvents = events
+  .filter((e) => new Date(e.pubDate) >= today)
+  .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
 
-    return dateA - dateB;
-});
+const sortedGuides = guides.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
+const eventsPage = sortedEvents.slice(0, 15);
+const guidesPage = sortedGuides.slice(0, 15);
+
+// Pagination tracking (just for metadata / Paginator component)
+const page = {
+  currentPage: 1,
+  lastPage: Math.max(
+    Math.ceil(sortedEvents.length / 15),
+    Math.ceil(sortedGuides.length / 15)
+  ),
+  url: '/',
+};
 ---
 
 <html lang="en">
-
 <head>
   <BaseHead title={title} description={seoDescription} />
 </head>
@@ -73,26 +72,46 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates.sort((a, b) => {
 <body class="text-black font-body leading-normal personality-casual">
   <Nav />  
   <main class="lg:pt-20">
-    <HomeHeader title={title} city={city} description={description} />      
+    <HomeHeader title={title} city={city} description={description} />
+
     <article class="max-w-6xl mx-auto px-3">
       <SubNav />
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
-          <Card post={p} />
-        </div>)}
-      </section>
-    </article>
-    <article class="max-w-6xl mx-auto px-3">      
-      
-      <header style="margin: 0 !important" class="pt-10 text-center content">
-        <h1>Guides</h1>  
+      <header class="pt-14 text-center content">
+        <h1>Calendar</h1>
       </header>
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-        {guideFormatted.map(g => <div class="col-span-1">
-          <Card post={g} />
-        </div>)}
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+        {eventsPage.map((e) => (
+          <div class="col-span-1">
+            <Card post={e} />
+          </div>
+        ))}
       </section>
+      {sortedEvents.length > 15 && (
+        <div class="text-center mt-4">
+          <a href="/chattanooga/events/page/2" class="underline text-blue-600 font-semibold">View more events →</a>
+        </div>
+      )}
     </article>
+
+    <article class="max-w-6xl mx-auto px-3">
+      <header class="pt-10 text-center content">
+        <h1>Guides</h1>
+      </header>
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+        {guidesPage.map((g) => (
+          <div class="col-span-1">
+            <Card post={g} />
+          </div>
+        ))}
+      </section>
+      {sortedGuides.length > 15 && (
+        <div class="text-center mt-4">
+          <a href="/chattanooga/guides/page/2" class="underline text-blue-600 font-semibold">View more guides →</a>
+        </div>
+      )}
+    </article>
+
+    <Paginator page={page} />
   </main>
 
   <Footer />

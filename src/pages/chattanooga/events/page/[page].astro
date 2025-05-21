@@ -1,0 +1,63 @@
+---
+import BaseHead from '../../../../components/Head/BaseHead.astro';
+import Nav from '../../../../components/Nav.astro';
+import SubNav from '../../../../components/SubNav.astro';
+import HomeHeader from '../../../../components/HomeHeader.astro';
+import Card from '../../../../components/Card.astro';
+import Footer from '../../../../components/Footer/Footer.astro';
+import Paginator from '../../../../components/Paginator.astro';
+
+export async function getStaticPaths({ paginate }) {
+  const allEvents = await Astro.glob('./../../../chattanooga/**/**/*.mdx');
+
+  const expanded = [];
+  for (const file of allEvents) {
+    const base = { ...file.frontmatter, url: file.url };
+
+    if (base.eventDates) {
+      base.eventDates.forEach((date) => {
+        expanded.push({
+          ...base,
+          pubDate: date,
+          url: `${base.url}/${date}`,
+        });
+      });
+    } else {
+      expanded.push(base);
+    }
+  }
+
+  const today = new Date();
+  today.setDate(today.getDate() - 1);
+  today.setHours(0, 0, 0, 0);
+
+  const futureEvents = expanded
+    .filter((e) => new Date(e.pubDate) >= today)
+    .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
+
+  return paginate(futureEvents, { pageSize: 15 });
+}
+
+const { page } = Astro.props;
+---
+
+<html lang="en">
+<head>
+  <BaseHead title="Events - Page {page.currentPage}" description="Upcoming events in Chattanooga" />
+</head>
+
+<body class="text-black font-body leading-normal personality-casual">
+  <Nav />
+  <main class="max-w-6xl mx-auto px-3 py-12">
+    <HomeHeader title="Events" description="Here’s what’s coming up around Chattanooga" />
+    <SubNav />
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+      {page.data.map((event) => (
+        <Card post={event} />
+      ))}
+    </section>
+    <Paginator page={page} />
+  </main>
+  <Footer />
+</body>
+</html>
