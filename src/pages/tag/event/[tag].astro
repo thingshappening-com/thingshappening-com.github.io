@@ -6,67 +6,54 @@ import SubNav from '../../../components/SubNav.astro';
 import BaseHead from '../../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../../**/*.mdx');
+  const allPosts = await Astro.glob('../../**/**/*.mdx');
 
-  console.log("allpppp");
-  console.log(allPosts[0].frontmatter);
-  // Extract tags with type "guide" and create a Set to ensure uniqueness
-  let tags = new Set(allPosts.flatMap(post => 
-  post.frontmatter.tags 
-    ? post.frontmatter.tags
-        .filter(tagObject => tagObject.type === "guide")
-        .map(tagObject => tagObject.tag)
-    : []  // Return an empty array if there are no tags
-));
-  // Convert the Set to an Array
-  tags = Array.from(tags);
-  tags = tags.filter(element => element !== undefined);
+  let tags = new Set(
+    allPosts.flatMap(post =>
+      post.frontmatter.tags
+        ? post.frontmatter.tags
+            .filter(t => t.type === "event")
+            .map(t => t.tag)
+        : []
+    )
+  );
 
-  // Create paths for each tag
-  console.log("i am here")
-  const paths = tags.map(tag => {    
-    return {
-      params: { tag }
-    };
-  });
+  tags = Array.from(tags).filter(Boolean);
 
-  return paths;
+  return tags.map(tag => ({
+    params: { tag }
+  }));
 }
+
 
 const { tag } = Astro.params;
 
-let filteredPosts = [];
-// Since we cannot share allPosts between getStaticPaths and the component,
-// we need to fetch them again here for filtering
-let filteredGuides = (await Astro.glob('../../**/*.mdx')).filter(post => post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
-let filteredEvents = (await Astro.glob('../../**/**/*.mdx')).filter(post => post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
-
-filteredPosts.push(...filteredGuides, ...filteredEvents);
+// Get only events that have a tag matching the current tag param
+const filteredEvents = (await Astro.glob('../../**/**/*.mdx')).filter(post =>
+  post.frontmatter.tags?.some(t => t.type === "event" && t.tag === tag)
+);
 
 
-console.log("filteredPosts");
-console.log(filteredPosts);
-// let allPostsIncludingMultipleDates = [];
-const description = 'A simple way to find  things to do in greater Chattanooga';
-const title = 'thingshappening';
-const seoDescription = 'A simple way to find  things happening';
-
-let allPostsIncludingMultipleDates = [];
-filteredPosts.forEach((p) => {
-  let baseData = Object.assign({}, p.frontmatter, {url: p.url});  // Create a copy of the base data
-
-  if (baseData.eventDates) {
-    baseData.eventDates.forEach((date, i) => {
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title}`, url: `${baseData.url}/${date}`}); 
-
-      allPostsIncludingMultipleDates.push(again);
-    })
+// Flatten event posts with multiple dates
+const allPostsIncludingMultipleDates = [];
+filteredEvents.forEach((p) => {
+  const base = { ...p.frontmatter, url: p.url };
+  if (base.eventDates) {
+    base.eventDates.forEach((date) => {
+      allPostsIncludingMultipleDates.push({
+        ...base,
+        pubDate: date,
+        url: `${base.url}/${date}`
+      });
+    });
   } else {
-    allPostsIncludingMultipleDates.push(baseData); // Push base data if no eventDates
+    allPostsIncludingMultipleDates.push(base);
   }
 });
 
-
+const description = 'A simple way to find things to do in greater Chattanooga';
+const title = 'thingshappening';
+const seoDescription = 'A simple way to find things happening';
 ---
 
 <html>
@@ -86,12 +73,13 @@ filteredPosts.forEach((p) => {
       <article class="max-w-6xl mx-auto px-3">
         <HomeHeader title={`#${tag}`} description={description} />
         <div class="ml-embedded" data-form="ZoK6PR"></div>
-  
+
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-          {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
-            {console.log(p.frontmatter)}
-            <Card post={p} highlighted={tag} />
-          </div>)}
+          {allPostsIncludingMultipleDates.map(p => (
+            <div class="col-span-1">
+              <Card post={p} highlighted={tag} />
+            </div>
+          ))}
         </section>
       </article>
     </main>

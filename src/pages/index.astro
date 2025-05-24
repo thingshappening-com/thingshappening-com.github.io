@@ -50,7 +50,7 @@ const sortedEvents = events
 
 const sortedGuides = guides.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
-const eventsPage = sortedEvents.slice(0, 12);
+const eventsPage = sortedEvents.slice(0, 9);
 const guidesPage = sortedGuides.slice(0, 9);
 
 // Pagination tracking (just for metadata / Paginator component)
@@ -84,15 +84,15 @@ const page = {
         ))}
       </section>
       {sortedEvents.length > 15 && (
-        <div class="text-center mt-6 mb-6">
-          <a href="/chattanooga/events/page/2" class="text-2xl font-semibold">View more events →</a>
+        <div class="text-center mt-6 mb-8">
+          <a href="/chattanooga/events/page/2" class="text-2xl">View more events →</a>
         </div>
       )}
     </article>
 
     <article class="max-w-6xl mx-auto px-3">
       <header class="pt-10 text-center content">
-        <h1>Guides</h1>
+        <h1 class="font-jakarta font-normal text-5xl">Explore our Chattanooga Guides</h1>
       </header>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
         {guidesPage.map((g) => (
