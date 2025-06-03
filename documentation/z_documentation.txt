@@ -1,4 +1,41 @@
-Documentation:
+How The Fuck Does This Thing Even Work? When would I need to change each for handling?
+- [...page].astro at src/pages/[...page].astro
+This is for pagination
+
+- BlogPost.astro
+post rendering
+
+- BlogPostLayout.astro / 
+rendered inside of each .astro file for an [eventTitle]. passes props to blogpost.astro
+
+- index.astro
+This is the homepage. It functions basically the same way as [...page].astro
+They each render Card components. This one also renders it form guides in addition to events
+
+- getStaticPaths
+In Astro, getStaticPaths is used to generate a list of dynamic routes at build time, telling Astro
+which pages to pre-render. When passed { paginate }, you can split large datasets into paginated chunks for 
+creating multi-page lists like blog indexes or event listings.
+You might need to modify getStaticPaths when:
+Your data source changes — e.g. switching from local .mdx files to a CMS or API, so the way you gather routes needs to be updated.
+Your URL structure changes — like adding date-based paths (/events/2025/07/04) instead of just slugs.
+You want to filter or sort content — for example, only include future events, or order blog posts by publish date.
+You're adding pagination — or changing how many items appear per page (paginate(data, { pageSize: 10 })).
+You’re localizing content — and need to generate paths for each language (/en/post-title, /es/post-title, etc.).
+Basically, any time your route logic or content structure evolves, getStaticPaths needs to reflect that.
+
+
+Types of events and notes on how they work:
+- Multiple events same day (woodcraft)
+- 
+
+Questions:
+- How is a URL created? 
+
+
+
+
+Other (older) Documentation:
 - Define a slot - The <slot /> element is a placeholder for external HTML content, allowing you to inject (or “slot”) child elements from other files into your component template. By default, all child elements passed to a component will be rendered in its <slot />. BlogPostLayout renders a <slot> within <BlogPost>, which contains the contents from the markdown
 - Routing for multiple cities - all routing for content is by directories underneath pages - ex Pages -> Chattanooga -> Events, Attractions. I think Ill need to update the tagging functionality to get Astro.glob for multiple .md paths if it doesn’t get them all properly from the /pages top level
 - Tags

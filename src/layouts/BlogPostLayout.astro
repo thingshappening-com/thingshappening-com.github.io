@@ -4,7 +4,9 @@ import BaseHead from '../components/Head/BaseHead.astro';
 import BlogPost from '../components/BlogPost.astro';
 
 const {content} = Astro.props;
-let {address, author, eventLink, readTime, originalDate, eventDatesDetails, entranceCost, lastUpdated, ticketsLink, tags, title, time, description, pubDate, venue, venueDetails, hero, youtube} = content;
+let {address, author, eventLink, readTime, originalDate, matchedDetails, eventDatesDetails, entranceCost, lastUpdated, ticketsLink, tags, title, time, description, pubDate, venue, venueDetails, hero, youtube} = content;
+console.log(content)
+console.log("above")
 
 title = title ? title : "";
 ---
@@ -16,7 +18,7 @@ title = title ? title : "";
   <body>
     <Nav />
     <main class="overflow-hidden">
-      <BlogPost tags={tags} author={author} readTime={readTime} originalDate={originalDate} lastUpdated={lastUpdated} eventDatesDetails={eventDatesDetails} address={address} eventLink={eventLink} entranceCost={entranceCost} ticketsLink={ticketsLink} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube} >
+      <BlogPost tags={tags} author={author} readTime={readTime} matchedDetails={matchedDetails} originalDate={originalDate} lastUpdated={lastUpdated} eventDatesDetails={eventDatesDetails} address={address} eventLink={eventLink} entranceCost={entranceCost} ticketsLink={ticketsLink} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube} >
         <slot />
       </BlogPost>
     </main>

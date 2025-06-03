@@ -7,9 +7,6 @@ import BaseHead from '../../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob('../../**/*.mdx');
-
-  console.log("allpppp");
-  console.log(allPosts[0].frontmatter);
   // Extract tags with type "guide" and create a Set to ensure uniqueness
   let tags = new Set(allPosts.flatMap(post => 
   post.frontmatter.tags 
@@ -23,7 +20,6 @@ export async function getStaticPaths() {
   tags = tags.filter(element => element !== undefined);
 
   // Create paths for each tag
-  console.log("i am here")
   const paths = tags.map(tag => {    
     return {
       params: { tag }
@@ -44,12 +40,10 @@ let filteredEvents = (await Astro.glob('../../**/**/*.mdx')).filter(post => post
 filteredPosts.push(...filteredGuides, ...filteredEvents);
 
 
-console.log("filteredPosts");
-console.log(filteredPosts);
 // let allPostsIncludingMultipleDates = [];
-const description = 'A simple way to find  things to do in greater Chattanooga';
+const description = 'An easier way to find  things to do in greater Chattanooga';
 const title = 'thingshappening';
-const seoDescription = 'A simple way to find  things happening';
+const seoDescription = 'An easier way to find  things happening';
 
 let allPostsIncludingMultipleDates = [];
 filteredPosts.forEach((p) => {
@@ -89,7 +83,6 @@ filteredPosts.forEach((p) => {
   
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
           {allPostsIncludingMultipleDates.map(p => <div class="col-span-1">
-            {console.log(p.frontmatter)}
             <Card post={p} highlighted={tag} />
           </div>)}
         </section>

@@ -1,0 +1,91 @@
+---
+import BlogPostLayout from "../../../../../../../layouts/BlogPostLayout.astro"
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob('../../**/erlanger-east.mdx');
+
+  let paths = [];
+
+  for (const post of allPosts) {
+    const dates = post.frontmatter.eventDatesDetails || [];
+
+    const groupedByDate = dates.reduce((acc, detail) => {
+      acc[detail.date] = acc[detail.date] || [];
+      acc[detail.date].push(detail);
+      return acc;
+    }, {});
+
+    for (const [date, events] of Object.entries(groupedByDate)) {
+      if (events.length > 1) {
+        for (const event of events) {
+          const slug = event.eventTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          paths.push({ params: { date, eventTitle: slug } });
+        }
+      } else {
+        const event = events[0];
+        const slug = event.eventTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        paths.push({ params: { date, eventTitle: slug } });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { date, eventTitle } = Astro.params;
+const allPosts = await Astro.glob('../../**/erlanger-east.mdx');
+
+let matchedPost = null;
+let matchedDetail = null;
+
+console.log(date);
+console.log(eventTitle);
+
+for (const post of allPosts) {
+  const details = post.frontmatter.eventDatesDetails || [];
+
+  for (const detail of details) {
+    const slug = detail.eventTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    console.log(slug);
+    if (detail.date === date && slug === eventTitle) {
+      console.log(post);
+      matchedPost = post;
+      matchedDetail = detail;
+      break;
+    }
+  }
+
+  if (matchedPost) break;
+}
+
+if (!matchedPost || !matchedDetail) {
+  throw new Error(`No event found for date "${date}" and title "${eventTitle}"`);
+}
+
+const postDetails = {
+  ...matchedPost.frontmatter,
+  matchedDetails: matchedDetail,
+  pubDate: date
+};
+---
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script is:inline>(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '930023')</script>
+  </head>
+  <body>
+    <ul>
+      <BlogPostLayout content={postDetails}>
+        <matchedPost.Content />
+      </BlogPostLayout>
+    </ul>
+
+    <div class="ml-embedded ml-embedded-left max-w-5xl mx-auto px-3" data-form="ZoK6PR"></div>
+  </body>
+</html>

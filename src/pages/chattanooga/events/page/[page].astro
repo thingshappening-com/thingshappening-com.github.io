@@ -11,19 +11,46 @@ export async function getStaticPaths({ paginate }) {
   const allEvents = await Astro.glob('./../../../chattanooga/**/**/*.mdx');
 
   const expanded = [];
-  for (const file of allEvents) {
-    const base = { ...file.frontmatter, url: file.url };
 
-    if (base.eventDates) {
-      base.eventDates.forEach((date) => {
+  for (const file of allEvents) {
+    const frontmatter = file.frontmatter;
+    const baseUrl = file.url;
+
+    if (frontmatter.eventDatesDetails) {
+      frontmatter.eventDatesDetails.forEach((detail, index) => {
+        const slugifiedTitle = detail.eventTitle
+          ? detail.eventTitle
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '')
+          : '';
+
         expanded.push({
-          ...base,
+          ...frontmatter,
+          pubDate: detail.date,
+          eventTitle: detail.eventTitle,
+          entranceCost: detail.entranceCost,
+          time: detail.time,
+          topDetails: detail.topDetails,
+          url: `${baseUrl}/${detail.date}/${slugifiedTitle}`,
+          type: 'event',
+        });
+      });
+    } else if (frontmatter.eventDates) {
+      frontmatter.eventDates.forEach((date, index) => {
+        expanded.push({
+          ...frontmatter,
           pubDate: date,
-          url: `${base.url}/${date}`,
+          url: `${baseUrl}/${date}`,
+          type: 'event',
         });
       });
     } else {
-      expanded.push(base);
+      expanded.push({
+        ...frontmatter,
+        url: baseUrl,
+        type: 'event',
+      });
     }
   }
 
@@ -43,7 +70,7 @@ const { page } = Astro.props;
 
 <html lang="en">
 <head>
-  <BaseHead title="Events - Page {page.currentPage}" description="Upcoming events in Chattanooga" />
+  <BaseHead title={`Events - Page ${page.currentPage}`} description="Upcoming events in Chattanooga" />
 </head>
 
 <body class="text-black font-body leading-normal personality-casual">

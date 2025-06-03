@@ -13,7 +13,7 @@ interface MarkdownFrontmatter {
 
 const title = 'thingshappening';
 const seoDescription = 'Helping you explore and enjoy your local city! Things Happening guides you and your family to fun adventures and experiences in your city and beyond.';
-const description = "A simple way to find things happening in";
+const description = "An easier way to find things happening in";
 const city = "Chattanooga";
 
 const allGuides = await Astro.glob('./chattanooga/guides/*.mdx');
@@ -26,16 +26,48 @@ const guides = allGuides.map((p) => ({
   type: 'guide',
 }));
 
-// Format events with multiple dates
-const events = [];
-for (const p of allEvents) {
-  const base = { ...p.frontmatter, url: p.url, type: 'event' };
-  if (base.eventDates) {
-    base.eventDates.forEach((date) => {
-      events.push({ ...base, pubDate: date, url: `${base.url}/${date}` });
+// Format events similar to pagination logic
+const expanded = [];
+
+for (const file of allEvents) {
+  const frontmatter = file.frontmatter;
+  const baseUrl = file.url;
+
+  if (frontmatter.eventDatesDetails) {
+    frontmatter.eventDatesDetails.forEach((detail) => {
+      const slugifiedTitle = detail.eventTitle
+        ? detail.eventTitle
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')
+        : '';
+
+      expanded.push({
+        ...frontmatter,
+        pubDate: detail.date,
+        eventTitle: detail.eventTitle,
+        entranceCost: detail.entranceCost,
+        time: detail.time,
+        topDetails: detail.topDetails,
+        url: `${baseUrl}/${detail.date}/${slugifiedTitle}`,
+        type: 'event',
+      });
+    });
+  } else if (frontmatter.eventDates) {
+    frontmatter.eventDates.forEach((date) => {
+      expanded.push({
+        ...frontmatter,
+        pubDate: date,
+        url: `${baseUrl}/${date}`,
+        type: 'event',
+      });
     });
   } else {
-    events.push(base);
+    expanded.push({
+      ...frontmatter,
+      url: baseUrl,
+      type: 'event',
+    });
   }
 }
 
@@ -44,7 +76,7 @@ const today = new Date();
 today.setDate(today.getDate() - 1);
 today.setHours(0, 0, 0, 0);
 
-const sortedEvents = events
+const sortedEvents = expanded
   .filter((e) => new Date(e.pubDate) >= today)
   .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
 
