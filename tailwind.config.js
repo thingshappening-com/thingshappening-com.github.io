@@ -105,7 +105,8 @@ module.exports = {
         black: "#12151E",
         "hot-pink": "#3CB371",
         beige: "#FFF8F0E6",
-        customGreen1: "#3CB371"
+        customGreen1: "#3CB371",
+        customGreen2: "#"
       },
       fontFamily: {
         display: ["Londrina Solid", "sans-serif"],
