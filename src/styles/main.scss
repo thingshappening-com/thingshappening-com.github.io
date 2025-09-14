@@ -36,9 +36,7 @@
 
 .date-filter-options {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding-top: 4em;
   max-width: 100%;
 }
 
@@ -46,9 +44,7 @@
 .date-filter-options a {
   position: relative; /* Ensure relative positioning for the pseudo-element */
   margin-right: 3em;
-  margin-left: 3em;
   font-size: 20px;
-  // font-weight: 600; 
   padding-bottom: .25em; 
   margin-bottom: 1.5em
 }
