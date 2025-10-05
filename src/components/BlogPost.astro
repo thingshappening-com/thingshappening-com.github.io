@@ -3,17 +3,48 @@
 import dayjs from 'dayjs'
 
 export interface Props {
-  address: string;
+  // Core post metadata
   title: string;
-  pubDate: string;
-  time: string;
-  venue: string;
-  venueDetails: string;
+  pubDate?: string;
+  originalDate?: string;
+  lastUpdated?: string;
+  readTime?: string;
+  author?: string;
+  description?: string;
+  tags?: Array<{ type: string; tag: string }>;
+
+  // Event/venue metadata
+  time?: string;
+  venue?: string;
+  venueDetails?: string;
+  address?: string;
+  entranceCost?: string;
+  eventLink?: string;
+  ticketsLink?: string;
+  matchedDetails?: any;
+  eventDatesDetails?: any;
+
+  // Media
   hero?: string;
   youtube?: string;
+
+  // Additional optional metadata
+  seoDescription?: string;
+  featured?: boolean;
+  geoCoverage?: string;
+  neighborhoods?: string[];
+  seasonality?: string;
+  accessibilityNotes?: string;
+  parking?: string;
+  kidFriendly?: boolean;
+  petFriendly?: boolean;
+  bestFor?: string[];
+  sources?: string[];
 }
 
-let { address, author, readTime, matchedDetails, eventDatesDetails, eventLink, entranceCost, lastUpdated, originalDate, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube } = Astro.props;
+let { address, author, readTime, matchedDetails, eventDatesDetails, eventLink, entranceCost, lastUpdated, originalDate, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube,
+  // Additional optional metadata
+  seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources } = Astro.props;
 const date = new Date(pubDate);
 let eventDateDetails;
 // console.log(matchedDetails)
@@ -34,24 +65,38 @@ address = eventDateDetails && eventDateDetails.address ?  eventDateDetails.addre
 ticketsLink = eventDateDetails && eventDateDetails.ticketsLink ?  eventDateDetails.ticketsLink : ticketsLink
 eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.eventLink : eventLink
 ---
-<div class="header-styles mb-10 pt-12 pb-12 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-lg">
-  <header class="max-w-5xl content max-w-5xl mx-auto px-3 text-xl tracking-wide">
+<div class="header-styles mb-10 pt-14 pb-14 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-xl">
+  <header class="max-w-5xl content max-w-5xl mx-auto px-3 text-3xl tracking-wide">
     <h1>{title} {pubDate && (
      `: ${subTitle}`
    )}</h1>
  </header>
-  <div class="max-w-5xl content max-w-5xl mx-auto px-3">
-    {pubDate ? <div><b>When:</b> {pubDate} {`(${dayOfWeek})`}</div> : ""}
-    {time ? <div><b>Time:</b> {time}</div> : ""}
-    {venue ? <div><b>Venue:</b> {venue}</div> : ""}
-    {venueDetails ? <div><b>Venue Details:</b> {venueDetails}</div> : ""}
-    {address ? <div><b>Address:</b> {address}</div> : ""}
-    {entranceCost ? <div><b>Entrance Fee:</b> {entranceCost}</div> : ""}
+  <div class="max-w-5xl content max-w-5xl mx-auto px-3 text-lg">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-1">
+      {pubDate ? <div><span class="font-semibold">When:</span> {pubDate} {`(${dayOfWeek})`}</div> : ""}
+      {time ? <div><span class="font-semibold">Time:</span> {time}</div> : ""}
+      {venue ? <div><span class="font-semibold">Venue:</span> {venue}</div> : ""}
+      {venueDetails ? <div><span class="font-semibold">Venue Details:</span> {venueDetails}</div> : ""}
+      {address ? <div><span class="font-semibold">Address:</span> {address}</div> : ""}
+      {entranceCost ? <div><span class="font-semibold">Entrance Fee:</span> {entranceCost}</div> : ""}
+      {author ? <div><span class="font-semibold">Original Author:</span> <a href="/about">{author}</a></div> : ""}
+      {readTime ? <div><span class="font-semibold">Read time:</span> {readTime}</div> : ""}
+      {lastUpdated ? <div><span class="font-semibold">Last updated:</span> {lastUpdated}</div> : ""}
+      {originalDate ? <div><span class="font-semibold">Published on:</span> {originalDate}</div> : ""}
+      {geoCoverage ? <div><span class="font-semibold">Geo coverage:</span> {geoCoverage}</div> : ""}
+      {neighborhoods && neighborhoods.length ? <div><span class="font-semibold">Neighborhoods:</span> {neighborhoods.join(', ')}</div> : ""}
+      {seasonality ? <div><span class="font-semibold">Seasonality:</span> {seasonality}</div> : ""}
+      {parking ? <div><span class="font-semibold">Parking:</span> {parking}</div> : ""}
+      {accessibilityNotes ? <div><span class="font-semibold">Accessibility:</span> {accessibilityNotes}</div> : ""}
+      {(kidFriendly !== undefined) ? <div><span class="font-semibold">Kid friendly:</span> {kidFriendly ? 'Yes' : 'No'}</div> : ""}
+      {(petFriendly !== undefined) ? <div><span class="font-semibold">Pet friendly:</span> {petFriendly ? 'Yes' : 'No'}</div> : ""}
+      {bestFor && bestFor.length ? <div><span class="font-semibold">Best for:</span> {bestFor.join(', ')}</div> : ""}
+    </div>
     <div class="mt-2">
-      {eventLink ? <a target="_blank" class="mr-3 mt-5 underline-pink" href={eventLink}>Event Website</a> : ""}
+      {eventLink ? <a target="_blank" class="mr-3 underline-pink" href={eventLink}>Event Website</a> : ""}
       {() => { 
         if(ticketsLink && ticketsLink.includes("http")) {
-          return <a target="_blank" class="mr-1 mt-5 underline-pink" href={ticketsLink}>Tickets Link</a>
+          return <a target="_blank" class="mr-1 underline-pink" href={ticketsLink}>Tickets Link</a>
         } else if (ticketsLink) {
         return <div><b>Tickets Link:</b> {ticketsLink}</div>
         } else {
@@ -63,32 +108,16 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
       {tags && tags.length > 0 && (
         <div>
           {tags.map(tag => {
-            return <a class="mr-3 no-underline" href={`/tag/${tag.type}/${tag.tag}`}><span class="text-customGreen1">#</span>{tag.tag}</a>
+            return <a class="mr-3 no-underline text-purpleBlue" href={`/tag/${tag.type}/${tag.tag}`}><span class="text-darkRoyal">#</span>{tag.tag}</a>
           })}
         </div>
       )}
     </div>
-    <div class="mt-2">
-      {author && (
-        <div><b>Original Author:</b> <a href="/about#jack-burnham">{author}</a></div>
-      )}
-    </div>
-
-    <div class="mt-2">
-      {readTime && (
-        <div><b>Read time:</b> {readTime}</div>
-      )}
-    </div>
-    <div class="mt-2">
-      {lastUpdated && (
-        <div><b>Last updated:</b> {lastUpdated}</div>
-      )}
-    </div>
-    <div class="mt-2">
-      {originalDate && (
-        <div><b>Published on:</b> {originalDate}</div>
-      )}
-    </div>
+    {sources && sources.length ? (
+      <div class="mt-2">
+        <div><b>Sources:</b> {sources.join(', ')}</div>
+      </div>
+    ) : ""}
   </div>
 </div>
 <article class="max-w-5xl mx-auto px-3 text-xl tracking-wide">

@@ -100,13 +100,17 @@ module.exports = {
         xl: ".75rem",
       },
       colors: {
-        tealOutsideGuide: "#07bd8e",
         darkTeal: "#065F46",
         black: "#12151E",
         "hot-pink": "#3CB371",
         beige: "#FFF8F0E6",
         customGreen1: "#3CB371",
-        customGreen2: "#"
+        warmGreen: "#3CB371",
+        teal1: "#27F9D8",
+        logoLightGreen: "#01C47A",
+        logoDarkGreen: "#1A221B",
+        darkRoyal: "#1831EA",
+        purpleBlue: "#AFB1FF",
       },
       fontFamily: {
         display: ["Londrina Solid", "sans-serif"],

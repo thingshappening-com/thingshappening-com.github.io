@@ -6,11 +6,18 @@
 
 .header-styles {
   height: fit-content;
-  background-color: #065F46;
   color: white;
-  // display: flex;
-  // flex-direction: column;
-  // align-content: center;
+  background: linear-gradient(135deg, #1A221B 0%, #01C47A 100%);
+}
+
+
+.gradient-text {
+  display: inline-block; /* important for clipping */
+  background: linear-gradient(135deg, #1A221B 0%, #01C47A 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* for Safari/Chrome */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* for Safari */
 }
 
 #mlb2-14458342.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent, #mlb2-14458342.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
