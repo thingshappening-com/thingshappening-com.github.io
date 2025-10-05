@@ -30,6 +30,7 @@ Authoritative rules for writing and editing `.mdx` content in this repo. Follow 
 ### MDX Expressions
 - **Interpolation**: Wrap JS expressions in `{}`. Keep expressions simple and deterministic.
 - **Escaping**: Escape braces and angle brackets in text as needed (e.g., code fences) to avoid accidental JSX interpretation.
+- **Acorn parse errors**: MDX parses JSX with Acorn. Avoid non-literal object expressions inside HTML attributes (e.g., `style={{ fontFamily: 'X' }}`) in `.mdx` content blocks. Prefer string attributes (e.g., `style="font-family: X;"`) or move styles to a class. Also avoid inline `<style>` blocks that include nested JSX selectors; scope via classes or page-level styles instead.
 
 ### Accessibility and Semantics
 - **Headings**: Maintain a logical heading order.
