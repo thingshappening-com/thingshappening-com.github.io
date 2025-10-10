@@ -67,7 +67,10 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
 ---
 <div class="header-styles mb-10 pt-14 pb-14 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-xl">
   <header class="max-w-5xl content max-w-5xl mx-auto px-3 text-3xl tracking-wide">
-    <h1 style="font-family: 'Libre Baskerville', serif;">{title} {pubDate && (
+    <h2 class="text-xl font-semibold tracking-widest">
+      The Chattanooga Guides Series
+    </h2>
+    <h1 class="break-words" style="font-family: 'Libre Baskerville', serif; font-size: clamp(2.5rem, 5vw, 4.5rem);">{title} {pubDate && (
      `: ${subTitle}`
    )}</h1>
  </header>
