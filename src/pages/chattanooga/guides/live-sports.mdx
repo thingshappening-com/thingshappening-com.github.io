@@ -3,16 +3,20 @@ title: "A Playbook for Chattanooga Live Sports"
 lastUpdated: "03/07/2025"
 originalDate: "01/24/2025"
 readTime: "8 minutes"
-iconPath: "../../../images/icons/fitness.svg"
 tags: [{type: "guide", tag: "sports"}]
 layout: "../../../layouts/BlogPostLayout.astro"
-description: "Live sports guide for Chattanooga. Breakdowns on the Lookouts, UTC Mocs, Pro Soccer, Sports Bars and more."
+seoDescription: "Guide to live sports in Chattanooga including the Lookouts, UTC Mocs, Chattanooga FC, basketball, and sports bars for watching games."
+neighborhoods: ["Downtown", "North Shore", "East Ridge", "Signal Mountain", "Lookout Mountain"]
+seasonality: "Year-round; baseball (April-September), basketball (November-March), soccer (March-October)"
+bestFor: ["Sports fans", "Families", "Date night", "Group outings"]
+iconPath: "../../../images/icons/fitness.svg"
+# sources: ["UTC Athletics", "Chattanooga Lookouts", "Chattanooga FC", "Chattanooga Red Wolves"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';
 
 <div>
-  <div class="pb-2 text-2xl">
-  <section class="text-2xl">
+  <div class="pb-2 text-xl">
+  <section class="text-xl">
     <div class="pb-3">
       <h2 class="text-5xl" style="font-family: 'Libre Baskerville', serif;">Overview<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -31,10 +35,29 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-2xl">
-    <div class="pb-5">
-      <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Football<span class="color-pink ml-1"><b>.</b></span></h2>
+  <section class="text-xl pb-12">
+    <div>
+      <h2 class="text-4xl mb-4" style="font-family: 'Libre Baskerville', serif;">By Topic<span class="color-pink ml-1"><b>.</b></span></h2>
+      <div class="pb-4">
+        <div class="text-xl">
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#football">Football</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#soccer">Soccer</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#basketball">Basketball</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#baseball">Baseball</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#other-teams">Other Teams</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#sports-bars">Sports Bars</a></div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section class="text-xl pb-2">
+    <div>
+      <h2 id="football" class="text-4xl mb-2" style="font-family: 'Libre Baskerville', serif;">Football<span class="color-pink ml-1"><b>.</b></span></h2>
+    </div>
+  </section>
+
+  <section class="text-xl">
     <div class="pb-7">
       <div>
         <div class="text-3xl pb-5">
@@ -89,10 +112,13 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-2xl">
-    <div class="pb-5">
-      <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Soccer<span class="color-pink ml-1"><b>.</b></span></h2>
+  <section class="text-xl pb-2">
+    <div>
+      <h2 id="soccer" class="text-4xl mb-2" style="font-family: 'Libre Baskerville', serif;">Soccer<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+  </section>
+
+  <section class="text-xl">
     <div class="pb-3">
       <div class="pb-5">
         <div class="text-3xl pb-5">
@@ -155,10 +181,13 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-2xl">
-    <div class="pb-5">
-      <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Basketball<span class="color-pink ml-1"><b>.</b></span></h2>
+  <section class="text-xl pb-2">
+    <div>
+      <h2 id="basketball" class="text-4xl mb-2" style="font-family: 'Libre Baskerville', serif;">Basketball<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+  </section>
+
+  <section class="text-xl">
     <div class="pb-3">        
       <div class="pb-5">
         <div class="text-3xl pb-5">
@@ -277,10 +306,13 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-2xl">
-    <div class="pb-5">
-      <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Baseball<span class="color-pink ml-1"><b>.</b></span></h2>
+  <section class="text-xl pb-2">
+    <div>
+      <h2 id="baseball" class="text-4xl mb-2" style="font-family: 'Libre Baskerville', serif;">Baseball<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+  </section>
+
+  <section class="text-xl">
     <div class="pb-3">
       <div class="pb-5">
         <div class="text-3xl">
@@ -321,10 +353,13 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <section class="text-2xl">
-    <div class="pb-5">
-      <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Other teams<span class="color-pink ml-1"><b>.</b></span></h2>
+  <section class="text-xl pb-2">
+    <div>
+      <h2 id="other-teams" class="text-4xl mb-2" style="font-family: 'Libre Baskerville', serif;">Other teams<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+  </section>
+
+  <section class="text-xl">
     <div class="pb-3">
       <div class="pb-5">
        <div class="pb-5">
@@ -347,10 +382,13 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-2xl">
-    <div class="pb-5">
-      <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Sports Bars<span class="color-pink ml-1"><b>.</b></span></h2>
+  <section class="text-xl pb-2">
+    <div>
+      <h2 id="sports-bars" class="text-4xl mb-2" style="font-family: 'Libre Baskerville', serif;">Sports Bars<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
+  </section>
+
+  <section class="text-xl">
     <div class="pb-3">
         <div className="pb-5">
           Chances are if you're reading this guide you'd also like to know where you can watch UT on Saturdays or the NFL on Sundays. Some noted places of interest are 
@@ -378,7 +416,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <section class="text-2xl">
+  <section class="text-xl">
     <div class="pb-5">
       <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Outro<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>

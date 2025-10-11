@@ -6,7 +6,11 @@
   iconPath: "../../../images/icons/history.svg"
   tags: [{type: "guide", tag: "history"}]
   layout: "../../../layouts/BlogPostLayout.astro"
-  description: "A comprehensive guide to Chattanooga's Civil War history, including key events, their significance, and historical landmarks you can visit today."
+  seoDescription: "A comprehensive guide to Chattanooga's Civil War history, including key events, their significance, and historical landmarks you can visit today."
+  neighborhoods: ["Lookout Mountain", "Missionary Ridge", "St. Elmo", "North Georgia", "Downtown Chattanooga"]
+  seasonality: "Year-round; best weather March-November, some monuments seasonal access"
+  bestFor: ["History buffs", "Families", "Students", "Tourists", "Outdoor enthusiasts"]
+  # sources: ["Chickamauga and Chattanooga National Military Park", "National Park Service", "Civil War Trust"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';
 
@@ -35,7 +39,22 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
         The Battle of Chickamauga is on record as the second most deadly battle of the Civil War after the Battle of Gettysburg. The Union victory in the Chattanooga Campaign marks a turning point in the civil war as Chattanooga was a major transportation hub referred to as the "Gateway to the Deep South". It gave the Union control of the supply lines and allowed troops to move effectively into the heart of the confederacy.
       </div>
     </section>
-    <section class="text-2xl">
+
+    <section class="text-2xl pb-12">
+      <div>
+        <h2 class="text-4xl mb-4" style="font-family: 'Libre Baskerville', serif;">By Topic<span class="color-pink ml-1"><b>.</b></span></h2>
+        <div class="pb-4">
+          <div class="text-2xl">
+            <div class="pb-4"><a class="text-3xl gradient-text" href="#chickamauga">Battle of Chickamauga</a></div>
+            <div class="pb-4"><a class="text-3xl gradient-text" href="#chattanooga-campaign">Chattanooga Campaign</a></div>
+            <div class="pb-4"><a class="text-3xl gradient-text" href="#military-park">National Military Park</a></div>
+            <div class="pb-4"><a class="text-3xl gradient-text" href="#smaller-sites">Smaller Historical Sites</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-2xl" id="chickamauga">
       <div class="pb-5">
         <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Battle of Chickamauga<span class="color-pink ml-1"><b>.</b></span></h2>
         <div class="pb-3"><b>Dates<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 09/18/1963 - 09/20/1963</div>
@@ -68,7 +87,8 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
         <em>Artillery civil war monument</em>
       </div>
     </div>
-    <section class="text-2xl">
+
+    <section class="text-2xl" id="chattanooga-campaign">
       <div class="pb-6">
         <h2 class="text-4xl" style="font-family: 'Libre Baskerville', serif;">Chattanooga Campaign<span class="color-pink ml-1"><b>.</b></span></h2>
         <div class="pb-3"><b>Dates<span class="text-customGreen1 text-xl2 font-bold">:</span></b> 10/28/1863 - 11/27/1963</div>
@@ -139,7 +159,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
   </div>
  </section>
 
-  <section class="pb-3 text-2xl">
+  <section class="pb-3 text-2xl" id="military-park">
     <div class="pb-1">
       <h2 class="text-5xl" style="font-family: 'Libre Baskerville', serif;">Chickamauga and Chattanooga National Military Park<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -245,7 +265,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="pb-3 text-xl2">
+  <section class="pb-3 text-xl2" id="smaller-sites">
     <div>
       <h2 class="text-5xl w-full break-words" style="font-family: 'Libre Baskerville', serif;">Smaller Historical Sites<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>

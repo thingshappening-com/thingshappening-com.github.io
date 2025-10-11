@@ -6,7 +6,11 @@ readTime: "7 minutes"
 iconPath: "../../../images/icons/music.svg"
 tags: [{type: "guide", tag: "music"}, {type: "guide", tag: "live-performances"}]
 layout: "../../../layouts/BlogPostLayout.astro"
-description: "The ultimate live music guide to Chattanooga—explore local bars, music venues, theaters, festivals, history and more."
+seoDescription: "The ultimate live music guide to Chattanooga—explore local bars, music venues, theaters, festivals, history and more."
+neighborhoods: ["Downtown", "St. Elmo", "North Shore", "East Ridge", "Ooltewah", "Arts District"]
+seasonality: "Year-round; outdoor concerts peak summer (May-October), festivals fall-spring"
+bestFor: ["Music lovers", "Date night", "Families", "Festival-goers", "Nightlife seekers"]
+# sources: ["Tivoli Theatre Foundation", "The Signal", "Songbirds Foundation", "IBMA", "Smart Music Fest"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';
 
@@ -58,7 +62,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <div class="pb-2 text-2xl">
+  <div class="pb-2 text-xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
       <OptimizedImage  src="/images/chattanooga_guides/live-music/woodshop1.webp" alt="The Woodshop at the Listening Room in St Elmo, Chattanooga" />
       <div class="text-center">
@@ -67,7 +71,21 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-xl">
+  <section class="text-xl pb-12">
+    <div>
+      <h2 class="text-4xl mb-4" style="font-family: 'Libre Baskerville', serif;">By Topic<span class="color-pink ml-1"><b>.</b></span></h2>
+      <div class="pb-4">
+        <div class="text-xl">
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#local-bars">Local Bars</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#recurring-events">Recurring Music Events</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#larger-venues">Larger Music Venues</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#festivals">Festivals</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-xl" id="local-bars">
     <div class="pb-3">
       <h2>Local Bars<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -157,7 +175,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     <OptimizedImage src="/images/chattanooga_guides/live-music/woodshop2.webp" alt="Exterior photo of The Woodshop" />
   </div>
 
-  <section class="text-xl">
+  <section class="text-xl" id="recurring-events">
     <div class="pb-5">
       <h2>Recurring Music Events<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -195,7 +213,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <div class="pb-10 text-2xl">If you like being outdoors for concerts, there's a good chance you'd like outdoor activities at the <a href="chattanooga/guides/cloudland-canyon" target="_blank">best state park in Georgia</a> just outside of Chattanooga. We wrote a <a href="chattanooga/guides/cloudland-canyon" target="_blank">guide</a> for you.</div>
+  <div class="pb-10 text-xl">If you like being outdoors for concerts, there's a good chance you'd like outdoor activities at the <a href="chattanooga/guides/cloudland-canyon" target="_blank">best state park in Georgia</a> just outside of Chattanooga. We wrote a <a href="chattanooga/guides/cloudland-canyon" target="_blank">guide</a> for you.</div>
 
   <div style="overflow-x: auto;">
   <table border="1" style="width: 100%; border-collapse: collapse;">
@@ -223,7 +241,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
 </div>
 
 
-  <section class="text-xl">
+  <section class="text-xl" id="larger-venues">
     <div class="pb-5">
       <h2>Larger Music Venues<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>
@@ -299,7 +317,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
 </div>
 
 
-  <section class="text-xl">
+  <section class="text-xl" id="festivals">
     <div class="pb-5">
       <h2>Festivals<span class="color-pink ml-1"><b>.</b></span></h2>
     </div>

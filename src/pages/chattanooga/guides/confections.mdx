@@ -6,11 +6,16 @@
   iconPath: "../../../images/icons/coffee-cup.svg"
   tags: [{type: "guide", tag: "merchants"}]
   layout: "../../../layouts/BlogPostLayout.astro"
+  seoDescription: "Guide to Chattanooga's best sweet treats including ice cream shops, bakeries, chocolate shops, creperies, and coffee houses for desserts and confections."
+  neighborhoods: ["North Shore", "Downtown", "St. Elmo", "Arts District", "Market Street"]
+  seasonality: "Year-round; hot chocolate best in winter, ice cream popular spring-summer"
+  bestFor: ["Families", "Date night", "Food lovers", "Coffee enthusiasts", "Ice cream fans"]
+  # sources: ["Clumpies Ice Cream", "The Hot Chocolatier", "Adelle's Crêperie", "Rembrandt's Coffee House"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';
 
 <div>
-  <section class="text-2xl pb-10 pt-10">
+  <section class="text-xl pb-10 pt-10">
     <div>
       <div class="pb-5">
         Chattanooga has quite a few quality restaurants, bakeries and ice cream shops you can visit for a sweet treat. We built a guide to cover some of our favorites worth stopping by after a date night, when your parents are in town, or just for the sake of exploration.
@@ -24,7 +29,21 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <section class="text-2xl pb-10">
+  <section class="text-xl pb-12">
+    <div>
+      <h2 class="text-4xl mb-4" style="font-family: 'Libre Baskerville', serif;">By Topic<span class="color-pink ml-1"><b>.</b></span></h2>
+      <div class="pb-4">
+        <div class="text-xl">
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#confections">Confections</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#europe">A Touch of Europe</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#ice-cream">Ice Cream</a></div>
+          <div class="pb-4"><a class="text-3xl gradient-text" href="#baked-goods">Baked Goods</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-xl pb-10" id="confections">
     <h2 class="text-5xl" style="font-family: 'Libre Baskerville', serif;">
       Confections<span class="color-pink ml-1"><b>.</b></span>
     </h2>
@@ -42,7 +61,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <div class="pb-2 text-2xl">
+  <div class="pb-2 text-xl">
     <div class="flex flex-col justify-center items-center mb-16 mt-16">
       <OptimizedImage  src="/images/chattanooga_guides/shops/hot-chocolatier1.jpg" alt="The Hotchocolatier, outside photo. St Elmo, Chattanooga" />
       <div class="text-center">
@@ -51,7 +70,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </div>
 
-  <section class="text-2xl pb-10">
+  <section class="text-xl pb-10" id="europe">
     <h2 class="text-5xl" style="font-family: 'Libre Baskerville', serif;">
       A touch of Europe<span class="color-pink ml-1"><b>.</b></span>
     </h2>
@@ -96,7 +115,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>    
   </section>
 
-  <section class="text-2xl pb-10">
+  <section class="text-xl pb-10" id="ice-cream">
     <h2 class="text-5xl" style="font-family: 'Libre Baskerville', serif;">
       Ice cream<span class="color-pink ml-1"><b>.</b></span>
     </h2>
@@ -144,7 +163,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>    
   </section>
 
-  <section class="text-2xl pb-10">
+  <section class="text-xl pb-10" id="baked-goods">
     <h2 class="text-5xl" style="font-family: 'Libre Baskerville', serif;">
       Baked Goods<span class="color-pink ml-1"><b>.</b></span>
     </h2>
@@ -186,7 +205,7 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     </div>
   </section>  
 
-  <section class="text-2xl pb-10">
+  <section class="text-xl pb-10">
     <h2 class="text-4xl pb-5" style="font-family: 'Libre Baskerville', serif;">Breakdown and Wrap Up<span class="color-pink ml-1"><b>.</b></span></h2>
     <table class="min-w-full border border-gray-300 shadow-md rounded-lg overflow-hidden">
       <thead class="bg-gray-100 text-gray-700 uppercase text-sm">
