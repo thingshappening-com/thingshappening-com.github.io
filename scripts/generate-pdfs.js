@@ -103,8 +103,13 @@ async function generatePDFs() {
           .pb-5 a[href*=".pdf"] {
             display: none !important;
           }
-          iframe {
-            max-width: 100% !important;
+          /* Hide video iframes and YouTube embeds in PDFs */
+          iframe, .aspect-video, [class*="video"], [class*="youtube"] {
+            display: none !important;
+          }
+          /* Hide video containers */
+          .flex.justify-center.items-center {
+            display: none !important;
           }
         `
       });
