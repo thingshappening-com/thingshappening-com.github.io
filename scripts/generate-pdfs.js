@@ -99,6 +99,10 @@ async function generatePDFs() {
           nav {
             display: none !important;
           }
+          /* Hide PDF download buttons in PDFs */
+          .pb-5 a[href*=".pdf"] {
+            display: none !important;
+          }
           iframe {
             max-width: 100% !important;
           }
