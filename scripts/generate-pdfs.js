@@ -2,9 +2,23 @@ import puppeteer from 'puppeteer';
 import { globby } from 'globby';
 import fs from 'fs';
 import path from 'path';
+import http from 'http';
+import handler from 'serve-handler';
 
 async function generatePDFs() {
   console.log('Starting PDF generation...');
+
+  // Start a local server to serve the built files
+  const server = http.createServer((request, response) => {
+    return handler(request, response, {
+      public: './dist'
+    });
+  });
+
+  const serverPort = 4322; // Use the same port as Astro preview
+  server.listen(serverPort, () => {
+    console.log(`Running static server at http://localhost:${serverPort}`);
+  });
   
   // Find all guide MDX files
   const guideFiles = await globby('./src/pages/chattanooga/guides/*.mdx');
@@ -24,11 +38,16 @@ async function generatePDFs() {
   // Set viewport for consistent rendering
   await page.setViewport({ width: 1920, height: 1080 });
   
-  // Create PDFs directory structure if it doesn't exist
-  const pdfDir = './dist/pdfs/chattanooga';
-  if (!fs.existsSync(pdfDir)) {
-    fs.mkdirSync(pdfDir, { recursive: true });
-  }
+      // Create PDFs directory structure if it doesn't exist
+      const pdfDir = './dist/pdfs/chattanooga';
+      const publicPdfDir = './public/pdfs/chattanooga';
+      
+      if (!fs.existsSync(pdfDir)) {
+        fs.mkdirSync(pdfDir, { recursive: true });
+      }
+      if (!fs.existsSync(publicPdfDir)) {
+        fs.mkdirSync(publicPdfDir, { recursive: true });
+      }
   
   for (const file of mdxFiles) {
     try {
@@ -36,7 +55,7 @@ async function generatePDFs() {
       const filename = path.basename(file, '.mdx');
       
       // Convert to URL path (assuming your site structure)
-      const url = `http://localhost:4321/chattanooga/guides/${filename}`;
+      const url = `http://localhost:4322/chattanooga/guides/${filename}`;
       
       console.log(`Generating PDF for ${filename}...`);
       
@@ -86,22 +105,28 @@ async function generatePDFs() {
         `
       });
       
-      // Generate PDF
-      const pdfPath = `${pdfDir}/${filename}.pdf`;
-      await page.pdf({
-        path: pdfPath,
-        format: 'A4',
-        printBackground: true,
-        preferCSSPageSize: true,
-        margin: {
-          top: '0.5in',
-          right: '0.5in',
-          bottom: '0.5in',
-          left: '0.5in'
-        }
-      });
-      
-      console.log(`✅ Generated: ${pdfPath}`);
+          // Generate PDF
+          const pdfPath = `${pdfDir}/${filename}.pdf`;
+          const publicPdfPath = `${publicPdfDir}/${filename}.pdf`;
+          
+          await page.pdf({
+            path: pdfPath,
+            format: 'A4',
+            printBackground: true,
+            preferCSSPageSize: true,
+            margin: {
+              top: '0.5in',
+              right: '0.5in',
+              bottom: '0.5in',
+              left: '0.5in'
+            }
+          });
+
+          // Copy PDF to public directory for GitHub Pages
+          fs.copyFileSync(pdfPath, publicPdfPath);
+
+          console.log(`✅ Generated: ${pdfPath}`);
+          console.log(`✅ Copied to public: ${publicPdfPath}`);
       
     } catch (error) {
       console.error(`❌ Error generating PDF for ${file}:`, error.message);
@@ -109,6 +134,7 @@ async function generatePDFs() {
   }
   
   await browser.close();
+  server.close();
   console.log('PDF generation complete!');
 }
 
