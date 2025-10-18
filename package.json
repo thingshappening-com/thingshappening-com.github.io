@@ -2,17 +2,19 @@
   "name": "astro-theme-creek",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "postbuild": "node ./scripts/search/prepare-index.js",
+    "postbuild": "node ./scripts/search/prepare-index.js && node ./scripts/generate-pdfs.js",
     "preview": "astro preview"
   },
   "devDependencies": {
     "astro": "^5.2.5",
     "globby": "^14.0.0",
     "mark.js": "^8.11.1",
+    "puppeteer": "^24.25.0",
     "sass": "^1.67.0",
     "tailwindcss": "^3.3.3"
   },
