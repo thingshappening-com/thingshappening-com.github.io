@@ -6,7 +6,7 @@ import BlogPost from '../components/BlogPost.astro';
 const {content} = Astro.props;
 let {address, author, eventLink, readTime, originalDate, matchedDetails, eventDatesDetails, entranceCost, lastUpdated, ticketsLink, tags, title, time, description, pubDate, venue, venueDetails, hero, youtube,
   // Additional optional metadata
-  seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources} = content;
+  seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources, pageItems} = content;
 console.log(content)
 console.log("above")
 
@@ -24,7 +24,7 @@ title = title ? title : "";
     <Nav />
     <main class="overflow-hidden">
       <BlogPost tags={tags} author={author} readTime={readTime} matchedDetails={matchedDetails} originalDate={originalDate} lastUpdated={lastUpdated} eventDatesDetails={eventDatesDetails} address={address} eventLink={eventLink} entranceCost={entranceCost} ticketsLink={ticketsLink} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube}
-        seoDescription={seoDescription} featured={featured} geoCoverage={geoCoverage} neighborhoods={neighborhoods} seasonality={seasonality} accessibilityNotes={accessibilityNotes} parking={parking} kidFriendly={kidFriendly} petFriendly={petFriendly} bestFor={bestFor} sources={sources}
+        seoDescription={seoDescription} featured={featured} geoCoverage={geoCoverage} neighborhoods={neighborhoods} seasonality={seasonality} accessibilityNotes={accessibilityNotes} parking={parking} kidFriendly={kidFriendly} petFriendly={petFriendly} bestFor={bestFor} sources={sources} pageItems={pageItems}
       >
         <slot />
       </BlogPost>

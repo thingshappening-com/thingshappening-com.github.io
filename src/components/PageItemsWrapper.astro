@@ -1,0 +1,10 @@
+---
+import PageItems from './PageItems.astro';
+
+const { pageItems } = Astro.props;
+---
+
+{pageItems && pageItems.length > 0 && (
+  <PageItems items={pageItems} />
+)}
+

@@ -1,0 +1,38 @@
+---
+export interface Props {
+  items: Array<{
+    title: string;
+    description: string;
+    number: number;
+    tags: string[];
+  }>;
+}
+
+const { items } = Astro.props;
+const sortedItems = items.sort((a, b) => a.number - b.number);
+---
+
+{sortedItems.map((item) => (
+  <section key={item.number} class="text-xl pb-10">
+    <div>
+      <h2 class="text-3xl mb-4" style="font-family: 'Libre Baskerville', serif;">
+        <span class="text-gray-500 font-normal mr-2">{item.number}.</span>
+        {item.title}
+        <span class="color-pink ml-1"><b>.</b></span>
+      </h2>
+      <div class="pb-5">
+        {item.description}
+      </div>
+      <div class="pb-5">
+        <div class="flex flex-wrap gap-2">
+          {item.tags.map((tag) => (
+            <span key={tag} class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+))}
+
