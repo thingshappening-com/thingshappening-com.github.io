@@ -5,6 +5,7 @@ export interface Props {
     description: string;
     number: number;
     tags: string[];
+    photos?: string[];
   }>;
 }
 
@@ -26,6 +27,15 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
         {item.title}
         <span class="color-pink ml-1"><b>.</b></span>
       </h2>
+      {item.photos && item.photos.length > 0 && (
+        <div class="pb-5">
+          <div class="flex flex-wrap gap-4">
+            {item.photos.map((photo) => (
+              <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
+            ))}
+          </div>
+        </div>
+      )}
       <div class="pb-5">
         {item.description}
       </div>
