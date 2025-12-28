@@ -12,8 +12,14 @@ const { items } = Astro.props;
 const sortedItems = items.sort((a, b) => a.number - b.number);
 ---
 
+<div id="page-items-container">
+<div id="clear-filters" class="mb-4 hidden">
+  <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition-colors cursor-pointer">
+    Clear filters
+  </button>
+</div>
 {sortedItems.map((item) => (
-  <section key={item.number} class="text-xl pb-10">
+  <section key={item.number} class="page-item text-xl pb-10" data-tags={item.tags.join(',')}>
     <div>
       <h2 class="text-3xl mb-4" style="font-family: 'Libre Baskerville', serif;">
         <span class="text-gray-500 font-normal mr-2">{item.number}.</span>
@@ -26,7 +32,7 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
       <div class="pb-5">
         <div class="flex flex-wrap gap-2">
           {item.tags.map((tag) => (
-            <span key={tag} class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+            <span key={tag} class="page-item-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm cursor-pointer hover:bg-gray-200 transition-colors" data-tag={tag}>
               {tag}
             </span>
           ))}
@@ -35,4 +41,72 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
     </div>
   </section>
 ))}
+</div>
+
+<script>
+  (function() {
+    const container = document.getElementById('page-items-container');
+    if (!container) return;
+    
+    const items = container.querySelectorAll('.page-item');
+    const tags = container.querySelectorAll('.page-item-tag');
+    const clearFiltersBtn = document.getElementById('clear-filters');
+    let activeTag = null;
+    
+    function resetFilters() {
+      activeTag = null;
+      items.forEach(item => {
+        item.style.display = '';
+      });
+      tags.forEach(t => {
+        t.classList.remove('bg-blue-500', 'text-white');
+        t.classList.add('bg-gray-100', 'text-gray-700');
+      });
+      if (clearFiltersBtn) {
+        clearFiltersBtn.classList.add('hidden');
+      }
+    }
+    
+    function applyFilter(tagName) {
+      activeTag = tagName;
+      items.forEach(item => {
+        const itemTags = item.getAttribute('data-tags').split(',');
+        if (itemTags.includes(tagName)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      tags.forEach(t => {
+        if (t.getAttribute('data-tag') === tagName) {
+          t.classList.add('bg-blue-500', 'text-white');
+          t.classList.remove('bg-gray-100', 'text-gray-700');
+        } else {
+          t.classList.remove('bg-blue-500', 'text-white');
+          t.classList.add('bg-gray-100', 'text-gray-700');
+        }
+      });
+      if (clearFiltersBtn) {
+        clearFiltersBtn.classList.remove('hidden');
+      }
+    }
+    
+    if (clearFiltersBtn) {
+      clearFiltersBtn.querySelector('button').addEventListener('click', resetFilters);
+    }
+    
+    tags.forEach(tag => {
+      tag.addEventListener('click', function() {
+        const clickedTag = this.getAttribute('data-tag');
+        
+        // Toggle: if same tag clicked, show all; otherwise filter
+        if (activeTag === clickedTag) {
+          resetFilters();
+        } else {
+          applyFilter(clickedTag);
+        }
+      });
+    });
+  })();
+</script>
 
