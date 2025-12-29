@@ -46,7 +46,10 @@ export interface Props {
     description: string;
     order: number;
     tags: string[];
-    photos?: string[];
+    photoOptions?: {
+      photos: string[];
+      appearance?: 'before' | 'after' | 'inline';
+    };
   }>;
 }
 
@@ -160,7 +163,7 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
         description: item.description,
         number: item.order,
         tags: item.tags,
-        photos: item.photos
+        photoOptions: item.photoOptions
       }))} />
     </div>
   )}

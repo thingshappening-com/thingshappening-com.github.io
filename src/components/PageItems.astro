@@ -5,7 +5,10 @@ export interface Props {
     description: string;
     number: number;
     tags: string[];
-    photos?: string[];
+    photoOptions?: {
+      photos: string[];
+      appearance?: 'before' | 'after' | 'inline';
+    };
   }>;
 }
 
@@ -20,34 +23,52 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
   </button>
 </div>
 {sortedItems.map((item) => (
-  <section key={item.number} class="page-item text-xl pb-10" data-tags={item.tags.join(',')}>
+  <section class="page-item text-xl pb-10" data-tags={item.tags.join(',')}>
     <div>
+      {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'before' && (
+        <div class="pb-5">
+          <div class="flex flex-wrap gap-4">
+            {item.photoOptions.photos.map((photo) => (
+              <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
+            ))}
+          </div>
+        </div>
+      )}
       <h2 class="text-3xl mb-4" style="font-family: 'Libre Baskerville', serif;">
         <span class="text-gray-500 font-normal mr-2">{item.number}.</span>
         {item.title}
         <span class="color-pink ml-1"><b>.</b></span>
       </h2>
-      {item.photos && item.photos.length > 0 && (
+      <div class="pb-5">
+        {item.description}
+      </div>
+      {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'inline' && (
         <div class="pb-5">
           <div class="flex flex-wrap gap-4">
-            {item.photos.map((photo) => (
+            {item.photoOptions.photos.map((photo) => (
               <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
             ))}
           </div>
         </div>
       )}
       <div class="pb-5">
-        {item.description}
-      </div>
-      <div class="pb-5">
         <div class="flex flex-wrap gap-2">
           {item.tags.map((tag) => (
-            <span key={tag} class="page-item-tag px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm cursor-pointer hover:bg-gray-200 transition-colors" data-tag={tag}>
-              {tag}
+            <span class="page-item-tag px-3 py-1 text-white rounded-full text-sm cursor-pointer transition-colors" style="background-color: #1a4d2e;" data-tag={tag}>
+              #{tag}
             </span>
           ))}
         </div>
       </div>
+      {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && (item.photoOptions.appearance === 'after' || !item.photoOptions.appearance) && (
+        <div class="pb-5">
+          <div class="flex flex-wrap gap-4">
+            {item.photoOptions.photos.map((photo) => (
+              <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </section>
 ))}
@@ -69,8 +90,8 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
         item.style.display = '';
       });
       tags.forEach(t => {
-        t.classList.remove('bg-blue-500', 'text-white');
-        t.classList.add('bg-gray-100', 'text-gray-700');
+        t.style.backgroundColor = '#1a4d2e';
+        t.classList.add('text-white');
       });
       if (clearFiltersBtn) {
         clearFiltersBtn.classList.add('hidden');
@@ -89,11 +110,9 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
       });
       tags.forEach(t => {
         if (t.getAttribute('data-tag') === tagName) {
-          t.classList.add('bg-blue-500', 'text-white');
-          t.classList.remove('bg-gray-100', 'text-gray-700');
+          t.style.backgroundColor = '#3CB371';
         } else {
-          t.classList.remove('bg-blue-500', 'text-white');
-          t.classList.add('bg-gray-100', 'text-gray-700');
+          t.style.backgroundColor = '#1a4d2e';
         }
       });
       if (clearFiltersBtn) {
@@ -119,4 +138,10 @@ const sortedItems = items.sort((a, b) => a.number - b.number);
     });
   })();
 </script>
+
+<style>
+  .page-item-tag:hover {
+    background-color: #3CB371 !important;
+  }
+</style>
 
