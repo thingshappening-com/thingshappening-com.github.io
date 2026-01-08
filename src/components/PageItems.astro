@@ -9,139 +9,262 @@ export interface Props {
       photos: string[];
       appearance?: 'before' | 'after' | 'inline';
     };
+    links?: Array<{
+      text: string;
+      link: string;
+      target?: string;
+    }>;
   }>;
+  showClearFilters?: boolean;
 }
 
-const { items } = Astro.props;
+const { items, showClearFilters = false } = Astro.props;
 const sortedItems = items.sort((a, b) => a.number - b.number);
+
+// Get filter from URL query params
+const activeTag = Astro.url.searchParams.get('tags') || null;
+const filteredItems = activeTag 
+  ? sortedItems.filter(item => item.tags.includes(activeTag))
+  : sortedItems;
+
+// Get current URL without query params for clear filters link
+const currentPath = Astro.url.pathname;
 ---
 
-<div id="page-items-container">
-<div id="clear-filters" class="mb-4 hidden">
-  <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition-colors cursor-pointer">
-    Clear filters
-  </button>
-</div>
-{sortedItems.map((item) => (
-  <section class="page-item text-xl pb-10" data-tags={item.tags.join(',')}>
-    <div>
-      {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'before' && (
-        <div class="pb-5">
-          <div class="flex flex-wrap gap-4">
-            {item.photoOptions.photos.map((photo) => (
-              <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-            ))}
-          </div>
-        </div>
-      )}
-      <h2 class="text-3xl mb-4" style="font-family: 'Libre Baskerville', serif;">
-        <span class="text-gray-500 font-normal mr-2">{item.number}.</span>
-        {item.title}
-        <span class="color-pink ml-1"><b>.</b></span>
-      </h2>
-      <div class="pb-5">
-        {item.description}
-      </div>
-      {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'inline' && (
-        <div class="pb-5">
-          <div class="flex flex-wrap gap-4">
-            {item.photoOptions.photos.map((photo) => (
-              <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-            ))}
-          </div>
-        </div>
-      )}
-      <div class="pb-5">
-        <div class="flex flex-wrap gap-2">
-          {item.tags.map((tag) => (
-            <span class="page-item-tag px-3 py-1 text-white rounded-full text-sm cursor-pointer transition-colors" style="background-color: #1a4d2e;" data-tag={tag}>
-              #{tag}
-            </span>
-          ))}
-        </div>
-      </div>
-      {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && (item.photoOptions.appearance === 'after' || !item.photoOptions.appearance) && (
-        <div class="pb-5">
-          <div class="flex flex-wrap gap-4">
-            {item.photoOptions.photos.map((photo) => (
-              <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-            ))}
-          </div>
-        </div>
-      )}
+<div class="max-w-6xl mx-auto px-3 mb-5">
+  {showClearFilters && (
+    <div class="mb-4 mt-4">
+      <a href={currentPath} id="page-items-clear-filters" class={`px-4 py-2 text-white rounded-full text-sm transition-colors cursor-pointer inline-block ${activeTag ? '' : 'hidden'}`} style="background-color: #1a4d2e;">
+        Clear filters
+      </a>
     </div>
-  </section>
-))}
+  )}
+  
+  {filteredItems.map((item) => (
+    <section class="page-item text-xl pb-7" data-tags={item.tags.join(',')}>
+      <div>
+        {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'before' && (
+          <div class="pb-5">
+            <div class="flex flex-wrap gap-4">
+              {item.photoOptions.photos.map((photo) => (
+                <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
+              ))}
+            </div>
+          </div>
+        )}
+        <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">
+          <span class="text-gray-500 font-normal mr-2">{item.number}.</span>
+          {item.title}
+          <span class="color-pink ml-1"><b>.</b></span>
+        </h2>
+        <div class="pb-5">
+          {item.description}
+        </div>
+        {item.links && item.links.length > 0 && (
+          <div class="pb-5">
+            <div class="flex flex-wrap gap-4">
+              {item.links.map((link) => (
+                <a href={link.link} target={link.target || '_blank'} rel={link.target === '_blank' ? 'noopener noreferrer' : undefined} class="page-item-link text-logoDarkGreen underline">
+                  {link.text}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+        {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'inline' && (
+          <div class="pb-5">
+            <div class="flex flex-wrap gap-4">
+              {item.photoOptions.photos.map((photo) => (
+                <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
+              ))}
+            </div>
+          </div>
+        )}
+        <div class="pb-5">
+          <div class="flex flex-wrap gap-2">
+            {item.tags.map((tag) => {
+              const isActive = activeTag === tag;
+              const tagUrl = isActive ? currentPath : `${currentPath}?tags=${tag}`;
+              return (
+                <a href={tagUrl} class="page-item-tag px-3 py-1 text-white rounded-full text-sm cursor-pointer transition-colors font-normal no-underline" style={`background-color: ${isActive ? '#3CB371' : '#1a4d2e'};`} data-tag={tag}>
+                  #{tag}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+        {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && (item.photoOptions.appearance === 'after' || !item.photoOptions.appearance) && (
+          <div class="pb-5">
+            <div class="flex flex-wrap gap-4">
+              {item.photoOptions.photos.map((photo) => (
+                <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  ))}
 </div>
 
 <script>
-  (function() {
-    const container = document.getElementById('page-items-container');
-    if (!container) return;
+  document.addEventListener('DOMContentLoaded', function() {
+    const tagLinks = document.querySelectorAll('.page-item-tag');
+    const popularTags = document.querySelectorAll('.popular-tag');
+    const pageItems = document.querySelectorAll('.page-item');
+    const currentUrl = new URL(window.location.href);
+    const activeTag = currentUrl.searchParams.get('tags');
     
-    const items = container.querySelectorAll('.page-item');
-    const tags = container.querySelectorAll('.page-item-tag');
-    const clearFiltersBtn = document.getElementById('clear-filters');
-    let activeTag = null;
-    
-    function resetFilters() {
-      activeTag = null;
-      items.forEach(item => {
-        item.style.display = '';
-      });
-      tags.forEach(t => {
-        t.style.backgroundColor = '#1a4d2e';
-        t.classList.add('text-white');
-      });
-      if (clearFiltersBtn) {
-        clearFiltersBtn.classList.add('hidden');
-      }
-    }
-    
-    function applyFilter(tagName) {
-      activeTag = tagName;
-      items.forEach(item => {
-        const itemTags = item.getAttribute('data-tags').split(',');
-        if (itemTags.includes(tagName)) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-      tags.forEach(t => {
-        if (t.getAttribute('data-tag') === tagName) {
+    // Helper function to update all tag highlights
+    function updateTagHighlights(tag) {
+      // Update page-item tags
+      tagLinks.forEach(t => {
+        const tagValue = t.getAttribute('data-tag');
+        if (tagValue === tag) {
           t.style.backgroundColor = '#3CB371';
         } else {
           t.style.backgroundColor = '#1a4d2e';
         }
       });
-      if (clearFiltersBtn) {
-        clearFiltersBtn.classList.remove('hidden');
-      }
-    }
-    
-    if (clearFiltersBtn) {
-      clearFiltersBtn.querySelector('button').addEventListener('click', resetFilters);
-    }
-    
-    tags.forEach(tag => {
-      tag.addEventListener('click', function() {
-        const clickedTag = this.getAttribute('data-tag');
-        
-        // Toggle: if same tag clicked, show all; otherwise filter
-        if (activeTag === clickedTag) {
-          resetFilters();
+      
+      // Update popular tags
+      popularTags.forEach(t => {
+        const tagValue = t.getAttribute('data-tag');
+        if (tagValue === tag) {
+          t.style.backgroundColor = '#3CB371';
         } else {
-          applyFilter(clickedTag);
+          t.style.backgroundColor = '#1a4d2e';
+        }
+      });
+    }
+    
+    // Highlight tags on initial load
+    if (activeTag) {
+      updateTagHighlights(activeTag);
+    }
+    
+    // Handle page-item tag clicks
+    tagLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const tag = this.getAttribute('data-tag');
+        const currentUrl = new URL(window.location.href);
+        const currentTag = currentUrl.searchParams.get('tags');
+        let newTag = null;
+        
+        if (currentTag === tag) {
+          // Remove filter if clicking the same tag
+          currentUrl.searchParams.delete('tags');
+        } else {
+          // Set new filter
+          currentUrl.searchParams.set('tags', tag);
+          newTag = tag;
+        }
+        
+        // Update URL without page reload
+        window.history.pushState({}, '', currentUrl.toString());
+        
+        // Filter items client-side
+        pageItems.forEach(item => {
+          const itemTags = item.getAttribute('data-tags');
+          if (!newTag || itemTags.includes(newTag)) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        
+        // Update all tag highlights
+        updateTagHighlights(newTag);
+        
+        // Update clear filters button
+        const clearBtn = document.getElementById('page-items-clear-filters');
+        if (clearBtn) {
+          if (newTag) {
+            clearBtn.classList.remove('hidden');
+          } else {
+            clearBtn.classList.add('hidden');
+          }
         }
       });
     });
-  })();
+    
+    // Handle popular tag clicks
+    popularTags.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const tag = this.getAttribute('data-tag');
+        const currentUrl = new URL(window.location.href);
+        const currentTag = currentUrl.searchParams.get('tags');
+        let newTag = null;
+        
+        if (currentTag === tag) {
+          // Remove filter if clicking the same tag
+          currentUrl.searchParams.delete('tags');
+        } else {
+          // Set new filter
+          currentUrl.searchParams.set('tags', tag);
+          newTag = tag;
+        }
+        
+        // Update URL without page reload
+        window.history.pushState({}, '', currentUrl.toString());
+        
+        // Filter items client-side
+        pageItems.forEach(item => {
+          const itemTags = item.getAttribute('data-tags');
+          if (!newTag || itemTags.includes(newTag)) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        
+        // Update all tag highlights
+        updateTagHighlights(newTag);
+        
+        // Update clear filters button
+        const clearBtn = document.getElementById('page-items-clear-filters');
+        if (clearBtn) {
+          if (newTag) {
+            clearBtn.classList.remove('hidden');
+          } else {
+            clearBtn.classList.add('hidden');
+          }
+        }
+      });
+    });
+    
+    // Clear filters button handler
+    const clearBtn = document.getElementById('page-items-clear-filters');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const currentUrl = new URL(window.location.href);
+        currentUrl.searchParams.delete('tags');
+        window.history.pushState({}, '', currentUrl.toString());
+        
+        // Show all items
+        pageItems.forEach(item => {
+          item.style.display = '';
+        });
+        
+        // Reset all tag highlights
+        updateTagHighlights(null);
+        
+        // Hide clear button
+        clearBtn.classList.add('hidden');
+      });
+    }
+  });
 </script>
 
 <style>
-  .page-item-tag:hover {
+  .page-item-tag:hover,
+  .popular-tag:hover {
     background-color: #3CB371 !important;
   }
+  .page-item-link {
+    text-decoration-color: #3CB371;
+  }
 </style>
-

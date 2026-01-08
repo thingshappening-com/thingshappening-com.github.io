@@ -1,0 +1,40 @@
+---
+import PageItems from './PageItems.astro';
+
+export interface Props {
+  pageItems?: Array<{
+    title: string;
+    description: string;
+    order: number;
+    tags: string[];
+    photoOptions?: {
+      photos: string[];
+      appearance?: 'before' | 'after' | 'inline';
+    };
+    links?: Array<{
+      text: string;
+      link: string;
+      target?: string;
+    }>;
+  }>;
+  showClearFilters?: boolean;
+}
+
+const { pageItems, showClearFilters = false } = Astro.props;
+
+if (!pageItems || pageItems.length === 0) {
+  return null;
+}
+
+const mappedPageItems = pageItems.map(item => ({
+  title: item.title,
+  description: item.description,
+  number: item.order,
+  tags: item.tags,
+  photoOptions: item.photoOptions,
+  links: item.links
+}));
+---
+
+<PageItems items={mappedPageItems} showClearFilters={showClearFilters} />
+

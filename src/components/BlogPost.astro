@@ -1,7 +1,6 @@
 ---
 // import EmailSignup from './Subscribe/EmailSignup.astro'
 import dayjs from 'dayjs'
-import PageItemsWrapper from './PageItemsWrapper.astro';
 
 export interface Props {
   // Core post metadata
@@ -154,19 +153,6 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
       </div>
     )}
   </div>
-
-  <!-- Page Items -->
-  {pageItems && pageItems.length > 0 && (
-    <div class="max-w-6xl mx-auto px-3 mt-8 mb-8">
-      <PageItemsWrapper pageItems={pageItems.map(item => ({
-        title: item.title,
-        description: item.description,
-        number: item.order,
-        tags: item.tags,
-        photoOptions: item.photoOptions
-      }))} />
-    </div>
-  )}
 
   <!-- Content -->
   <section class="max-w-6xl mx-auto content font-body">

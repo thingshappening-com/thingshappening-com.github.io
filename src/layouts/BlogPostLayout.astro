@@ -26,7 +26,7 @@ title = title ? title : "";
       <BlogPost tags={tags} author={author} readTime={readTime} matchedDetails={matchedDetails} originalDate={originalDate} lastUpdated={lastUpdated} eventDatesDetails={eventDatesDetails} address={address} eventLink={eventLink} entranceCost={entranceCost} ticketsLink={ticketsLink} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube}
         seoDescription={seoDescription} featured={featured} geoCoverage={geoCoverage} neighborhoods={neighborhoods} seasonality={seasonality} accessibilityNotes={accessibilityNotes} parking={parking} kidFriendly={kidFriendly} petFriendly={petFriendly} bestFor={bestFor} sources={sources} pageItems={pageItems}
       >
-        <slot />
+        <slot pageItems={pageItems} />
       </BlogPost>
     </main>
   </body>
