@@ -34,7 +34,7 @@ const currentPath = Astro.url.pathname;
 <div class="max-w-6xl mx-auto px-3 mb-5">
   {showClearFilters && (
     <div class="mb-4 mt-4">
-      <a href={currentPath} id="page-items-clear-filters" class={`px-4 py-2 text-white rounded-full text-sm transition-colors cursor-pointer inline-block ${activeTag ? '' : 'hidden'}`} style="background-color: #1a4d2e;">
+      <a href={currentPath} id="page-items-clear-filters" class={`px-5 py-2 text-white rounded-full text-sm transition-colors cursor-pointer inline-block ${activeTag ? '' : 'hidden'}`} style="background-color: #1a4d2e;">
         Clear filters
       </a>
     </div>
@@ -86,7 +86,7 @@ const currentPath = Astro.url.pathname;
               const isActive = activeTag === tag;
               const tagUrl = isActive ? currentPath : `${currentPath}?tags=${tag}`;
               return (
-                <a href={tagUrl} class="page-item-tag px-3 py-1 text-white rounded-full text-sm cursor-pointer transition-colors font-normal no-underline" style={`background-color: ${isActive ? '#3CB371' : '#1a4d2e'};`} data-tag={tag}>
+                <a href={tagUrl} class="page-item-tag px-5 py-2 text-white rounded-full text-sm cursor-pointer transition-colors font-normal no-underline" style={`background-color: ${isActive ? '#3CB371' : '#1a4d2e'};`} data-tag={tag}>
                   #{tag}
                 </a>
               );
