@@ -16,8 +16,12 @@ const seoDescription = 'Helping you explore and enjoy your local city! Things Ha
 const description = "A place to find things happening in";
 const city = "Chattanooga";
 
-const allGuides = await Astro.glob('./chattanooga/guides/*.mdx');
-const allEvents = await Astro.glob('./chattanooga/**/**/*.mdx');
+const allGuides = (await Astro.glob('./chattanooga/guides/*.mdx')).filter(
+  (post) => post.frontmatter.published !== false
+);
+const allEvents = (await Astro.glob('./chattanooga/**/**/*.mdx')).filter(
+  (post) => post.frontmatter.published !== false
+);
 
 // Format guides
 const guides = allGuides.map((p) => ({

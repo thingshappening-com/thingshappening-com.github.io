@@ -16,7 +16,9 @@ const title = 'thingshappening';
 const description = 'An easier way to find  things to do in greater Chattanooga';
 const seoDescription = 'An easier way to find  things happening';
 
-let allPosts = await Astro.glob<MarkdownFrontmatter>('../*/*/*.mdx');
+let allPosts = (await Astro.glob<MarkdownFrontmatter>('../*/*/*.mdx')).filter(
+  (post) => post.frontmatter.published !== false
+);
 
 let allPostsIncludingMultipleDates = [];
 

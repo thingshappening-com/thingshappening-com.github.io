@@ -12,7 +12,9 @@ const seoDescription = 'In-depth guides to exploring Chattanooga – from outdoo
 const description = 'A growing library of curated, in-depth guides to';
 const city = 'Chattanooga';
 
-const allGuides = await Astro.glob('./*.mdx');
+const allGuides = (await Astro.glob('./*.mdx')).filter(
+  (post) => post.frontmatter.published !== false
+);
 const sortedGuides = allGuides
   .map((p) => ({ ...p.frontmatter, url: p.url }))
   .sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));

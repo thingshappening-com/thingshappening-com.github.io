@@ -6,7 +6,9 @@ import SubNav from '../../../components/SubNav.astro';
 import BaseHead from '../../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../../**/**/*.mdx');
+  const allPosts = (await Astro.glob('../../**/**/*.mdx')).filter(
+    (post) => post.frontmatter.published !== false
+  );
 
   let tags = new Set(
     allPosts.flatMap(post =>
@@ -30,7 +32,7 @@ const { tag } = Astro.params;
 
 // Get only events that have a tag matching the current tag param
 const filteredEvents = (await Astro.glob('../../**/**/*.mdx')).filter(post =>
-  post.frontmatter.tags?.some(t => t.type === "event" && t.tag === tag)
+  post.frontmatter.published !== false && post.frontmatter.tags?.some(t => t.type === "event" && t.tag === tag)
 );
 
 

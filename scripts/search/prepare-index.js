@@ -38,9 +38,15 @@ import grayMatter from "gray-matter";
     let i = 0;
     for await (let file of files) {
       const {
-        data: { title, description, tags, eventDates },
+        data: { title, description, tags, eventDates, published },
         content,
       } = grayMatter(file);
+      
+      // Skip files with published: false
+      if (published === false) {
+        i++;
+        continue;
+      }
 
       // TODO: youll continuously need to update this when you add things like:
       // new cities, new content types, etc
