@@ -193,7 +193,7 @@ const currentPath = Astro.url.pathname;
         distanceSection.style.display = '';
         
         // Get all distance tags available in items that match current filters
-        const distanceTags = ['1-to-2-miles', '3-to-5-miles', '10-plus-miles'];
+        const distanceTags = ['1-to-2-miles', '3-to-5-miles', '10-to-20-miles', '20-plus-miles'];
         const availableDistanceTags = new Set();
         
         pageItems.forEach(item => {
@@ -232,10 +232,17 @@ const currentPath = Astro.url.pathname;
     // Helper function to toggle a tag
     function toggleTag(clickedTag) {
       let activeTags = getActiveTags();
+      const activityTags = ['biking', 'hiking', 'paddling', 'climbing'];
+      const distanceTags = ['1-to-2-miles', '3-to-5-miles', '10-to-20-miles', '20-plus-miles'];
       
       if (activeTags.includes(clickedTag)) {
         // Remove tag if already active
         activeTags = activeTags.filter(tag => tag !== clickedTag);
+        
+        // If removing an activity tag, also remove all distance tags
+        if (activityTags.includes(clickedTag)) {
+          activeTags = activeTags.filter(tag => !distanceTags.includes(tag));
+        }
       } else {
         // Add tag if not active
         activeTags.push(clickedTag);
