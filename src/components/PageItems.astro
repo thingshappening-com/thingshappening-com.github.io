@@ -21,10 +21,11 @@ export interface Props {
 const { items, showClearFilters = false } = Astro.props;
 const sortedItems = items.sort((a, b) => a.number - b.number);
 
-// Get filter from URL query params
-const activeTag = Astro.url.searchParams.get('tags') || null;
-const filteredItems = activeTag 
-  ? sortedItems.filter(item => item.tags.includes(activeTag))
+// Get filter from URL query params (supports multiple tags comma-separated)
+const activeTagsParam = Astro.url.searchParams.get('tags') || null;
+const activeTags = activeTagsParam ? activeTagsParam.split(',').filter(t => t.trim()) : [];
+const filteredItems = activeTags.length > 0
+  ? sortedItems.filter(item => activeTags.every(tag => item.tags.includes(tag)))
   : sortedItems;
 
 // Get current URL without query params for clear filters link
@@ -34,7 +35,7 @@ const currentPath = Astro.url.pathname;
 <div class="max-w-6xl mx-auto px-3 mb-5">
   {showClearFilters && (
     <div class="mb-4 mt-4">
-      <a href={currentPath} id="page-items-clear-filters" class={`px-5 py-2 text-white rounded-full text-sm transition-colors cursor-pointer inline-block ${activeTag ? '' : 'hidden'}`} style="background-color: #1a4d2e;">
+      <a href={currentPath} id="page-items-clear-filters" class={`px-5 py-2 text-white rounded-full text-sm transition-colors cursor-pointer inline-block ${activeTags.length > 0 ? '' : 'hidden'}`} style="background-color: #1a4d2e;">
         Clear filters
       </a>
     </div>
@@ -83,8 +84,16 @@ const currentPath = Astro.url.pathname;
         <div class="pb-5">
           <div class="flex flex-wrap gap-2">
             {item.tags.map((tag) => {
-              const isActive = activeTag === tag;
-              const tagUrl = isActive ? currentPath : `${currentPath}?tags=${tag}`;
+              const isActive = activeTags.includes(tag);
+              // Build URL: if tag is active, remove it; otherwise add it
+              let tagUrl;
+              if (isActive) {
+                const newTags = activeTags.filter(t => t !== tag);
+                tagUrl = newTags.length > 0 ? `${currentPath}?tags=${newTags.join(',')}` : currentPath;
+              } else {
+                const newTags = [...activeTags, tag];
+                tagUrl = `${currentPath}?tags=${newTags.join(',')}`;
+              }
               return (
                 <a href={tagUrl} class="page-item-tag px-5 py-2 text-white rounded-full text-sm cursor-pointer transition-colors font-normal no-underline" style={`background-color: ${isActive ? '#3CB371' : '#1a4d2e'};`} data-tag={tag}>
                   #{tag}
@@ -112,15 +121,48 @@ const currentPath = Astro.url.pathname;
     const tagLinks = document.querySelectorAll('.page-item-tag');
     const clickableFilterTags = document.querySelectorAll('.clickable-filter-tag');
     const pageItems = document.querySelectorAll('.page-item');
-    const currentUrl = new URL(window.location.href);
-    const activeTag = currentUrl.searchParams.get('tags');
+    
+    // Helper function to get active tags from URL
+    function getActiveTags() {
+      const currentUrl = new URL(window.location.href);
+      const activeTagsParam = currentUrl.searchParams.get('tags');
+      return activeTagsParam ? activeTagsParam.split(',').filter(t => t.trim()) : [];
+    }
+    
+    // Helper function to update URL with active tags
+    function updateUrlWithTags(activeTags) {
+      const currentUrl = new URL(window.location.href);
+      if (activeTags.length > 0) {
+        currentUrl.searchParams.set('tags', activeTags.join(','));
+      } else {
+        currentUrl.searchParams.delete('tags');
+      }
+      window.history.pushState({}, '', currentUrl.toString());
+    }
+    
+    // Helper function to filter items based on active tags
+    function filterItems(activeTags) {
+      pageItems.forEach(item => {
+        const itemTags = item.getAttribute('data-tags');
+        const itemTagsArray = itemTags ? itemTags.split(',').map(t => t.trim()) : [];
+        
+        if (activeTags.length === 0) {
+          // Show all items if no filters
+          item.style.display = '';
+        } else {
+          // Show item only if it has ALL active tags (AND logic)
+          const hasAllTags = activeTags.every(tag => itemTagsArray.includes(tag));
+          item.style.display = hasAllTags ? '' : 'none';
+        }
+      });
+    }
     
     // Helper function to update all tag highlights
-    function updateTagHighlights(tag) {
+    function updateTagHighlights(activeTags) {
       // Update page-item tags
       tagLinks.forEach(t => {
         const tagValue = t.getAttribute('data-tag');
-        if (tagValue === tag) {
+        if (activeTags.includes(tagValue)) {
           t.style.backgroundColor = '#3CB371';
         } else {
           t.style.backgroundColor = '#1a4d2e';
@@ -130,7 +172,7 @@ const currentPath = Astro.url.pathname;
       // Update clickable filter tags
       clickableFilterTags.forEach(t => {
         const tagValue = t.getAttribute('data-tag');
-        if (tagValue === tag) {
+        if (activeTags.includes(tagValue)) {
           t.style.backgroundColor = '#3CB371';
         } else {
           t.style.backgroundColor = '#1a4d2e';
@@ -138,54 +180,104 @@ const currentPath = Astro.url.pathname;
       });
     }
     
-    // Highlight tags on initial load
-    if (activeTag) {
-      updateTagHighlights(activeTag);
+    // Helper function to show/hide distance filters based on activity selection
+    function updateDistanceFiltersVisibility(activeTags) {
+      const distanceSection = document.getElementById('distance-filters-section');
+      if (!distanceSection) return;
+      
+      const activityTags = ['biking', 'hiking', 'paddling', 'climbing'];
+      const hasActivity = activityTags.some(activity => activeTags.includes(activity));
+      
+      if (hasActivity) {
+        // Show distance filters section
+        distanceSection.style.display = '';
+        
+        // Get all distance tags available in items that match current filters
+        const distanceTags = ['1-to-2-miles', '3-to-5-miles', '10-plus-miles'];
+        const availableDistanceTags = new Set();
+        
+        pageItems.forEach(item => {
+          const itemTags = item.getAttribute('data-tags');
+          if (!itemTags) return;
+          
+          const itemTagsArray = itemTags.split(',').map(t => t.trim());
+          
+          // Check if item matches current filters (excluding distance tags)
+          const nonDistanceTags = activeTags.filter(tag => !distanceTags.includes(tag));
+          if (nonDistanceTags.length === 0 || nonDistanceTags.every(tag => itemTagsArray.includes(tag))) {
+            // Item matches, add its distance tags to available set
+            itemTagsArray.forEach(tag => {
+              if (distanceTags.includes(tag)) {
+                availableDistanceTags.add(tag);
+              }
+            });
+          }
+        });
+        
+        // Show/hide individual distance filter tags
+        distanceSection.querySelectorAll('.clickable-filter-tag').forEach(tagEl => {
+          const tagValue = tagEl.getAttribute('data-tag');
+          if (availableDistanceTags.has(tagValue)) {
+            tagEl.style.display = '';
+          } else {
+            tagEl.style.display = 'none';
+          }
+        });
+      } else {
+        // Hide distance filters section
+        distanceSection.style.display = 'none';
+      }
     }
+    
+    // Helper function to toggle a tag
+    function toggleTag(clickedTag) {
+      let activeTags = getActiveTags();
+      
+      if (activeTags.includes(clickedTag)) {
+        // Remove tag if already active
+        activeTags = activeTags.filter(tag => tag !== clickedTag);
+      } else {
+        // Add tag if not active
+        activeTags.push(clickedTag);
+      }
+      
+      // Update URL
+      updateUrlWithTags(activeTags);
+      
+      // Filter items
+      filterItems(activeTags);
+      
+      // Update highlights
+      updateTagHighlights(activeTags);
+      
+      // Update distance filters visibility
+      updateDistanceFiltersVisibility(activeTags);
+      
+      // Update clear filters button
+      const clearBtn = document.getElementById('page-items-clear-filters');
+      if (clearBtn) {
+        if (activeTags.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+      }
+    }
+    
+    // Highlight tags on initial load
+    const initialActiveTags = getActiveTags();
+    if (initialActiveTags.length > 0) {
+      updateTagHighlights(initialActiveTags);
+      filterItems(initialActiveTags);
+    }
+    updateDistanceFiltersVisibility(initialActiveTags);
     
     // Handle page-item tag clicks
     tagLinks.forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const tag = this.getAttribute('data-tag');
-        const currentUrl = new URL(window.location.href);
-        const currentTag = currentUrl.searchParams.get('tags');
-        let newTag = null;
-        
-        if (currentTag === tag) {
-          // Remove filter if clicking the same tag
-          currentUrl.searchParams.delete('tags');
-        } else {
-          // Set new filter
-          currentUrl.searchParams.set('tags', tag);
-          newTag = tag;
-        }
-        
-        // Update URL without page reload
-        window.history.pushState({}, '', currentUrl.toString());
-        
-        // Filter items client-side
-        pageItems.forEach(item => {
-          const itemTags = item.getAttribute('data-tags');
-          if (!newTag || itemTags.includes(newTag)) {
-            item.style.display = '';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-        
-        // Update all tag highlights
-        updateTagHighlights(newTag);
-        
-        // Update clear filters button
-        const clearBtn = document.getElementById('page-items-clear-filters');
-        if (clearBtn) {
-          if (newTag) {
-            clearBtn.classList.remove('hidden');
-          } else {
-            clearBtn.classList.add('hidden');
-          }
-        }
+        toggleTag(tag);
       });
     });
     
@@ -194,44 +286,7 @@ const currentPath = Astro.url.pathname;
       link.addEventListener('click', function(e) {
         e.preventDefault();
         const tag = this.getAttribute('data-tag');
-        const currentUrl = new URL(window.location.href);
-        const currentTag = currentUrl.searchParams.get('tags');
-        let newTag = null;
-        
-        if (currentTag === tag) {
-          // Remove filter if clicking the same tag
-          currentUrl.searchParams.delete('tags');
-        } else {
-          // Set new filter
-          currentUrl.searchParams.set('tags', tag);
-          newTag = tag;
-        }
-        
-        // Update URL without page reload
-        window.history.pushState({}, '', currentUrl.toString());
-        
-        // Filter items client-side
-        pageItems.forEach(item => {
-          const itemTags = item.getAttribute('data-tags');
-          if (!newTag || itemTags.includes(newTag)) {
-            item.style.display = '';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-        
-        // Update all tag highlights
-        updateTagHighlights(newTag);
-        
-        // Update clear filters button
-        const clearBtn = document.getElementById('page-items-clear-filters');
-        if (clearBtn) {
-          if (newTag) {
-            clearBtn.classList.remove('hidden');
-          } else {
-            clearBtn.classList.add('hidden');
-          }
-        }
+        toggleTag(tag);
       });
     });
     
@@ -240,17 +295,18 @@ const currentPath = Astro.url.pathname;
     if (clearBtn) {
       clearBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        const currentUrl = new URL(window.location.href);
-        currentUrl.searchParams.delete('tags');
-        window.history.pushState({}, '', currentUrl.toString());
+        
+        // Clear all tags
+        updateUrlWithTags([]);
         
         // Show all items
-        pageItems.forEach(item => {
-          item.style.display = '';
-        });
+        filterItems([]);
         
         // Reset all tag highlights
-        updateTagHighlights(null);
+        updateTagHighlights([]);
+        
+        // Hide distance filters section
+        updateDistanceFiltersVisibility([]);
         
         // Hide clear button
         clearBtn.classList.add('hidden');

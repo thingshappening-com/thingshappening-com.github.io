@@ -59,7 +59,7 @@
     {title: "Lula Lake Classic Loop", order: 45, tags: ["lookout-mtn", "hike", "waterfall"], links: [{text: "Availability Details", link: "https://www.lulalake.org/visit.html"}, {text: "More Information", link: "https://www.alltrails.com/trail/us/georgia/lula-lake-classic-loop"}], description: "The Lula Lake area is privately owned by the Lula Lake Land Trust. It is not frequently open to visitors so check the availability link for preparing your visit. Once planned, this 4 mile loop will take you to a scenic waterfall and lake, be prepared for crowds near the falls."},
     {title: "Bike Chickamauga Battlefield Road Loop", order: 46, tags: ["chickamauga-battlefield", "10-plus-miles", "biking"], links: [{text: "More Information", link: "https://www.alltrails.com/trail/us/georgia/chickamauga-battlefield-road-loop"}], description: "A road ride through history. Ride through the well preserved history and nature of the Chickamauga Battlefield park. This is an easy ride with lots of opportunity to stop and take in some of the historic sites. Expect other bikers on the route as well."},
     {title: "Bike or hike Raccoon Mountain Reservoir Loop", order: 47, tags: ["raccoon-mtn", "10-plus-miles","biking", "hiking"], links: [{text: "More Information", link: "https://www.alltrails.com/trail/us/tennessee/raccoon-mountain-reservoir-loop"}], description: "A 14 mile technical trail loop. It's considered moderately difficult but the distance and 1450ft of elevation gain put it close to a hard route. Handfuls of opportunities for scenic views on this lap around the mountain. The trails were built for MTB but are multi-use so look out for one another."},
-    {title: "", order: 1, tags: [], links: [{text: "More Information", link: ""}], description: ""}
+    {title: "Bike or hike", order: 48, tags: [], links: [{text: "More Information", link: ""}], description: ""}
     # {title: "Bike or hik Raccoon Mountain Reservoir Loop", order: 47, tags: ["raccoon-mtn", "10-plus-miles","biking", "hiking"], links: [{text: "More Information", link: "https://www.alltrails.com/trail/us/tennessee/raccoon-mountain-reservoir-loop"}], description: "A 14 mile technical trail loop. It's considered moderately difficult but the distance and 1450ft of elevation gain put it close to a hard route. Handfuls of opportunities for scenic views on this lap around the mountain. The trails were built for MTB but are multi-use so look out for one another."},
   ]
   itemTemplate: {title: "", order: 1, tags: [], links: [{text: "More Information", link: ""}], description: ""}
@@ -98,6 +98,16 @@ import PageItemsFromFrontmatter from '../../../components/PageItemsFromFrontmatt
       </div>
     </div>
   </div>
+  <div class="max-w-6xl mx-auto px-3" id="distance-filters-section" style="display: none;">
+    <div class="flex flex-col md:flex-row md:items-center mb-3 pb-3 gap-2 md:gap-6">
+      <h2 class="text-[2.5rem] mb-0" style="font-family: 'Libre Baskerville', serif;">Distance<span class="color-pink ml-1"><b>:</b></span></h2>
+      <div class="flex flex-wrap gap-2">
+        <a href="/chattanooga/guides/outdoor-adventures?tags=1-to-2-miles" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="1-to-2-miles">1-2 Miles</a>
+        <a href="/chattanooga/guides/outdoor-adventures?tags=3-to-5-miles" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="3-to-5-miles">3-5 Miles</a>
+        <a href="/chattanooga/guides/outdoor-adventures?tags=10-plus-miles" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="10-plus-miles">10+ Miles</a>
+      </div>
+    </div>
+  </div>
   <div class="max-w-6xl mx-auto px-3">
     <div class="flex flex-col md:flex-row md:items-start gap-2 md:gap-6">
       <h2 class="text-[2.5rem] mb-0" style="font-family: 'Libre Baskerville', serif;">Places<span class="color-pink ml-1"><b>:</b></span></h2>
@@ -120,6 +130,7 @@ import PageItemsFromFrontmatter from '../../../components/PageItemsFromFrontmatt
         <a href="/chattanooga/guides/outdoor-adventures?tags=kid-friendly" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="kid-friendly">Kid Friendly</a>
         <a href="/chattanooga/guides/outdoor-adventures?tags=waterfalls" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="waterfalls">Waterfall</a>
         <a href="/chattanooga/guides/outdoor-adventures?tags=farm" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="farm">Farm</a>
+        <a href="/chattanooga/guides/outdoor-adventures?tags=cave" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="cave">Cave</a>
         <a href="/chattanooga/guides/outdoor-adventures?tags=other" class="clickable-filter-tag px-5 py-2 text-white rounded-full text-base cursor-pointer transition-colors font-normal no-underline" style="background-color: #1a4d2e;" data-tag="other">Other</a>
       </div>
     </div>
