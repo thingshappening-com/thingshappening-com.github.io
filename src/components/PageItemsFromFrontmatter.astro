@@ -18,9 +18,10 @@ export interface Props {
     }>;
   }>;
   showClearFilters?: boolean;
+  placeDescriptions?: Record<string, { title: string; description: string }>;
 }
 
-const { pageItems, showClearFilters = false } = Astro.props;
+const { pageItems, showClearFilters = false, placeDescriptions = {} } = Astro.props;
 
 if (!pageItems || pageItems.length === 0) {
   return null;
@@ -36,5 +37,5 @@ const mappedPageItems = pageItems.map(item => ({
 }));
 ---
 
-<PageItems items={mappedPageItems} showClearFilters={showClearFilters} />
+<PageItems items={mappedPageItems} showClearFilters={showClearFilters} placeDescriptions={placeDescriptions} />
 

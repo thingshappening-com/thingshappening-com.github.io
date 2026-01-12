@@ -16,9 +16,10 @@ export interface Props {
     }>;
   }>;
   showClearFilters?: boolean;
+  placeDescriptions?: Record<string, { title: string; description: string }>;
 }
 
-const { items, showClearFilters = false } = Astro.props;
+const { items, showClearFilters = false, placeDescriptions = {} } = Astro.props;
 const sortedItems = items.sort((a, b) => a.number - b.number);
 
 // Get filter from URL query params (supports multiple tags comma-separated)
@@ -30,6 +31,10 @@ const filteredItems = activeTags.length > 0
 
 // Get current URL without query params for clear filters link
 const currentPath = Astro.url.pathname;
+
+// Get place description if exactly one place tag is selected
+const activePlaceTags = activeTags.filter(tag => tag in placeDescriptions);
+const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activePlaceTags[0]] : null;
 ---
 
 <div class="max-w-6xl mx-auto px-3 mb-5">
@@ -40,6 +45,15 @@ const currentPath = Astro.url.pathname;
       </a>
     </div>
   )}
+  
+  {/* Place description - shown when exactly one place tag is selected */}
+  <div id="place-description-section" class={`mb-6 pb-4 ${activePlaceInfo ? '' : 'hidden'}`} data-place-descriptions={JSON.stringify(placeDescriptions)}>
+    <h2 id="place-description-title" class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">
+      {activePlaceInfo?.title}
+      <span class="color-pink ml-1"><b>.</b></span>
+    </h2>
+    <p id="place-description-text" class="text-xl">{activePlaceInfo?.description}</p>
+  </div>
   
   {filteredItems.map((item) => (
     <section class="page-item text-xl pb-7" data-tags={item.tags.join(',')}>
@@ -180,6 +194,24 @@ const currentPath = Astro.url.pathname;
       });
     }
     
+    // Helper function to show/hide place description based on single place tag selection
+    function updatePlaceDescription(activeTags) {
+      const section = document.getElementById('place-description-section');
+      if (!section) return;
+      
+      const descriptions = JSON.parse(section.dataset.placeDescriptions || '{}');
+      const activePlaceTags = activeTags.filter(tag => tag in descriptions);
+      const info = activePlaceTags.length === 1 ? descriptions[activePlaceTags[0]] : null;
+      
+      if (info) {
+        document.getElementById('place-description-title').innerHTML = `${info.title}<span class="color-pink ml-1"><b>.</b></span>`;
+        document.getElementById('place-description-text').textContent = info.description;
+        section.classList.remove('hidden');
+      } else {
+        section.classList.add('hidden');
+      }
+    }
+    
     // Helper function to show/hide distance filters based on activity selection
     function updateDistanceFiltersVisibility(activeTags) {
       const distanceSection = document.getElementById('distance-filters-section');
@@ -189,11 +221,8 @@ const currentPath = Astro.url.pathname;
       const hasActivity = activityTags.some(activity => activeTags.includes(activity));
       
       if (hasActivity) {
-        // Show distance filters section
-        distanceSection.style.display = '';
-        
         // Get all distance tags available in items that match current filters
-        const distanceTags = ['1-to-2-miles', '3-to-5-miles', '10-to-20-miles', '20-plus-miles'];
+        const distanceTags = ['1-to-2-miles', '3-to-5-miles', '5-to-10-miles', '10-to-20-miles', '20-plus-miles'];
         const availableDistanceTags = new Set();
         
         pageItems.forEach(item => {
@@ -214,6 +243,15 @@ const currentPath = Astro.url.pathname;
           }
         });
         
+        // Only show distance section if there are distance tags available
+        if (availableDistanceTags.size === 0) {
+          distanceSection.style.display = 'none';
+          return;
+        }
+        
+        // Show distance filters section
+        distanceSection.style.display = '';
+        
         // Show/hide individual distance filter tags
         distanceSection.querySelectorAll('.clickable-filter-tag').forEach(tagEl => {
           const tagValue = tagEl.getAttribute('data-tag');
@@ -233,7 +271,7 @@ const currentPath = Astro.url.pathname;
     function toggleTag(clickedTag) {
       let activeTags = getActiveTags();
       const activityTags = ['biking', 'hiking', 'paddling', 'climbing'];
-      const distanceTags = ['1-to-2-miles', '3-to-5-miles', '10-to-20-miles', '20-plus-miles'];
+      const distanceTags = ['1-to-2-miles', '3-to-5-miles', '5-to-10-miles', '10-to-20-miles', '20-plus-miles'];
       
       if (activeTags.includes(clickedTag)) {
         // Remove tag if already active
@@ -259,6 +297,9 @@ const currentPath = Astro.url.pathname;
       
       // Update distance filters visibility
       updateDistanceFiltersVisibility(activeTags);
+      
+      // Update place description visibility
+      updatePlaceDescription(activeTags);
       
       // Update clear filters button
       const clearBtn = document.getElementById('page-items-clear-filters');
@@ -314,6 +355,9 @@ const currentPath = Astro.url.pathname;
         
         // Hide distance filters section
         updateDistanceFiltersVisibility([]);
+        
+        // Hide place description
+        updatePlaceDescription([]);
         
         // Hide clear button
         clearBtn.classList.add('hidden');
