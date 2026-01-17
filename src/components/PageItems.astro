@@ -16,7 +16,11 @@ export interface Props {
     }>;
   }>;
   showClearFilters?: boolean;
-  placeDescriptions?: Record<string, { title: string; description: string }>;
+  placeDescriptions?: Record<string, { 
+    title: string; 
+    description: string;
+    links?: Array<{ text: string; link: string }>;
+  }>;
 }
 
 const { items, showClearFilters = false, placeDescriptions = {} } = Astro.props;
@@ -53,6 +57,13 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
       <span class="color-pink ml-1"><b>.</b></span>
     </h2>
     <p id="place-description-text" class="text-xl">{activePlaceInfo?.description}</p>
+    {activePlaceInfo?.links && activePlaceInfo.links.length > 0 && (
+      <div id="place-description-links" class="flex flex-wrap gap-4 mt-3">
+        {activePlaceInfo.links.map((link) => (
+          <a href={link.link} class="page-item-link text-logoDarkGreen underline">{link.text}</a>
+        ))}
+      </div>
+    )}
   </div>
   
   {filteredItems.map((item) => (
@@ -68,7 +79,7 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
           </div>
         )}
         <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">
-          <span class="text-gray-500 font-normal mr-2">{item.number}.</span>
+          <span class="font-normal mr-2"><span class="text-logoDarkGreen">{item.number}</span><span class="text-logoLightGreen ml-0.5" style="font-size: 2.1rem;">.</span></span>
           {item.title}
           <span class="color-pink ml-1"><b>.</b></span>
         </h2>
@@ -206,6 +217,22 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
       if (info) {
         document.getElementById('place-description-title').innerHTML = `${info.title}<span class="color-pink ml-1"><b>.</b></span>`;
         document.getElementById('place-description-text').textContent = info.description;
+        
+        // Handle links
+        let linksEl = document.getElementById('place-description-links');
+        if (info.links && info.links.length > 0) {
+          if (!linksEl) {
+            linksEl = document.createElement('div');
+            linksEl.id = 'place-description-links';
+            linksEl.className = 'flex flex-wrap gap-4 mt-3';
+            section.appendChild(linksEl);
+          }
+          linksEl.innerHTML = info.links.map(l => `<a href="${l.link}" class="page-item-link text-logoDarkGreen underline">${l.text}</a>`).join('');
+          linksEl.style.display = '';
+        } else if (linksEl) {
+          linksEl.style.display = 'none';
+        }
+        
         section.classList.remove('hidden');
       } else {
         section.classList.add('hidden');
@@ -319,6 +346,7 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
       filterItems(initialActiveTags);
     }
     updateDistanceFiltersVisibility(initialActiveTags);
+    updatePlaceDescription(initialActiveTags);
     
     // Handle page-item tag clicks
     tagLinks.forEach(link => {
