@@ -51,12 +51,12 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
   )}
   
   {/* Place description - shown when exactly one place tag is selected */}
-  <div id="place-description-section" class={`mb-6 pb-4 ${activePlaceInfo ? '' : 'hidden'}`} data-place-descriptions={JSON.stringify(placeDescriptions)}>
+  <div id="place-description-section" class={`mb-10 mt-10 p-4 border border-black rounded-lg ${activePlaceInfo ? '' : 'hidden'}`} data-place-descriptions={JSON.stringify(placeDescriptions)}>
     <h2 id="place-description-title" class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">
       {activePlaceInfo?.title}
       <span class="color-pink ml-1"><b>.</b></span>
     </h2>
-    <p id="place-description-text" class="text-xl">{activePlaceInfo?.description}</p>
+    <p id="place-description-text" class="text-xl pb-6">{activePlaceInfo?.description}</p>
     {activePlaceInfo?.links && activePlaceInfo.links.length > 0 && (
       <div id="place-description-links" class="flex flex-wrap gap-4 mt-3">
         {activePlaceInfo.links.map((link) => (
