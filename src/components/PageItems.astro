@@ -6,7 +6,7 @@ export interface Props {
     number: number;
     tags: string[];
     photoOptions?: {
-      photos: string[];
+      photos: Array<string | { src: string; alt: string }>;
       appearance?: 'before' | 'after' | 'inline';
     };
     links?: Array<{
@@ -20,8 +20,16 @@ export interface Props {
     title: string; 
     description: string;
     links?: Array<{ text: string; link: string }>;
-    photos?: string[];
+    photos?: Array<string | { src: string; alt: string }>;
   }>;
+}
+
+// Helper to normalize photo to src/alt object
+function normalizePhoto(photo: string | { src: string; alt: string }, fallbackAlt: string): { src: string; alt: string } {
+  if (typeof photo === 'string') {
+    return { src: photo, alt: fallbackAlt };
+  }
+  return photo;
 }
 
 const { items, showClearFilters = false, placeDescriptions = {} } = Astro.props;
@@ -57,19 +65,20 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
       {activePlaceInfo?.title}
       <span class="color-pink ml-1"><b>.</b></span>
     </h2>
-    <p id="place-description-text" class="text-xl pb-6">{activePlaceInfo?.description}</p>
+    <p id="place-description-text" class="text-xl">{activePlaceInfo?.description}</p>
     {activePlaceInfo?.links && activePlaceInfo.links.length > 0 && (
-      <div id="place-description-links" class="flex flex-wrap gap-4 mt-3">
+      <div id="place-description-links" class="flex flex-wrap gap-4 mt-4">
         {activePlaceInfo.links.map((link) => (
           <a href={link.link} class="page-item-link text-logoDarkGreen underline">{link.text}</a>
         ))}
       </div>
     )}
     {activePlaceInfo?.photos && activePlaceInfo.photos.length > 0 && (
-      <div id="place-description-photos" class="flex flex-wrap justify-center gap-4 mt-4">
-        {activePlaceInfo.photos.map((photo) => (
-          <img src={photo} alt={activePlaceInfo.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-        ))}
+      <div id="place-description-photos" class="flex flex-wrap justify-center gap-4 mt-6">
+        {activePlaceInfo.photos.map((photo) => {
+          const p = normalizePhoto(photo, activePlaceInfo.title);
+          return <img src={p.src} alt={p.alt} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />;
+        })}
       </div>
     )}
   </div>
@@ -80,9 +89,10 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
         {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'before' && (
           <div class="pb-5">
             <div class="flex flex-wrap gap-4">
-              {item.photoOptions.photos.map((photo) => (
-                <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-              ))}
+              {item.photoOptions.photos.map((photo) => {
+                const p = normalizePhoto(photo, item.title);
+                return <img src={p.src} alt={p.alt} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />;
+              })}
             </div>
           </div>
         )}
@@ -108,9 +118,10 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
         {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && item.photoOptions.appearance === 'inline' && (
           <div class="pb-5">
             <div class="flex flex-wrap gap-4">
-              {item.photoOptions.photos.map((photo) => (
-                <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-              ))}
+              {item.photoOptions.photos.map((photo) => {
+                const p = normalizePhoto(photo, item.title);
+                return <img src={p.src} alt={p.alt} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />;
+              })}
             </div>
           </div>
         )}
@@ -138,9 +149,10 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
         {item.photoOptions && item.photoOptions.photos && item.photoOptions.photos.length > 0 && (item.photoOptions.appearance === 'after' || !item.photoOptions.appearance) && (
           <div class="pb-5">
             <div class="flex flex-wrap gap-4">
-              {item.photoOptions.photos.map((photo) => (
-                <img src={photo} alt={item.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
-              ))}
+              {item.photoOptions.photos.map((photo) => {
+                const p = normalizePhoto(photo, item.title);
+                return <img src={p.src} alt={p.alt} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />;
+              })}
             </div>
           </div>
         )}
@@ -226,35 +238,57 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
         document.getElementById('place-description-title').innerHTML = `${info.title}<span class="color-pink ml-1"><b>.</b></span>`;
         document.getElementById('place-description-text').textContent = info.description;
         
-        // Handle links
-        let linksEl = document.getElementById('place-description-links');
+        // Handle links (appears above photos)
+        const linksEl = document.getElementById('place-description-links');
         if (info.links && info.links.length > 0) {
           if (!linksEl) {
-            linksEl = document.createElement('div');
-            linksEl.id = 'place-description-links';
-            linksEl.className = 'flex flex-wrap gap-4 mt-3';
-            section.appendChild(linksEl);
+            const newLinksEl = document.createElement('div');
+            newLinksEl.id = 'place-description-links';
+            newLinksEl.className = 'flex flex-wrap gap-4 mt-4';
+            // Insert after description text, before photos
+            const photosEl = document.getElementById('place-description-photos');
+            if (photosEl) {
+              section.insertBefore(newLinksEl, photosEl);
+            } else {
+              section.appendChild(newLinksEl);
+            }
+            newLinksEl.innerHTML = info.links.map(l => `<a href="${l.link}" class="page-item-link text-logoDarkGreen underline">${l.text}</a>`).join('');
+            newLinksEl.style.display = 'flex';
+          } else {
+            linksEl.innerHTML = info.links.map(l => `<a href="${l.link}" class="page-item-link text-logoDarkGreen underline">${l.text}</a>`).join('');
+            linksEl.style.display = 'flex';
           }
-          linksEl.innerHTML = info.links.map(l => `<a href="${l.link}" class="page-item-link text-logoDarkGreen underline">${l.text}</a>`).join('');
-          linksEl.style.display = '';
         } else if (linksEl) {
           linksEl.style.display = 'none';
+          linksEl.innerHTML = '';
         }
         
-        // Handle photos
-        let photosEl = document.getElementById('place-description-photos');
+        // Handle photos (appears below links)
+        const photosEl = document.getElementById('place-description-photos');
         const photos = Array.isArray(info.photos) ? info.photos : [];
         if (photos.length > 0) {
           if (!photosEl) {
-            photosEl = document.createElement('div');
-            photosEl.id = 'place-description-photos';
-            photosEl.className = 'flex justify-center flex-wrap gap-4 mt-1 mb-3';
-            section.appendChild(photosEl);
+            const newPhotosEl = document.createElement('div');
+            newPhotosEl.id = 'place-description-photos';
+            newPhotosEl.className = 'flex justify-center flex-wrap gap-4 mt-6';
+            section.appendChild(newPhotosEl);
+            newPhotosEl.innerHTML = photos.map(photo => {
+              const src = typeof photo === 'string' ? photo : photo.src;
+              const alt = typeof photo === 'string' ? info.title : photo.alt;
+              return `<img src="${src}" alt="${alt}" class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />`;
+            }).join('');
+            newPhotosEl.style.display = 'flex';
+          } else {
+            photosEl.innerHTML = photos.map(photo => {
+              const src = typeof photo === 'string' ? photo : photo.src;
+              const alt = typeof photo === 'string' ? info.title : photo.alt;
+              return `<img src="${src}" alt="${alt}" class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />`;
+            }).join('');
+            photosEl.style.display = 'flex';
           }
-          photosEl.innerHTML = photos.map(p => `<img src="${p}" alt="${info.title}" class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />`).join('');
-          photosEl.style.display = '';
         } else if (photosEl) {
           photosEl.style.display = 'none';
+          photosEl.innerHTML = '';
         }
         
         section.classList.remove('hidden');
