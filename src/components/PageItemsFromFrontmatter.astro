@@ -18,7 +18,7 @@ export interface Props {
     }>;
   }>;
   showClearFilters?: boolean;
-  placeDescriptions?: Record<string, { title: string; description: string }>;
+  placeDescriptions?: Record<string, { title: string; description: string; links?: Array<{ text: string; link: string }>; photos?: string[] }>;
 }
 
 const { pageItems, showClearFilters = false, placeDescriptions = {} } = Astro.props;

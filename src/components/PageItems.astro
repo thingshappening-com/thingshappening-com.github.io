@@ -20,6 +20,7 @@ export interface Props {
     title: string; 
     description: string;
     links?: Array<{ text: string; link: string }>;
+    photos?: string[];
   }>;
 }
 
@@ -61,6 +62,13 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
       <div id="place-description-links" class="flex flex-wrap gap-4 mt-3">
         {activePlaceInfo.links.map((link) => (
           <a href={link.link} class="page-item-link text-logoDarkGreen underline">{link.text}</a>
+        ))}
+      </div>
+    )}
+    {activePlaceInfo?.photos && activePlaceInfo.photos.length > 0 && (
+      <div id="place-description-photos" class="flex flex-wrap justify-center gap-4 mt-4">
+        {activePlaceInfo.photos.map((photo) => (
+          <img src={photo} alt={activePlaceInfo.title} class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />
         ))}
       </div>
     )}
@@ -231,6 +239,22 @@ const activePlaceInfo = activePlaceTags.length === 1 ? placeDescriptions[activeP
           linksEl.style.display = '';
         } else if (linksEl) {
           linksEl.style.display = 'none';
+        }
+        
+        // Handle photos
+        let photosEl = document.getElementById('place-description-photos');
+        const photos = Array.isArray(info.photos) ? info.photos : [];
+        if (photos.length > 0) {
+          if (!photosEl) {
+            photosEl = document.createElement('div');
+            photosEl.id = 'place-description-photos';
+            photosEl.className = 'flex justify-center flex-wrap gap-4 mt-1 mb-3';
+            section.appendChild(photosEl);
+          }
+          photosEl.innerHTML = photos.map(p => `<img src="${p}" alt="${info.title}" class="rounded-xl max-w-md h-auto object-cover" loading="lazy" />`).join('');
+          photosEl.style.display = '';
+        } else if (photosEl) {
+          photosEl.style.display = 'none';
         }
         
         section.classList.remove('hidden');
