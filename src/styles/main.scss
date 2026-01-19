@@ -87,6 +87,13 @@ a:hover {
   color: #3CB371 !important;
 }
 
+a.page-item-tag:hover,
+a.clickable-filter-tag:hover,
+a.page-item-tag:active,
+a.clickable-filter-tag:active {
+  color: white !important;
+}
+
 .small-txt-xs {
   font-size: 1.25rem !important;
 }

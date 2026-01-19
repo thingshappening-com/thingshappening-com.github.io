@@ -366,9 +366,19 @@ const currentPath = Astro.url.pathname;
 </script>
 
 <style>
+  .page-item-tag,
+  .clickable-filter-tag {
+    color: white !important;
+    -webkit-tap-highlight-color: transparent;
+  }
   .page-item-tag:hover,
-  .clickable-filter-tag:hover {
+  .clickable-filter-tag:hover,
+  .page-item-tag:active,
+  .clickable-filter-tag:active,
+  .page-item-tag:focus,
+  .clickable-filter-tag:focus {
     background-color: #3CB371 !important;
+    color: white !important;
   }
   .page-item-link {
     text-decoration-color: #3CB371;
