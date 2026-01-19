@@ -1,0 +1,172 @@
+---
+export interface Props {
+  images: string[];
+}
+
+const { images } = Astro.props;
+---
+
+<div class="carousel-container relative w-full overflow-hidden rounded-t-xl py-4">
+  <!-- Images Track -->
+  <div class="carousel-track flex gap-3 transition-transform duration-300 ease-out">
+    {images.map((src, index) => (
+      <div class="carousel-slide flex-shrink-0" data-index={index}>
+        <img 
+          src={src} 
+          alt={`Slide ${index + 1}`}
+          class="w-full aspect-video object-cover rounded-lg"
+          loading={index === 0 ? "eager" : "lazy"}
+        />
+      </div>
+    ))}
+  </div>
+
+  <!-- Navigation Controls -->
+  <div class="carousel-controls flex items-center justify-between px-4 py-3 bg-gray-50 border-t border-gray-100">
+    <!-- Arrow Navigation (Left Side) -->
+    <div class="flex items-center gap-2">
+      <button 
+        class="carousel-prev w-9 h-9 flex items-center justify-center rounded-full bg-white border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-150 shadow-sm"
+        aria-label="Previous image"
+      >
+        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button 
+        class="carousel-next w-9 h-9 flex items-center justify-center rounded-full bg-white border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-150 shadow-sm"
+        aria-label="Next image"
+      >
+        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Dot Navigation (Right Side) -->
+    <div class="carousel-dots flex items-center gap-3">
+      {images.map((_, index) => (
+        <button 
+          class={`carousel-dot w-4 h-4 rounded-full border-2 transition-all duration-150 ${index === 0 ? 'bg-gray-800 border-gray-800' : 'bg-white border-gray-400 hover:border-gray-600'}`}
+          data-index={index}
+          aria-label={`Go to slide ${index + 1}`}
+        ></button>
+      ))}
+    </div>
+  </div>
+</div>
+
+<script>
+  class Carousel {
+    container: HTMLElement;
+    track: HTMLElement;
+    slides: NodeListOf<HTMLElement>;
+    dots: NodeListOf<HTMLElement>;
+    prevBtn: HTMLElement;
+    nextBtn: HTMLElement;
+    currentIndex: number = 0;
+    gap: number = 12; // gap-3 = 0.75rem = 12px
+
+    constructor(container: HTMLElement) {
+      this.container = container;
+      this.track = container.querySelector('.carousel-track')!;
+      this.slides = container.querySelectorAll('.carousel-slide');
+      this.dots = container.querySelectorAll('.carousel-dot');
+      this.prevBtn = container.querySelector('.carousel-prev')!;
+      this.nextBtn = container.querySelector('.carousel-next')!;
+
+      this.init();
+    }
+
+    init() {
+      this.prevBtn.addEventListener('click', () => this.prev());
+      this.nextBtn.addEventListener('click', () => this.next());
+      
+      this.dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => this.goTo(index));
+      });
+
+      // Set initial centered position
+      this.goTo(0);
+      this.updateButtons();
+      
+      // Recalculate on resize
+      window.addEventListener('resize', () => this.goTo(this.currentIndex));
+    }
+
+    prev() {
+      if (this.currentIndex > 0) {
+        this.goTo(this.currentIndex - 1);
+      }
+    }
+
+    next() {
+      if (this.currentIndex < this.slides.length - 1) {
+        this.goTo(this.currentIndex + 1);
+      }
+    }
+
+    goTo(index: number) {
+      this.currentIndex = index;
+      
+      const containerWidth = this.container.offsetWidth;
+      const slideWidth = this.slides[0].offsetWidth;
+      
+      // Calculate the offset to center the current slide
+      // Start position: center the first slide
+      const centerOffset = (containerWidth - slideWidth) / 2;
+      // Move by (slideWidth + gap) for each slide
+      const slideOffset = index * (slideWidth + this.gap);
+      
+      this.track.style.transform = `translateX(${centerOffset - slideOffset}px)`;
+      
+      this.updateDots();
+      this.updateButtons();
+    }
+
+    updateDots() {
+      this.dots.forEach((dot, index) => {
+        if (index === this.currentIndex) {
+          dot.classList.remove('bg-white', 'border-gray-400', 'hover:border-gray-600');
+          dot.classList.add('bg-gray-800', 'border-gray-800');
+        } else {
+          dot.classList.remove('bg-gray-800', 'border-gray-800');
+          dot.classList.add('bg-white', 'border-gray-400', 'hover:border-gray-600');
+        }
+      });
+    }
+
+    updateButtons() {
+      // Update prev button
+      if (this.currentIndex === 0) {
+        this.prevBtn.classList.add('opacity-40', 'cursor-not-allowed');
+        this.prevBtn.classList.remove('hover:bg-gray-100', 'hover:border-gray-300');
+      } else {
+        this.prevBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+        this.prevBtn.classList.add('hover:bg-gray-100', 'hover:border-gray-300');
+      }
+
+      // Update next button
+      if (this.currentIndex === this.slides.length - 1) {
+        this.nextBtn.classList.add('opacity-40', 'cursor-not-allowed');
+        this.nextBtn.classList.remove('hover:bg-gray-100', 'hover:border-gray-300');
+      } else {
+        this.nextBtn.classList.remove('opacity-40', 'cursor-not-allowed');
+        this.nextBtn.classList.add('hover:bg-gray-100', 'hover:border-gray-300');
+      }
+    }
+  }
+
+  // Initialize all carousels on the page
+  document.querySelectorAll('.carousel-container').forEach((container) => {
+    new Carousel(container as HTMLElement);
+  });
+</script>
+
+<style>
+  .carousel-slide {
+    /* 90% width leaves room for peeks on both sides when centered */
+    width: 90%;
+    min-width: 90%;
+  }
+</style>

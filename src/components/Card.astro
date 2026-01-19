@@ -1,12 +1,23 @@
 ---
 import dayjs from 'dayjs'
+import Carousel from './Carousel.astro'
 
 export interface Props {
   post: any;
-  highlighted: string;
+  highlighted?: string;
+  images?: string[];
 }
 
-let { post, highlighted } = Astro.props;
+let { post, highlighted, images } = Astro.props;
+
+// Default placeholder images from public directory
+const defaultImages = [
+  '/images/chattanooga_guides/performance-arts/tivoli-theatre.jpg',
+  '/images/chattanooga_guides/outdoors/cloudland/cloudland-canyon.webp',
+  '/images/chattanooga_guides/history/war_canons.webp',
+];
+
+const carouselImages = images || post.images || defaultImages;
 
 const pubDate = post.pubDate || post.lastUpdated
 const date = new Date(pubDate);
@@ -33,25 +44,27 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
 ---
 
 <div class="bg-white border-[1.5px] transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl rounded-xl overflow-hidden" data-test="article-card">
-  <a href={post.url}
-  class="transition-all duration-75 ease-in-out h-full top-0 hover:-top-2 shadow-lg bg-white rounded-xl"
-  >
-
-    <div class="py-6 px-8">
-      <h2 class="font-semi text-2xl leading-tight">
+  <!-- Title & Date Section -->
+  <a href={post.url} class="block">
+    <div class="pt-8 pb-4 px-10">
+      <h2 class="font-semi text-3xl leading-tight">
         {post.title}{post.pubDate && (
           `: ${subTitle}`
         )}
       </h2>
       {(post.pubDate || post.lastUpdated) && (
-        <p class="text-lg text-gray-600 mt-4 flex items-center">
-          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8" src=`${post.iconPath}` alt="icon"></img> : ""}
+        <p class="text-xl text-gray-600 mt-3 flex items-center">
+          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-10 h-10 inline-icon" src={post.iconPath} alt="icon" /> : ""}
         </p>
       )}
     </div>
   </a>
 
-  <div class="flex items-center pl-8 pb-3 text-base">
+  <!-- Carousel Section -->
+  <Carousel images={carouselImages} />
+
+  <!-- Tags Section -->
+  <div class="flex items-center px-10 pb-6 pt-2 text-lg">
     {post.tags && (
       <div>
         {Array.isArray(post.tags) ? (
@@ -67,12 +80,11 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
   </div>
 </div>
 
-<!-- <p class="transition-all duration-75 ease-in-out hover:-top-2 text-xs text-gray-600 mt-4 flex items-center"></p> -->
-
 <style>
-  img {
-    width: 100%;
-    aspect-ratio: 15/7;
-    object-fit: cover;
+  .inline-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    aspect-ratio: 1;
+    object-fit: contain;
   }
 </style>
