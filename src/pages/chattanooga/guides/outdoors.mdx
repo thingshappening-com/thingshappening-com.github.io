@@ -1,6 +1,6 @@
 ---
   # title: "41 Outdoor Adventures in Chattanooga"
-  title: "Chattanooga Outdoors Interactive Database: 71 Adventures"
+  title: "Outdoors Interactive Database: 71 Adventures"
   published: true
   lastUpdated: "01/18/2026"
   originalDate: "01/15/2026"
@@ -285,8 +285,93 @@ import PageItemsFromFrontmatter from '../../../components/PageItemsFromFrontmatt
   </div>  
 </section> 
 
+{/* Place descriptions - pre-rendered in DOM for crawlers, shown/hidden via JS */}
+<div id="place-descriptions-container" class="max-w-6xl mx-auto px-3">
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="chickamauga-battlefield">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Chickamauga Battlefield Military Park<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">A largely flat, easy walking battlefield spread across roughly 9000+ acres of rolling hills, open fields and forest just south of Chattanooga near Fort Oglethorpe, Georgia. It's preserved under the National Park Service as a major Civil War site, known for quiet roads, abundant wildlife and extensive history monuments.</p>
+    <div class="flex flex-wrap gap-4 mt-4">
+      <a href="/chattanooga/guides/tours#chickamauga-battlefield-tours" class="page-item-link text-logoDarkGreen underline">Tour Options</a>
+      <a href="/chattanooga/guides/civil-war-history" class="page-item-link text-logoDarkGreen underline">Civil War History Guide</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/history/path.webp" alt="A Chickamauga Battlefield landscape photo of a bridge, creek and a worn in walking trail." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/chickamauga-battlefield/tree-tunnel.jpg" alt="A scenic tree tunnel offers shade over a wide dirt trail at Chickamauga Battlefield park." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="lookout-mtn">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Lookout Mountain<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">One of the most famous landmarks in the Chattanooga area, roughly 2,300 feet above the valley and well known historically for its stunning views and strategic use during the Civil War. It spans both Tennessee and Georgia state lines. In addition to trails like Glen Falls and Guild Hardy, the mountain is frequently visited for attractions like Point Park, Cravens House, Rock City and Ruby Falls. After your adventure, the St Elmo neighborhood at the mountain's base has sweet treats at Hot Chocolatier and Clumpies ice cream.</p>
+    <div class="flex flex-wrap gap-4 mt-4">
+      <a href="/chattanooga/guides/civil-war-history" class="page-item-link text-logoDarkGreen underline">Civil War History Guide</a>
+      <a href="/chattanooga/guides/confections#ice-cream" class="page-item-link text-logoDarkGreen underline">Sweet Treats in St Elmo</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/outdoors/lookout-mtn/mountain-top.jpg" alt="Wide and long view of the entire city of Chattanooga from atop Lookout Mountain." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/lookout-mtn/ga-tn.jpg" alt="A GA/TN sign on the Guild Hardy train indicating the crossover from Tennessee into Georgia." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="prentice-cooper">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Prentice Cooper State Forest<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">A large Wildlife Management Area northwest of downtown Chattanooga, covering roughly 24,500 acres of rugged Cumberland Plateau terrain. Known for hunting access, long gravel roads that connect to trailheads and overlooks and designated OHV routes. Scenic overlooks along the plateau edge offer big views of the Tennessee River Gorge.</p>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/outdoors/prentice-cooper/game-reserve-road.jpg" alt="View from Game Reserve Road into the Prentice Cooper Forest." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/prentice-cooper/davis-pond-trail.jpg" alt="Turn off to the trail for Davis Pond in Prentice Cooper for backcountry camping." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="stringers-ridge">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Stringers Ridge<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">92 acre nature park located in the heart of Chattanooga's city limits. An easy escape from downtown. It's a quick outdoor playground for locals for hiking, mountain biking and trail running. Shorter loops and moderate elevation changes make it a common stop for before or after work laps rather than long backcountry outings. The Northshore location puts you near Clumpies flagship ice cream shop for a post-hike treat.</p>
+    <div class="flex flex-wrap gap-4 mt-4">
+      <a href="/chattanooga/guides/confections#ice-cream" class="page-item-link text-logoDarkGreen underline">Nearby Sweet Treats</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/outdoors/stringers-ridge/trail-map.jpg" alt="The Stringers Ridge Trail map and connection details to White Oak Mountain." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/stringers-ridge/trail-view.jpg" alt="A viewpoint from a biker on the trail at Stringers Ridge in Chattanooga." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="cloudland">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Cloudland Canyon State Park<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">Considered one of Georgia's top state parks, located on the western edge of Lookout Mountain near the Tennessee line. The park has sweeping canyon views, sandstone cliffs and steep descents into the gorge. Dozens of miles of trails from easy rim walks to hard waterfall hikes and backcountry routes. Note that they do have a $5 entrance fee.</p>
+    <div class="flex flex-wrap gap-4 mt-4">
+      <a href="/chattanooga/guides/cloudland-canyon" class="page-item-link text-logoDarkGreen underline">Full Cloudland Canyon Guide</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/outdoors/cloudland/vista.webp" alt="Panoramic view of Cloudland Canyon from the West Rim trail" class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/cloudland/overlook-west-rim.webp" alt="Hiker at the West Rim overlook gazing into Cloudland Canyon" class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="raccoon-mtn">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Raccoon Mountain<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">Sits just west of downtown Chattanooga on Tennessee Valley Authority land, covering roughly 3,800 acres of rugged terrain. It's known for technical trail features and exposed boulders, making it one of the Southeast's notable mountain biking locations. A scenic loop road circles the mountain and doubles as a popular drive, road ride, or gravel bike loop, with trailhead access into the rocky terrain.</p>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/outdoors/raccoon-mtn/gorge-overlook.jpg" alt="An expansive view into the gorge of the Tennessee River from a Raccoon Mountain trail." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/raccoon-mtn/pond.jpg" alt="A view of a pond next to a Raccoon Mountain MTB and hiking trail." class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="enterprise-nature">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Enterprise Nature Park<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">A 2,800+ acre park in northeast Chattanooga. This park is known for flowy, beginner-friendly mountain bike trails and a network of easier hiking trails. The trails in this park are known for rolling terrain, wildlife (deer, turkeys, snakes are common) and are available for casual rides, hiking and trail running.</p>
+  </div>
+
+  <div class="place-description hidden mb-10 mt-10 p-4 border border-black rounded-lg" data-place="booker-t-washington">
+    <h2 class="text-3xl mb-2" style="font-family: 'Libre Baskerville', serif;">Booker T. Washington State Park<span class="color-pink ml-1"><b>.</b></span></h2>
+    <p class="text-xl">A lakeside state park northeast of downtown Chattanooga along Chickamauga Lake. In total the park encompasses roughly 350 acres. The park features a small network of wooded, multi-use trails, some with water views. The trail terrain is beginner friendly and popular for hiking, trail running and mountain biking.</p>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <img src="/images/chattanooga_guides/outdoors/booker-t-washington/shoreline.jpg" alt="Wooded shoreline along Chickamauga Lake at Booker T. Washington State Park" class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+      <img src="/images/chattanooga_guides/outdoors/booker-t-washington/water-view.jpg" alt="View of Chickamauga Lake from the Outer Loop trail" class="rounded-xl w-full max-w-md h-auto object-cover" loading="lazy" />
+    </div>
+  </div>
+</div>
+
 <section class="text-xl pb-2">
   <div>
-    <PageItemsFromFrontmatter pageItems={frontmatter.pageItems} showClearFilters={true} placeDescriptions={frontmatter.placeDescriptions} />
+    <PageItemsFromFrontmatter pageItems={frontmatter.pageItems} showClearFilters={true} />
   </div>
 </section>
