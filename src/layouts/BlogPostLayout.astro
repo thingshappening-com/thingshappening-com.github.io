@@ -15,6 +15,15 @@ title = title ? title : "";
 <html lang={ content.lang || 'en' }>
   <head>
     <BaseHead title={title} description={seoDescription || description} />
+    <link rel="canonical" href={`https://thingshappening.com${Astro.url.pathname}`} />
+    <script is:inline>
+      if (window.location.search.includes('tags=')) {
+        var meta = document.createElement('meta');
+        meta.name = 'robots';
+        meta.content = 'noindex, follow';
+        document.head.appendChild(meta);
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
