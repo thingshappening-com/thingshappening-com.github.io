@@ -3,14 +3,18 @@
   lastUpdated: "11/29/2025"
   originalDate: "06/08/2025"
   readTime: "8 minutes"
-  tags: [{type: "guide", tag: "tours"}]
+  tags: [{type: "guide", tag: "tours"}, {type: "guide", tag: "longform"}]
   layout: "../../../layouts/BlogPostLayout.astro"
-  seoDescription: "Guide to guided tours and adventures in Chattanooga including ghost tours, food tours, kayaking, and historical excursions."
+  seoDescription: "Guide to guided tours and in Chattanooga including ghost tours, food tours, kayaking, and historical experiences."
   neighborhoods: ["Downtown", "Southside", "North Shore", "Signal Mountain", "Chickamauga"]
   seasonality: "Year-round; some outdoor tours seasonal (March-October)"
   bestFor: ["Families", "Adventure seekers", "History buffs", "Food lovers"]
   iconPath: "../../../images/icons/megaphone.svg"
-  images: ["/images/chattanooga_guides/trolley.jpg", "/images/chattanooga_guides/hunter_museum.jpg", "/images/chattanooga_guides/tonys_restaurant.jpg"]
+  images: [
+    {src: "/images/chattanooga_guides/trolley.jpg", position: "upper"},
+    {src: "/images/chattanooga_guides/hunter_museum.jpg", position: "center"},
+    {src: "/images/chattanooga_guides/tonys_restaurant.jpg", position: "center"}
+  ]
   # sources: ["Chattanooga Trolley Tours", "Chattanooga Ghost Tours", "Southern Belle", "Chattanooga Guided Adventures"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';

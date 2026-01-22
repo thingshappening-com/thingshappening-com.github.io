@@ -11,7 +11,7 @@ interface MarkdownFrontmatter {
   date: number;
 }
 
-const title = 'thingshappening';
+const title = 'Things Happening';
 const seoDescription = 'Helping you explore and enjoy your local city! Things Happening guides you and your family to fun adventures and experiences in your city and beyond.';
 const description = "A place to find things happening in";
 const city = "Chattanooga";
@@ -126,11 +126,16 @@ const page = {
       )}
     </article> -->
 
-    <article class="max-w-6xl mx-auto px-3">
+    <article class="w-full px-4 md:px-8 lg:px-16 mt-8">
       <header class="pt-10 content">
-        <h1 class="font-jakarta font-normal text-5xl">Explore our local <span class="text-customGreen1">Chattanooga</span> Guides</h1>
+        <h1 class="font-jakarta font-normal text-5xl">Explore <span class="text-customGreen1">Chattanooga</span> Like a Local with Our Guides<span class="text-customGreen1">.</span></h1>
       </header>
-      <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-8">
+      <nav class="flex gap-6 pt-6 text-xl">
+        <a href="/" class="text-customGreen1 font-semibold border-b-2 border-customGreen1 pb-1">All</a>
+        <a href="/tag/guide/longform" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Longform</span><span class="hidden md:inline">Longform Guides</span></a>
+        <a href="/tag/guide/interactive" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Interactive</span><span class="hidden md:inline">Interactive Guides</span></a>
+      </nav>
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8">
         {guidesPage.map((g) => (
           <div class="col-span-1">
             <Card post={g} />

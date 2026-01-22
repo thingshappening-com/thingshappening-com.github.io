@@ -4,13 +4,16 @@
   originalDate: "03/01/2025"
   readTime: "5 minutes"
   iconPath: "../../../images/icons/coffee-cup.svg"
-  tags: [{type: "guide", tag: "merchants"}]
+  tags: [{type: "guide", tag: "merchants"}, {type: "guide", tag: "longform"}]
   layout: "../../../layouts/BlogPostLayout.astro"
-  seoDescription: "Guide to Chattanooga's best sweet treats including ice cream shops, bakeries, chocolate shops, creperies, and coffee houses for desserts and confections."
+  seoDescription: "Chattanooga's best sweet treats including ice cream shops, bakeries, chocolate shops, creperies, and coffee houses for desserts and confections."
   neighborhoods: ["North Shore", "Downtown", "St. Elmo", "Arts District", "Market Street"]
   seasonality: "Year-round; hot chocolate best in winter, ice cream popular spring-summer"
   bestFor: ["Families", "Date night", "Foodies", "Coffee enthusiasts", "Ice cream heads"]
-  images: ["/images/chattanooga_guides/shops/hot-chocolatier1.jpg", "/images/chattanooga_guides/shops/hot-chocolatier2.jpg", "/images/chattanooga_guides/social/coffee1.webp"]
+  images: [
+    {src: "/images/chattanooga_guides/shops/hot-chocolatier1.jpg", position: "upper"},
+    {src: "/images/chattanooga_guides/shops/hot-chocolatier2.jpg", position: "lower"}
+  ]
   # sources: ["Clumpies Ice Cream", "The Hot Chocolatier", "Adelle's Crêperie", "Rembrandt's Coffee House"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';

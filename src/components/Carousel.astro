@@ -1,20 +1,41 @@
 ---
+export interface ImageConfig {
+  src: string;
+  position?: 'top' | 'upper' | 'center' | 'lower' | 'bottom';
+}
+
 export interface Props {
-  images: string[];
+  images: (string | ImageConfig)[];
 }
 
 const { images } = Astro.props;
+
+// Normalize images to always have src and position (default: top)
+const normalizedImages = images.map(img => {
+  if (typeof img === 'string') {
+    return { src: img, position: 'top' };
+  }
+  return { src: img.src, position: img.position || 'top' };
+});
+
+const positionClasses = {
+  top: 'object-top',
+  upper: 'object-[50%_25%]',
+  center: 'object-center',
+  lower: 'object-[50%_75%]',
+  bottom: 'object-bottom',
+};
 ---
 
 <div class="carousel-container relative w-full overflow-hidden rounded-t-xl py-4">
   <!-- Images Track -->
   <div class="carousel-track flex gap-3 transition-transform duration-300 ease-out">
-    {images.map((src, index) => (
+    {normalizedImages.map((img, index) => (
       <div class="carousel-slide flex-shrink-0" data-index={index}>
         <img 
-          src={src} 
+          src={img.src} 
           alt={`Slide ${index + 1}`}
-          class="w-full aspect-video object-cover rounded-lg"
+          class={`w-full aspect-[3/2] object-cover rounded-lg ${positionClasses[img.position]}`}
           loading={index === 0 ? "eager" : "lazy"}
         />
       </div>
@@ -26,18 +47,18 @@ const { images } = Astro.props;
     <!-- Arrow Navigation (Left Side) -->
     <div class="flex items-center gap-2">
       <button 
-        class="carousel-prev w-9 h-9 flex items-center justify-center rounded-full bg-white border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-150 shadow-sm"
+        class="carousel-prev w-9 h-9 flex items-center justify-center rounded-full bg-white border-2 border-logoDarkGreen hover:bg-gray-100 transition-all duration-150 shadow-sm"
         aria-label="Previous image"
       >
-        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 text-customGreen1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button 
-        class="carousel-next w-9 h-9 flex items-center justify-center rounded-full bg-white border border-gray-200 hover:bg-gray-100 hover:border-gray-300 transition-all duration-150 shadow-sm"
+        class="carousel-next w-9 h-9 flex items-center justify-center rounded-full bg-white border-2 border-logoDarkGreen hover:bg-gray-100 transition-all duration-150 shadow-sm"
         aria-label="Next image"
       >
-        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 text-customGreen1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </button>
@@ -47,7 +68,7 @@ const { images } = Astro.props;
     <div class="carousel-dots flex items-center gap-3">
       {images.map((_, index) => (
         <button 
-          class={`carousel-dot w-4 h-4 rounded-full border-2 transition-all duration-150 ${index === 0 ? 'bg-gray-800 border-gray-800' : 'bg-white border-gray-400 hover:border-gray-600'}`}
+          class={`carousel-dot w-4 h-4 rounded-full border-2 transition-all duration-150 ${index === 0 ? 'bg-customGreen1 border-logoDarkGreen' : 'bg-white border-gray-400 hover:border-gray-600'}`}
           data-index={index}
           aria-label={`Go to slide ${index + 1}`}
         ></button>
@@ -128,9 +149,9 @@ const { images } = Astro.props;
       this.dots.forEach((dot, index) => {
         if (index === this.currentIndex) {
           dot.classList.remove('bg-white', 'border-gray-400', 'hover:border-gray-600');
-          dot.classList.add('bg-gray-800', 'border-gray-800');
+          dot.classList.add('bg-customGreen1', 'border-logoDarkGreen');
         } else {
-          dot.classList.remove('bg-gray-800', 'border-gray-800');
+          dot.classList.remove('bg-customGreen1', 'border-logoDarkGreen');
           dot.classList.add('bg-white', 'border-gray-400', 'hover:border-gray-600');
         }
       });
@@ -139,20 +160,20 @@ const { images } = Astro.props;
     updateButtons() {
       // Update prev button
       if (this.currentIndex === 0) {
-        this.prevBtn.classList.add('opacity-40', 'cursor-not-allowed');
-        this.prevBtn.classList.remove('hover:bg-gray-100', 'hover:border-gray-300');
+        this.prevBtn.classList.add('opacity-40', 'cursor-not-allowed', 'border-gray-300');
+        this.prevBtn.classList.remove('hover:bg-gray-100', 'border-logoDarkGreen');
       } else {
-        this.prevBtn.classList.remove('opacity-40', 'cursor-not-allowed');
-        this.prevBtn.classList.add('hover:bg-gray-100', 'hover:border-gray-300');
+        this.prevBtn.classList.remove('opacity-40', 'cursor-not-allowed', 'border-gray-300');
+        this.prevBtn.classList.add('hover:bg-gray-100', 'border-logoDarkGreen');
       }
 
       // Update next button
       if (this.currentIndex === this.slides.length - 1) {
-        this.nextBtn.classList.add('opacity-40', 'cursor-not-allowed');
-        this.nextBtn.classList.remove('hover:bg-gray-100', 'hover:border-gray-300');
+        this.nextBtn.classList.add('opacity-40', 'cursor-not-allowed', 'border-gray-300');
+        this.nextBtn.classList.remove('hover:bg-gray-100', 'border-logoDarkGreen');
       } else {
-        this.nextBtn.classList.remove('opacity-40', 'cursor-not-allowed');
-        this.nextBtn.classList.add('hover:bg-gray-100', 'hover:border-gray-300');
+        this.nextBtn.classList.remove('opacity-40', 'cursor-not-allowed', 'border-gray-300');
+        this.nextBtn.classList.add('hover:bg-gray-100', 'border-logoDarkGreen');
       }
     }
   }
@@ -165,7 +186,7 @@ const { images } = Astro.props;
 
 <style>
   .carousel-slide {
-    /* 90% width leaves room for peeks on both sides when centered */
+    /* 90% width shows just a small peek on both sides */
     width: 90%;
     min-width: 90%;
   }

@@ -4,6 +4,9 @@ title: string;
 description: string;
 }
 const { title, description, city } = Astro.props;
+// Remove # from title if present and capitalize for display
+const rawTag = title?.startsWith('#') ? title.slice(1) : title;
+const displayTag = rawTag ? rawTag.charAt(0).toUpperCase() + rawTag.slice(1) : '';
 ---
 <style>
   .responsive-header {
@@ -16,8 +19,8 @@ const { title, description, city } = Astro.props;
   }
 </style>
 
-<header class="mx-auto max-w-6xl flex flex-col content px-3 py-8">
-  <h2 data-test="header-description" class="font-jakarta font-normal text-5xl lg:pb-16 pt-4 lg:pt-12">
-    A place to find <span>things</span> <span>happening</span> in <span class="text-customGreen1">{city}.</span>
+<header class="flex flex-col content py-8">
+  <h2 data-test="header-description" class="font-jakarta font-normal text-5xl pt-4">
+    <span class="text-customGreen1">Chattanooga</span> Guides to <span class="text-customGreen1">{displayTag}</span><span class="text-customGreen1">.</span>
   </h2>
 </header>

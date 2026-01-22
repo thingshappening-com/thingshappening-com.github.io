@@ -40,7 +40,7 @@ const filteredItems = activeTags.length > 0
 const currentPath = Astro.url.pathname;
 ---
 
-<div class="max-w-6xl mx-auto px-3 mb-5">
+<div class="max-w-6xl mx-auto px-3 mb-1">
   {showClearFilters && (
     <div class="mb-4 mt-4">
       <a href={currentPath} id="page-items-clear-filters" class={`px-5 py-2 text-white rounded-full text-sm transition-colors cursor-pointer inline-block ${activeTags.length > 0 ? '' : 'hidden'}`} style="background-color: #1a4d2e;">

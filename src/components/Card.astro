@@ -43,18 +43,18 @@ if (post.eventDatesDetails) {
 const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDetails.eventTitle : dayjs(post.pubDate).format('MM-DD-YYYY');
 ---
 
-<div class="bg-white border-[1.5px] transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl rounded-xl overflow-hidden" data-test="article-card">
+<div class="bg-white border-[1.5px] transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl rounded-xl overflow-hidden " data-test="article-card">
   <!-- Title & Date Section -->
   <a href={post.url} class="block">
-    <div class="pt-8 pb-4 px-10">
-      <h2 class="font-semi text-3xl leading-tight">
+    <div class="pt-6 pb-3 px-4">
+      <h2 class="font-semi text-2xl leading-tight">
         {post.title}{post.pubDate && (
           `: ${subTitle}`
         )}
       </h2>
       {(post.pubDate || post.lastUpdated) && (
-        <p class="text-xl text-gray-600 mt-3 flex items-center">
-          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-10 h-10 inline-icon" src={post.iconPath} alt="icon" /> : ""}
+        <p class="text-lg text-gray-600 mt-2 flex items-center">
+          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8 inline-icon" src={post.iconPath} alt="icon" /> : ""}
         </p>
       )}
     </div>
@@ -63,8 +63,15 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
   <!-- Carousel Section -->
   <Carousel images={carouselImages} />
 
+  <!-- Overview Section -->
+  {post.seoDescription && (
+    <a href={post.url} class="block">
+      <p class="px-4 mt-3 mb-4 text-lg text-gray-600 line-clamp-2">{post.seoDescription}<span class="text-2xl">...</span></p>
+    </a>
+  )}
+
   <!-- Tags Section -->
-  <div class="flex items-center px-10 pb-6 pt-2 text-lg">
+  <div class="flex items-center px-4 pb-5 pt-1 text-base">
     {post.tags && (
       <div>
         {Array.isArray(post.tags) ? (
@@ -82,8 +89,8 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
 
 <style>
   .inline-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     aspect-ratio: 1;
     object-fit: contain;
   }

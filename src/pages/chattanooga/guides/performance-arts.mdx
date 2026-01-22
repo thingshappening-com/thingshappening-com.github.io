@@ -3,14 +3,18 @@
   lastUpdated: "12/28/2025"
   originalDate: "10/06/2025"
   readTime: "6 minutes"
-  tags: [{type: "guide", tag: "live-performances"}]
+  tags: [{type: "guide", tag: "live-events"}, {type: "guide", tag: "arts"}, {type: "guide", tag: "longform"}]
   layout: "../../../layouts/BlogPostLayout.astro"
   seoDescription: "Guide to live performance venues and shows in Chattanooga."
   neighborhoods: ["Downtown", "Highland Park", "North Shore", "Signal Mountain"]
   seasonality: "Year-round; some outdoor shows spring–summer"
   bestFor: ["Date night", "Families", "Theatre lovers"]
   iconPath: "../../../images/icons/performing_arts.svg"
-  images: ["/images/chattanooga_guides/performance-arts/tivoli-theatre.jpg", "/images/chattanooga_guides/performance-arts/soldiers-and-sailors.jpg", "/images/chattanooga_guides/performance-arts/chattanooga-theatre-center.jpg"]
+  images: [
+        {src: "/images/chattanooga_guides/performance-arts/tivoli-theatre.jpg", position: "upper"},
+    {src: "/images/chattanooga_guides/performance-arts/chattanooga-theatre-center.jpg", position: "upper"},
+    {src: "/images/chattanooga_guides/performance-arts/soldiers-and-sailors.jpg", position: "center"}
+  ]
   # sources: ["Tivoli Foundation", "Chattanooga Theatre Centre", "Barking Legs Theater"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';

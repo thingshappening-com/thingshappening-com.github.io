@@ -4,13 +4,17 @@
   originalDate: "12/29/2025"
   readTime: "9 minutes"
   iconPath: "../../../images/icons/history.svg"
-  tags: [{type: "guide", tag: "history"}]
+  tags: [{type: "guide", tag: "history"}, {type: "guide", tag: "longform"}]
   layout: "../../../layouts/BlogPostLayout.astro"
   seoDescription: "A comprehensive guide to Chattanooga's Civil War history, including key events, their significance, and historical landmarks you can visit today."
   neighborhoods: ["Lookout Mountain", "Missionary Ridge", "St. Elmo", "North Georgia", "Downtown Chattanooga"]
   seasonality: "Year-round; best weather March-November, some monuments seasonal access"
   bestFor: ["History buffs", "Families", "Students", "Tourists", "Outdoor enthusiasts"]
-  images: ["/images/chattanooga_guides/history/soldiers_with_flag.webp", "/images/chattanooga_guides/history/monument_tennessee.webp", "/images/chattanooga_guides/history/war_canons.webp"]
+  images: [
+    {src: "/images/chattanooga_guides/history/soldiers_with_flag.webp", position: "top"},    
+    {src: "/images/chattanooga_guides/history/war_canons.webp", position: "upper"},
+    {src: "/images/chattanooga_guides/history/monument_tennessee.webp", position: "upper"}
+  ]
   # sources: ["Chickamauga and Chattanooga National Military Park", "National Park Service", "Civil War Trust"]
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';

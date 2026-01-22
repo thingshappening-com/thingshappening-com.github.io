@@ -5,12 +5,16 @@
   lastUpdated: "01/18/2026"
   originalDate: "01/15/2026"
   readTime: "15 minutes"
-  tags: [{type: "guide", tag: "outdoors"}]
+  tags: [{type: "guide", tag: "outdoors"}, {type: "guide", tag: "interactive"}]
   layout: "../../../layouts/BlogPostLayout.astro"
-  seoDescription: "Guide to outdoor adventures and activities in Chattanooga including hiking, kayaking, rock climbing, biking and nature exploration."
+  seoDescription: "The fastest way to find your next outdoor adventures in Chattanooga."
   bestFor: ["Adventure seekers", "Outdoor enthusiasts", "Families", "Naturalists"]
   iconPath: "../../../images/icons/pine-tree.svg"
-  images: ["/images/chattanooga_guides/outdoors/lookout-mtn/mountain-top.jpg", "/images/chattanooga_guides/outdoors/cloudland/vista.webp", "/images/chattanooga_guides/outdoors/raccoon-mtn/gorge-overlook.jpg"]
+  images: [
+    {src: "/images/chattanooga_guides/outdoors/raccoon-mtn/gorge-overlook.jpg", position: "center"},
+    {src: "/images/chattanooga_guides/outdoors/lookout-mtn/mountain-top.jpg", position: "center"},
+    {src: "/images/chattanooga_guides/outdoors/cloudland/vista.webp", position: "center"}
+  ]
   pageItems: [
     # Cloudland Canyon State Park (1-5)
     {title: "Hike the West Rim Loop", description: "A 5 mile loop trail that stays on top of the canyon as you follow the canyon rim. The terrain is dirt, rock and has some tree roots. Elevation changes on the trail are mild, about 700ft of elevation gain in total. The park is open 7am–10pm and requires a $5 daily parking fee.", order: 1, tags: ["hiking", "cloudland", "3-to-5-miles"], links: [{text: "Full Trail Details", link: "/chattanooga/guides/cloudland-canyon#advanced-hikes"}]},
@@ -204,7 +208,7 @@ import PageItemsFromFrontmatter from '../../../components/PageItemsFromFrontmatt
 </div>
 
 <div class="max-w-6xl mx-auto px-3">
-  <div class="pb-5 pt-2">Chattanooga is the United State’s first designated National Park City, by the foundation of the same name. A recognition for it’s commitment to conservation, access to nature and outdoor recreation.</div>
+  <div class="pb-5 pt-2">Chattanooga is the United State's first designated National Park City, by the foundation of the same name. A recognition for it's commitment to conservation, access to nature and outdoor recreation.</div>
   <div class="pb-5">The aim of this database guide is to help you find an activity or adventure that inspires you to get outside and explore the nearby parks more easily.</div>
   <div class="pb-5">A reminder to all to please practice Leave No Trace ethics. Avoid riding muddy trails, pack out waste properly, and be mindful of wildlife.</div>
   <div class="pt-2 mb-5">  
@@ -371,8 +375,13 @@ import PageItemsFromFrontmatter from '../../../components/PageItemsFromFrontmatt
   </div>
 </div>
 
-<section class="text-xl pb-2">
+<section class="text-xl">
   <div>
     <PageItemsFromFrontmatter pageItems={frontmatter.pageItems} showClearFilters={true} />
   </div>
 </section>
+
+<div class="pb-12">
+  <div class="pb-3">Have we done enough to satisfy your craving for the outdoors? If no, <a href="mailto:jack@thingshappening.com">send us an email</a>, all feedback helps (constructive preferred). If yes, <a href="mailto:jack@thingshappening.com">send us an email</a>, a bit of praise never hurt anyone.</div>
+  <div>This guide will continue to be added to and refined over time, so please check back in after you've gathered yourself following your latest Chattanooga adventure.</div>
+</div>
