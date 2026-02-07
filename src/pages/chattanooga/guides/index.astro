@@ -1,16 +1,11 @@
 ---
 import BaseHead from '../../../components/Head/BaseHead.astro';
 import Nav from '../../../components/Nav.astro';
-import SubNav from '../../../components/SubNav.astro';
-import HomeHeader from '../../../components/HomeHeader.astro';
 import Card from '../../../components/Card.astro';
 import Footer from '../../../components/Footer/Footer.astro';
 
 const title = 'Chattanooga Guides';
 const seoDescription = 'In-depth guides to exploring Chattanooga – from outdoor adventures to hidden gems.';
-// const description = 'Your source for curated, in-depth guides to Chattanooga';
-const description = 'A growing library of curated, in-depth guides to';
-const city = 'Chattanooga';
 
 const allGuides = (await Astro.glob('./*.mdx')).filter(
   (post) => post.frontmatter.published !== false
@@ -29,9 +24,11 @@ const guidesPage = sortedGuides.slice(0, 12);
 
 <body class="text-black font-body leading-normal personality-casual">
   <Nav />
-  <main class="lg:pt-20">
-    <HomeHeader title={title} city={city} description={description} />
+  <main>
     <article class="w-full px-4 md:px-8 lg:px-16 mt-8">
+      <header class="pt-10 content">
+        <h1 class="font-jakarta font-normal text-5xl">Our Guides to <span class="text-customGreen1">Chattanooga</span><span class="text-customGreen1">.</span></h1>
+      </header>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8">
         {guidesPage.map((guide) => (
           <div class="col-span-1">

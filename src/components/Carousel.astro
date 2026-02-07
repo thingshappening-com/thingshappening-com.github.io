@@ -29,14 +29,14 @@ const positionClasses = {
 
 <div class="carousel-container relative w-full overflow-hidden rounded-t-xl py-4">
   <!-- Images Track -->
-  <div class="carousel-track flex gap-3 transition-transform duration-300 ease-out">
+  <div class="carousel-track flex gap-3 transition-transform duration-150 ease-out">
     {normalizedImages.map((img, index) => (
       <div class="carousel-slide flex-shrink-0" data-index={index}>
         <img 
           src={img.src} 
           alt={`Slide ${index + 1}`}
           class={`w-full aspect-[3/2] object-cover rounded-lg ${positionClasses[img.position]}`}
-          loading={index === 0 ? "eager" : "lazy"}
+          loading="eager"
         />
       </div>
     ))}
