@@ -19,6 +19,9 @@ const city = "Chattanooga";
 const allGuides = (await Astro.glob('./chattanooga/guides/*.mdx')).filter(
   (post) => post.frontmatter.published !== false
 );
+const allEditorials = (await Astro.glob('./chattanooga/editorials/*.mdx')).filter(
+  (post) => post.frontmatter.published !== false
+);
 const allEvents = (await Astro.glob('./chattanooga/**/**/*.mdx')).filter(
   (post) => post.frontmatter.published !== false
 );
@@ -28,6 +31,13 @@ const guides = allGuides.map((p) => ({
   ...p.frontmatter,
   url: p.url,
   type: 'guide',
+}));
+
+// Format editorials
+const editorials = allEditorials.map((p) => ({
+  ...p.frontmatter,
+  url: p.url,
+  type: 'editorial',
 }));
 
 // Format events similar to pagination logic
@@ -84,17 +94,19 @@ const sortedEvents = expanded
   .filter((e) => new Date(e.pubDate) >= today)
   .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
 
-const sortedGuides = guides.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
+// Merge guides and editorials, sort by lastUpdated
+const allContent = [...guides, ...editorials];
+const sortedContent = allContent.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
 const eventsPage = sortedEvents.slice(0, 9);
-const guidesPage = sortedGuides.slice(0, 9);
+const contentPage = sortedContent.slice(0, 9);
 
 // Pagination tracking (just for metadata / Paginator component)
 const page = {
   currentPage: 1,
   lastPage: Math.max(
     Math.ceil(sortedEvents.length / 9),
-    Math.ceil(sortedGuides.length / 9)
+    Math.ceil(sortedContent.length / 9)
   ),
   url: '/',
 };
@@ -134,17 +146,18 @@ const page = {
         <a href="/" class="text-customGreen1 font-semibold border-b-2 border-customGreen1 pb-1">All</a>
         <a href="/tag/guide/longform" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Longform</span><span class="hidden md:inline">Longform Guides</span></a>
         <a href="/tag/guide/interactive" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Interactive</span><span class="hidden md:inline">Interactive Guides</span></a>
+        <a href="/tag/guide/editorial" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors">Editorials</a>
       </nav>
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8">
-        {guidesPage.map((g) => (
+        {contentPage.map((item) => (
           <div class="col-span-1">
-            <Card post={g} />
+            <Card post={item} />
           </div>
         ))}
       </section>
-      {sortedGuides.length > 15 && (
+      {sortedContent.length > 15 && (
         <div class="text-center mt-4">
-          <a href="/chattanooga/guides/page/2" class="underline text-blue-600 font-semibold">View more guides →</a>
+          <a href="/chattanooga/guides/page/2" class="underline text-blue-600 font-semibold">View more →</a>
         </div>
       )}
     </article>
