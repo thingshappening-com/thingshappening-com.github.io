@@ -1,0 +1,55 @@
+---
+import Card from '../../../components/Card.astro';
+import Nav from '../../../components/Nav.astro';
+import BaseHead from '../../../components/Head/BaseHead.astro';
+
+const tag = 'editorial';
+
+// Fetch editorials
+let allEditorials = (await Astro.glob('./*.mdx')).filter(
+  post => post.frontmatter.published !== false
+);
+
+const title = 'Chattanooga Editorials | Things Happening';
+const seoDescription = 'Field notes and first-hand observations from exploring Chattanooga and the surrounding area.';
+
+let allPosts = allEditorials.map((p) => {
+  return Object.assign({}, p.frontmatter, { url: p.url });
+});
+
+// Sort by lastUpdated or originalDate
+allPosts.sort((a, b) => {
+  const dateA = new Date(a.lastUpdated || a.originalDate).getTime();
+  const dateB = new Date(b.lastUpdated || b.originalDate).getTime();
+  return dateB - dateA;
+});
+---
+
+<html>
+  <head>
+    <BaseHead title={title} description={seoDescription} />
+    <meta charset="utf-8" />
+  </head>
+  <body class="text-black font-body leading-normal personality-casual">
+    <Nav />
+
+    <main>
+      <article class="w-full px-4 md:px-8 lg:px-16 mt-8">
+        <header class="pt-10 content">
+          <h1 class="font-jakarta font-normal text-5xl">Explore <span class="text-customGreen1">Chattanooga</span> Like a Local with Our Guides<span class="text-customGreen1">.</span></h1>
+        </header>
+        <nav class="flex gap-6 pt-6 text-xl">
+          <a href="/" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors">All</a>
+          <a href="/tag/guide/longform" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Longform</span><span class="hidden md:inline">Longform Guides</span></a>
+          <a href="/chattanooga/editorials" class="text-customGreen1 font-semibold border-b-2 border-customGreen1 pb-1">Editorials</a>
+        </nav>
+  
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8" data-test="articles-section">
+          {allPosts.map(p => <div class="col-span-1">
+            <Card post={p} highlighted={tag} />
+          </div>)}
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
