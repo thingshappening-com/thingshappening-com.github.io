@@ -1,11 +1,16 @@
 ---
-title: "A Beach Day at Booker T Washington State Park"
+title: "Finding a Shoreline at Booker T. Washington State Park"
 originalDate: "02/08/2026"
-lastUpdated: "02/08/2026"
+lastUpdated: "02/14/2026"
 readTime: "4 minutes"
 layout: "../../../layouts/BlogPostLayout.astro"
-seoDescription: "Field notes from a winter visit to Booker T Washington State Park's hidden shoreline on Chickamauga Lake near Chattanooga, Tennessee."
+seoDescription: "A winter hiking visit to Booker T. Washington State Park near Chattanooga. Rocky shoreline, driftwood, waterfowl, and long views across Chickamauga Lake to the Appalachian hills. Dog friendly trails and kayak launch."
 tags: [{type: "guide", tag: "editorial"}]
+neighborhoods: ["Harrison", "Chickamauga Lake"]
+bestFor: ["Paddlers", "Kid and dog friendly outdoors", "Easier bikes and hikes"]
+petFriendly: true
+kidFriendly: true
+seasonality: "Year-round; winter offers fewer crowds and expanded shoreline"
 images: [
   {src: "/editorials/long-water-view-booker-t-washington-park.jpg", position: "center"},
   {src: "/editorials/driftwood-booker-t-washington-park.jpg", position: "center"},
@@ -14,25 +19,70 @@ images: [
 ---
 import OptimizedImage from '../../../components/OptimizedImage.astro';
 
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Finding a Shoreline at Booker T. Washington State Park",
+  "description": "A winter hiking visit to Booker T. Washington State Park near Chattanooga. Rocky shoreline, driftwood, waterfowl, and long views across Chickamauga Lake.",
+  "image": "https://thingshappening.com/editorials/long-water-view-booker-t-washington-park.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Jack Burum"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Things Happening",
+    "url": "https://thingshappening.com"
+  },
+  "datePublished": "2026-02-08",
+  "dateModified": "2026-02-14",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thingshappening.com/chattanooga/editorials/beach-day-booker-t-washington-state-park"
+  },
+  "about": {
+    "@type": "Park",
+    "name": "Booker T. Washington State Park",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chattanooga",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    }
+  }
+})} />
+
 <div class="text-xl">
   <p class="pb-5">
-    I went to Booker T Washington State Park to find some water views. My dog Merlin came along, open to the idea.
+    I drove out to Booker T. Washington State Park, looking for a spot to get outside and find some open water views while hiking around Chickamauga Lake. My dog, Merlin, came along, happy as always to be invited.
   </p>
 
   <p class="pb-5">
-    The turn into the park is easy to miss. Where you see the sign is where you turn. Parking is free.
+    Parking here was easy and free. The turnoff sneaks up on you—right where the park sign stands, that's the entrance. Obvious once you know, still worth noting.
   </p>
 
   <p class="pb-5">
-    From the recreation area, it's a short walk to the shoreline. I went in winter. Fewer people, fewer boats, more beach exposed from less rain. No bugs. Low humidity. Brisk air.
+    Boat traffic around the lake runs lighter here than in other parts due to shallow waters, but stay alert anyway.
   </p>
 
   <p class="pb-5">
-    The beach runs about a third of a mile, maybe a little more depending on water levels. Rocky throughout. No boulders, but the stones vary from marble-sized to baseball-sized in different sections. A surprising number of mussel and snail shells. Fewer skipping stones than I expected. Maybe it was a bad day for them. Maybe I need my eyes checked.
+    We visited in winter. Fewer people and fewer bugs. Less boat traffic too. The beach stretched wider from a rain dry spell. Humidity stayed low. The air felt brisk and clean.
   </p>
 
   <p class="pb-5">
-    Dried driftwood lies along the bank, some pieces running from the shore into the water. Almost sculptural. One log made a natural bench. Easy to step over, though small children might need help.
+    We strolled the shoreline, it's maybe 10-20 yards of walkable frontage, though likely less if you visit during a rainy stretch. The ground was more rock than dirt, mostly small stones from marble to baseball in size. Mussel and snail shells cover a surprising amount of the ground as well. This stretch measured about 0.3 to 0.5 miles long that day, I wasn't tracking so don't hold me to the estimate.
+  </p>
+
+  <p class="pb-5">
+    Merlin and I found fewer skipping stones than we'd hoped. Maybe a bad day for them. Maybe we need to check our eyes checked.
+  </p>
+
+  <p class="pb-5">
+    I regretted leaving the binoculars at home. The hills, birds, and wide water would have been fun to view up close.
+  </p>
+
+  <p class="pb-5">
+    Dried driftwood lies scattered along the walk. Beautiful pieces, some almost like sculptures you'd see at Sculpture Fields. A few logs stretch from bank to water. Easy to step over, but small children might need a helping hand. One thick log sits just right as a natural bench if your legs want a break.
   </p>
 
   <div class="mb-12 mt-8 flex flex-col justify-center items-center">
@@ -50,7 +100,11 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
   </div>
 
   <p class="pb-5">
-    The forest is mostly deciduous with a few pines mixed in. Tall trees give shade unless you're there midday. Long views open across Chickamauga Lake, Appalachian hills on the horizon. I didn't bring binoculars. I wished I had.
+    The forest around us was mostly deciduous. A few pines mix in among the leaf shedders. Tall trees provide good shade, except right in the middle of the afternoon.
+  </p>
+
+  <p class="pb-5">
+    The views open up long. Chickamauga Lake spreads wide in the distance. Appalachian hills rise on the horizon.
   </p>
 
   <div class="mb-12 mt-8 flex flex-col justify-center items-center">
@@ -61,19 +115,23 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
   </div>
 
   <p class="pb-5">
-    We shared the cove with mallards and coots. Vultures overhead. Birds of prey calling from the tree line. A kingfisher zipped through. The usual brush birds and small mammals moving around.
+    Waterfowl joined us mallards and wood ducks. Vultures circle overhead. Birds of prey called from the forest edge. A kingfisher zipped past low and fast. The usual small brush birds and mammals we're around too.
   </p>
 
   <p class="pb-5">
-    Less boat traffic here than other parts of the lake, but stay aware. Good spot to fish the shoreline, launch a kayak, have a picnic with fold-out chairs. No swimming sign posted. Swim at your own risk. You can extend the visit on the 1.1-mile nature trail or the longer multi-use trails.
+    The walk from the main recreation area ended up being short and easy. You can extend it into the 1.1-mile nature trail (single-use) or hop on one of the longer multi-use trails for more distance.
   </p>
 
   <p class="pb-5">
-    It was clean. Keep it that way.
+    This spot would work well for shoreline fishing. Kayaks or paddleboards launch easily here. A waterside picnic fits—bring fold-out chairs.
   </p>
 
   <p class="pb-5">
-    There's no name for this stretch of beach. I'm calling it Merlin's Cove. It has some magic to it, and it's my dog's name. Call it what you want.
+    Worth noting the area stayed exceptionally clean. And it would be nice to keep it that way, if you could help out.
+  </p>
+
+  <p class="pb-5">
+    I don't think the park has a name for this strip, so for I call it Merlin's Cove. It has a little bit of magic going for it and Merlin happens to be my dog's name. Call it whatever you see fit or just call yourself lucky to be there. That's the place as it appeared this winter day. Quiet, open, and worth the drive.
   </p>
 
   <div class="mb-12 mt-8 flex flex-col justify-center items-center">
@@ -81,5 +139,11 @@ import OptimizedImage from '../../../components/OptimizedImage.astro';
     <div class="text-center mt-4 text-[18px] max-w-2xl text-gray-600">
       <em>Merlin at Merlin's Cove</em>
     </div>
+  </div>
+
+  <div class="pt-8 border-t border-gray-200 mt-8 pb-12">
+    <p class="pb-3">
+      <strong>Related:</strong> For more outdoors ideas at Booker T. Washington State Park, check out the <a href="/chattanooga/guides/outdoors?tags=booker-t-washington">Chattanooga Outdoors Guide</a>.
+    </p>
   </div>
 </div>
