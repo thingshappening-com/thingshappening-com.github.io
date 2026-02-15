@@ -77,7 +77,8 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
         {Array.isArray(post.tags) ? (
           post.tags.map((t) => {
             const highlight = t == highlighted ? 'font-semibold' : ''
-            return <a href={`/tag/${t.type}/${t.tag}`} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span class="text-customGreen1">#</span>{`${t.tag}`}</a>
+            const tagHref = t.type === 'guide' ? `/chattanooga/guides/${t.tag}` : `/tag/${t.type}/${t.tag}`;
+            return <a href={tagHref} class={`${highlight} transition-all duration-75 h-fit inline pr-2`}><span class="text-customGreen1">#</span>{`${t.tag}`}</a>
           })
         ) : (
           <span>Tags are not an array.</span>

@@ -121,7 +121,8 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
       {tags && tags.length > 0 && (
         <div>
           {tags.map(tag => {
-            return <a class="mr-3 no-underline text-warmGreen" href={`/tag/${tag.type}/${tag.tag}`}><span class="text-white">#</span>{tag.tag}</a>
+            const tagHref = tag.type === 'guide' ? `/chattanooga/guides/${tag.tag}` : `/tag/${tag.type}/${tag.tag}`;
+            return <a class="mr-3 no-underline text-warmGreen" href={tagHref}><span class="text-white">#</span>{tag.tag}</a>
           })}
         </div>
       )}
