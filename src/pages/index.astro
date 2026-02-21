@@ -98,6 +98,42 @@ const sortedEvents = expanded
 const allContent = [...guides, ...editorials];
 const sortedContent = allContent.sort((a, b) => new Date(b.lastUpdated) - new Date(a.lastUpdated));
 
+// Map content tags to three homepage groupings
+const OUTDOORS_TAGS = ['outdoors', 'editorial'];
+const LIVE_EVENTS_TAGS = ['music', 'live-events', 'arts', 'sports'];
+const AROUND_THE_CITY_TAGS = ['tours', 'merchants', 'history'];
+
+function getSectionKey(item: { tags?: Array<{ type: string; tag: string }>; type?: string }) {
+  const tags = item.tags ?? [];
+  const first = tags.find((t) => t.tag !== 'longform');
+  const tag = first ? first.tag : (item.type === 'editorial' ? 'editorial' : 'around-the-city');
+  if (OUTDOORS_TAGS.includes(tag)) return 'outdoors';
+  if (LIVE_EVENTS_TAGS.includes(tag)) return 'live-events-and-performances';
+  return 'around-the-city';
+}
+
+const SECTION_LABELS: Record<string, string> = {
+  'outdoors': 'Outdoors',
+  'live-events-and-performances': 'Live Events and Performances',
+  'around-the-city': 'Around the city',
+};
+const SECTION_DESCRIPTIONS: Record<string, string> = {
+  'outdoors': 'Hikes, parks, trails, and outdoor adventures in and around Chattanooga.',
+  'live-events-and-performances': 'Live music, theatre, performing arts, and sports to see in person.',
+  'around-the-city': 'Tours, history, food, and ways to explore the city like a local.',
+};
+const SECTION_ORDER = ['outdoors', 'live-events-and-performances', 'around-the-city'];
+
+// Group content by section, each section sorted by lastUpdated
+const bySection: Record<string, typeof sortedContent> = {};
+for (const item of sortedContent) {
+  const key = getSectionKey(item);
+  if (!bySection[key]) bySection[key] = [];
+  bySection[key].push(item);
+}
+// Per-section slice for homepage (e.g. 3 cards per section)
+const SECTION_PREVIEW_SIZE = 3;
+
 const eventsPage = sortedEvents.slice(0, 9);
 const contentPage = sortedContent.slice(0, 9);
 
@@ -147,15 +183,31 @@ const page = {
         <a href="/chattanooga/guides" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Longform</span><span class="hidden md:inline">Longform Guides</span></a>
         <a href="/chattanooga/editorials" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors">Editorials</a>
       </nav>
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8">
-        {contentPage.map((item) => (
-          <div class="col-span-1">
-            <Card post={item} />
-          </div>
-        ))}
-      </section>
+      {SECTION_ORDER.filter((key) => bySection[key]?.length).map((key) => {
+        const items = bySection[key].slice(0, SECTION_PREVIEW_SIZE);
+        const label = SECTION_LABELS[key] ?? key;
+        const description = SECTION_DESCRIPTIONS[key] ?? '';
+        return (
+          <section class="pt-10 first:pt-8" aria-labelledby={`section-${key}`}>
+            <h2 id={`section-${key}`} class="font-jakarta font-normal text-2xl text-gray-800 mb-1">{label}</h2>
+            {description && <p class="text-gray-600 text-lg mb-6">{description}</p>}
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
+              {items.map((item) => (
+                <div class="col-span-1">
+                  <Card post={item} />
+                </div>
+              ))}
+            </div>
+            {bySection[key].length > SECTION_PREVIEW_SIZE && (
+              <div class="mt-4">
+                <a href="/chattanooga/guides" class="underline text-blue-600 font-semibold">View all in {label} →</a>
+              </div>
+            )}
+          </section>
+        );
+      })}
       {sortedContent.length > 15 && (
-        <div class="text-center mt-4">
+        <div class="text-center mt-10 pt-6 border-t border-gray-200">
           <a href="/chattanooga/guides/page/2" class="underline text-blue-600 font-semibold">View more →</a>
         </div>
       )}

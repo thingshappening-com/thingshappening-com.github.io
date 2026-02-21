@@ -1,10 +1,10 @@
 ---
-import Card from '../../../components/Card.astro';
-import Nav from '../../../components/Nav.astro';
-import BaseHead from '../../../components/Head/BaseHead.astro';
+import Card from '../../../../components/Card.astro';
+import Nav from '../../../../components/Nav.astro';
+import BaseHead from '../../../../components/Head/BaseHead.astro';
 
 export async function getStaticPaths() {
-  const allPosts = (await Astro.glob('../../**/*.mdx')).filter(
+  const allPosts = (await Astro.glob('../../../**/*.mdx')).filter(
     (post) => post.frontmatter.published !== false
   );
   // Extract tags with type "guide" and create a Set to ensure uniqueness
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 ));
   const tags = Array.from(tagSet).filter((element): element is string => element !== undefined);
 
-  // Create paths for each tag
+  // Create paths for each tag (at /chattanooga/guides/tag/[tag] to avoid clashing with guide slugs like outdoors)
   const paths = tags.map(tag => {
     return {
       params: { tag }
@@ -31,8 +31,8 @@ const { tag } = Astro.params;
 
 // Since we cannot share allPosts between getStaticPaths and the component,
 // we need to fetch them again here for filtering
-let filteredGuides = (await Astro.glob('../../**/*.mdx')).filter(post => post.frontmatter.published !== false && post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
-let filteredEvents = (await Astro.glob('../../**/**/*.mdx')).filter(post => post.frontmatter.published !== false && post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
+let filteredGuides = (await Astro.glob('../../../**/*.mdx')).filter(post => post.frontmatter.published !== false && post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
+let filteredEvents = (await Astro.glob('../../../**/**/*.mdx')).filter(post => post.frontmatter.published !== false && post.frontmatter.tags && post.frontmatter.tags.find(postTag => postTag.tag === tag));
 
 // Deduplicate posts by URL since both globs can match the same files
 const postsMap = new Map();
