@@ -121,10 +121,10 @@ module.exports = {
         jakarta: ["'Plus Jakarta Sans'", "sans-serif"]
       },
       fontSize: {
-        "4xl": "2.5em",
+        "4xl": "2.2em",
         "xl2": "1.38rem",
         "5xl": "3rem",
-        "6xl": "4rem",
+        "6xl": "3.75rem",
         "7xl": "5rem",
         "8xl": "6rem",
         "9xl": "7rem",

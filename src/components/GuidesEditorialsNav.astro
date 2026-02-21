@@ -1,0 +1,23 @@
+---
+export type ActiveTab = 'all' | 'guides' | 'editorials';
+
+interface Props {
+  active: ActiveTab;
+}
+
+const { active } = Astro.props;
+
+const linkClass = (tab: ActiveTab) =>
+  active === tab
+    ? 'text-customGreen1 font-semibold border-b-2 border-customGreen1 pb-1'
+    : 'text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors';
+---
+
+<nav class="flex gap-5 pt-10 text-2xl" aria-label="Guides and editorials">
+  <a href="/" class={linkClass('all')}>All</a>
+  <a href="/chattanooga/guides" class={linkClass('guides')}>
+    <span class="md:hidden">Longform</span>
+    <span class="hidden md:inline">Longform Guides</span>
+  </a>
+  <a href="/chattanooga/editorials" class={linkClass('editorials')}>Editorials</a>
+</nav>

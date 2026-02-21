@@ -2,6 +2,7 @@
 import Card from '../../../components/Card.astro';
 import Nav from '../../../components/Nav.astro';
 import BaseHead from '../../../components/Head/BaseHead.astro';
+import GuidesEditorialsNav from '../../../components/GuidesEditorialsNav.astro';
 
 const tag = 'editorial';
 
@@ -36,13 +37,9 @@ allPosts.sort((a, b) => {
     <main>
       <article class="w-full px-4 md:px-8 lg:px-16 mt-8">
         <header class="pt-10 content">
-          <h1 class="font-jakarta font-medium text-5xl">Read about <span class="text-customGreen1">Chattanooga </span> through second hand experience<span class="text-customGreen1">.</span></h1>
+          <h1 class="font-jakarta font-medium text-5xl md:text-6xl">Read about <span class="text-customGreen1">Chattanooga </span> through second hand experience<span class="text-customGreen1">.</span></h1>
         </header>        
-        <nav class="flex gap-6 pt-6 text-2xl">
-          <a href="/" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors">All</a>
-          <a href="/chattanooga/guides" class="text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors"><span class="md:hidden">Longform</span><span class="hidden md:inline">Longform Guides</span></a>
-          <a href="/chattanooga/editorials" class="text-customGreen1 font-semibold border-b-2 border-customGreen1 pb-1">Editorials</a>
-        </nav>
+        <GuidesEditorialsNav active="editorials" />
   
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8" data-test="articles-section">
           {allPosts.map(p => <div class="col-span-1">
