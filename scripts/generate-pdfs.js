@@ -8,17 +8,19 @@ import handler from 'serve-handler';
 async function generatePDFs() {
   console.log('Starting PDF generation...');
 
-  // Start a local server to serve the built files
+  // Start a local server to serve the built files (port 0 = OS picks a free port)
   const server = http.createServer((request, response) => {
     return handler(request, response, {
       public: './dist'
     });
   });
 
-  const serverPort = 4322; // Use the same port as Astro preview
-  server.listen(serverPort, () => {
-    console.log(`Running static server at http://localhost:${serverPort}`);
+  await new Promise((resolve, reject) => {
+    server.listen(0, () => resolve());
+    server.on('error', reject);
   });
+  const serverPort = server.address().port;
+  console.log(`Running static server at http://localhost:${serverPort}`);
   
   // Find all guide MDX files
   const guideFiles = await globby('./src/pages/chattanooga/guides/*.mdx');
@@ -55,7 +57,7 @@ async function generatePDFs() {
       const filename = path.basename(file, '.mdx');
       
       // Convert to URL path (assuming your site structure)
-      const url = `http://localhost:4322/chattanooga/guides/${filename}`;
+      const url = `http://localhost:${serverPort}/chattanooga/guides/${filename}`;
       
       console.log(`Generating PDF for ${filename}...`);
       
