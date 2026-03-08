@@ -10,6 +10,15 @@ export interface Props {
 
 let { post, highlighted, images } = Astro.props;
 
+// Ensure icon path is root-relative so icons work on nested routes (e.g. /chattanooga/guides/tag/...)
+const iconPath = post.iconPath
+  ? post.iconPath.startsWith('/') || post.iconPath.startsWith('http')
+    ? post.iconPath
+    : post.iconPath.includes('images/')
+      ? '/' + post.iconPath.replace(/^.*images\//, 'images/')
+      : post.iconPath
+  : undefined;
+
 const carouselImages = images?.length ? images : post.images?.length ? post.images : [];
 
 const pubDate = post.pubDate || post.lastUpdated
@@ -47,7 +56,7 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
       </h2>
       {(post.pubDate || post.lastUpdated) && (
         <p class="text-lg text-gray-600 mt-2 flex items-center">
-          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {post.iconPath ? <img class="w-8 h-8 inline-icon" src={post.iconPath} alt="icon" /> : ""}
+          {`${dayOfWeek}`} {dayjs(pubDate).format('MM-DD-YYYY')} &nbsp {iconPath ? <img class="w-8 h-8 inline-icon" src={iconPath} alt="icon" /> : ""}
         </p>
       )}
     </div>
