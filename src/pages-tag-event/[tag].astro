@@ -4,6 +4,7 @@ import HomeHeader from '../../../components/HomeHeader.astro';
 import Nav from '../../../components/Nav.astro';
 import SubNav from '../../../components/SubNav.astro';
 import BaseHead from '../../../components/Head/BaseHead.astro';
+import Footer from '../../../components/Footer/Footer.astro';
 
 export async function getStaticPaths() {
   const allPosts = (await Astro.glob('../../**/**/*.mdx')).filter(
@@ -85,5 +86,6 @@ const seoDescription = 'An easier way to find things happening';
         </section>
       </article>
     </main>
+    <Footer />
   </body>
 </html>

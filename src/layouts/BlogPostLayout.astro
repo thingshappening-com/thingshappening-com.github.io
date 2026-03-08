@@ -2,6 +2,7 @@
 import Nav from '../components/Nav.astro';
 import BaseHead from '../components/Head/BaseHead.astro';
 import BlogPost from '../components/BlogPost.astro';
+import Footer from '../components/Footer/Footer.astro';
 
 const {content} = Astro.props;
 let {address, author, eventLink, readTime, originalDate, matchedDetails, eventDatesDetails, entranceCost, lastUpdated, ticketsLink, tags, title, time, description, pubDate, venue, venueDetails, hero, youtube,
@@ -39,6 +40,7 @@ title = title ? title : "";
         <slot pageItems={pageItems} />
       </BlogPost>
     </main>
+    <Footer />
   </body>
 </html>
 
