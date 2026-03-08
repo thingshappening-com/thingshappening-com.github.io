@@ -10,14 +10,7 @@ export interface Props {
 
 let { post, highlighted, images } = Astro.props;
 
-// Default placeholder images from public directory
-const defaultImages = [
-  '/images/chattanooga_guides/performance-arts/tivoli-theatre.jpg',
-  '/images/chattanooga_guides/outdoors/cloudland/cloudland-canyon.webp',
-  '/images/chattanooga_guides/history/war_canons.webp',
-];
-
-const carouselImages = images || post.images || defaultImages;
+const carouselImages = images?.length ? images : post.images?.length ? post.images : [];
 
 const pubDate = post.pubDate || post.lastUpdated
 const date = new Date(pubDate);
@@ -60,8 +53,8 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
     </div>
   </a>
 
-  <!-- Carousel Section -->
-  <Carousel images={carouselImages} />
+  <!-- Carousel Section (only when post has images) -->
+  {carouselImages.length > 0 && <Carousel images={carouselImages} />}
 
   <!-- Overview Section -->
   {post.seoDescription && (

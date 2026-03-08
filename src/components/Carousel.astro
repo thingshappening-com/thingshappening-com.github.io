@@ -100,6 +100,7 @@ const positionClasses = {
     }
 
     init() {
+      if (!this.slides.length) return;
       this.prevBtn.addEventListener('click', () => this.prev());
       this.nextBtn.addEventListener('click', () => this.next());
       
@@ -128,6 +129,7 @@ const positionClasses = {
     }
 
     goTo(index: number) {
+      if (!this.slides.length) return;
       this.currentIndex = index;
       
       const containerWidth = this.container.offsetWidth;

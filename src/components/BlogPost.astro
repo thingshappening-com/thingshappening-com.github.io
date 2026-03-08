@@ -50,11 +50,17 @@ export interface Props {
       appearance?: 'before' | 'after' | 'inline';
     };
   }>;
+  /** Override the series/subtitle line above the title. Default: "The Chattanooga Guides Series"; editorials default to "A Things Happening Chattanooga Editorial" when pathname contains /editorials/ */
+  seriesLabel?: string;
+  /** Used to pick default seriesLabel for editorials vs guides; pass Astro.url.pathname */
+  pathname?: string;
 }
 
 let { address, author, readTime, matchedDetails, eventDatesDetails, eventLink, entranceCost, lastUpdated, originalDate, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube,
   // Additional optional metadata
-  seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources, pageItems } = Astro.props;
+  seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources, pageItems, seriesLabel, pathname } = Astro.props;
+
+const displaySeriesLabel = seriesLabel ?? (pathname?.includes('/editorials/') ? 'A Things Happening Chattanooga Editorial' : 'The Chattanooga Guides Series');
 const date = new Date(pubDate);
 let eventDateDetails;
 // console.log(matchedDetails)
@@ -78,7 +84,7 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
 <div class="header-styles mb-10 pt-14 pb-14 lg:flex-wrap md:flex-wrap sm:flex-nowrap text-xl">
   <header class="max-w-5xl content max-w-5xl mx-auto px-3 text-3xl tracking-wide">
     <h2 class="text-xl font-semibold tracking-widest">
-      The Chattanooga Guides Series
+      {displaySeriesLabel}
     </h2>
     <h1 class="break-words" style="font-family: 'Libre Baskerville', serif; font-size: clamp(2.75rem, 5vw, 4.5rem);">{title} {pubDate && (
      `: ${subTitle}`

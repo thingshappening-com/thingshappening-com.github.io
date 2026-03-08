@@ -119,6 +119,12 @@ const SECTION_LABELS: Record<string, string> = {
   'live-events-and-performances': 'Live Events and Performances',
   'around-the-city': 'Around the city',
 };
+/** Tag slug for "View all" link: /chattanooga/guides/tag/{slug} */
+const SECTION_TAG_SLUG: Record<string, string> = {
+  'outdoors': 'outdoors',
+  'live-events-and-performances': 'live-events',
+  'around-the-city': 'around-the-city',
+};
 const SECTION_DESCRIPTIONS: Record<string, string> = {
   'outdoors': 'Hikes, parks, trails, and outdoor adventures in and around Chattanooga',
   'live-events-and-performances': 'Live music, theatre, performing arts, and sports to see in person',
@@ -198,7 +204,7 @@ const page = {
             </div>
             {bySection[key].length > SECTION_PREVIEW_SIZE && (
               <div class="mt-4">
-                <a href="/chattanooga/guides" class="text-customGreen1 font-semibold underline hover:opacity-90 transition-colors text-xl">View all in {label} →</a>
+                <a href={SECTION_TAG_SLUG[key] ? `/chattanooga/guides/tag/${SECTION_TAG_SLUG[key]}` : '/chattanooga/guides'} class="text-customGreen1 font-semibold underline hover:opacity-90 transition-colors text-xl">View all in {label} →</a>
               </div>
             )}
           </section>
