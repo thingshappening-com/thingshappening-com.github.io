@@ -20,6 +20,18 @@ const iconPath = post.iconPath
   : undefined;
 
 const carouselImages = images?.length ? images : post.images?.length ? post.images : [];
+const singleImage = carouselImages.length === 1
+  ? (typeof carouselImages[0] === 'string'
+      ? { src: carouselImages[0], position: 'center' }
+      : { src: carouselImages[0].src, position: carouselImages[0].position || 'center' })
+  : null;
+const positionClasses = {
+  top: 'object-top',
+  upper: 'object-[50%_25%]',
+  center: 'object-center',
+  lower: 'object-[50%_75%]',
+  bottom: 'object-bottom',
+};
 
 const pubDate = post.pubDate || post.lastUpdated
 const date = new Date(pubDate);
@@ -62,8 +74,18 @@ const subTitle = eventDateDetails && eventDateDetails.eventTitle ? eventDateDeta
     </div>
   </a>
 
-  <!-- Carousel Section (only when post has images) -->
-  {carouselImages.length > 0 && <Carousel images={carouselImages} />}
+  <!-- Images Section: single image when one, carousel when multiple -->
+  {singleImage && (
+    <div class="w-full overflow-hidden rounded-t-xl py-4 px-4">
+      <img
+        src={singleImage.src}
+        alt=""
+        class={`w-full aspect-[3/2] object-cover rounded-lg ${positionClasses[singleImage.position] || positionClasses.center}`}
+        loading="eager"
+      />
+    </div>
+  )}
+  {carouselImages.length > 1 && <Carousel images={carouselImages} />}
 
   <!-- Overview Section -->
   {post.seoDescription && (
