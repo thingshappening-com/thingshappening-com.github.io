@@ -5,7 +5,7 @@ import BlogPost from '../components/BlogPost.astro';
 import Footer from '../components/Footer/Footer.astro';
 
 const {content} = Astro.props;
-let {address, author, eventLink, readTime, originalDate, matchedDetails, eventDatesDetails, entranceCost, lastUpdated, ticketsLink, tags, title, time, description, pubDate, venue, venueDetails, hero, youtube,
+let {address, author, eventLink, readTime, originalDate, matchedDetails, eventDatesDetails, eventDates, entranceCost, lastUpdated, ticketsLink, tags, title, time, description, pubDate, venue, venueDetails, hero, youtube,
   // Additional optional metadata
   seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources, pageItems} = content;
 console.log(content)
@@ -18,7 +18,7 @@ title = title ? title : "";
     <BaseHead title={title} description={seoDescription || description} />
     <link rel="canonical" href={`https://thingshappening.com${Astro.url.pathname}`} />
     <script is:inline>
-      if (window.location.search.includes('tags=')) {
+      if (window.location.search.includes('tags=') || window.location.search.includes('date=')) {
         var meta = document.createElement('meta');
         meta.name = 'robots';
         meta.content = 'noindex, follow';
@@ -33,7 +33,7 @@ title = title ? title : "";
   <body>
     <Nav />
     <main class="overflow-hidden">
-      <BlogPost tags={tags} author={author} readTime={readTime} matchedDetails={matchedDetails} originalDate={originalDate} lastUpdated={lastUpdated} eventDatesDetails={eventDatesDetails} address={address} eventLink={eventLink} entranceCost={entranceCost} ticketsLink={ticketsLink} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube}
+      <BlogPost tags={tags} author={author} readTime={readTime} matchedDetails={matchedDetails} originalDate={originalDate} lastUpdated={lastUpdated} eventDatesDetails={eventDatesDetails} eventDates={eventDates} address={address} eventLink={eventLink} entranceCost={entranceCost} ticketsLink={ticketsLink} title={title} venue={venue} venueDetails={venueDetails} time={time} hero={hero} pubDate={pubDate} youtube={youtube}
         seoDescription={seoDescription} featured={featured} geoCoverage={geoCoverage} neighborhoods={neighborhoods} seasonality={seasonality} accessibilityNotes={accessibilityNotes} parking={parking} kidFriendly={kidFriendly} petFriendly={petFriendly} bestFor={bestFor} sources={sources} pageItems={pageItems}
         seriesLabel={content.seriesLabel} pathname={Astro.url.pathname}
       >

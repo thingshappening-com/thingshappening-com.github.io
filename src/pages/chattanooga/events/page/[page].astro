@@ -1,0 +1,98 @@
+---
+import BaseHead from '../../../../components/Head/BaseHead.astro';
+import Nav from '../../../../components/Nav.astro';
+import Card from '../../../../components/Card.astro';
+import Footer from '../../../../components/Footer/Footer.astro';
+import Paginator from '../../../../components/Paginator.astro';
+
+export async function getStaticPaths({ paginate }) {
+  const allPosts = (await Astro.glob('../*.mdx')).filter(
+    (post) => post.frontmatter.published !== false
+  );
+
+  const expanded = [];
+
+  for (const file of allPosts) {
+    const frontmatter = file.frontmatter;
+    const baseUrl = file.url;
+
+    if (frontmatter.eventDatesDetails) {
+      frontmatter.eventDatesDetails.forEach((detail) => {
+        const slugifiedTitle = detail.eventTitle
+          ? detail.eventTitle
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '')
+          : '';
+
+        expanded.push({
+          ...frontmatter,
+          pubDate: detail.date,
+          eventTitle: detail.eventTitle,
+          entranceCost: detail.entranceCost,
+          time: detail.time,
+          topDetails: detail.topDetails,
+          url: `${baseUrl}/${detail.date}/${slugifiedTitle}`,
+          type: 'event',
+        });
+      });
+    } else if (frontmatter.eventDates) {
+      frontmatter.eventDates.forEach((date) => {
+        expanded.push({
+          ...frontmatter,
+          pubDate: date,
+          url: `${baseUrl}?date=${date}`,
+          type: 'event',
+        });
+      });
+    } else {
+      expanded.push({
+        ...frontmatter,
+        url: baseUrl,
+        type: 'event',
+      });
+    }
+  }
+
+  const today = new Date();
+  today.setDate(today.getDate() - 1);
+  today.setHours(0, 0, 0, 0);
+
+  const futureEvents = expanded
+    .filter((e) => new Date(e.pubDate) >= today)
+    .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
+
+  return paginate(futureEvents, { pageSize: 15 });
+}
+
+const { page } = Astro.props;
+---
+
+<html lang="en">
+<head>
+  <BaseHead title={`Events in Chattanooga — Page ${page.currentPage}`} description="Upcoming events in Chattanooga, TN." />
+</head>
+<body class="text-black font-body leading-normal personality-casual">
+  <Nav />
+  <main>
+    <article class="w-full px-4 md:px-8 lg:px-16 mt-8 pb-4">
+      <header class="pt-10">
+        <h1 class="font-jakarta font-bold text-5xl md:text-6xl leading-[1.2]">
+          ThingsHappening in <span class="text-customGreen1">Chattanooga</span><span class="text-customGreen1">.</span>
+        </h1>
+        <p class="text-gray-600 text-3xl mt-3 mb-6">A simpler way to find things happening in Chattanooga</p>
+      </header>
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8" data-test="articles-section">
+        {page.data.map((event) => (
+          <div class="col-span-1"><Card post={event} /></div>
+        ))}
+        {page.data.length === 0 && (
+          <p class="col-span-3 text-xl text-gray-500">No upcoming events — check back soon.</p>
+        )}
+      </section>
+      <Paginator page={page} />
+    </article>
+  </main>
+  <Footer />
+</body>
+</html>

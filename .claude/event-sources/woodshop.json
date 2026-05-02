@@ -1,0 +1,23 @@
+{
+  "name": "The Woodshop Listening Room",
+  "type": "recurring",
+  "url": "https://thewoodshoplisteningroom.com/shows",
+  "events": [
+    {
+      "outputPath": "src/pages/chattanooga/events/woodshop-friday-bluegrass.mdx",
+      "matchHint": "Forever Friday Bluegrass or any Friday bluegrass show"
+    },
+    {
+      "outputPath": "src/pages/chattanooga/events/woodshop-tuesday-bluesday.mdx",
+      "matchHint": "Jhett Black Tuesday Bluesday or any Tuesday blues show"
+    },
+    {
+      "outputPath": "src/pages/chattanooga/events/woodshop-soul-night.mdx",
+      "matchHint": "Soul Night with Joel Forlines or any Thursday soul show"
+    },
+    {
+      "outputPath": "src/pages/chattanooga/events/woodshop-tuesday-trivia.mdx",
+      "matchHint": "Woodshop Trivia or Tuesday trivia night"
+    }
+  ]
+}

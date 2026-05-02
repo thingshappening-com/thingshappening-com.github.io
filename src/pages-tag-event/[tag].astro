@@ -46,7 +46,7 @@ filteredEvents.forEach((p) => {
       allPostsIncludingMultipleDates.push({
         ...base,
         pubDate: date,
-        url: `${base.url}/${date}`
+        url: `${base.url}?date=${date}`
       });
     });
   } else {

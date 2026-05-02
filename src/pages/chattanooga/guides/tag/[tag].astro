@@ -53,7 +53,7 @@ filteredPosts.forEach((p) => {
 
   if (baseData.eventDates) {
     baseData.eventDates.forEach((date, i) => {
-      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title}`, url: `${baseData.url}/${date}`});
+      const again = Object.assign({}, baseData, {pubDate: date, title: `${baseData.title}`, url: `${baseData.url}?date=${date}`});
 
       allPostsIncludingMultipleDates.push(again);
     })

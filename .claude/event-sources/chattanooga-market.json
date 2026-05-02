@@ -1,0 +1,15 @@
+{
+  "name": "Chattanooga Market",
+  "type": "recurring",
+  "url": "https://chattanoogamarket.com/calendar/",
+  "events": [
+    {
+      "outputPath": "src/pages/chattanooga/events/chattanooga-market-river.mdx",
+      "matchHint": "River Market or Tennessee Aquarium Plaza or Aquarium Plaza — Saturday market downtown"
+    },
+    {
+      "outputPath": "src/pages/chattanooga/events/chattanooga-market-erlanger.mdx",
+      "matchHint": "Erlanger Medical Mall or Erlanger — Wednesday market"
+    }
+  ]
+}

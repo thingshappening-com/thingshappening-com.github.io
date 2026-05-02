@@ -1,0 +1,15 @@
+{
+  "name": "Barrelhouse Ballroom",
+  "type": "calendar",
+  "url": "https://www.barrelhouseballroom.com/shows",
+  "outputDir": "src/pages/chattanooga/events",
+  "slugPrefix": "barrelhouse-ballroom",
+  "defaultFrontmatter": {
+    "venue": "Barrelhouse Ballroom",
+    "address": "1501 Long St, Chattanooga, TN 37408",
+    "iconPath": "/images/icons/music.svg",
+    "eventLink": "https://www.barrelhouseballroom.com/shows",
+    "tags": [{"type": "event", "tag": "music"}, {"type": "event", "tag": "live-events"}],
+    "layout": "../../../layouts/BlogPostLayout.astro"
+  }
+}

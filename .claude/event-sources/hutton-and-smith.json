@@ -1,0 +1,15 @@
+{
+  "name": "Hutton & Smith Brewing Co.",
+  "type": "recurring",
+  "url": "https://huttonandsmithbrewing.com/about-us/services/",
+  "events": [
+    {
+      "outputPath": "src/pages/chattanooga/events/hutton-smith-thursday-trivia.mdx",
+      "matchHint": "Thursday trivia or complimentary trivia"
+    },
+    {
+      "outputPath": "src/pages/chattanooga/events/hutton-smith-bike-night.mdx",
+      "matchHint": "Bike Night or Tuesday bike night"
+    }
+  ]
+}

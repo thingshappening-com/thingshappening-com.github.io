@@ -1,0 +1,30 @@
+{
+  "name": "Oddstory Brewing Co.",
+  "type": "mixed",
+  "url": "https://www.oddstorybrewing.co/central-events",
+  "recurring": {
+    "events": [
+      {
+        "outputPath": "src/pages/chattanooga/events/oddstory-pub-trivia.mdx",
+        "matchHint": "Pub Trivia on Tuesdays and Thursdays at 7:30pm"
+      },
+      {
+        "outputPath": "src/pages/chattanooga/events/oddstory-monday-bingo.mdx",
+        "matchHint": "BINGO on Mondays at 6:30pm"
+      }
+    ]
+  },
+  "calendar": {
+    "outputDir": "src/pages/chattanooga/events",
+    "slugPrefix": "oddstory",
+    "defaultFrontmatter": {
+      "venue": "Oddstory Brewing Co.",
+      "address": "1503 Campbell St, Chattanooga, TN 37409",
+      "iconPath": "/images/icons/music.svg",
+      "eventLink": "https://www.oddstorybrewing.co/central-events",
+      "tags": [{"type": "event", "tag": "food-drink"}, {"type": "event", "tag": "brewery"}],
+      "entranceCost": "Free",
+      "layout": "../../../layouts/BlogPostLayout.astro"
+    }
+  }
+}

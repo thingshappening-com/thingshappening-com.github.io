@@ -23,6 +23,7 @@ export interface Props {
   ticketsLink?: string;
   matchedDetails?: any;
   eventDatesDetails?: any;
+  eventDates?: string[];
 
   // Media
   hero?: string;
@@ -56,11 +57,14 @@ export interface Props {
   pathname?: string;
 }
 
-let { address, author, readTime, matchedDetails, eventDatesDetails, eventLink, entranceCost, lastUpdated, originalDate, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube,
+let { address, author, readTime, matchedDetails, eventDatesDetails, eventDates, eventLink, entranceCost, lastUpdated, originalDate, title, time, pubDate, tags, ticketsLink, venue, venueDetails, hero, youtube,
   // Additional optional metadata
   seoDescription, featured, geoCoverage, neighborhoods, seasonality, accessibilityNotes, parking, kidFriendly, petFriendly, bestFor, sources, pageItems, seriesLabel, pathname } = Astro.props;
 
 const displaySeriesLabel = seriesLabel ?? (pathname?.includes('/editorials/') ? 'A Things Happening Chattanooga Editorial' : 'The Chattanooga Guides Series');
+const displayDates = eventDates?.length
+  ? eventDates
+  : (eventDatesDetails?.map((d: any) => d.date) ?? []);
 const date = new Date(pubDate);
 let eventDateDetails;
 // console.log(matchedDetails)
@@ -140,8 +144,38 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
         <div><b>Sources:</b> {sources.join(', ')}</div>
       </div>
     ) : ""}
+    {displayDates.length > 0 && (
+      <div class="mt-4">
+        <span class="font-semibold">Upcoming Dates:</span>
+        <ul class="mt-2 flex flex-wrap gap-2">
+          {displayDates.map((d: string) => (
+            <li>
+              <a
+                href={`?date=${d}`}
+                data-date={d}
+                class="date-pill"
+              >
+                {dayjs(d).format('ddd MMM D')}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
   </div>
 </div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const selectedDate = params.get('date');
+  if (selectedDate) {
+    const el = document.querySelector(`a[data-date="${selectedDate}"]`);
+    if (el) {
+      el.classList.add('date-pill--selected');
+      el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+</script>
 <article class="max-w-5xl mx-auto px-3 text-xl tracking-wide">
 
   <!-- Image -->
@@ -181,6 +215,26 @@ eventLink = eventDateDetails && eventDateDetails.eventLink ?  eventDateDetails.e
   </div>
 </article>
 <style>
+  .date-pill {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    border: 1.5px solid #d1d5db;
+    font-size: 0.95rem;
+    color: #374151;
+    text-decoration: none;
+    transition: border-color 0.1s, color 0.1s;
+  }
+  .date-pill:hover {
+    border-color: #3CB371;
+    color: #3CB371;
+  }
+  .date-pill--selected {
+    border-color: #3CB371;
+    color: #3CB371;
+    font-weight: 600;
+    background-color: #f0faf4;
+  }
   pre {
     padding: 8px 16px;
     overflow: auto;

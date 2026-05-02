@@ -1,0 +1,16 @@
+{
+  "name": "The Tap House",
+  "type": "calendar",
+  "url": "https://taphousechatt.com/chattanooga-chattanooga-the-tap-house-events",
+  "outputDir": "src/pages/chattanooga/events",
+  "slugPrefix": "tap-house",
+  "defaultFrontmatter": {
+    "venue": "The Tap House",
+    "address": "122 Broad St, Chattanooga, TN 37402",
+    "iconPath": "/images/icons/music.svg",
+    "eventLink": "https://taphousechatt.com/chattanooga-chattanooga-the-tap-house-events",
+    "tags": [{"type": "event", "tag": "food-drink"}],
+    "entranceCost": "Free",
+    "layout": "../../../layouts/BlogPostLayout.astro"
+  }
+}

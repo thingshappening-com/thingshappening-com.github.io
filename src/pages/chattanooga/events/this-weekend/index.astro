@@ -1,0 +1,71 @@
+---
+import BaseHead from '../../../../components/Head/BaseHead.astro';
+import Nav from '../../../../components/Nav.astro';
+import EventsNav from '../../../../components/EventsNav.astro';
+import HomeHeader from '../../../../components/HomeHeader.astro';
+import Card from '../../../../components/Card.astro';
+import Footer from '../../../../components/Footer/Footer.astro';
+
+const title = 'This Weekend in Chattanooga';
+const seoDescription = 'Events happening this weekend in Chattanooga, TN.';
+
+let allPosts = (await Astro.glob('../*.mdx')).filter(
+  (post) => post.frontmatter.published !== false
+);
+
+let allPostsIncludingMultipleDates = [];
+
+allPosts.forEach((p) => {
+  const baseData = { ...p.frontmatter, url: p.url };
+  if (baseData.eventDates) {
+    baseData.eventDates.forEach((date) => {
+      allPostsIncludingMultipleDates.push({ ...baseData, pubDate: date, url: `${baseData.url}?date=${date}` });
+    });
+  } else {
+    allPostsIncludingMultipleDates.push(baseData);
+  }
+});
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+// Upcoming Friday through Sunday
+const currentDay = today.getDay(); // 0=Sun, 5=Fri, 6=Sat
+const daysUntilFriday = (5 - currentDay + 7) % 7 || 7;
+const upcomingFriday = new Date(today.getFullYear(), today.getMonth(), today.getDate() + (currentDay <= 5 ? (5 - currentDay) : 0));
+const upcomingSunday = new Date(upcomingFriday.getFullYear(), upcomingFriday.getMonth(), upcomingFriday.getDate() + 2);
+upcomingSunday.setHours(23, 59, 59, 999);
+
+allPostsIncludingMultipleDates = allPostsIncludingMultipleDates
+  .filter(({ pubDate }) => {
+    const d = new Date(pubDate);
+    if (d < today || d > upcomingSunday) return false;
+    const day = d.getDay();
+    return day === 0 || day === 5 || day === 6;
+  })
+  .sort((a, b) => new Date(a.pubDate) - new Date(b.pubDate));
+---
+
+<html lang="en">
+<head>
+  <BaseHead title={title} description={seoDescription} />
+</head>
+<body class="text-black font-body leading-normal personality-casual">
+  <Nav />
+  <main class="py-12 lg:pt-20">
+    <article class="max-w-6xl mx-auto px-3">
+      <HomeHeader title={title} description="Events happening in Chattanooga this weekend" />
+      <EventsNav active="this-weekend" />
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+        {allPostsIncludingMultipleDates.map(p => (
+          <div class="col-span-1"><Card post={p} /></div>
+        ))}
+        {allPostsIncludingMultipleDates.length === 0 && (
+          <p class="col-span-3 text-xl text-gray-500">No events this weekend — check back soon.</p>
+        )}
+      </section>
+    </article>
+  </main>
+  <Footer />
+</body>
+</html>

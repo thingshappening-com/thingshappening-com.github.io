@@ -1,0 +1,34 @@
+---
+export type ActiveTab = 'all' | 'this-weekend' | 'this-week' | 'this-month' | 'all-weekends';
+
+interface Props {
+  active: ActiveTab;
+}
+
+const { active } = Astro.props;
+
+const linkClass = (tab: ActiveTab) =>
+  active === tab
+    ? 'text-customGreen1 font-semibold border-b-2 border-customGreen1 pb-1'
+    : 'text-gray-600 hover:text-customGreen1 pb-1 border-b-2 border-transparent hover:border-customGreen1 transition-colors';
+---
+
+<nav class="flex gap-5 pt-10 text-2xl md:text-[1.7rem]" aria-label="Event filters">
+  <a href="/#events" class={linkClass('all')}>All</a>
+  <a href="/chattanooga/events/this-weekend" class={linkClass('this-weekend')}>
+    <span class="md:hidden">Weekend</span>
+    <span class="hidden md:inline">This Weekend</span>
+  </a>
+  <a href="/chattanooga/events/this-week" class={linkClass('this-week')}>
+    <span class="md:hidden">Week</span>
+    <span class="hidden md:inline">This Week</span>
+  </a>
+  <a href="/chattanooga/events/this-month" class={linkClass('this-month')}>
+    <span class="md:hidden">Month</span>
+    <span class="hidden md:inline">This Month</span>
+  </a>
+  <a href="/chattanooga/events/all-weekends" class={linkClass('all-weekends')}>
+    <span class="md:hidden">Weekends</span>
+    <span class="hidden md:inline">Future Weekends</span>
+  </a>
+</nav>
