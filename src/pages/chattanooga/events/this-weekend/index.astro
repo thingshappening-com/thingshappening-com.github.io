@@ -2,7 +2,6 @@
 import BaseHead from '../../../../components/Head/BaseHead.astro';
 import Nav from '../../../../components/Nav.astro';
 import EventsNav from '../../../../components/EventsNav.astro';
-import HomeHeader from '../../../../components/HomeHeader.astro';
 import Card from '../../../../components/Card.astro';
 import Footer from '../../../../components/Footer/Footer.astro';
 
@@ -29,9 +28,7 @@ allPosts.forEach((p) => {
 const today = new Date();
 today.setHours(0, 0, 0, 0);
 
-// Upcoming Friday through Sunday
-const currentDay = today.getDay(); // 0=Sun, 5=Fri, 6=Sat
-const daysUntilFriday = (5 - currentDay + 7) % 7 || 7;
+const currentDay = today.getDay();
 const upcomingFriday = new Date(today.getFullYear(), today.getMonth(), today.getDate() + (currentDay <= 5 ? (5 - currentDay) : 0));
 const upcomingSunday = new Date(upcomingFriday.getFullYear(), upcomingFriday.getMonth(), upcomingFriday.getDate() + 2);
 upcomingSunday.setHours(23, 59, 59, 999);
@@ -52,11 +49,16 @@ allPostsIncludingMultipleDates = allPostsIncludingMultipleDates
 </head>
 <body class="text-black font-body leading-normal personality-casual">
   <Nav />
-  <main class="py-12 lg:pt-20">
-    <article class="max-w-6xl mx-auto px-3">
-      <HomeHeader title={title} description="Events happening in Chattanooga this weekend" />
+  <main>
+    <article class="w-full px-4 md:px-8 lg:px-16 mt-8 pb-4">
+      <header class="pt-10">
+        <h1 class="font-jakarta font-bold text-5xl md:text-6xl leading-[1.2]">
+          This Weekend in <span class="text-customGreen1">Chattanooga</span><span class="text-customGreen1">.</span>
+        </h1>
+        <p class="text-gray-600 text-3xl mt-3 mb-6">Events happening in Chattanooga this weekend</p>
+      </header>
       <EventsNav active="this-weekend" />
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8" data-test="articles-section">
         {allPostsIncludingMultipleDates.map(p => (
           <div class="col-span-1"><Card post={p} /></div>
         ))}

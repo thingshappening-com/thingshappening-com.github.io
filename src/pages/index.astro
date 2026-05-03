@@ -171,7 +171,7 @@ const page = {
           <h2 class="font-jakarta font-bold text-5xl md:text-6xl leading-[1.2]">
             ThingsHappening in <span class="text-customGreen1">Chattanooga</span><span class="text-customGreen1">.</span>
           </h2>
-          <p class="text-gray-600 text-3xl mt-3 mb-6">A simpler way to find things happening in Chattanooga</p>
+          <p class="text-gray-600 text-3xl mt-3 mb-6">A simpler way to find things happening in Chattanooga<span class="text-customGreen1 text-3xl">.</span></p>
         </header>
         <EventsNav active="all" />
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 py-8">
@@ -182,14 +182,14 @@ const page = {
           ))}
         </section>
         <div class="mt-4">
-          <a href="/chattanooga/events/page/1" class="text-customGreen1 font-semibold hover:opacity-90 transition-colors text-2xl">View More Events</a>
+          <a href="/chattanooga/events/page/1" class="text-customGreen1 font-semibold underline decoration-black hover:opacity-90 transition-colors text-3xl">View More Events</a>
         </div>
       </article>
     )}
 
     <article class="w-full px-4 md:px-8 lg:px-16 mt-8">
       <ExploreHeader>
-        Explore <span class="text-customGreen1">{city}, TN</span> with <a href="/chattanooga/guides" class="text-customGreen1 underline">Guides</a> and <a href="/chattanooga/editorials" class="text-customGreen1 underline">Editorials</a><span class="text-customGreen1">.</span>
+        Explore <span class="text-customGreen1">{city}, TN</span> with <a href="/chattanooga/guides" class="text-customGreen1 underline decoration-black">Guides</a> and <a href="/chattanooga/editorials" class="text-customGreen1 underline decoration-black">Editorials</a><span class="text-customGreen1">.</span>
       </ExploreHeader>
       <GuidesEditorialsNav active="all" />
       {SECTION_ORDER.filter((key) => bySection[key]?.length).map((key) => {
@@ -209,7 +209,7 @@ const page = {
             </div>
             {bySection[key].length > SECTION_PREVIEW_SIZE && (
               <div class="mt-4">
-                <a href={SECTION_TAG_SLUG[key] ? `/chattanooga/guides/tag/${SECTION_TAG_SLUG[key]}` : '/chattanooga/guides'} class="text-customGreen1 font-semibold underline hover:opacity-90 transition-colors text-xl">View all in {label} →</a>
+                <a href={SECTION_TAG_SLUG[key] ? `/chattanooga/guides/tag/${SECTION_TAG_SLUG[key]}` : '/chattanooga/guides'} class="text-customGreen1 font-semibold underline decoration-black hover:opacity-90 transition-colors text-xl">View all in {label} →</a>
               </div>
             )}
           </section>
@@ -217,7 +217,7 @@ const page = {
       })}
       {sortedContent.length > 15 && (
         <div class="text-center mt-10 pt-6 border-t border-gray-200">
-          <a href="/chattanooga/guides/page/2" class="text-customGreen1 font-semibold underline hover:opacity-90 transition-colors text-xl">View more →</a>
+          <a href="/chattanooga/guides/page/2" class="text-customGreen1 font-semibold underline decoration-black hover:opacity-90 transition-colors text-xl">View more →</a>
         </div>
       )}
     </article>
