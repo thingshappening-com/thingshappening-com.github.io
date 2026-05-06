@@ -102,7 +102,7 @@ When you encounter these, rewrite without them:
 
 ## What NOT to change
 
-- Frontmatter field names or values (except `pageItems[].description` in guides)
+- Frontmatter field names or values (except `pageItems[].description` in guides, and `lastUpdated` in guides — see below)
 - MDX import statements
 - `<script>` blocks and JSON-LD
 - JSX component tags and their props
@@ -113,12 +113,15 @@ When you encounter these, rewrite without them:
 
 ## Process
 
+**Guide lastUpdated:** When any edits are made to a guide file, update the `lastUpdated` frontmatter field to today's date in MM/DD/YYYY format.
+
+**Token efficiency — do not use Read+Edit per file.** When processing multiple files, use a single Bash script with python3 to write body text directly. Read+Edit doubles tool calls (one read, one edit per file) and burns tokens fast on large batches. Reserve Read+Edit only for single-file runs where precision matters.
+
 For each file:
-1. Read the file
-2. Detect content type (if not passed)
-3. Identify the rewritable text regions
-4. Rewrite those regions applying the voice rules
-5. Output to terminal or write back to source per output mode
+1. Extract body text and frontmatter via Bash (e.g. `awk` or `python3`) — do not use the Read tool for batch runs
+2. Detect content type from frontmatter fields or file path
+3. Rewrite the rewritable regions applying the voice rules
+4. Write back via a single Bash python3 script for the whole batch, or output to terminal
 
 ---
 
