@@ -6,6 +6,7 @@ allowed-tools:
   - Read
   - Write
   - Bash(python3 *)
+  - Bash(curl *)
   - Bash(find *)
   - WebFetch
   - WebSearch
@@ -57,9 +58,23 @@ Known neighborhood tags: `downtown`, `north-shore`, `southside`, `st-elmo`, `inn
 
 ### Pass 2 — Web verification (one item at a time)
 
+**Fetching pages:** Always use `curl` via Bash to fetch pages — it's cheaper and faster than WebFetch. Strip HTML with python3:
+
+```bash
+curl -sL --max-time 10 "$URL" | python3 -c "
+import sys, html, re
+txt = sys.stdin.read()
+txt = re.sub(r'<[^>]+>', '', html.unescape(txt))
+txt = re.sub(r'\s+', ' ', txt)
+print(txt[:4000])
+"
+```
+
+Only fall back to `WebFetch` if `curl` returns empty content or a JS-only page. Only use `WebSearch` if the site itself is ambiguous or there is no website link.
+
 For each item, in order:
 
-1. **Fetch the website link** (if present and not Google Maps). Look for signs the business is closed or the URL redirects to something unrelated.
+1. **Fetch the website link** (if present and not Google Maps) using `curl`. Look for signs the business is closed or the URL redirects to something unrelated.
 
 2. **WebSearch the business name** if the site fetch is ambiguous or there is no website link. Search `"{title}" Chattanooga` and scan for closure notices, "permanently closed" on Google, or news articles.
 
